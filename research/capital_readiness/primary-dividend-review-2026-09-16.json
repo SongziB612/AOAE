@@ -1,0 +1,60 @@
+{
+  "review_date": "2026-09-16",
+  "scope": "Additional selected historical fields; supplement, not replacement of 2026-09-14 review",
+  "evidence_method": "Manual transcription after reading original issuer PDFs hosted by SSE or fund manager with web tool; PDFs not locally archived",
+  "events": [
+    {
+      "symbol": "510300",
+      "ex_date": "2024-01-18",
+      "registration_date": "2024-01-17",
+      "payment_date": "2024-01-23",
+      "cash_per_share": "0.069",
+      "publication_date": "2024-01-11",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2024-01-11/510300_20240111_QQFV.pdf",
+      "source_locator": "PDF page 2 distribution table and page 3 payment mechanics",
+      "issuer_remittance_date": "2024-01-19",
+      "csdc_transfer_date": "2024-01-22"
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2024-05-17",
+      "registration_date": "2024-05-16",
+      "payment_date": "2024-05-22",
+      "cash_per_share": "0.087",
+      "publication_date": "2024-05-10",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2024-05-10/510500_20240510_LM77.pdf",
+      "source_locator": "PDF page 2 distribution table and page 3 payment mechanics",
+      "issuer_remittance_date": "2024-05-20",
+      "csdc_transfer_date": "2024-05-21"
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2025-01-16",
+      "registration_date": "2025-01-15",
+      "payment_date": "2025-01-21",
+      "cash_per_share": "0.091",
+      "publication_date": "2025-01-09",
+      "source_url": "https://www.nffund.com/main/files/2025/01/08/255916276908.pdf",
+      "source_locator": "PDF page 1 announcement date; page 2 distribution table; page 3 payment mechanics",
+      "issuer_remittance_date": "2025-01-17",
+      "csdc_transfer_date": "2025-01-20",
+      "note": "URL path date is not substituted for printed announcement date. Actual first public availability time unknown."
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2025-06-18",
+      "publication_date": "2025-06-11",
+      "source_url": "https://www.sse.com.cn/assortment/options/disclo/update/c/c_20250611_10781544.shtml",
+      "source_locator": "SSE options adjustment notice 2025 number 33",
+      "note": "Ex-date only; do not infer amount or payment date from this notice."
+    }
+  ],
+  "unresolved_sources": [
+    {
+      "url": "https://www.nffund.com/main/files/2024/05/09/446881768060.pdf",
+      "status": "WEB_OPEN_FAILED; verified same event using SSE original PDF instead"
+    }
+  ],
+  "point_in_time_admitted": false,
+  "capital_authorized": false
+}

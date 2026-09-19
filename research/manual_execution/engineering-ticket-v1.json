@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-08T09:31:05+08:00",
+  "status": "PAPER_REVIEW_READY",
+  "classification": "PAPER_REHEARSAL_ONLY_NOT_A_LIVE_ORDER",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false,
+  "legs": [
+    {
+      "symbol": "510300",
+      "side": "BUY",
+      "quantity": 1200,
+      "limit_price": "4.000",
+      "estimated_commission_cny": "14.400000",
+      "reference_quote_at": "2026-10-08T09:31:00+08:00",
+      "reference_price": "4.000"
+    }
+  ],
+  "request_sha256": "8c462280a7aebd0d1547e461538175367ca4a60b2ecde262afdafe16a020f8de",
+  "signal_id": "20a7ce1f89fbe08cfd66878bfda42f3cf90bf83ed29c032846f1dfba5606d0d6",
+  "arm": "model",
+  "expires_at": "2026-10-08T09:32:00+08:00",
+  "execution_not_before": "2026-10-08T09:30:00+08:00",
+  "blockers": [],
+  "initial_positions": {
+    "510300": 0
+  },
+  "initial_available_to_sell": {
+    "510300": 0
+  },
+  "initial_available_cash_cny": "10000",
+  "fees": {
+    "commission_rate": "0.003",
+    "minimum_cny": "5",
+    "basis": "Engineering assumption only; not confirmed account tariff"
+  },
+  "seconds_after_model_open": 65.0,
+  "delay_backtest_validated": false,
+  "cancellation_rule": "At expiry request cancellation; verify final order status before any replacement.",
+  "warnings": [
+    "Prices and tradability are supplied snapshots, not a verified live feed.",
+    "No automatic cancellation, follow-up, real-money approval or profitability claim.",
+    "Manual fills must not be booked as historical opening fills."
+  ],
+  "ticket_id": "9b282322ab58a116c9e67470128e1450f869637c986e7818d9959ce2dec58c27"
+}

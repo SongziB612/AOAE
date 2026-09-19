@@ -1,0 +1,42 @@
+{
+  "acceptance": {
+    "confidence_level": 0.95,
+    "maximum_false_positive_rate": 0.1,
+    "maximum_wilson_upper_bound": 0.2
+  },
+  "bias_controls": [
+    "The candidate and control are independent IID Gaussian return series with no injected autocorrelation.",
+    "Seeds and thresholds are inherited from a digest-bound preregistration before execution.",
+    "Every declared seed is reported; no false positive may be hidden.",
+    "The lagged rule, sample size, split, and turnover cost match the positive-control experiments."
+  ],
+  "capital_authorized": false,
+  "confidence": "infrastructure_negative_control_only",
+  "data": {
+    "control_seed_offset": 1000003,
+    "samples": 5000,
+    "sigma": 0.01
+  },
+  "experiment_id": "EXP-0003-iid-negative-control",
+  "failure_modes": [
+    "Gaussian IID returns are much simpler than real markets.",
+    "Thirty-two seeds only bound, rather than eliminate, the false-positive probability.",
+    "Rejecting this null does not prove that future real-data discoveries are valid.",
+    "The negative control tests one strategy and one cost model only."
+  ],
+  "hypothesis": "On independent IID candidate and control series, the unchanged opportunity rule will produce false positives on at most 10% of seeds and the two-sided 95% Wilson upper bound will not exceed 20%.",
+  "method": {
+    "annualization_periods": 252,
+    "cost_bps": 5.0,
+    "signal_lag": 1,
+    "strategy": "lagged_sign_reversal",
+    "train_fraction": 0.6
+  },
+  "next_experiment": "Define the first real-data due-diligence contract: provider, instrument universe, timestamps, survivorship controls, costs, licenses, and a no-capital exploration budget.",
+  "schema_version": 1,
+  "seed_source": {
+    "canonical_sha256": "4b14660e3a4423ad3c319e4a25b47f3bf6d3339d7f8d2b8890099f0e9aa6be59",
+    "spec_path": "../0002-multiseed-sensitivity/spec.json"
+  },
+  "title": "Independent IID negative-control rejection gate"
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "validation_id": "VAL-0001-etf-champion-stability",
+  "title": "Independent-engine and stability audit of the ETF dual-momentum champion",
+  "frozen_inputs": {
+    "strategy_spec_path": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+    "strategy_spec_sha256": "9e351225eaf37dec65c87e06b9dbd183c27c900df0c00aff2ac0f83503e461ef",
+    "strategy_result_path": "research/hypotheses/0004-cn-etf-dual-momentum/result.json",
+    "strategy_result_sha256": "70079a34efecaca3bc3cd3722983a898cce2294d64ae6fb4f3fc89bf66853f6a",
+    "raw_price_hashes_source": "strategy_result.inputs.price_sha256"
+  },
+  "external_engine": {
+    "name": "vectorbt",
+    "source": "https://github.com/polakowo/vectorbt",
+    "commit": "34b6d5935e3ea3eccd549e2592bc0f455b8045f5",
+    "role": "independent portfolio accounting only",
+    "strategy_parameter_search_authorized": false
+  },
+  "tests": {
+    "full_holdout_reproduction": {
+      "maximum_total_return_difference": 0.005,
+      "maximum_max_drawdown_difference": 0.005
+    },
+    "rolling_windows": {
+      "length_common_observations": 504,
+      "step_common_observations": 126,
+      "minimum_fraction_positive_return": 0.8,
+      "minimum_fraction_beating_benchmark_return": 0.8,
+      "minimum_fraction_lower_drawdown_than_benchmark": 0.8
+    },
+    "leave_one_risk_asset_out": {
+      "assets": ["510300", "510500", "159915", "513500", "518880"],
+      "minimum_variants_with_positive_cagr": 4,
+      "minimum_variants_beating_benchmark_cagr": 3,
+      "drawdown_floor": -0.4
+    }
+  },
+  "decision_rule": "all_declared_checks_must_pass",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "next_step_if_pass": "preregister a Qlib LightGBM challenger without changing this holdout",
+  "next_step_if_fail": "retain or reject the champion according to the failed check; do not tune on this holdout"
+}

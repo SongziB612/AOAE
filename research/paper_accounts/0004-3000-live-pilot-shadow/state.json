@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "account_id": "PAPER-0004-3000-live-pilot-shadow",
+  "mode": "local_broker_independent_simulation",
+  "spec_sha256": "62e60c282daaf6c7d9e8ee0e7c9a0525a118c19bd0217fe0b3b8be8e18afe50d",
+  "as_of": "2026-09-05",
+  "status": "ACTIVE_WAITING_FOR_FIRST_ELIGIBLE_SIGNAL",
+  "cash_cny": 3000.0,
+  "positions": {},
+  "market_value_cny": 0.0,
+  "equity_cny": 3000.0,
+  "realized_pnl_cny": 0.0,
+  "unrealized_pnl_cny": 0.0,
+  "drawdown_fraction": 0.0,
+  "risk_budget": {
+    "maximum_acceptable_loss_cny": 1000,
+    "pause_new_risk_at_loss_cny": 600,
+    "remaining_to_pause_cny": 600,
+    "remaining_to_maximum_acceptable_loss_cny": 1000
+  },
+  "execution_constraints": {
+    "buy_lot_size_shares": 100,
+    "maximum_risk_asset_market_value_cny": 3000.0,
+    "defensive_asset": "cash",
+    "minimum_cost_per_order_cny": 5
+  },
+  "next_event": "wait for first common calendar-month-end close strictly after 2026-09-05; create paper order for next common open",
+  "events": [
+    {
+      "date": "2026-09-05",
+      "type": "ACCOUNT_OPENED",
+      "cash_change_cny": 3000.0,
+      "note": "local simulation only; no broker, position, order, or real capital"
+    }
+  ],
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

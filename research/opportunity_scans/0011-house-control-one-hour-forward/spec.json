@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scan_id": "SCAN-0011-house-control-one-hour-forward",
+  "portfolio_spec": "research/opportunity_scans/0005-house-control-superhedge/spec.json",
+  "hybrid_candidate": "research/opportunity_scans/0010-house-control-hybrid-completion/result.json",
+  "observation_seconds": 3600,
+  "purpose": "Observe all four public books for one hour; hybrid interpretation focuses on the first three maker legs and treats the House-NO leg as taker completion only.",
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

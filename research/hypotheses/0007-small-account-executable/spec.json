@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0007-small-account-executable",
+  "title": "10000 CNY executable-lot feasibility diagnostic",
+  "status_context": "Designed after all prior historical and September launch observations; diagnostic only, never a clean holdout.",
+  "frozen_inputs": {
+    "overlay_spec_path": "research/hypotheses/0006-volatility-controlled-etf-overlay/spec.json",
+    "overlay_spec_sha256": "2d2a6f59a7879d6ebfcb2dbcf6603422147f473a0b580eecf7abaceaf44e7999",
+    "overlay_result_path": "research/hypotheses/0006-volatility-controlled-etf-overlay/result.json",
+    "overlay_result_sha256": "b75b7be5559f24a8244b7988904fad63b66e0462658c1139e7aa9e2198242962",
+    "paper_account_spec_path": "research/paper_accounts/0001-small-etf-risk-overlay/spec.json",
+    "paper_account_spec_sha256": "a49f0c1584dea5686f8e1d7d6bdac05f530211f3155db12ccd3d807a8f2d8cb0"
+  },
+  "period": ["2022-01-01", "2026-08-31"],
+  "execution": {
+    "initial_cash_cny": 10000,
+    "risk_asset_market_value_cap_fraction": 0.4,
+    "defensive_allocation": "cash_with_zero_interest",
+    "buy_lot_size_shares": 100,
+    "target_quantity": "floor(desired_notional / execution_open / 100) * 100",
+    "rebalance": "next_common_trading_day_open",
+    "one_way_cost_rate": 0.0015,
+    "minimum_cost_per_nonzero_order_cny": 5,
+    "sell_entire_existing_position_when_target_is_zero": true,
+    "insufficient_cash_behavior": "reduce buys by one lot starting with lowest target score until cash and fees fit"
+  },
+  "decision_rule": {
+    "total_return_positive": true,
+    "cagr_above_510300_benchmark": true,
+    "maximum_drawdown_not_below_negative_10_percent": true,
+    "maximum_historical_loss_cny_not_above_1000": true,
+    "all_buys_are_100_share_multiples": true,
+    "cash_never_negative": true
+  },
+  "trial_count": 1,
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "replacement_authorized": false,
+  "next_step_if_pass": "keep PAPER-0001 active for the first clean future month-end",
+  "next_step_if_fail": "pause PAPER-0001 and redesign without using this diagnostic period for parameter search"
+}

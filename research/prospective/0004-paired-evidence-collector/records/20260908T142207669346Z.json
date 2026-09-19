@@ -1,0 +1,53 @@
+{
+  "experiment_id": "PRO-0003-EVIDENCE-COLLECTOR-0001",
+  "captured_at_utc": "2026-09-08T14:22:07.669346+00:00",
+  "expected_market_date": "2026-09-08",
+  "actual_market_dates": [
+    "2026-09-08"
+  ],
+  "freshness_status": "CURRENT",
+  "freeze_sha256": "1499f105b93079eb40e468ec402bd73c038b64da218c754e20bf3956cf49441d",
+  "manifest_sha256": "5a66b6e4ac7c2d818079e7a8d3eb1935918faadf0740b6ca4eb3a3f2c94640b0",
+  "price_sha256": {
+    "510300": "4648267f2127ea09d41b301806bc998b1285ddb22591d035efe5545307456b1f",
+    "510500": "210c88257f1f092e229d986afe430e345608faae6dd41aa2191212530f3699f4",
+    "159915": "d88977da9ec6df7c8daa4b14b45da02efc3be074a4a3f85d1cdce3177a51dd54",
+    "513500": "11a2a6cc4e11a625b80484e34f43d14f967f5e86cb9dab2fbff7dc38ad4c6f84",
+    "518880": "b404285c7395097ad74abf7cb8b8a9f50c123e4dc1d10c9bb3664593a0b2887d",
+    "511010": "c6ea268aa6d6429efe7e6671a7f83d5e4cc34d2d5b57fb4117e9f8d0210fb508"
+  },
+  "signal_status": "NOT_ADMITTED_CALENDAR_AND_CORPORATE_ACTION_REVIEW_REQUIRED",
+  "observed_forward_signals": 0,
+  "observed_forward_fills": 0,
+  "initial_cash_account_templates": {
+    "causal_total_return_momentum_overlay": {
+      "cash_cny": 300000.0,
+      "positions": {},
+      "simulated_fills": 0
+    },
+    "monthly_same_universe_equal_weight": {
+      "cash_cny": 300000.0,
+      "positions": {},
+      "simulated_fills": 0
+    },
+    "monthly_same_universe_exposure_matched_equal_weight": {
+      "cash_cny": 300000.0,
+      "positions": {},
+      "simulated_fills": 0
+    }
+  },
+  "templates_are_not_running_account_states": true,
+  "source_sha256": {
+    "scripts/collect_paired_forward.py": "0e046686e65a4a1aab1d30650e3b21e4bc432db45ed868cd4c75d8efaa2af3ef",
+    "src/aoae/paired_forward.py": "8983e83acc0de8491c8f9f8ee4cdd927065acfc190faf266fe99bebca0b1e921"
+  },
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false,
+  "limits": [
+    "Local acquisition timestamp is not vendor publication time.",
+    "Expected date is explicitly supplied, not an inferred exchange calendar.",
+    "No signal backfill or invented opening fills. No strategy scoring in this collector.",
+    "Collector does not yet certify raw adjustment/action changes or automatically advance ledgers."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-09-04",
+  "account_id": "PAPER-0003-high-risk-overlay",
+  "current_decision": "CONDITIONALLY_READY_FOR_SMALL_REAL_CAPITAL_PILOT_AT_NEXT_VALID_SIGNAL",
+  "earliest_review_date": "2026-10-08",
+  "supersedes_wait_until": "2026-12-04",
+  "reason_for_acceleration": "The preregistered HYP-0012 post-discovery robustness audit passed all slicing and cost-stress gates. This permits a small execution-learning pilot, not a claim of proven future alpha.",
+  "review_date_is_not_automatic_authorization": true,
+  "pilot_if_all_gates_pass": {
+    "capital_cny": 3000,
+    "maximum_planned_loss_cny": 600,
+    "leverage": 1.0,
+    "borrowing_forbidden": true,
+    "derivatives_forbidden": true,
+    "automatic_trading_forbidden": true,
+    "human_confirmation_required_for_every_order": true
+  },
+  "required_gates": [
+    {
+      "id": "G1",
+      "requirement": "frozen historical strategy passes calendar, rolling-window, and adverse-cost robustness audit",
+      "status": "PASS",
+      "evidence": "research/hypotheses/0012-high-risk-overlay-robustness/result.json"
+    },
+    {
+      "id": "G2",
+      "requirement": "first untouched 2026-09 month-end signal is generated without rule changes; any resulting order is first eligible at the next common open",
+      "status": "PENDING"
+    },
+    {
+      "id": "G3",
+      "requirement": "the paper order is lot-size feasible for the 3000 CNY pilot; if the frozen signal is cash, no trade is forced",
+      "status": "PENDING"
+    },
+    {
+      "id": "G4",
+      "requirement": "the user accepts that the 600 CNY planned-loss limit is not guaranteed under gaps or unavailable liquidity",
+      "status": "PENDING"
+    },
+    {
+      "id": "G5",
+      "requirement": "a manual limit-order plan and cancellation rule are prepared from observable quotes; no automatic order",
+      "status": "PENDING"
+    },
+    {
+      "id": "G6",
+      "requirement": "broker, fees, instrument eligibility, and account rules are verified before any order",
+      "status": "BLOCKED_BROKER_NOT_SELECTED"
+    },
+    {
+      "id": "G7",
+      "requirement": "fresh human approval after reviewing the complete forward report",
+      "status": "PENDING"
+    }
+  ],
+  "scale_policy_if_pilot_starts": {
+    "minimum_pilot_duration_days": 90,
+    "maximum_capital_after_first_review_cny": 5000,
+    "full_10000_cny_requires": "a second successful 90-day real-capital review with no rule changes or risk breach",
+    "stop_condition": "pause new risk and liquidate only after human confirmation if pilot equity falls to 2400 CNY or below"
+  },
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false
+}

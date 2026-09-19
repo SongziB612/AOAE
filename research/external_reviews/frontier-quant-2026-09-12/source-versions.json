@@ -1,0 +1,23 @@
+{
+  "review_date": "2026-09-12",
+  "scope": "Public primary research and repositories relevant to AOAE; not an exhaustive or profitability ranking",
+  "version_method": "GitHub public commits API, default branch, per_page=1; observed commits are not necessarily stable releases",
+  "installed_external_packages": [],
+  "downloaded_model_weights": [],
+  "recurring_research_scheduler_created": false,
+  "repositories": [
+    {"repository": "microsoft/qlib", "sha": "79633dd9506ea689e5400dea0197717b5b3d74b7", "commit_date_utc": "2026-07-23T08:15:29Z", "decision": "Watch; not a new ETF alpha or replacement engine"},
+    {"repository": "microsoft/RD-Agent", "sha": "32b3d395e73d9db5eee3fe9063d69aec0fdc83bd", "commit_date_utc": "2026-09-04T02:25:05Z", "decision": "Watch; bounded research automation after point-in-time data and trial budget"},
+    {"repository": "cvxgrp/cvxportfolio", "sha": "351c782b9b8b395c1a5f886b77e0d55f1bc9396e", "commit_date_utc": "2026-04-27T14:01:55Z", "decision": "Applied cost-aware decision principle in isolated heuristic challenger; not full package integration"},
+    {"repository": "skfolio/skfolio", "sha": "553f7a542189c6cabf52b159b0f8d1133afc6b52", "commit_date_utc": "2026-09-12T13:01:47Z", "decision": "Applied turnover-cost principle; no optimizer installed"},
+    {"repository": "amazon-science/chronos-forecasting", "sha": "4dbf163c2734c089cdf7da2b86fde48862ff9c6f", "commit_date_utc": "2026-09-08T14:12:37Z", "decision": "Deferred; no demonstrated incremental net China ETF return"},
+    {"repository": "TauricResearch/TradingAgents", "sha": "be952b8eccb49720509af544c6675233bc1f10d0", "commit_date_utc": "2026-09-07T22:30:55Z", "decision": "Research-assistance reference only; no order authority"},
+    {"repository": "AI4Finance-Foundation/FinRL", "sha": "2334a5fe6d30629157f13c3b0319e1637e15e123", "commit_date_utc": "2026-07-12T06:22:09Z", "decision": "Deferred; environment realism and selection bias dominate"},
+    {"repository": "nautechsystems/nautilus_trader", "sha": "06dd8e756546a91402430e4d79a99dc74d142661", "commit_date_utc": "2026-09-12T12:21:20Z", "decision": "Execution architecture reference; no broker integration"},
+    {"repository": "shiyu-coder/Kronos", "sha": null, "decision": "README and published model table reviewed; default branch not pinned; no code adopted"},
+    {"repository": "Yizhan-Oliver-Shu/jump-models", "sha": null, "decision": "Online regime inference is a future challenger; default branch not pinned; no code adopted"}
+  ],
+  "implemented_experiment": "research/experiments/cn-no-trade-0001/spec.json",
+  "capital_authorized": false,
+  "orders_authorized": false
+}

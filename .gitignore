@@ -1,0 +1,53 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Python environments
+.venv/
+.venv-qlib/
+venv/
+env/
+.conda/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Notebook state
+.ipynb_checkpoints/
+
+# Editors and operating system
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+credentials.*
+secrets.*
+*.pem
+*.key
+
+# Local datasets, model artifacts, and runtime output
+/data/raw/
+/data/interim/
+/data/processed/
+/artifacts/
+/models/
+/logs/
+/tmp/
+/reports/generated/
+*.parquet
+*.feather
+*.sqlite
+*.sqlite3

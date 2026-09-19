@@ -1,0 +1,136 @@
+{
+  "allocations": {
+    "cash": 1.0
+  },
+  "assessments": [
+    {
+      "admitted_to_autonomous_portfolio": false,
+      "checks": {
+        "capacity_estimated": true,
+        "execution_reconciled": false,
+        "forward_only": false,
+        "independent_audit_passed": true,
+        "minimum_execution_fill_rate": false,
+        "minimum_forward_observations": false,
+        "positive_forward_net_pnl": false,
+        "positive_selection_adjusted_lcb": false,
+        "risk_limit_intact": true,
+        "selection_bias_accounted": false
+      },
+      "edge_id": "EDGE-CN-ETF-VOL-MOMENTUM",
+      "evidence_state": "HISTORICAL_ROBUSTNESS_PASS_FORWARD_PENDING",
+      "failed_checks": [
+        "minimum_forward_observations",
+        "positive_forward_net_pnl",
+        "positive_selection_adjusted_lcb",
+        "selection_bias_accounted",
+        "execution_reconciled",
+        "minimum_execution_fill_rate",
+        "forward_only"
+      ],
+      "fill_rate": 0.0,
+      "maximum_allocation_fraction": 0.0,
+      "mechanism": "medium-horizon momentum with volatility-controlled exposure",
+      "strategy_family": "cn_listed_etf_allocation"
+    },
+    {
+      "admitted_to_autonomous_portfolio": false,
+      "checks": {
+        "capacity_estimated": false,
+        "execution_reconciled": false,
+        "forward_only": false,
+        "independent_audit_passed": true,
+        "minimum_execution_fill_rate": false,
+        "minimum_forward_observations": false,
+        "positive_forward_net_pnl": true,
+        "positive_selection_adjusted_lcb": true,
+        "risk_limit_intact": true,
+        "selection_bias_accounted": false
+      },
+      "edge_id": "EDGE-BNB-5M-LATENCY",
+      "evidence_state": "PARTIAL_POST_CAPTURE_DIAGNOSTIC",
+      "failed_checks": [
+        "minimum_forward_observations",
+        "selection_bias_accounted",
+        "execution_reconciled",
+        "minimum_execution_fill_rate",
+        "capacity_estimated",
+        "forward_only"
+      ],
+      "fill_rate": 0.7692307692307693,
+      "maximum_allocation_fraction": 0.0,
+      "mechanism": "reference-price displacement before binary-market settlement",
+      "strategy_family": "bnb_five_minute_latency"
+    },
+    {
+      "admitted_to_autonomous_portfolio": false,
+      "checks": {
+        "capacity_estimated": false,
+        "execution_reconciled": false,
+        "forward_only": true,
+        "independent_audit_passed": true,
+        "minimum_execution_fill_rate": false,
+        "minimum_forward_observations": false,
+        "positive_forward_net_pnl": false,
+        "positive_selection_adjusted_lcb": false,
+        "risk_limit_intact": true,
+        "selection_bias_accounted": true
+      },
+      "edge_id": "EDGE-POLITICAL-SUPERHEDGE",
+      "evidence_state": "FORWARD_FILL_CHECK_FAILED",
+      "failed_checks": [
+        "minimum_forward_observations",
+        "positive_forward_net_pnl",
+        "positive_selection_adjusted_lcb",
+        "execution_reconciled",
+        "minimum_execution_fill_rate",
+        "capacity_estimated"
+      ],
+      "fill_rate": 0.25,
+      "maximum_allocation_fraction": 0.0,
+      "mechanism": "cross-market logical complete-set pricing constraint",
+      "strategy_family": "prediction_market_complete_set"
+    },
+    {
+      "admitted_to_autonomous_portfolio": false,
+      "checks": {
+        "capacity_estimated": true,
+        "execution_reconciled": false,
+        "forward_only": true,
+        "independent_audit_passed": false,
+        "minimum_execution_fill_rate": false,
+        "minimum_forward_observations": false,
+        "positive_forward_net_pnl": false,
+        "positive_selection_adjusted_lcb": false,
+        "risk_limit_intact": true,
+        "selection_bias_accounted": true
+      },
+      "edge_id": "EDGE-IDLE-CASH-REPO",
+      "evidence_state": "INPUTS_PENDING",
+      "failed_checks": [
+        "minimum_forward_observations",
+        "positive_forward_net_pnl",
+        "positive_selection_adjusted_lcb",
+        "independent_audit_passed",
+        "execution_reconciled",
+        "minimum_execution_fill_rate"
+      ],
+      "fill_rate": 0.0,
+      "maximum_allocation_fraction": 0.0,
+      "mechanism": "exchange reverse repo or broker cash sweep without impairing ETF liquidity",
+      "strategy_family": "regulated_idle_cash_yield"
+    }
+  ],
+  "autonomous_portfolio_ready": false,
+  "broker_connection_authorized": false,
+  "candidates_sha256": "f769cb59f489f28decbb243882c9b0dedc5e90e04c6908af21680e62373e36e1",
+  "capital_authorized": false,
+  "decision": "RESEARCH_MORE_ALL_CASH",
+  "evaluated_at_utc": "2026-09-04T15:45:27.301854Z",
+  "gross_exposure": 0.0,
+  "leverage_allowed": false,
+  "orders_authorized": false,
+  "record_type": "autonomous_edge_portfolio_status",
+  "schema_version": 1,
+  "spec_sha256": "d87ab615aea79d01a5adea2e5c381737333b16d7c590d616ea216cc92a7fe4c9"
+}

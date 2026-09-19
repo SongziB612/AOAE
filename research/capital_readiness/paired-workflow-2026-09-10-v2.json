@@ -1,0 +1,80 @@
+{
+  "day": "2026-09-10",
+  "plan": {
+    "is_session": true,
+    "next_session": "2026-09-11",
+    "is_month_end": false,
+    "signal_schedule": "NOT_A_SIGNAL_DAY",
+    "instrument_suspensions_verified": false
+  },
+  "stages": [
+    "IDLE_CASH_NOT_A_STRATEGY_EVALUATION_DAY",
+    "NOT_A_MONTH_END_SIGNAL_DAY"
+  ],
+  "blockers": [],
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "journal_head_sha256": "ece71f0bbf607c9543c76bdbf7cf7ed919ed7d4576f7a90e1d93b056b70d1f75",
+  "comparison": {
+    "arms": {
+      "causal_total_return_momentum_overlay": {
+        "equity_cny": "300000",
+        "net_pnl_cny": "0",
+        "modeled_cost_cny": "0",
+        "max_drawdown": "0",
+        "modeled_fills": 0,
+        "paused": false
+      },
+      "monthly_same_universe_equal_weight": {
+        "equity_cny": "300000",
+        "net_pnl_cny": "0",
+        "modeled_cost_cny": "0",
+        "max_drawdown": "0",
+        "modeled_fills": 0,
+        "paused": false
+      },
+      "monthly_same_universe_exposure_matched_equal_weight": {
+        "equity_cny": "300000",
+        "net_pnl_cny": "0",
+        "modeled_cost_cny": "0",
+        "max_drawdown": "0",
+        "modeled_fills": 0,
+        "paused": false
+      }
+    },
+    "model_minus_baseline_cny": {
+      "monthly_same_universe_equal_weight": "0",
+      "monthly_same_universe_exposure_matched_equal_weight": "0"
+    },
+    "monthly_marked_comparisons": [],
+    "saved_signals": 0,
+    "modeled_days": 0,
+    "observed_broker_fills": 0,
+    "realized_real_money_profit_cny": "0",
+    "valuation_note": "Marked NAV after modeled costs; not liquidation proceeds or observed fills.",
+    "first_principles_challenge": {
+      "economic_payer": "Underlying ETF market exposure; incremental timing edge remains unproven.",
+      "net_executable_value": "UNKNOWN: modeled costs do not establish executable fills.",
+      "risk_of_ruin": "NOT_ESTIMATED: pause threshold is not a guaranteed loss bound.",
+      "complexity_admission": "No capital pass without independent net improvement over simple baselines."
+    },
+    "profitability_established": false,
+    "capital_authorized": false
+  },
+  "status": "WORKFLOW_PASS_NOT_CAPITAL_APPROVAL",
+  "pre_capital_unresolved": [
+    "Complete independently reviewed source bundles and instrument tradability evidence.",
+    "Independent forward net economics and measured execution, not modeled fills.",
+    "Account-specific fees/permissions and explicit real-capital authorization."
+  ],
+  "source_sha256": {
+    "scripts/run_paired_strategy_cycle.py": "dde092364bcba9c99885825cec024156270b5c479f9d26366a89f547f0a1de72",
+    "src/aoae/paired_workflow.py": "f79289aac8d095af5f713a0a1dfb5085821a2c04329c07503ceb479f9c04c74c",
+    "src/aoae/reviewed_day.py": "10734397e7411f3fd6514c192fdb9eb789573ee602613d2ea13428b0ea991194",
+    "src/aoae/reviewed_signal.py": "8fd460cf121f9026607f387696313a4d283faf58a4df4140dbec3756172862eb",
+    "src/aoae/forward_journal.py": "2c6b56e3a538f2b2d875a7db81dbc09da637c03d5bf83407899c185e6ad744ab",
+    "src/aoae/shadow_cycle.py": "4749fe1dc54b6d912f53475d08962e1cbf8da7fb335485039b46fefa7163c7eb",
+    "src/aoae/shadow_accounting.py": "4df9e09d466d4d872dae8f9996b4527bf1b34852e63b427860fc4da1085e7996",
+    "configs/cn_exchange_calendar_2026.json": "7b42f33e0e718177c100bdd16ee9a49aa4fdf5ddc5520a33cb9244811f2b13d9"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-06",
+  "unit_test_command": ".venv/python.exe -m unittest discover -s tests",
+  "unit_tests_passed": 175,
+  "independent_audit": "independent-audit-v1.json",
+  "independent_audit_status": "PASS",
+  "reproduction": "reproduction-v2.json",
+  "result": "result-v2.json",
+  "byte_identical": true,
+  "result_and_reproduction_sha256": "5c38e0d14830c0cf56c1dfefa099683504740e8d3899ae3618653657545a1ab7",
+  "development_failures_preserved": [
+    "result-v1.json is incomplete due to NumPy boolean serialization; see failure-v1.json.",
+    "New small-suite audit test initially omitted the config fixture; fixed by attaching the same config before audit; no model parameter change."
+  ],
+  "empirical_out_of_sample_validation": false,
+  "classic_cover_stock_data_replication": false,
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false
+}

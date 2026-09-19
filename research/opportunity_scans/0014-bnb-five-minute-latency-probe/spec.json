@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "record_type": "preregistered_read_only_latency_probe",
+  "hypothesis": "The public Chainlink reference can imply the eventual BNB five-minute direction before the fee-adjusted Polymarket order book fully prices it.",
+  "asset": "bnb",
+  "chainlink_symbol": "bnb/usd",
+  "market_slug_prefix": "bnb-updown-5m-",
+  "interval_seconds": 300,
+  "market_count": 1,
+  "decision_seconds_before_end": [120, 60, 30, 15, 5],
+  "book_poll_seconds": 1.0,
+  "settlement_tick_tolerance_seconds": 15,
+  "minimum_order_size_shares": 5,
+  "interpretation_gate": {
+    "minimum_independent_markets": 100,
+    "minimum_profitable_markets_after_fees": 55,
+    "maximum_wilson_lower_bound_loss_rate": 0.5,
+    "requires_fill_or_execution_simulation": true
+  },
+  "limitations": [
+    "One market is an engineering probe and cannot validate profitability.",
+    "Quoted best asks are not fill confirmations and omit adverse movement during order submission.",
+    "The RTDS feed must be checked against the market's declared Chainlink TWAP resolution artifact before capital review.",
+    "All five decision offsets are reported; none may be selected post hoc from this probe as a deployable rule."
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

@@ -1,0 +1,74 @@
+{
+  "capital_authorized": false,
+  "decision": "continue_or_reprice_paper_test",
+  "event": {
+    "leg_count": 4,
+    "slug": "PORT-0001-house-control-superhedge",
+    "title": "Four-leg House-control superhedge"
+  },
+  "legs": [
+    {
+      "cross_events": 0,
+      "first_fill_evidence_at_utc": "2026-09-04T05:26:30.619000Z",
+      "first_fill_evidence_source": "last_trade_price",
+      "name": "D Senate, D House — YES",
+      "paper_bid": 0.49,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 1
+    },
+    {
+      "cross_events": 0,
+      "first_fill_evidence_at_utc": null,
+      "first_fill_evidence_source": null,
+      "name": "R Senate, D House — YES",
+      "paper_bid": 0.35,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "first_fill_evidence_at_utc": null,
+      "first_fill_evidence_source": null,
+      "name": "Balance Other — YES",
+      "paper_bid": 0.003,
+      "tick": 0.001,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "first_fill_evidence_at_utc": null,
+      "first_fill_evidence_source": null,
+      "name": "Democratic House control — NO",
+      "paper_bid": 0.1,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 0
+    }
+  ],
+  "method": {
+    "authentication_used": false,
+    "fill_evidence": "public best-ask cross in best_bid_ask or price_change, or SELL trade at/below paper bid; queue position and filled size are unknown",
+    "message_counts": {
+      "PONG": 359,
+      "best_bid_ask": 6,
+      "book": 10,
+      "last_trade_price": 3,
+      "new_market": 1038,
+      "price_change": 6138
+    },
+    "orders_placed": 0,
+    "quote_policy": "one_tick_below_initial_best_ask"
+  },
+  "observed_from_utc": "2026-09-04T04:50:13.079208Z",
+  "observed_until_utc": "2026-09-04T05:50:15.175504Z",
+  "record_type": "aggressive_forward_websocket_paper_fill_probe",
+  "result": {
+    "all_legs_with_fill_evidence": false,
+    "complete_set_cost_if_all_fill": 0.943,
+    "first_to_final_leg_evidence_seconds": null,
+    "legs_with_fill_evidence": 1,
+    "locked_payoff_if_all_fill": 0.057,
+    "status": "INCOMPLETE_FILL_EVIDENCE",
+    "worst_case_loss_if_only_evidenced_legs_fill": 0.49
+  },
+  "schema_version": 1
+}

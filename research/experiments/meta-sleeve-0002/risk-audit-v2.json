@@ -1,0 +1,664 @@
+{
+  "status": "DESCRIPTIVE_REUSED_HISTORY",
+  "rows": [
+    {
+      "year": 2022,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "aggregate": {
+        "net_pnl_cny": -46429.26000000001,
+        "maximum_drawdown": -0.1784982520666668,
+        "worst_day_return": -0.033258711229030236,
+        "observed_tail_mean_loss_95": 0.019136321530724316,
+        "log_wealth_growth": -0.16813963729864292,
+        "risk_of_ruin_probability": null
+      },
+      "sleeve_order": [
+        "existing_momentum",
+        "equal_monthly",
+        "equal_vol_target",
+        "equal_buy_hold"
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.6304996798117459,
+          0.661476715108522,
+          0.6473118515287598
+        ],
+        [
+          0.6304996798117459,
+          0.9999999999999998,
+          0.9851409956570361,
+          0.998029656902952
+        ],
+        [
+          0.6614767151085221,
+          0.985140995657036,
+          1.0,
+          0.9861781544155231
+        ],
+        [
+          0.6473118515287598,
+          0.9980296569029521,
+          0.9861781544155231,
+          1.0
+        ]
+      ],
+      "correlation_participation_ratio": 1.2917378140880296,
+      "mean_pairwise_correlation": 0.8181061755707565,
+      "controls": {
+        "existing_momentum": {
+          "net_pnl_cny": -51390.850000000006,
+          "maximum_drawdown": -0.19270279586666672,
+          "worst_day_return": -0.030239162085861193,
+          "observed_tail_mean_loss_95": 0.020841240147020483,
+          "log_wealth_growth": -0.18790049014267907,
+          "risk_of_ruin_probability": null
+        },
+        "equal_monthly": {
+          "net_pnl_cny": -44335.330000000016,
+          "maximum_drawdown": -0.18707325613333348,
+          "worst_day_return": -0.040224166973846565,
+          "observed_tail_mean_loss_95": 0.021670838548403272,
+          "log_wealth_growth": -0.1599157716355292,
+          "risk_of_ruin_probability": null
+        },
+        "equal_buy_hold": {
+          "net_pnl_cny": -44705.84,
+          "maximum_drawdown": -0.18203225213333352,
+          "worst_day_return": -0.03834699929151575,
+          "observed_tail_mean_loss_95": 0.020782423764857692,
+          "log_wealth_growth": -0.16136602571936284,
+          "risk_of_ruin_probability": null
+        },
+        "equal_vol_target": {
+          "net_pnl_cny": -45479.580000000016,
+          "maximum_drawdown": -0.18288579613333356,
+          "worst_day_return": -0.031829119316918786,
+          "observed_tail_mean_loss_95": 0.019168970335676216,
+          "log_wealth_growth": -0.16440140612795473,
+          "risk_of_ruin_probability": null
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "aggregate": {
+        "net_pnl_cny": -51922.76000000001,
+        "maximum_drawdown": -0.1915681717333333,
+        "worst_day_return": -0.033321146591059225,
+        "observed_tail_mean_loss_95": 0.019455619926100762,
+        "log_wealth_growth": -0.1900423253693012,
+        "risk_of_ruin_probability": null
+      },
+      "sleeve_order": [
+        "existing_momentum",
+        "equal_monthly",
+        "equal_vol_target",
+        "equal_buy_hold"
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.6223709101097297,
+          0.6586042924507034,
+          0.6386275084433177
+        ],
+        [
+          0.6223709101097297,
+          1.0,
+          0.9853676904008524,
+          0.9982128113634192
+        ],
+        [
+          0.6586042924507034,
+          0.9853676904008525,
+          1.0,
+          0.9862302443409696
+        ],
+        [
+          0.6386275084433177,
+          0.9982128113634194,
+          0.9862302443409696,
+          1.0
+        ]
+      ],
+      "correlation_participation_ratio": 1.2968111006854677,
+      "mean_pairwise_correlation": 0.8149022428514986,
+      "controls": {
+        "existing_momentum": {
+          "net_pnl_cny": -60050.04999999999,
+          "maximum_drawdown": -0.21801020513333347,
+          "worst_day_return": -0.030341961917987215,
+          "observed_tail_mean_loss_95": 0.02131907343927014,
+          "log_wealth_growth": -0.22335211472871336,
+          "risk_of_ruin_probability": null
+        },
+        "equal_monthly": {
+          "net_pnl_cny": -48753.23000000001,
+          "maximum_drawdown": -0.19394508793333343,
+          "worst_day_return": -0.04037217447354868,
+          "observed_tail_mean_loss_95": 0.0217214129990373,
+          "log_wealth_growth": -0.1773468710869442,
+          "risk_of_ruin_probability": null
+        },
+        "equal_buy_hold": {
+          "net_pnl_cny": -48756.619999999995,
+          "maximum_drawdown": -0.18931462460000015,
+          "worst_day_return": -0.038624670404606376,
+          "observed_tail_mean_loss_95": 0.02098468353406507,
+          "log_wealth_growth": -0.17736036388874352,
+          "risk_of_ruin_probability": null
+        },
+        "equal_vol_target": {
+          "net_pnl_cny": -50395.09,
+          "maximum_drawdown": -0.19340852460000002,
+          "worst_day_return": -0.03174180908894597,
+          "observed_tail_mean_loss_95": 0.01933530678065019,
+          "log_wealth_growth": -0.1839031668800504,
+          "risk_of_ruin_probability": null
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "aggregate": {
+        "net_pnl_cny": 7505.460000000021,
+        "maximum_drawdown": -0.0688374756756246,
+        "worst_day_return": -0.013692708745101534,
+        "observed_tail_mean_loss_95": 0.010150951513275693,
+        "log_wealth_growth": 0.02471036853029494,
+        "risk_of_ruin_probability": null
+      },
+      "sleeve_order": [
+        "existing_momentum",
+        "equal_monthly",
+        "equal_vol_target",
+        "equal_buy_hold"
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.4269704578827749,
+          0.4275808327767182,
+          0.46320653224177616
+        ],
+        [
+          0.4269704578827749,
+          1.0,
+          0.9994495164813403,
+          0.9975654116369553
+        ],
+        [
+          0.4275808327767182,
+          0.9994495164813403,
+          1.0,
+          0.9966555679723644
+        ],
+        [
+          0.4632065322417761,
+          0.9975654116369553,
+          0.9966555679723644,
+          1.0
+        ]
+      ],
+      "correlation_participation_ratio": 1.4370273492254557,
+      "mean_pairwise_correlation": 0.7185713864986548,
+      "controls": {
+        "existing_momentum": {
+          "net_pnl_cny": 27340.590000000026,
+          "maximum_drawdown": -0.04408576076196846,
+          "worst_day_return": -0.014398091476123809,
+          "observed_tail_mean_loss_95": 0.010130104743835902,
+          "log_wealth_growth": 0.08721871382719552,
+          "risk_of_ruin_probability": null
+        },
+        "equal_monthly": {
+          "net_pnl_cny": 789.320000000007,
+          "maximum_drawdown": -0.09319561826755685,
+          "worst_day_return": -0.014900060156896489,
+          "observed_tail_mean_loss_95": 0.011648665221310951,
+          "log_wealth_growth": 0.0026276114700060148,
+          "risk_of_ruin_probability": null
+        },
+        "equal_buy_hold": {
+          "net_pnl_cny": 4494.460000000021,
+          "maximum_drawdown": -0.08662287005005342,
+          "worst_day_return": -0.014330575987583694,
+          "observed_tail_mean_loss_95": 0.01131008831708777,
+          "log_wealth_growth": 0.014870418567979538,
+          "risk_of_ruin_probability": null
+        },
+        "equal_vol_target": {
+          "net_pnl_cny": -1339.960000000021,
+          "maximum_drawdown": -0.09312447477006391,
+          "worst_day_return": -0.014930786203437463,
+          "observed_tail_mean_loss_95": 0.011642933212556349,
+          "log_wealth_growth": -0.004476538095526521,
+          "risk_of_ruin_probability": null
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "aggregate": {
+        "net_pnl_cny": 1651.4599999999627,
+        "maximum_drawdown": -0.07071834321453485,
+        "worst_day_return": -0.013729228047718589,
+        "observed_tail_mean_loss_95": 0.010283555844851727,
+        "log_wealth_growth": 0.005489770265268044,
+        "risk_of_ruin_probability": null
+      },
+      "sleeve_order": [
+        "existing_momentum",
+        "equal_monthly",
+        "equal_vol_target",
+        "equal_buy_hold"
+      ],
+      "correlation": [
+        [
+          0.9999999999999998,
+          0.4210910096549192,
+          0.4199441624341282,
+          0.453439630657232
+        ],
+        [
+          0.42109100965491914,
+          0.9999999999999999,
+          0.9993888988845353,
+          0.9974659119561164
+        ],
+        [
+          0.4199441624341282,
+          0.9993888988845353,
+          1.0,
+          0.996351214373793
+        ],
+        [
+          0.453439630657232,
+          0.9974659119561166,
+          0.996351214373793,
+          1.0
+        ]
+      ],
+      "correlation_participation_ratio": 1.4425563956871799,
+      "mean_pairwise_correlation": 0.7146134713267873,
+      "controls": {
+        "existing_momentum": {
+          "net_pnl_cny": 16934.780000000028,
+          "maximum_drawdown": -0.05034333080763953,
+          "worst_day_return": -0.014332552908877583,
+          "observed_tail_mean_loss_95": 0.010695191846239495,
+          "log_wealth_growth": 0.054913536728508655,
+          "risk_of_ruin_probability": null
+        },
+        "equal_monthly": {
+          "net_pnl_cny": -3856.7700000000186,
+          "maximum_drawdown": -0.09349240425006189,
+          "worst_day_return": -0.014925587116968342,
+          "observed_tail_mean_loss_95": 0.011641874675996063,
+          "log_wealth_growth": -0.012939252231664887,
+          "risk_of_ruin_probability": null
+        },
+        "equal_buy_hold": {
+          "net_pnl_cny": 49.79999999998836,
+          "maximum_drawdown": -0.08743833080649244,
+          "worst_day_return": -0.01435791515010476,
+          "observed_tail_mean_loss_95": 0.011377328632529339,
+          "log_wealth_growth": 0.000165986223524464,
+          "risk_of_ruin_probability": null
+        },
+        "equal_vol_target": {
+          "net_pnl_cny": -5809.929999999993,
+          "maximum_drawdown": -0.09337510309490149,
+          "worst_day_return": -0.014920117677843514,
+          "observed_tail_mean_loss_95": 0.01163877069212431,
+          "log_wealth_growth": -0.019556419607780214,
+          "risk_of_ruin_probability": null
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "aggregate": {
+        "net_pnl_cny": 71894.27999999997,
+        "maximum_drawdown": -0.06615296426549422,
+        "worst_day_return": -0.04175912330680254,
+        "observed_tail_mean_loss_95": 0.01666706857468104,
+        "log_wealth_growth": 0.2148271456779191,
+        "risk_of_ruin_probability": null
+      },
+      "sleeve_order": [
+        "existing_momentum",
+        "equal_monthly",
+        "equal_vol_target",
+        "equal_buy_hold"
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.1942453851987729,
+          0.18205018700898148,
+          0.24772302074139926
+        ],
+        [
+          0.1942453851987729,
+          0.9999999999999999,
+          0.9604336534330369,
+          0.996206752478307
+        ],
+        [
+          0.18205018700898148,
+          0.9604336534330368,
+          1.0,
+          0.9435613044091234
+        ],
+        [
+          0.24772302074139924,
+          0.9962067524783071,
+          0.9435613044091233,
+          1.0
+        ]
+      ],
+      "correlation_participation_ratio": 1.6202830707083062,
+      "mean_pairwise_correlation": 0.5873700505449369,
+      "controls": {
+        "existing_momentum": {
+          "net_pnl_cny": 87568.76000000001,
+          "maximum_drawdown": -0.08139225395291394,
+          "worst_day_return": -0.04191712074474507,
+          "observed_tail_mean_loss_95": 0.017284693390048362,
+          "log_wealth_growth": 0.2561108035569605,
+          "risk_of_ruin_probability": null
+        },
+        "equal_monthly": {
+          "net_pnl_cny": 67904.31,
+          "maximum_drawdown": -0.0886605747645427,
+          "worst_day_return": -0.06511862854863382,
+          "observed_tail_mean_loss_95": 0.02109067484898578,
+          "log_wealth_growth": 0.20404040252588962,
+          "risk_of_ruin_probability": null
+        },
+        "equal_buy_hold": {
+          "net_pnl_cny": 57931.04999999999,
+          "maximum_drawdown": -0.08472727428601523,
+          "worst_day_return": -0.06569732213601898,
+          "observed_tail_mean_loss_95": 0.020914127634171605,
+          "log_wealth_growth": 0.17655789542980466,
+          "risk_of_ruin_probability": null
+        },
+        "equal_vol_target": {
+          "net_pnl_cny": 77253.23999999999,
+          "maximum_drawdown": -0.08442973631217754,
+          "worst_day_return": -0.034139181869519586,
+          "observed_tail_mean_loss_95": 0.015774741571374304,
+          "log_wealth_growth": 0.22913421142406137,
+          "risk_of_ruin_probability": null
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "aggregate": {
+        "net_pnl_cny": 65188.369999999995,
+        "maximum_drawdown": -0.06637053487024325,
+        "worst_day_return": -0.041988133980531916,
+        "observed_tail_mean_loss_95": 0.01732704183101249,
+        "log_wealth_growth": 0.19663082799345705,
+        "risk_of_ruin_probability": null
+      },
+      "sleeve_order": [
+        "existing_momentum",
+        "equal_monthly",
+        "equal_vol_target",
+        "equal_buy_hold"
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.20711319752498686,
+          0.19189984225616882,
+          0.2546962899686729
+        ],
+        [
+          0.20711319752498686,
+          1.0,
+          0.9620918179480603,
+          0.9963837484111211
+        ],
+        [
+          0.19189984225616885,
+          0.9620918179480603,
+          1.0,
+          0.9459054757259061
+        ],
+        [
+          0.2546962899686729,
+          0.9963837484111211,
+          0.9459054757259061,
+          0.9999999999999999
+        ]
+      ],
+      "correlation_participation_ratio": 1.6136417156266003,
+      "mean_pairwise_correlation": 0.593015061972486,
+      "controls": {
+        "existing_momentum": {
+          "net_pnl_cny": 78840.22999999998,
+          "maximum_drawdown": -0.08202589833300344,
+          "worst_day_return": -0.04191472590539258,
+          "observed_tail_mean_loss_95": 0.017287174332695134,
+          "log_wealth_growth": 0.2333320848179759,
+          "risk_of_ruin_probability": null
+        },
+        "equal_monthly": {
+          "net_pnl_cny": 61605.630000000005,
+          "maximum_drawdown": -0.08938667536948541,
+          "worst_day_return": -0.06511635644243197,
+          "observed_tail_mean_loss_95": 0.021846871329103942,
+          "log_wealth_growth": 0.18677172343087953,
+          "risk_of_ruin_probability": null
+        },
+        "equal_buy_hold": {
+          "net_pnl_cny": 52873.32000000001,
+          "maximum_drawdown": -0.08532064170937614,
+          "worst_day_return": -0.06605750321441528,
+          "observed_tail_mean_loss_95": 0.021785187243713946,
+          "log_wealth_growth": 0.16232665101345195,
+          "risk_of_ruin_probability": null
+        },
+        "equal_vol_target": {
+          "net_pnl_cny": 70511.21999999997,
+          "maximum_drawdown": -0.08622958494686428,
+          "worst_day_return": -0.03429656445005458,
+          "observed_tail_mean_loss_95": 0.016246667898306387,
+          "log_wealth_growth": 0.21110125302221727,
+          "risk_of_ruin_probability": null
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "aggregate": {
+        "net_pnl_cny": 93655.96000000002,
+        "maximum_drawdown": -0.10159409499607164,
+        "worst_day_return": -0.07606463243705996,
+        "observed_tail_mean_loss_95": 0.019947973675922118,
+        "log_wealth_growth": 0.2716948552127667,
+        "risk_of_ruin_probability": null
+      },
+      "sleeve_order": [
+        "existing_momentum",
+        "equal_monthly",
+        "equal_vol_target",
+        "equal_buy_hold"
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.8333912808233793,
+          0.8452786181502747,
+          0.8502682613445238
+        ],
+        [
+          0.8333912808233793,
+          1.0,
+          0.978524946290749,
+          0.9981621507807347
+        ],
+        [
+          0.8452786181502747,
+          0.978524946290749,
+          1.0,
+          0.9769384932829156
+        ],
+        [
+          0.8502682613445238,
+          0.9981621507807347,
+          0.9769384932829156,
+          0.9999999999999998
+        ]
+      ],
+      "correlation_participation_ratio": 1.1363247923068682,
+      "mean_pairwise_correlation": 0.9137606251120961,
+      "controls": {
+        "existing_momentum": {
+          "net_pnl_cny": 94724.68,
+          "maximum_drawdown": -0.06284749143958468,
+          "worst_day_return": -0.06097156843567497,
+          "observed_tail_mean_loss_95": 0.020094257219457415,
+          "log_wealth_growth": 0.27440603456043516,
+          "risk_of_ruin_probability": null
+        },
+        "equal_monthly": {
+          "net_pnl_cny": 101394.48999999999,
+          "maximum_drawdown": -0.12067060137202335,
+          "worst_day_return": -0.08321329869244198,
+          "observed_tail_mean_loss_95": 0.02205166158861258,
+          "log_wealth_growth": 0.29116223465616586,
+          "risk_of_ruin_probability": null
+        },
+        "equal_buy_hold": {
+          "net_pnl_cny": 100725.44,
+          "maximum_drawdown": -0.11557853489257686,
+          "worst_day_return": -0.0807349016223945,
+          "observed_tail_mean_loss_95": 0.022135715764142312,
+          "log_wealth_growth": 0.28949402986499806,
+          "risk_of_ruin_probability": null
+        },
+        "equal_vol_target": {
+          "net_pnl_cny": 81869.95000000001,
+          "maximum_drawdown": -0.11598663386419306,
+          "worst_day_return": -0.08212720658214923,
+          "observed_tail_mean_loss_95": 0.018911609375751683,
+          "log_wealth_growth": 0.24129763095963208,
+          "risk_of_ruin_probability": null
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "aggregate": {
+        "net_pnl_cny": 83215.73999999999,
+        "maximum_drawdown": -0.10417175743722884,
+        "worst_day_return": -0.07636921768955063,
+        "observed_tail_mean_loss_95": 0.020568228995978773,
+        "log_wealth_growth": 0.2448156457535195,
+        "risk_of_ruin_probability": null
+      },
+      "sleeve_order": [
+        "existing_momentum",
+        "equal_monthly",
+        "equal_vol_target",
+        "equal_buy_hold"
+      ],
+      "correlation": [
+        [
+          1.0,
+          0.8324226757122218,
+          0.8455854325143676,
+          0.8480825439484404
+        ],
+        [
+          0.8324226757122218,
+          1.0,
+          0.9739461132191939,
+          0.9982148479428148
+        ],
+        [
+          0.8455854325143676,
+          0.973946113219194,
+          1.0,
+          0.9723229503868575
+        ],
+        [
+          0.8480825439484404,
+          0.9982148479428147,
+          0.9723229503868573,
+          1.0
+        ]
+      ],
+      "correlation_participation_ratio": 1.1399905438024327,
+      "mean_pairwise_correlation": 0.911762427287316,
+      "controls": {
+        "existing_momentum": {
+          "net_pnl_cny": 73054.43,
+          "maximum_drawdown": -0.06364719000118735,
+          "worst_day_return": -0.06103354548430051,
+          "observed_tail_mean_loss_95": 0.02036704248069637,
+          "log_wealth_growth": 0.21794185927458293,
+          "risk_of_ruin_probability": null
+        },
+        "equal_monthly": {
+          "net_pnl_cny": 94799.21000000002,
+          "maximum_drawdown": -0.12105162505198308,
+          "worst_day_return": -0.0832228195065452,
+          "observed_tail_mean_loss_95": 0.02283515878918942,
+          "log_wealth_growth": 0.2745948318879522,
+          "risk_of_ruin_probability": null
+        },
+        "equal_buy_hold": {
+          "net_pnl_cny": 94890.22999999998,
+          "maximum_drawdown": -0.11671324604690114,
+          "worst_day_return": -0.08116744133652243,
+          "observed_tail_mean_loss_95": 0.02304584371746747,
+          "log_wealth_growth": 0.27482535288973503,
+          "risk_of_ruin_probability": null
+        },
+        "equal_vol_target": {
+          "net_pnl_cny": 74306.96000000002,
+          "maximum_drawdown": -0.11701119270540972,
+          "worst_day_return": -0.08213242090952688,
+          "observed_tail_mean_loss_95": 0.019064486548264332,
+          "log_wealth_growth": 0.22129373479142833,
+          "risk_of_ruin_probability": null
+        }
+      }
+    }
+  ],
+  "capital_authorized": false,
+  "limits": [
+    "Terminal NAV includes estimated exit haircut; not observed exit.",
+    "Eigenvalue participation ratio measures descriptive correlation dimension, not effective sample size or number of independent strategies.",
+    "No risk-of-ruin forecast or factor-neutral alpha claim."
+  ],
+  "input_sha256": {
+    "research\\experiments\\meta-sleeve-0002\\result-v1.json": "a84c65e2515f702c5c5dce9f26c56b72de7cc728de06f84c811d02c5901e4146",
+    "research\\experiments\\cn-fees-0001\\reproduction-2026-09-15.json": "098f81e4c0933c4e1267c0df3c49567233b91999832c06b020ba24f2bcccc57e",
+    "F:\\AOAE\\scripts\\audit_sleeve_risk.py": "af9e0082eb3498d8e2a08babfe83da9e9b09969d884e6e85fb39834d9152ebd8"
+  }
+}

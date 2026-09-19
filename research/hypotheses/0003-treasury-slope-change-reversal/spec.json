@@ -1,0 +1,55 @@
+{
+  "benchmark": {
+    "description": "no linear relation between consecutive 2s10s spread changes",
+    "lag1_correlation": 0.0
+  },
+  "bias_controls": [
+    "The 2022 source snapshot must not enter the project before this specification is committed.",
+    "The entire 2022 period is a single untouched holdout; no training or parameter selection is performed.",
+    "Only one decision metric and one threshold are permitted.",
+    "The predictor uses only the immediately preceding published observation; no same-observation or future value enters it.",
+    "All changes use consecutive published observations with no calendar interpolation or missing-value imputation.",
+    "The result cannot be represented as a strategy, net return, or capital authorization."
+  ],
+  "capital_authorized": false,
+  "confidence": "single_holdout_one_step_temporal_structure_only",
+  "data": {
+    "availability_policy": "official_archive_snapshot",
+    "local_path": "data/raw/treasury/daily_treasury_yield_curve_2022.xml",
+    "maximum_rows": 270,
+    "minimum_rows": 240,
+    "period_end": "2022-12-31",
+    "period_start": "2022-01-01",
+    "required_fields": [
+      "BC_2YEAR",
+      "BC_10YEAR"
+    ],
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022"
+  },
+  "decision_rule": {
+    "maximum_lag1_correlation": -0.1,
+    "minimum_lag_pairs": 200
+  },
+  "failure_modes": [
+    "Daily mean reversion documented for yield factors need not apply to the 2s10s spread change or to this regime.",
+    "A one-year holdout may not represent other monetary-policy, inflation, or volatility regimes.",
+    "CMT values are theoretical constant-maturity par yields rather than executable transaction prices.",
+    "Statistical reversal can be too small, unstable, or costly to trade even if the threshold passes.",
+    "Overlapping lag pairs create serial dependence, so this gate is an effect-size screen rather than an inference claim."
+  ],
+  "hypothesis": "On the untouched 2022 Treasury holdout, consecutive changes in the 2-year-minus-10-year CMT spread will have lag-1 Pearson correlation at or below -0.10.",
+  "hypothesis_id": "HYP-0003-treasury-slope-change-reversal",
+  "method": {
+    "imputation": "none",
+    "metric": "pearson_correlation",
+    "predictor_lag_observations": 1,
+    "trading_costs": "not_applicable_no_trading",
+    "transformation": "lag1_of_consecutive_observation_2s10s_spread_change_basis_points",
+    "trial_count": 1
+  },
+  "next_experiment": "If supported, test the unchanged effect on a new holdout before defining a strategy; if falsified, preserve the failure and stop this daily-reversal branch.",
+  "preregistration_state": "locked_before_download",
+  "schema_version": 1,
+  "strategy_mining_authorized": false,
+  "title": "Untouched 2022 Treasury 2s10s one-observation spread-change reversal"
+}

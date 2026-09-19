@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "audit_type": "post_holdout_cost_stress_and_reproduction",
+  "not_a_new_strategy_trial": true,
+  "cost_stress_one_way_bps": {
+    "0": {
+      "start": "2022-01-01",
+      "first_market_date": "2022-01-04",
+      "end": "2026-08-31",
+      "observations": 1128,
+      "total_return": 0.53024442,
+      "cagr": 0.09553555,
+      "annualized_volatility": 0.17864884,
+      "sharpe_zero_rate": 0.62202768,
+      "max_drawdown": -0.21982577
+    },
+    "15": {
+      "start": "2022-01-01",
+      "first_market_date": "2022-01-04",
+      "end": "2026-08-31",
+      "observations": 1128,
+      "total_return": 0.48027627,
+      "cagr": 0.08776273,
+      "annualized_volatility": 0.17842262,
+      "sharpe_zero_rate": 0.58101131,
+      "max_drawdown": -0.21983345
+    },
+    "30": {
+      "start": "2022-01-01",
+      "first_market_date": "2022-01-04",
+      "end": "2026-08-31",
+      "observations": 1128,
+      "total_return": 0.43186332,
+      "cagr": 0.0800327,
+      "annualized_volatility": 0.17826246,
+      "sharpe_zero_rate": 0.53969075,
+      "max_drawdown": -0.21984113
+    },
+    "50": {
+      "start": "2022-01-01",
+      "first_market_date": "2022-01-04",
+      "end": "2026-08-31",
+      "observations": 1128,
+      "total_return": 0.36965252,
+      "cagr": 0.06979224,
+      "annualized_volatility": 0.17815196,
+      "sharpe_zero_rate": 0.48420077,
+      "max_drawdown": -0.21985137
+    }
+  },
+  "benchmark": {
+    "start": "2022-01-01",
+    "first_market_date": "2022-01-04",
+    "end": "2026-08-31",
+    "observations": 1128,
+    "total_return": 0.02091959,
+    "cagr": 0.00445031,
+    "annualized_volatility": 0.19334117,
+    "sharpe_zero_rate": 0.12041532,
+    "max_drawdown": -0.34872019
+  },
+  "checks": {
+    "raw_hashes_match_result": true,
+    "base_metrics_reproduce_exactly": true,
+    "benchmark_metrics_reproduce_exactly": true,
+    "positive_cagr_at_50bps": true,
+    "beats_benchmark_cagr_at_50bps": true
+  },
+  "status": "PASS",
+  "orders_authorized": false,
+  "capital_authorized": false
+}

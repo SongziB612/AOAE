@@ -1,0 +1,294 @@
+{
+  "assessment": {
+    "all_controllable_preparation_complete": true,
+    "capital_authorized": false,
+    "external_gate_ids": [
+      "first_clean_forward_signal_and_lot_feasibility",
+      "minimum_forward_review_elapsed",
+      "account_instrument_permission_and_order_ticket",
+      "capital_is_disposable_and_emergency_fund_separate",
+      "fresh_user_capital_approval"
+    ],
+    "failed_gate_ids": [],
+    "gate_count": 18,
+    "incomplete_gate_ids": [
+      "first_clean_forward_signal_and_lot_feasibility",
+      "minimum_forward_review_elapsed",
+      "account_instrument_permission_and_order_ticket",
+      "capital_is_disposable_and_emergency_fund_separate",
+      "fresh_user_capital_approval"
+    ],
+    "internal_incomplete_gate_ids": [],
+    "passed_count": 13,
+    "ready_for_capital": false
+  },
+  "broker_connection_authorized": false,
+  "capital_authorized": false,
+  "decision": "DO_NOT_FUND",
+  "evaluated_at_utc": "2026-09-04T16:26:38.469040Z",
+  "evidence_sha256": {
+    "docs/manual-live-pilot-runbook.zh-CN.md": "1e9313da4ff49b0ce36b8fbfc8a3214dd7887c2a55427e07e02e10861fd62952",
+    "research/broker_profiles/huatai-manual-etf-pilot.json": "cbda798b483f0e6345a66e4d6505493c13557590ea46df263ade916f06a2228c",
+    "research/capital_readiness/manual-fills-template.json": "c85adeab0d2d91adb04b9ca92a4e178182d86663e998450ea43600e41ae2222a",
+    "research/data_admissions/0004-cn-etf-history/cross_provider_audit.json": "bb574e4dd0b220c620e312f15ba7b117c922f179ad40aea90c3b2f776682a83e",
+    "research/data_admissions/0004-cn-etf-history/result.json": "23ffc5b48928a322d44401cc5bbad9f3ea68fdd52cc079f5e739f814d244e2bd",
+    "research/hypotheses/0010-high-risk-executable-overlay/spec.json": "834b45c371a31f908d28f9e60f3bfd901fb128f7c3b2be856997b89b361547e1",
+    "research/hypotheses/0012-high-risk-overlay-robustness/result.json": "8fdab7586ea2f366d32c77660e12454d9b7b9e14356be90d327f10714b994022",
+    "research/hypotheses/0014-3000-pilot-execution-stress/result.json": "a9e3f603919a62280c3a418a07c550b44aacda7ec1b87cc954fd471056f6309d",
+    "research/hypotheses/0014-3000-pilot-execution-stress/spec.json": "6aa193325924c7930f7941dda4137350571cdef4e7ee93d82838152f8d67ff02",
+    "research/paper_accounts/0001-small-etf-risk-overlay/automation.json": "f824862a59fcaef0b392b53b14d7a554933171fcdbcc5b5afc7dbc5db9266bcd",
+    "research/paper_accounts/0004-3000-live-pilot-shadow/forward-progress-current.json": "ee4ef030eee8e217f0e3fd993a4ed956a8af44c6d03499678a099e97452a0ae7",
+    "research/paper_accounts/0004-3000-live-pilot-shadow/spec.json": "62e60c282daaf6c7d9e8ee0e7c9a0525a118c19bd0217fe0b3b8be8e18afe50d",
+    "research/paper_accounts/0004-3000-live-pilot-shadow/state.json": "43b753489012d355d03272a43f43a1e02f7afb35f41d4f306be9d194fa6d0908",
+    "research/validations/0001-etf-champion-stability/result.json": "8cdae4fa5c2b17f5e8b4749a6a0652ed54e5ee6398b9c1f9e2af9c98ded8b222",
+    "research/validations/0002-etf-risk-overlay-stability/result.json": "dc3151113a2e7d13cda70e61f6ddfa94a21ed1a01c62eb51e0b1852ead7d6cf0",
+    "scripts/daily_paper_cycle.ps1": "57784b637c901c90de99bb243397d61768089c40011a78927444d7ed4df7f80e",
+    "scripts/prepare_manual_pilot_packet.py": "1c37984e7792f0f5ef1935dee6ec4c45ddaf84148e79883bc94d897754360fb3",
+    "scripts/reconcile_manual_execution.py": "7d693a924a60e3235eda684b09b1e2f42db58c762ebdf0e8d05e34be466b21b8",
+    "src/aoae/manual_execution.py": "423e054ac121e8a6793ac065f644b14657bf34b5a8cbfd35651fee6feace8d22",
+    "src/aoae/paper_daily.py": "bdd10aef001fa823cf87e01529d95abb4e32815222e0d374396bf378c5af9c8c",
+    "tests/test_manual_execution.py": "529829a01c6da411f42b3a86ac39fc24f70e072fcd9e04a82ace9f5211c935aa",
+    "tests/test_paper_daily.py": "1bfe740fa286d40380aec4815e4f6ac30931174d5c8429f23e3e4e17e5368482",
+    "tests/test_pilot_account.py": "f9b68df0911039d4912894291f651e3aa38340f07facb1509820ef9c1452506d",
+    "tests/test_small_account.py": "92565dae3cae5198a908807cc9e2fe5befaac0fa6c9bff804c169a9a1423a9da"
+  },
+  "gates": [
+    {
+      "evidence": [
+        "research/hypotheses/0010-high-risk-executable-overlay/spec.json"
+      ],
+      "id": "strategy_frozen",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/hypotheses/0012-high-risk-overlay-robustness/result.json"
+      ],
+      "id": "historical_robustness",
+      "json_assertions": [
+        {
+          "equals": "PASS",
+          "path": [
+            "result"
+          ],
+          "source": "research/hypotheses/0012-high-risk-overlay-robustness/result.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/validations/0001-etf-champion-stability/result.json",
+        "research/validations/0002-etf-risk-overlay-stability/result.json"
+      ],
+      "id": "independent_engine_reproduction",
+      "json_assertions": [
+        {
+          "equals": "PASS",
+          "path": [
+            "result",
+            "status"
+          ],
+          "source": "research/validations/0001-etf-champion-stability/result.json"
+        },
+        {
+          "equals": "PASS",
+          "path": [
+            "result",
+            "status"
+          ],
+          "source": "research/validations/0002-etf-risk-overlay-stability/result.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/data_admissions/0004-cn-etf-history/cross_provider_audit.json"
+      ],
+      "id": "cross_provider_price_audit",
+      "json_assertions": [
+        {
+          "equals": "PASS",
+          "path": [
+            "status"
+          ],
+          "source": "research/data_admissions/0004-cn-etf-history/cross_provider_audit.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/data_admissions/0004-cn-etf-history/result.json"
+      ],
+      "id": "frozen_history_integrity",
+      "json_assertions": [
+        {
+          "equals": true,
+          "path": [
+            "checks",
+            "all_symbols_present"
+          ],
+          "source": "research/data_admissions/0004-cn-etf-history/result.json"
+        },
+        {
+          "equals": true,
+          "path": [
+            "checks",
+            "dates_unique"
+          ],
+          "source": "research/data_admissions/0004-cn-etf-history/result.json"
+        },
+        {
+          "equals": true,
+          "path": [
+            "checks",
+            "required_values_positive"
+          ],
+          "source": "research/data_admissions/0004-cn-etf-history/result.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/hypotheses/0012-high-risk-overlay-robustness/result.json",
+        "research/broker_profiles/huatai-manual-etf-pilot.json"
+      ],
+      "id": "cost_and_lot_realism",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/hypotheses/0014-3000-pilot-execution-stress/spec.json",
+        "research/hypotheses/0014-3000-pilot-execution-stress/result.json",
+        "tests/test_small_account.py"
+      ],
+      "id": "explicit_adverse_fill_stress",
+      "json_assertions": [
+        {
+          "equals": "PASS",
+          "path": [
+            "result"
+          ],
+          "source": "research/hypotheses/0014-3000-pilot-execution-stress/result.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/paper_accounts/0004-3000-live-pilot-shadow/spec.json",
+        "research/paper_accounts/0004-3000-live-pilot-shadow/state.json",
+        "tests/test_pilot_account.py"
+      ],
+      "id": "exact_3000_pilot_shadow_initialized",
+      "json_assertions": [
+        {
+          "equals": 3000.0,
+          "path": [
+            "cash_cny"
+          ],
+          "source": "research/paper_accounts/0004-3000-live-pilot-shadow/state.json"
+        },
+        {
+          "equals": false,
+          "path": [
+            "capital_authorized"
+          ],
+          "source": "research/paper_accounts/0004-3000-live-pilot-shadow/state.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "src/aoae/paper_daily.py",
+        "tests/test_paper_daily.py",
+        "tests/test_pilot_account.py"
+      ],
+      "id": "risk_pause_implementation",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "scripts/daily_paper_cycle.ps1",
+        "research/paper_accounts/0001-small-etf-risk-overlay/automation.json"
+      ],
+      "id": "daily_forward_automation",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "docs/manual-live-pilot-runbook.zh-CN.md"
+      ],
+      "id": "manual_execution_runbook",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "src/aoae/manual_execution.py",
+        "scripts/prepare_manual_pilot_packet.py",
+        "scripts/reconcile_manual_execution.py",
+        "tests/test_manual_execution.py",
+        "research/capital_readiness/manual-fills-template.json"
+      ],
+      "id": "manual_packet_and_fill_reconciliation",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/broker_profiles/huatai-manual-etf-pilot.json"
+      ],
+      "id": "broker_selected_and_maximum_fee_modeled",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/paper_accounts/0004-3000-live-pilot-shadow/spec.json",
+        "research/paper_accounts/0004-3000-live-pilot-shadow/forward-progress-current.json"
+      ],
+      "id": "first_clean_forward_signal_and_lot_feasibility",
+      "status": "PENDING_EXTERNAL_TIME"
+    },
+    {
+      "evidence": [
+        "research/paper_accounts/0004-3000-live-pilot-shadow/forward-progress-current.json"
+      ],
+      "id": "minimum_forward_review_elapsed",
+      "status": "PENDING_EXTERNAL_TIME"
+    },
+    {
+      "evidence": [
+        "research/broker_profiles/huatai-manual-etf-pilot.json"
+      ],
+      "id": "account_instrument_permission_and_order_ticket",
+      "status": "PENDING_EXTERNAL_ACCOUNT"
+    },
+    {
+      "evidence": [
+        "docs/manual-live-pilot-runbook.zh-CN.md"
+      ],
+      "id": "capital_is_disposable_and_emergency_fund_separate",
+      "status": "PENDING_USER_APPROVAL"
+    },
+    {
+      "evidence": [
+        "docs/manual-live-pilot-runbook.zh-CN.md"
+      ],
+      "id": "fresh_user_capital_approval",
+      "status": "PENDING_USER_APPROVAL"
+    }
+  ],
+  "orders_authorized": false,
+  "pilot": {
+    "leverage": false,
+    "manual_confirmation_each_order": true,
+    "maximum_initial_capital_cny": 3000,
+    "planned_pause_loss_cny": 600
+  },
+  "record_type": "pre_capital_readiness_status",
+  "schema_version": 1,
+  "spec_sha256": "b0cfdf550ba9fe00049d93b713f3787120dea56700a414b8cc5548caff8db4ef"
+}

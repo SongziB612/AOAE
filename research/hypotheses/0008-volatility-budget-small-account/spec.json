@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0008-volatility-budget-small-account",
+  "title": "Volatility-budgeted 10000 CNY ETF challenger",
+  "status_context": "One fixed post-holdout diagnostic designed after HYP-0007 was observed. It cannot authorize capital and must not be tuned on the reported period.",
+  "hypothesis": "Replacing the fixed 40% risk-asset cap with a 6% annualized volatility budget can use capital more efficiently while keeping historical drawdown and loss inside the user's 10% limit.",
+  "frozen_inputs": {
+    "overlay_spec_path": "research/hypotheses/0006-volatility-controlled-etf-overlay/spec.json",
+    "overlay_spec_sha256": "2d2a6f59a7879d6ebfcb2dbcf6603422147f473a0b580eecf7abaceaf44e7999",
+    "overlay_result_path": "research/hypotheses/0006-volatility-controlled-etf-overlay/result.json",
+    "overlay_result_sha256": "b75b7be5559f24a8244b7988904fad63b66e0462658c1139e7aa9e2198242962",
+    "paper_account_spec_path": "research/paper_accounts/0001-small-etf-risk-overlay/spec.json",
+    "paper_account_spec_sha256": "a49f0c1584dea5686f8e1d7d6bdac05f530211f3155db12ccd3d807a8f2d8cb0",
+    "champion_result_path": "research/hypotheses/0007-small-account-executable/result.json",
+    "champion_result_sha256": "8e3650f50ddc4d0d4efba93a25ef6a0119c21245429ac3ca347520d4e399c790"
+  },
+  "period": ["2022-01-01", "2026-08-31"],
+  "execution": {
+    "initial_cash_cny": 10000,
+    "risk_asset_market_value_cap_fraction": 1.0,
+    "volatility_lookback_days": 63,
+    "target_annualized_volatility": 0.06,
+    "defensive_allocation": "cash_with_zero_interest",
+    "buy_lot_size_shares": 100,
+    "one_way_cost_rate": 0.0015,
+    "minimum_cost_per_nonzero_order_cny": 5
+  },
+  "decision_rule": {
+    "cagr_must_exceed_frozen_HYP_0007": true,
+    "maximum_drawdown_not_below_negative_10_percent": true,
+    "maximum_historical_loss_cny_not_above_1000": true,
+    "cash_never_negative": true
+  },
+  "trial_count": 1,
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "replacement_authorized": false,
+  "next_step_if_pass": "register as a forward paper challenger starting at the next clean signal; do not replace the champion yet",
+  "next_step_if_fail": "reject this exact 6% volatility-budget challenger without parameter tuning on 2022-2026"
+}

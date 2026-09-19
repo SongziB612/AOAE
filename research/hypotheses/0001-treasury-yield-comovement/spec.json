@@ -1,0 +1,52 @@
+{
+  "benchmark": {
+    "description": "independent daily changes",
+    "pearson_correlation": 0.0
+  },
+  "bias_controls": [
+    "The 2025 source snapshot must not enter the project before this specification is committed.",
+    "The entire 2025 period is a single untouched holdout; no training or parameter selection is performed.",
+    "Only one metric and one threshold are permitted.",
+    "Changes use consecutive published observations with no calendar interpolation or missing-value imputation.",
+    "The result is an economic-structure check and cannot be represented as tradable alpha."
+  ],
+  "capital_authorized": false,
+  "confidence": "single_holdout_economic_structure_only",
+  "data": {
+    "availability_policy": "next_us_business_day",
+    "local_path": "data/raw/treasury/daily_treasury_yield_curve_2025.xml",
+    "maximum_rows": 270,
+    "minimum_rows": 240,
+    "period_end": "2025-12-31",
+    "period_start": "2025-01-01",
+    "required_fields": [
+      "BC_2YEAR",
+      "BC_10YEAR"
+    ],
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2025"
+  },
+  "decision_rule": {
+    "minimum_paired_changes": 200,
+    "minimum_pearson_correlation": 0.5
+  },
+  "failure_modes": [
+    "One calendar year may not represent other monetary-policy or volatility regimes.",
+    "CMT values are theoretical constant-maturity par yields, not transaction prices.",
+    "Correlation does not establish causation, predictability, or a profitable trade.",
+    "Daily observations can share common macroeconomic shocks without offering an exploitable edge."
+  ],
+  "hypothesis": "On the untouched 2025 Treasury holdout, consecutive-observation daily changes in the 2-year and 10-year CMT yields will have Pearson correlation of at least 0.50.",
+  "hypothesis_id": "HYP-0001-treasury-yield-comovement",
+  "method": {
+    "imputation": "none",
+    "metric": "pearson_correlation",
+    "trading_costs": "not_applicable_no_trading",
+    "transformation": "consecutive_observation_first_difference_basis_points",
+    "trial_count": 1
+  },
+  "next_experiment": "If supported, preregister a separate slope-factor hypothesis on a new holdout; if falsified, preserve the failure and reassess the common-factor premise.",
+  "preregistration_state": "locked_before_download",
+  "schema_version": 1,
+  "strategy_mining_authorized": false,
+  "title": "Untouched 2025 Treasury 2-year/10-year daily-change co-movement"
+}

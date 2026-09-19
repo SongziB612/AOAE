@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "record_type": "pre_capital_security_boundary_audit",
+  "scanned_text_files": 453,
+  "finding_files_only": {
+    "aws_access_key": [],
+    "private_key": [],
+    "openai_style_key": [],
+    "assigned_secret": []
+  },
+  "paper_pipeline_trading_call_findings": {},
+  "audited_file_sha256": {
+    "scripts\\daily_paper_cycle.ps1": "57784b637c901c90de99bb243397d61768089c40011a78927444d7ed4df7f80e",
+    "scripts\\fetch_sina_daily_prices.py": "f466af97832b154ef4a030bb1aee28a78a95a364a7aad879102119d147d97b5a",
+    "scripts\\run_paper_eod.py": "c2d10dd3a691ac96377336141a9a6d94ab426a9fc4f252ceb948ec265de22ee4",
+    "src\\aoae\\paper_daily.py": "bdd10aef001fa823cf87e01529d95abb4e32815222e0d374396bf378c5af9c8c"
+  },
+  "checks": {
+    "no_credential_shapes_found": true,
+    "paper_pipeline_contains_no_trading_calls": true
+  },
+  "status": "PASS",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

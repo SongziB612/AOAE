@@ -1,0 +1,14 @@
+{
+  "strategy_id": "UP-CLAIM-001",
+  "idea": "Positive diversification log-growth necessarily implies positive portfolio profit.",
+  "status": "REJECT",
+  "date_killed": "2026-09-06",
+  "scope": "A deliberately attacked universal claim, not Cover's theorem or the user's stated hypothesis.",
+  "failure_reason": "Permanent-loser and crisis paths have positive Jensen diversification terms while CRP wealth falls below initial capital.",
+  "backtest": "research/experiments/up-0001-synthetic-rejection/result-v2.json",
+  "parameters": "configs/universal_synthetic.json",
+  "code_version": "source_sha256 map in result-v2.json",
+  "tests_failed": ["Economic universal-profit claim contradicted; implementation identity tests pass."],
+  "next_allowed_action": "Study conditional regions; do not market a universal profit guarantee.",
+  "capital_authorized": false
+}

@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "matrix": "2022-user_confirmed_rate-30.json",
+      "return_error": 0.0,
+      "pbo_error": 0.0,
+      "dsr_error": 5.551115123125783e-17,
+      "partitions": 70
+    },
+    {
+      "matrix": "2022-user_confirmed_rate-100.json",
+      "return_error": 0.0,
+      "pbo_error": 0.0,
+      "dsr_error": 4.2500725161431774e-17,
+      "partitions": 70
+    },
+    {
+      "matrix": "2023-user_confirmed_rate-30.json",
+      "return_error": 0.0,
+      "pbo_error": 0.0,
+      "dsr_error": 1.6653345369377348e-16,
+      "partitions": 70
+    },
+    {
+      "matrix": "2023-user_confirmed_rate-100.json",
+      "return_error": 0.0,
+      "pbo_error": 0.0,
+      "dsr_error": 1.1102230246251565e-16,
+      "partitions": 70
+    },
+    {
+      "matrix": "2024-user_confirmed_rate-30.json",
+      "return_error": 0.0,
+      "pbo_error": 0.0,
+      "dsr_error": 2.220446049250313e-16,
+      "partitions": 70
+    },
+    {
+      "matrix": "2024-user_confirmed_rate-100.json",
+      "return_error": 0.0,
+      "pbo_error": 0.0,
+      "dsr_error": 4.440892098500626e-16,
+      "partitions": 70
+    },
+    {
+      "matrix": "2025-user_confirmed_rate-30.json",
+      "return_error": 0.0,
+      "pbo_error": 0.0,
+      "dsr_error": 1.1102230246251565e-16,
+      "partitions": 70
+    },
+    {
+      "matrix": "2025-user_confirmed_rate-100.json",
+      "return_error": 0.0,
+      "pbo_error": 0.0,
+      "dsr_error": 1.1102230246251565e-16,
+      "partitions": 70
+    }
+  ],
+  "input_sha256": {
+    "research\\experiments\\selection-confirmed-fees-2026-09-15\\result.json": "c95fb89c1f9425440c1a8dc72bae063804559bda30f03d5c2c34b6d71d01a77a",
+    "research\\experiments\\cn-fees-0001\\reproduction-2026-09-15.json": "098f81e4c0933c4e1267c0df3c49567233b91999832c06b020ba24f2bcccc57e",
+    "F:\\AOAE\\scripts\\verify_selection_result.py": "2b1f774306a9f3d9b053faeaf18c1910990077284d0a2c83c858c5ec30bcbfd5"
+  },
+  "limits": "Independent arithmetic implementation, same data and assumptions; not independent economic evidence, full-family validation or capital approval.",
+  "capital_authorized": false
+}

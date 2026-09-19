@@ -1,0 +1,1866 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0010-high-risk-executable-overlay",
+  "record_type": "post_holdout_small_account_feasibility_diagnostic",
+  "inputs": {
+    "spec_sha256": "834b45c371a31f908d28f9e60f3bfd901fb128f7c3b2be856997b89b361547e1",
+    "price_sha256": {
+      "510300": "b585f1eb4bc8711fe43e0a7637913ea09a745225b7716f8c980d9263ed52066a",
+      "510500": "c2464afdbc996e39fe64118f4521c7f87112a8b85b5ce4408206947d71a3e5f4",
+      "159915": "db05d10e2e184fafa3e124a287034c378a0ca6cc04c00fa3f82ed653f73435bc",
+      "513500": "3e869c6c2f7b78bade5c7334afa0c88698c94283514a9863aa0349ddd7eaa55f",
+      "518880": "85ec4f2f19b9b2098fff16888e2d712d8ee7c7d9b1cf075310c70ac68eb2b326",
+      "511010": "90e677a00b701565fd1a9d8a52fbdc9afb566bea6ab7cff331acbce9d3ae6948"
+    }
+  },
+  "small_account": {
+    "start": "2022-01-01",
+    "first_market_date": "2022-01-04",
+    "end": "2026-08-31",
+    "observations": 1128,
+    "total_return": 0.59945239,
+    "cagr": 0.10597838,
+    "annualized_volatility": 0.11451751,
+    "sharpe_zero_rate": 0.97394022,
+    "max_drawdown": -0.17655671
+  },
+  "executable_510300_benchmark": {
+    "start": "2022-01-01",
+    "first_market_date": "2022-01-04",
+    "end": "2026-08-31",
+    "observations": 1128,
+    "total_return": 0.01513911,
+    "cagr": 0.00322782,
+    "annualized_volatility": 0.18611622,
+    "sharpe_zero_rate": 0.1109331,
+    "max_drawdown": -0.33771217
+  },
+  "maximum_loss_from_initial_cny": 1859.95,
+  "execution_checks": {
+    "all_buys_are_lot_multiples": true,
+    "minimum_cash_cny": 127.1999,
+    "cash_never_negative": true,
+    "ending_cash_cny": 11530.8239,
+    "ending_positions": {
+      "510500": 300,
+      "159915": 600
+    }
+  },
+  "execution_summary": {
+    "rebalances": 56,
+    "orders": 95,
+    "total_cost_cny": 542.08
+  },
+  "checks": {
+    "total_return_positive": true,
+    "cagr_above_510300_benchmark": true,
+    "maximum_drawdown_not_below_negative_30_percent": true,
+    "maximum_historical_loss_cny_not_above_3000": true,
+    "all_buys_are_100_share_multiples": true,
+    "cash_never_negative": true,
+    "cagr_above_frozen_small_account_champion": true
+  },
+  "rebalances": [
+    {
+      "signal_date": "2021-12-31",
+      "execution_date": "2022-01-04",
+      "risk_exposure_before_lot_rounding": 0.88159467,
+      "positions_after": {
+        "510500": 700,
+        "159915": 1100
+      },
+      "cash_after_cny": 1637.07,
+      "cost_cny": 12.53,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "BUY",
+          "quantity": 700,
+          "price": 6.844,
+          "notional_cny": 4790.8,
+          "cost_cny": 7.19
+        },
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 1100,
+          "price": 3.236,
+          "notional_cny": 3559.6,
+          "cost_cny": 5.34
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.88159467,
+        "estimated_full_risk_volatility": 0.13611698,
+        "trailing_volatility_510500": 0.12459618,
+        "trailing_volatility_159915": 0.17880389
+      }
+    },
+    {
+      "signal_date": "2022-01-28",
+      "execution_date": "2022-02-07",
+      "risk_exposure_before_lot_rounding": 0.9602357,
+      "positions_after": {
+        "510500": 700,
+        "513500": 3100
+      },
+      "cash_after_cny": 635.05,
+      "cost_cny": 11.22,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "SELL",
+          "quantity": 1100,
+          "price": 2.87,
+          "notional_cny": 3157.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 3100,
+          "price": 1.338,
+          "notional_cny": 4147.8,
+          "cost_cny": 6.22
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.9602357,
+        "estimated_full_risk_volatility": 0.12496932,
+        "trailing_volatility_510500": 0.14220056,
+        "trailing_volatility_513500": 0.15033007
+      }
+    },
+    {
+      "signal_date": "2022-02-28",
+      "execution_date": "2022-03-01",
+      "risk_exposure_before_lot_rounding": 0.75264641,
+      "positions_after": {
+        "510500": 600,
+        "513500": 2200
+      },
+      "cash_after_cny": 2426.25,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 6.339,
+          "notional_cny": 633.9,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 900,
+          "price": 1.297,
+          "notional_cny": 1167.3,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.75264641,
+        "estimated_full_risk_volatility": 0.15943742,
+        "trailing_volatility_510500": 0.15650114,
+        "trailing_volatility_513500": 0.21226414
+      }
+    },
+    {
+      "signal_date": "2022-03-31",
+      "execution_date": "2022-04-01",
+      "risk_exposure_before_lot_rounding": 0.9475802,
+      "positions_after": {
+        "510500": 500,
+        "518880": 1300
+      },
+      "cash_after_cny": 983.75,
+      "cost_cny": 17.51,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 5.77,
+          "notional_cny": 577.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 2200,
+          "price": 1.365,
+          "notional_cny": 3003.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 1300,
+          "price": 3.85,
+          "notional_cny": 5005.0,
+          "cost_cny": 7.51
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.9475802,
+        "estimated_full_risk_volatility": 0.12663836,
+        "trailing_volatility_510500": 0.24662093,
+        "trailing_volatility_518880": 0.15868066
+      }
+    },
+    {
+      "signal_date": "2022-04-29",
+      "execution_date": "2022-05-05",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2400,
+        "518880": 1300
+      },
+      "cash_after_cny": 290.15,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 500,
+          "price": 5.132,
+          "notional_cny": 2566.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 2400,
+          "price": 1.354,
+          "notional_cny": 3249.6,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.1170422,
+        "trailing_volatility_513500": 0.25971039,
+        "trailing_volatility_518880": 0.16258102
+      }
+    },
+    {
+      "signal_date": "2022-05-31",
+      "execution_date": "2022-06-01",
+      "risk_exposure_before_lot_rounding": 0.5,
+      "positions_after": {
+        "518880": 1000
+      },
+      "cash_after_cny": 4565.95,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 2400,
+          "price": 1.305,
+          "notional_cny": 3132.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 300,
+          "price": 3.846,
+          "notional_cny": 1153.8,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.15411109,
+        "trailing_volatility_518880": 0.15411109
+      }
+    },
+    {
+      "signal_date": "2022-06-30",
+      "execution_date": "2022-07-01",
+      "risk_exposure_before_lot_rounding": 0.5,
+      "positions_after": {
+        "518880": 1100
+      },
+      "cash_after_cny": 4181.15,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 3.798,
+          "notional_cny": 379.8,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.1071718,
+        "trailing_volatility_518880": 0.1071718
+      }
+    },
+    {
+      "signal_date": "2022-07-29",
+      "execution_date": "2022-08-01",
+      "risk_exposure_before_lot_rounding": 0.5,
+      "positions_after": {
+        "518880": 1100
+      },
+      "cash_after_cny": 4181.15,
+      "cost_cny": 0.0,
+      "legs": [],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.11353235,
+        "trailing_volatility_518880": 0.11353235
+      }
+    },
+    {
+      "signal_date": "2022-08-31",
+      "execution_date": "2022-09-01",
+      "risk_exposure_before_lot_rounding": 0.5,
+      "positions_after": {
+        "518880": 1100
+      },
+      "cash_after_cny": 4181.15,
+      "cost_cny": 0.0,
+      "legs": [],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.10431117,
+        "trailing_volatility_518880": 0.10431117
+      }
+    },
+    {
+      "signal_date": "2022-09-30",
+      "execution_date": "2022-10-10",
+      "risk_exposure_before_lot_rounding": 0.5,
+      "positions_after": {
+        "518880": 1000
+      },
+      "cash_after_cny": 4559.45,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 3.833,
+          "notional_cny": 383.3,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.09660504,
+        "trailing_volatility_518880": 0.09660504
+      }
+    },
+    {
+      "signal_date": "2022-10-31",
+      "execution_date": "2022-11-01",
+      "risk_exposure_before_lot_rounding": 0.0,
+      "positions_after": {},
+      "cash_after_cny": 8361.73,
+      "cost_cny": 5.71,
+      "legs": [
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 1000,
+          "price": 3.808,
+          "notional_cny": 3808.0,
+          "cost_cny": 5.71
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.0,
+        "estimated_full_risk_volatility": 0.0
+      }
+    },
+    {
+      "signal_date": "2022-11-30",
+      "execution_date": "2022-12-01",
+      "risk_exposure_before_lot_rounding": 0.0,
+      "positions_after": {},
+      "cash_after_cny": 8361.73,
+      "cost_cny": 0.0,
+      "legs": [],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.0,
+        "estimated_full_risk_volatility": 0.0
+      }
+    },
+    {
+      "signal_date": "2022-12-30",
+      "execution_date": "2023-01-03",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 1900,
+        "518880": 1400
+      },
+      "cash_after_cny": 397.17,
+      "cost_cny": 13.36,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 1900,
+          "price": 1.25,
+          "notional_cny": 2375.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 1400,
+          "price": 3.983,
+          "notional_cny": 5576.2,
+          "cost_cny": 8.36
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.11161739,
+        "trailing_volatility_513500": 0.23031226,
+        "trailing_volatility_518880": 0.09348276
+      }
+    },
+    {
+      "signal_date": "2023-01-31",
+      "execution_date": "2023-02-01",
+      "risk_exposure_before_lot_rounding": 0.5,
+      "positions_after": {
+        "518880": 1000
+      },
+      "cash_after_cny": 4466.07,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 1900,
+          "price": 1.287,
+          "notional_cny": 2445.3,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 400,
+          "price": 4.084,
+          "notional_cny": 1633.6,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.09362476,
+        "trailing_volatility_518880": 0.09362476
+      }
+    },
+    {
+      "signal_date": "2023-02-28",
+      "execution_date": "2023-03-01",
+      "risk_exposure_before_lot_rounding": 0.5,
+      "positions_after": {
+        "518880": 1000
+      },
+      "cash_after_cny": 4466.07,
+      "cost_cny": 0.0,
+      "legs": [],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.08356698,
+        "trailing_volatility_518880": 0.08356698
+      }
+    },
+    {
+      "signal_date": "2023-03-31",
+      "execution_date": "2023-04-03",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "510500": 700,
+        "518880": 1000
+      },
+      "cash_after_cny": 273.09,
+      "cost_cny": 6.28,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "BUY",
+          "quantity": 700,
+          "price": 5.981,
+          "notional_cny": 4186.7,
+          "cost_cny": 6.28
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07913847,
+        "trailing_volatility_510500": 0.11287394,
+        "trailing_volatility_518880": 0.10959043
+      }
+    },
+    {
+      "signal_date": "2023-04-28",
+      "execution_date": "2023-05-04",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "510500": 700,
+        "518880": 1000
+      },
+      "cash_after_cny": 273.09,
+      "cost_cny": 0.0,
+      "legs": [],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.08560218,
+        "trailing_volatility_510500": 0.12772364,
+        "trailing_volatility_518880": 0.122074
+      }
+    },
+    {
+      "signal_date": "2023-05-31",
+      "execution_date": "2023-06-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "510500": 700,
+        "518880": 900
+      },
+      "cash_after_cny": 705.39,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 4.373,
+          "notional_cny": 437.3,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.08049839,
+        "trailing_volatility_510500": 0.12207461,
+        "trailing_volatility_518880": 0.12839789
+      }
+    },
+    {
+      "signal_date": "2023-06-30",
+      "execution_date": "2023-07-03",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2800,
+        "518880": 900
+      },
+      "cash_after_cny": 434.7,
+      "cost_cny": 12.39,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 700,
+          "price": 5.715,
+          "notional_cny": 4000.5,
+          "cost_cny": 6.0
+        },
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 2800,
+          "price": 1.521,
+          "notional_cny": 4258.8,
+          "cost_cny": 6.39
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.05812591,
+        "trailing_volatility_513500": 0.10603749,
+        "trailing_volatility_518880": 0.10535629
+      }
+    },
+    {
+      "signal_date": "2023-07-31",
+      "execution_date": "2023-08-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2500,
+        "518880": 1000
+      },
+      "cash_after_cny": 446.2,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 300,
+          "price": 1.546,
+          "notional_cny": 463.8,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 4.423,
+          "notional_cny": 442.3,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.06423336,
+        "trailing_volatility_513500": 0.11071668,
+        "trailing_volatility_518880": 0.09270327
+      }
+    },
+    {
+      "signal_date": "2023-08-31",
+      "execution_date": "2023-09-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2000,
+        "518880": 1200
+      },
+      "cash_after_cny": 312.8,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 500,
+          "price": 1.542,
+          "notional_cny": 771.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 200,
+          "price": 4.472,
+          "notional_cny": 894.4,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.06918821,
+        "trailing_volatility_513500": 0.11580765,
+        "trailing_volatility_518880": 0.0667892
+      }
+    },
+    {
+      "signal_date": "2023-09-28",
+      "execution_date": "2023-10-09",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2300,
+        "518880": 1100
+      },
+      "cash_after_cny": 301.2,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 300,
+          "price": 1.472,
+          "notional_cny": 441.6,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 4.4,
+          "notional_cny": 440.0,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07853196,
+        "trailing_volatility_513500": 0.11195331,
+        "trailing_volatility_518880": 0.07846331
+      }
+    },
+    {
+      "signal_date": "2023-10-31",
+      "execution_date": "2023-11-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2500,
+        "518880": 1000
+      },
+      "cash_after_cny": 462.8,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 200,
+          "price": 1.44,
+          "notional_cny": 288.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 4.596,
+          "notional_cny": 459.6,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07647742,
+        "trailing_volatility_513500": 0.11921301,
+        "trailing_volatility_518880": 0.08985792
+      }
+    },
+    {
+      "signal_date": "2023-11-30",
+      "execution_date": "2023-12-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2600,
+        "518880": 1000
+      },
+      "cash_after_cny": 304.3,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 1.535,
+          "notional_cny": 153.5,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07272279,
+        "trailing_volatility_513500": 0.11576547,
+        "trailing_volatility_518880": 0.09664497
+      }
+    },
+    {
+      "signal_date": "2023-12-29",
+      "execution_date": "2024-01-02",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2700,
+        "518880": 1000
+      },
+      "cash_after_cny": 139.3,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 1.6,
+          "notional_cny": 160.0,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07505607,
+        "trailing_volatility_513500": 0.11168058,
+        "trailing_volatility_518880": 0.10226612
+      }
+    },
+    {
+      "signal_date": "2024-01-31",
+      "execution_date": "2024-02-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2300,
+        "518880": 1100
+      },
+      "cash_after_cny": 326.1,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 400,
+          "price": 1.655,
+          "notional_cny": 662.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 4.652,
+          "notional_cny": 465.2,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.06920371,
+        "trailing_volatility_513500": 0.10621237,
+        "trailing_volatility_518880": 0.07947331
+      }
+    },
+    {
+      "signal_date": "2024-02-29",
+      "execution_date": "2024-03-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2000,
+        "518880": 1200
+      },
+      "cash_after_cny": 384.8,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 300,
+          "price": 1.782,
+          "notional_cny": 534.6,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 4.659,
+          "notional_cny": 465.9,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.06921273,
+        "trailing_volatility_513500": 0.12137843,
+        "trailing_volatility_518880": 0.07320285
+      }
+    },
+    {
+      "signal_date": "2024-03-29",
+      "execution_date": "2024-04-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2200,
+        "518880": 1100
+      },
+      "cash_after_cny": 519.7,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 200,
+          "price": 1.863,
+          "notional_cny": 372.6,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 5.175,
+          "notional_cny": 517.5,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07641608,
+        "trailing_volatility_513500": 0.12650269,
+        "trailing_volatility_518880": 0.08834733
+      }
+    },
+    {
+      "signal_date": "2024-04-30",
+      "execution_date": "2024-05-06",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2700,
+        "518880": 1000
+      },
+      "cash_after_cny": 153.1,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 500,
+          "price": 1.758,
+          "notional_cny": 879.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 5.224,
+          "notional_cny": 522.4,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.1051604,
+        "trailing_volatility_513500": 0.15239225,
+        "trailing_volatility_518880": 0.1389504
+      }
+    },
+    {
+      "signal_date": "2024-05-31",
+      "execution_date": "2024-06-03",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 3000,
+        "518880": 900
+      },
+      "cash_after_cny": 127.2,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 300,
+          "price": 1.826,
+          "notional_cny": 547.8,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 5.319,
+          "notional_cny": 531.9,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.11538199,
+        "trailing_volatility_513500": 0.14199702,
+        "trailing_volatility_518880": 0.16636472
+      }
+    },
+    {
+      "signal_date": "2024-06-28",
+      "execution_date": "2024-07-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 3000,
+        "518880": 800
+      },
+      "cash_after_cny": 651.9,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 5.297,
+          "notional_cny": 529.7,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.1153917,
+        "trailing_volatility_513500": 0.14063258,
+        "trailing_volatility_518880": 0.17772519
+      }
+    },
+    {
+      "signal_date": "2024-07-31",
+      "execution_date": "2024-08-01",
+      "risk_exposure_before_lot_rounding": 0.92288823,
+      "positions_after": {
+        "513500": 2500,
+        "518880": 900
+      },
+      "cash_after_cny": 1081.3,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 500,
+          "price": 1.979,
+          "notional_cny": 989.5,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 5.501,
+          "notional_cny": 550.1,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.92288823,
+        "estimated_full_risk_volatility": 0.13002658,
+        "trailing_volatility_513500": 0.16018343,
+        "trailing_volatility_518880": 0.15987501
+      }
+    },
+    {
+      "signal_date": "2024-08-30",
+      "execution_date": "2024-09-02",
+      "risk_exposure_before_lot_rounding": 0.80720502,
+      "positions_after": {
+        "513500": 1700,
+        "518880": 900
+      },
+      "cash_after_cny": 2668.3,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 800,
+          "price": 1.99,
+          "notional_cny": 1592.0,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.80720502,
+        "estimated_full_risk_volatility": 0.14866112,
+        "trailing_volatility_513500": 0.22879101,
+        "trailing_volatility_518880": 0.1440563
+      }
+    },
+    {
+      "signal_date": "2024-09-30",
+      "execution_date": "2024-10-08",
+      "risk_exposure_before_lot_rounding": 0.82942757,
+      "positions_after": {
+        "513500": 1600,
+        "518880": 1000
+      },
+      "cash_after_cny": 2278.7,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 1.886,
+          "notional_cny": 188.6,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 5.682,
+          "notional_cny": 568.2,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.82942757,
+        "estimated_full_risk_volatility": 0.14467809,
+        "trailing_volatility_513500": 0.24496612,
+        "trailing_volatility_518880": 0.12848198
+      }
+    },
+    {
+      "signal_date": "2024-10-31",
+      "execution_date": "2024-11-01",
+      "risk_exposure_before_lot_rounding": 0.96699498,
+      "positions_after": {
+        "513500": 1800,
+        "518880": 1200
+      },
+      "cash_after_cny": 672.3,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 200,
+          "price": 1.965,
+          "notional_cny": 393.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 200,
+          "price": 6.017,
+          "notional_cny": 1203.4,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.96699498,
+        "estimated_full_risk_volatility": 0.12409578,
+        "trailing_volatility_513500": 0.23502577,
+        "trailing_volatility_518880": 0.11243421
+      }
+    },
+    {
+      "signal_date": "2024-11-29",
+      "execution_date": "2024-12-02",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "513500": 2300,
+        "518880": 1100
+      },
+      "cash_after_cny": 147.8,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 500,
+          "price": 2.199,
+          "notional_cny": 1099.5,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 5.85,
+          "notional_cny": 585.0,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.10850588,
+        "trailing_volatility_513500": 0.18171637,
+        "trailing_volatility_518880": 0.1395633
+      }
+    },
+    {
+      "signal_date": "2024-12-31",
+      "execution_date": "2025-01-02",
+      "risk_exposure_before_lot_rounding": 0.69824534,
+      "positions_after": {
+        "159915": 700,
+        "513500": 3000
+      },
+      "cash_after_cny": 3719.14,
+      "cost_cny": 19.86,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 700,
+          "price": 2.096,
+          "notional_cny": 1467.2,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "513500",
+          "side": "BUY",
+          "quantity": 700,
+          "price": 2.163,
+          "notional_cny": 1514.1,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 1100,
+          "price": 5.975,
+          "notional_cny": 6572.5,
+          "cost_cny": 9.86
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.69824534,
+        "estimated_full_risk_volatility": 0.17185937,
+        "trailing_volatility_159915": 0.77289749,
+        "trailing_volatility_513500": 0.18036078
+      }
+    },
+    {
+      "signal_date": "2025-01-27",
+      "execution_date": "2025-02-05",
+      "risk_exposure_before_lot_rounding": 0.78888993,
+      "positions_after": {
+        "159915": 1600,
+        "513500": 2700
+      },
+      "cash_after_cny": 2527.74,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 900,
+          "price": 2.043,
+          "notional_cny": 1838.7,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 300,
+          "price": 2.191,
+          "notional_cny": 657.3,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.78888993,
+        "estimated_full_risk_volatility": 0.15211247,
+        "trailing_volatility_159915": 0.30863246,
+        "trailing_volatility_513500": 0.16949697
+      }
+    },
+    {
+      "signal_date": "2025-02-28",
+      "execution_date": "2025-03-03",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "159915": 1800,
+        "518880": 1100
+      },
+      "cash_after_cny": 528.1,
+      "cost_cny": 23.94,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 200,
+          "price": 2.133,
+          "notional_cny": 426.6,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "513500",
+          "side": "SELL",
+          "quantity": 2700,
+          "price": 2.052,
+          "notional_cny": 5540.4,
+          "cost_cny": 8.31
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 1100,
+          "price": 6.445,
+          "notional_cny": 7089.5,
+          "cost_cny": 10.63
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.11853904,
+        "trailing_volatility_159915": 0.26247945,
+        "trailing_volatility_518880": 0.13305865
+      }
+    },
+    {
+      "signal_date": "2025-03-31",
+      "execution_date": "2025-04-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "159915": 1900,
+        "518880": 1100
+      },
+      "cash_after_cny": 316.4,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 2.067,
+          "notional_cny": 206.7,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.10766752,
+        "trailing_volatility_159915": 0.25181927,
+        "trailing_volatility_518880": 0.12511101
+      }
+    },
+    {
+      "signal_date": "2025-04-30",
+      "execution_date": "2025-05-06",
+      "risk_exposure_before_lot_rounding": 0.63873701,
+      "positions_after": {
+        "510500": 600,
+        "518880": 500
+      },
+      "cash_after_cny": 5268.64,
+      "cost_cny": 17.35,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "BUY",
+          "quantity": 600,
+          "price": 5.444,
+          "notional_cny": 3266.4,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "159915",
+          "side": "SELL",
+          "quantity": 1900,
+          "price": 1.936,
+          "notional_cny": 3678.4,
+          "cost_cny": 5.52
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 600,
+          "price": 7.596,
+          "notional_cny": 4557.6,
+          "cost_cny": 6.84
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.63873701,
+        "estimated_full_risk_volatility": 0.18787075,
+        "trailing_volatility_510500": 0.25907412,
+        "trailing_volatility_518880": 0.21405063
+      }
+    },
+    {
+      "signal_date": "2025-05-30",
+      "execution_date": "2025-06-03",
+      "risk_exposure_before_lot_rounding": 0.72752906,
+      "positions_after": {
+        "510300": 1300,
+        "518880": 500
+      },
+      "cash_after_cny": 3682.26,
+      "cost_cny": 12.28,
+      "legs": [
+        {
+          "symbol": "510300",
+          "side": "BUY",
+          "quantity": 1300,
+          "price": 3.735,
+          "notional_cny": 4855.5,
+          "cost_cny": 7.28
+        },
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 600,
+          "price": 5.469,
+          "notional_cny": 3281.4,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.72752906,
+        "estimated_full_risk_volatility": 0.16494187,
+        "trailing_volatility_510300": 0.18333964,
+        "trailing_volatility_518880": 0.22723074
+      }
+    },
+    {
+      "signal_date": "2025-06-30",
+      "execution_date": "2025-07-01",
+      "risk_exposure_before_lot_rounding": 0.76600473,
+      "positions_after": {
+        "510300": 1400,
+        "518880": 500
+      },
+      "cash_after_cny": 3291.56,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "510300",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 3.857,
+          "notional_cny": 385.7,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.76600473,
+        "estimated_full_risk_volatility": 0.156657,
+        "trailing_volatility_510300": 0.17164431,
+        "trailing_volatility_518880": 0.2310461
+      }
+    },
+    {
+      "signal_date": "2025-07-31",
+      "execution_date": "2025-08-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "510500": 1100,
+        "518880": 700
+      },
+      "cash_after_cny": 758.59,
+      "cost_cny": 23.47,
+      "legs": [
+        {
+          "symbol": "510300",
+          "side": "SELL",
+          "quantity": 1400,
+          "price": 4.025,
+          "notional_cny": 5635.0,
+          "cost_cny": 8.45
+        },
+        {
+          "symbol": "510500",
+          "side": "BUY",
+          "quantity": 1100,
+          "price": 6.069,
+          "notional_cny": 6675.9,
+          "cost_cny": 10.01
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 200,
+          "price": 7.343,
+          "notional_cny": 1468.6,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.09811681,
+        "trailing_volatility_510500": 0.12430232,
+        "trailing_volatility_518880": 0.15217674
+      }
+    },
+    {
+      "signal_date": "2025-08-29",
+      "execution_date": "2025-09-01",
+      "risk_exposure_before_lot_rounding": 1.0,
+      "positions_after": {
+        "159915": 1400,
+        "518880": 1200
+      },
+      "cash_after_cny": 575.42,
+      "cost_cny": 23.18,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 1100,
+          "price": 6.95,
+          "notional_cny": 7645.0,
+          "cost_cny": 11.47
+        },
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 1400,
+          "price": 2.88,
+          "notional_cny": 4032.0,
+          "cost_cny": 6.05
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 500,
+          "price": 7.546,
+          "notional_cny": 3773.0,
+          "cost_cny": 5.66
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.09183264,
+        "trailing_volatility_159915": 0.21993292,
+        "trailing_volatility_518880": 0.09516955
+      }
+    },
+    {
+      "signal_date": "2025-09-30",
+      "execution_date": "2025-10-09",
+      "risk_exposure_before_lot_rounding": 0.53519015,
+      "positions_after": {
+        "510500": 600,
+        "159915": 900
+      },
+      "cash_after_cny": 8220.21,
+      "cost_cny": 27.31,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "BUY",
+          "quantity": 600,
+          "price": 7.342,
+          "notional_cny": 4405.2,
+          "cost_cny": 6.61
+        },
+        {
+          "symbol": "159915",
+          "side": "SELL",
+          "quantity": 500,
+          "price": 3.217,
+          "notional_cny": 1608.5,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 1200,
+          "price": 8.724,
+          "notional_cny": 10468.8,
+          "cost_cny": 15.7
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.53519015,
+        "estimated_full_risk_volatility": 0.22421937,
+        "trailing_volatility_510500": 0.18840552,
+        "trailing_volatility_159915": 0.30237614
+      }
+    },
+    {
+      "signal_date": "2025-10-31",
+      "execution_date": "2025-11-03",
+      "risk_exposure_before_lot_rounding": 0.44506079,
+      "positions_after": {
+        "510500": 500,
+        "159915": 800
+      },
+      "cash_after_cny": 9247.01,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 7.216,
+          "notional_cny": 721.6,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "159915",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 3.152,
+          "notional_cny": 315.2,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.44506079,
+        "estimated_full_risk_volatility": 0.26962609,
+        "trailing_volatility_510500": 0.22545554,
+        "trailing_volatility_159915": 0.35964362
+      }
+    },
+    {
+      "signal_date": "2025-11-28",
+      "execution_date": "2025-12-01",
+      "risk_exposure_before_lot_rounding": 0.56697984,
+      "positions_after": {
+        "159915": 1100,
+        "518880": 500
+      },
+      "cash_after_cny": 7214.24,
+      "cost_cny": 17.07,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 500,
+          "price": 6.941,
+          "notional_cny": 3470.5,
+          "cost_cny": 5.21
+        },
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 300,
+          "price": 3.044,
+          "notional_cny": 913.2,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "BUY",
+          "quantity": 500,
+          "price": 9.146,
+          "notional_cny": 4573.0,
+          "cost_cny": 6.86
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.56697984,
+        "estimated_full_risk_volatility": 0.21164774,
+        "trailing_volatility_159915": 0.35972117,
+        "trailing_volatility_518880": 0.24059317
+      }
+    },
+    {
+      "signal_date": "2025-12-31",
+      "execution_date": "2026-01-05",
+      "risk_exposure_before_lot_rounding": 0.593976,
+      "positions_after": {
+        "159915": 1200,
+        "518880": 500
+      },
+      "cash_after_cny": 6887.74,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 100,
+          "price": 3.215,
+          "notional_cny": 321.5,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.593976,
+        "estimated_full_risk_volatility": 0.20202836,
+        "trailing_volatility_159915": 0.29566591,
+        "trailing_volatility_518880": 0.24516059
+      }
+    },
+    {
+      "signal_date": "2026-01-30",
+      "execution_date": "2026-02-02",
+      "risk_exposure_before_lot_rounding": 0.65544711,
+      "positions_after": {
+        "159915": 1600,
+        "518880": 400
+      },
+      "cash_after_cny": 6533.34,
+      "cost_cny": 10.0,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 400,
+          "price": 3.338,
+          "notional_cny": 1335.2,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 9.908,
+          "notional_cny": 990.8,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.65544711,
+        "estimated_full_risk_volatility": 0.18308113,
+        "trailing_volatility_159915": 0.22773713,
+        "trailing_volatility_518880": 0.26600788
+      }
+    },
+    {
+      "signal_date": "2026-02-27",
+      "execution_date": "2026-03-02",
+      "risk_exposure_before_lot_rounding": 0.52524079,
+      "positions_after": {
+        "159915": 1600,
+        "518880": 200
+      },
+      "cash_after_cny": 8801.94,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 200,
+          "price": 11.368,
+          "notional_cny": 2273.6,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.52524079,
+        "estimated_full_risk_volatility": 0.22846664,
+        "trailing_volatility_159915": 0.23067097,
+        "trailing_volatility_518880": 0.37167499
+      }
+    },
+    {
+      "signal_date": "2026-03-31",
+      "execution_date": "2026-04-01",
+      "risk_exposure_before_lot_rounding": 0.38497568,
+      "positions_after": {
+        "510500": 500,
+        "518880": 200
+      },
+      "cash_after_cny": 10147.4,
+      "cost_cny": 13.54,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "BUY",
+          "quantity": 500,
+          "price": 7.666,
+          "notional_cny": 3833.0,
+          "cost_cny": 5.75
+        },
+        {
+          "symbol": "159915",
+          "side": "SELL",
+          "quantity": 1600,
+          "price": 3.245,
+          "notional_cny": 5192.0,
+          "cost_cny": 7.79
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.38497568,
+        "estimated_full_risk_volatility": 0.311708,
+        "trailing_volatility_510500": 0.27131398,
+        "trailing_volatility_518880": 0.45897665
+      }
+    },
+    {
+      "signal_date": "2026-04-30",
+      "execution_date": "2026-05-06",
+      "risk_exposure_before_lot_rounding": 0.4506305,
+      "positions_after": {
+        "510500": 400,
+        "159915": 900
+      },
+      "cash_after_cny": 9522.22,
+      "cost_cny": 15.08,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 8.37,
+          "notional_cny": 837.0,
+          "cost_cny": 5.0
+        },
+        {
+          "symbol": "159915",
+          "side": "BUY",
+          "quantity": 900,
+          "price": 3.763,
+          "notional_cny": 3386.7,
+          "cost_cny": 5.08
+        },
+        {
+          "symbol": "518880",
+          "side": "SELL",
+          "quantity": 200,
+          "price": 9.698,
+          "notional_cny": 1939.6,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.4506305,
+        "estimated_full_risk_volatility": 0.26629356,
+        "trailing_volatility_510500": 0.28553209,
+        "trailing_volatility_159915": 0.27788248
+      }
+    },
+    {
+      "signal_date": "2026-05-29",
+      "execution_date": "2026-06-01",
+      "risk_exposure_before_lot_rounding": 0.4474381,
+      "positions_after": {
+        "510500": 400,
+        "159915": 800
+      },
+      "cash_after_cny": 9921.92,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 4.047,
+          "notional_cny": 404.7,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.4474381,
+        "estimated_full_risk_volatility": 0.26819352,
+        "trailing_volatility_510500": 0.26724513,
+        "trailing_volatility_159915": 0.29489019
+      }
+    },
+    {
+      "signal_date": "2026-06-30",
+      "execution_date": "2026-07-01",
+      "risk_exposure_before_lot_rounding": 0.40812672,
+      "positions_after": {
+        "510500": 400,
+        "159915": 600
+      },
+      "cash_after_cny": 10789.72,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "159915",
+          "side": "SELL",
+          "quantity": 200,
+          "price": 4.364,
+          "notional_cny": 872.8,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.40812672,
+        "estimated_full_risk_volatility": 0.29402633,
+        "trailing_volatility_510500": 0.26408989,
+        "trailing_volatility_159915": 0.35375469
+      }
+    },
+    {
+      "signal_date": "2026-07-31",
+      "execution_date": "2026-08-03",
+      "risk_exposure_before_lot_rounding": 0.31681138,
+      "positions_after": {
+        "510500": 300,
+        "159915": 600
+      },
+      "cash_after_cny": 11530.82,
+      "cost_cny": 5.0,
+      "legs": [
+        {
+          "symbol": "510500",
+          "side": "SELL",
+          "quantity": 100,
+          "price": 7.461,
+          "notional_cny": 746.1,
+          "cost_cny": 5.0
+        }
+      ],
+      "overlay_diagnostics": {
+        "risk_exposure": 0.31681138,
+        "estimated_full_risk_volatility": 0.37877427,
+        "trailing_volatility_510500": 0.33497646,
+        "trailing_volatility_159915": 0.46141931
+      }
+    }
+  ],
+  "result": {
+    "status": "PASS",
+    "decision": "initialize a separate 90-day forward paper challenger; no real capital"
+  },
+  "orders_authorized": false,
+  "capital_authorized": false
+}

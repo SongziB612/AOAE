@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "record_type": "preregistered_execution_delay_simulation",
+  "source_result": "../0019-bnb-five-minute-websocket-execution-probe/result.json",
+  "decision_seconds_before_end": [120, 60, 30, 15, 5],
+  "delays_ms": [0, 250, 500, 1000, 2000],
+  "shares_per_attempt": 5,
+  "rule": "A trade is attempted only if the decision snapshot has at least five shares at the signaled ask; execution is repriced to the first captured WebSocket book at or after the fixed delay and requires five shares there.",
+  "interpretation": "One source market is an execution-engineering diagnostic only; results cannot estimate expected return.",
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

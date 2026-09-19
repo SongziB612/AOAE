@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "rows": 6,
+  "maximum_absolute_error": 5.440092820663267e-15,
+  "method": "70-digit Decimal backwards barrier recursion and terminal binomial sum",
+  "source_sha256": "4621190c6e646e6c2ad2a9a082779a517b7a7c9b4379a6041ab0bb425fdf272c",
+  "verifier_sha256": "086118cfefceb8f9c7a73f78b917d1661306669eaee1d370d1279f809d222e19",
+  "limitation": "Checks hypothetical binary math only, not real strategy edge or execution"
+}

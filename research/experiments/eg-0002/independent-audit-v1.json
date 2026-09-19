@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "runs": 168,
+  "maximum_absolute_error": 1.141309269314661e-13,
+  "result_sha256": "6020aa1b2370f6bf73ea849ed894d066500d52cbe9b444d30b67a1b679985d79",
+  "auditor_sha256": "a9e5759eaa260319875b0bfd9bfb0ee3e707eba623f38140d711990fee6943c4",
+  "scope": "Independent EG/mixture target update and scalar costed terminal wealth/fees/turnover; same synthetic paths; other metrics not independently certified.",
+  "capital_authorized": false
+}

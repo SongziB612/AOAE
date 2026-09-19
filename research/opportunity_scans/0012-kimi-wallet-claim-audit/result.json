@@ -1,0 +1,98 @@
+{
+  "authentication_used": false,
+  "capital_authorized": false,
+  "captured_at_utc": "2026-09-04T05:36:42.854009Z",
+  "captures": [
+    {
+      "byte_count": 2,
+      "endpoint": "/v1/leaderboard",
+      "http_date": "Fri, 04 Sep 2026 05:36:33 GMT",
+      "name": "leaderboard_day",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "byte_count": 2,
+      "endpoint": "/v1/leaderboard",
+      "http_date": "Fri, 04 Sep 2026 05:36:34 GMT",
+      "name": "leaderboard_week",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "byte_count": 2,
+      "endpoint": "/v1/leaderboard",
+      "http_date": "Fri, 04 Sep 2026 05:36:36 GMT",
+      "name": "leaderboard_month",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "byte_count": 249,
+      "endpoint": "/v1/leaderboard",
+      "http_date": "Fri, 04 Sep 2026 05:36:37 GMT",
+      "name": "leaderboard_all",
+      "sha256": "490d07109d7f77cd43c3385bdde479fe140bc016a26216c335bb365083f529da"
+    },
+    {
+      "byte_count": 109420,
+      "endpoint": "/trades",
+      "http_date": "Fri, 04 Sep 2026 05:36:39 GMT",
+      "name": "trades",
+      "sha256": "5588775a5ddb514992d944e53b297eddc828bdd1ffe5036db53eea65a6e8c1e7"
+    },
+    {
+      "byte_count": 16588,
+      "endpoint": "/closed-positions",
+      "http_date": "Fri, 04 Sep 2026 05:36:41 GMT",
+      "name": "closed_positions",
+      "sha256": "236b2e892e0ca60133e0f2b585ed2503286e129c49b6d438a13bf756d81522bf"
+    }
+  ],
+  "claim_assessment": {
+    "917_trade_or_loop_claim_supported": false,
+    "identity_or_jane_street_claim_supported": false,
+    "kimi_causation_supported": false,
+    "reason": "The wallet is unverified and has no linked X account; public data show 139 trade rows but cannot identify software, operator, model, agent loops, or employment history.",
+    "single_session_trading_supported": true,
+    "wallet_profit_supported": true
+  },
+  "closed_positions": {
+    "rows": 23,
+    "sum_realized_pnl": 945642.1127,
+    "sum_total_bought": 1370034.316
+  },
+  "decision": "investigate_market_timing_not_model_story",
+  "leaderboard": {
+    "all": {
+      "pnl": 917892.9911941001,
+      "profileImage": "",
+      "proxyWallet": "0x75973c667cec880353450be3a6f17c5da67b4421",
+      "rank": "216",
+      "userName": "0x75973C667CeC880353450BE3A6F17C5da67B4421-1784278069335",
+      "verifiedBadge": false,
+      "vol": 1595213.0983290002,
+      "xUsername": ""
+    },
+    "day": [],
+    "month": [],
+    "week": []
+  },
+  "orders_placed": 0,
+  "record_type": "exploratory_public_wallet_claim_audit",
+  "schema_version": 1,
+  "trades": {
+    "buy_rows": 139,
+    "elapsed_seconds": 11209,
+    "first_trade_utc": "2026-07-17T09:12:06Z",
+    "last_trade_utc": "2026-07-17T12:18:55Z",
+    "reported_cash_notional": 448888.27922599,
+    "rows": 139,
+    "seconds_before_contract_end": {
+      "maximum": 758.0,
+      "median": 104.0,
+      "minimum": 21.0,
+      "observations": 139
+    },
+    "sell_rows": 0,
+    "unique_markets": 24
+  },
+  "wallet": "0x75973c667cec880353450be3a6f17c5da67b4421"
+}

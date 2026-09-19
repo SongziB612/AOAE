@@ -1,0 +1,232 @@
+{
+  "authentication_used": false,
+  "capital_authorized": false,
+  "decision": "engineering_only_collect_more_websocket_markets",
+  "orders_placed": 0,
+  "record_type": "read_only_websocket_execution_delay_simulation",
+  "schema_version": 1,
+  "simulations": [
+    {
+      "actual_sample_delay_ms": 0,
+      "delay_ms": 0,
+      "execution_snapshot_timestamp_ms": 1788513179892,
+      "fee": 0.047040000000000005,
+      "net_pnl": 0.7529600000000002,
+      "price": 0.84,
+      "seconds_before_end": 120,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 486,
+      "delay_ms": 250,
+      "execution_snapshot_timestamp_ms": 1788513180378,
+      "fee": 0.047040000000000005,
+      "net_pnl": 0.7529600000000002,
+      "price": 0.84,
+      "seconds_before_end": 120,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 727,
+      "delay_ms": 500,
+      "execution_snapshot_timestamp_ms": 1788513180619,
+      "fee": 0.047040000000000005,
+      "net_pnl": 0.7529600000000002,
+      "price": 0.84,
+      "seconds_before_end": 120,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 1246,
+      "delay_ms": 1000,
+      "execution_snapshot_timestamp_ms": 1788513181138,
+      "fee": 0.047040000000000005,
+      "net_pnl": 0.7529600000000002,
+      "price": 0.84,
+      "seconds_before_end": 120,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 2036,
+      "delay_ms": 2000,
+      "execution_snapshot_timestamp_ms": 1788513181928,
+      "fee": 0.047040000000000005,
+      "net_pnl": 0.7529600000000002,
+      "price": 0.84,
+      "seconds_before_end": 120,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 0,
+      "delay_ms": 0,
+      "execution_snapshot_timestamp_ms": 1788513239875,
+      "fee": 0.06006,
+      "net_pnl": -3.9600600000000004,
+      "price": 0.78,
+      "seconds_before_end": 60,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 263,
+      "delay_ms": 250,
+      "execution_snapshot_timestamp_ms": 1788513240138,
+      "fee": 0.06006,
+      "net_pnl": -3.9600600000000004,
+      "price": 0.78,
+      "seconds_before_end": 60,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 525,
+      "delay_ms": 500,
+      "execution_snapshot_timestamp_ms": 1788513240400,
+      "fee": 0.061985,
+      "net_pnl": -3.911985,
+      "price": 0.77,
+      "seconds_before_end": 60,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 1035,
+      "delay_ms": 1000,
+      "execution_snapshot_timestamp_ms": 1788513240910,
+      "fee": 0.07206500000000002,
+      "net_pnl": -3.622065,
+      "price": 0.71,
+      "seconds_before_end": 60,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 2047,
+      "delay_ms": 2000,
+      "execution_snapshot_timestamp_ms": 1788513241922,
+      "fee": 0.079625,
+      "net_pnl": -3.329625,
+      "price": 0.65,
+      "seconds_before_end": 60,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 0,
+      "delay_ms": 0,
+      "execution_snapshot_timestamp_ms": 1788513269845,
+      "fee": 0.01018500000000001,
+      "net_pnl": 0.13981500000000013,
+      "price": 0.97,
+      "seconds_before_end": 30,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 259,
+      "delay_ms": 250,
+      "execution_snapshot_timestamp_ms": 1788513270104,
+      "fee": 0.01018500000000001,
+      "net_pnl": 0.13981500000000013,
+      "price": 0.97,
+      "seconds_before_end": 30,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 526,
+      "delay_ms": 500,
+      "execution_snapshot_timestamp_ms": 1788513270371,
+      "fee": 0.01018500000000001,
+      "net_pnl": 0.13981500000000013,
+      "price": 0.97,
+      "seconds_before_end": 30,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 1052,
+      "delay_ms": 1000,
+      "execution_snapshot_timestamp_ms": 1788513270897,
+      "fee": 0.01018500000000001,
+      "net_pnl": 0.13981500000000013,
+      "price": 0.97,
+      "seconds_before_end": 30,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "actual_sample_delay_ms": 2067,
+      "delay_ms": 2000,
+      "execution_snapshot_timestamp_ms": 1788513271912,
+      "fee": 0.01018500000000001,
+      "net_pnl": 0.13981500000000013,
+      "price": 0.97,
+      "seconds_before_end": 30,
+      "shares": 5.0,
+      "status": "SIMULATED_REPRICE"
+    },
+    {
+      "delay_ms": 0,
+      "seconds_before_end": 15,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 250,
+      "seconds_before_end": 15,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 500,
+      "seconds_before_end": 15,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 1000,
+      "seconds_before_end": 15,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 2000,
+      "seconds_before_end": 15,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 0,
+      "seconds_before_end": 5,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 250,
+      "seconds_before_end": 5,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 500,
+      "seconds_before_end": 5,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 1000,
+      "seconds_before_end": 5,
+      "status": "NO_INITIAL_QUOTE"
+    },
+    {
+      "delay_ms": 2000,
+      "seconds_before_end": 5,
+      "status": "NO_INITIAL_QUOTE"
+    }
+  ],
+  "source_sha256": "8e0fef78e6f9d674e356b1a74759ff84ae5e071287aba6e69dd39cbad8b5e085",
+  "summary": {
+    "deployable": false,
+    "net_pnl_sum_across_all_diagnostics": -14.31992,
+    "positive_reprices": 10,
+    "simulated_reprices": 15
+  }
+}

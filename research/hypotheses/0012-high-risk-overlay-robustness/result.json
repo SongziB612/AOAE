@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0012-high-risk-overlay-robustness",
+  "record_type": "post_discovery_robustness_audit",
+  "inputs": {
+    "spec_sha256": "364a945e79badb5e40d2643dbad02cb2476301465a482b9bfcfb0f1002d1840d",
+    "strategy_spec_sha256": "834b45c371a31f908d28f9e60f3bfd901fb128f7c3b2be856997b89b361547e1",
+    "strategy_result_sha256": "bd57d304aa8a693f0e551e3dd7f3c8c4ea191b381d94068a4915a1f1b82bff79",
+    "price_sha256": {
+      "510300": "b585f1eb4bc8711fe43e0a7637913ea09a745225b7716f8c980d9263ed52066a",
+      "510500": "c2464afdbc996e39fe64118f4521c7f87112a8b85b5ce4408206947d71a3e5f4",
+      "159915": "db05d10e2e184fafa3e124a287034c378a0ca6cc04c00fa3f82ed653f73435bc",
+      "513500": "3e869c6c2f7b78bade5c7334afa0c88698c94283514a9863aa0349ddd7eaa55f",
+      "518880": "85ec4f2f19b9b2098fff16888e2d712d8ee7c7d9b1cf075310c70ac68eb2b326",
+      "511010": "90e677a00b701565fd1a9d8a52fbdc9afb566bea6ab7cff331acbce9d3ae6948"
+    }
+  },
+  "full_period_cost_stress": [
+    {
+      "period": [
+        "2022-01-01",
+        "2026-08-31"
+      ],
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.59945239,
+        "cagr": 0.10597838,
+        "annualized_volatility": 0.11451751,
+        "sharpe_zero_rate": 0.97394022,
+        "max_drawdown": -0.17655671
+      },
+      "benchmark": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.01513911,
+        "cagr": 0.00322782,
+        "annualized_volatility": 0.18611622,
+        "sharpe_zero_rate": 0.1109331,
+        "max_drawdown": -0.33771217
+      },
+      "maximum_loss_from_initial_cny": 1859.95,
+      "orders": 95,
+      "cost_cny": 542.08,
+      "cash_never_negative": true,
+      "cost_model": {
+        "one_way_cost_rate": 0.0015,
+        "minimum_cost_cny": 5
+      }
+    },
+    {
+      "period": [
+        "2022-01-01",
+        "2026-08-31"
+      ],
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.52987575,
+        "cagr": 0.09547893,
+        "annualized_volatility": 0.11546016,
+        "sharpe_zero_rate": 0.88085149,
+        "max_drawdown": -0.1802072
+      },
+      "benchmark": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.01368822,
+        "cagr": 0.00292012,
+        "annualized_volatility": 0.18645731,
+        "sharpe_zero_rate": 0.10935623,
+        "max_drawdown": -0.33820723
+      },
+      "maximum_loss_from_initial_cny": 1906.31,
+      "orders": 93,
+      "cost_cny": 1055.04,
+      "cash_never_negative": true,
+      "cost_model": {
+        "one_way_cost_rate": 0.003,
+        "minimum_cost_cny": 10
+      }
+    },
+    {
+      "period": [
+        "2022-01-01",
+        "2026-08-31"
+      ],
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.4418256,
+        "cagr": 0.08163996,
+        "annualized_volatility": 0.1141907,
+        "sharpe_zero_rate": 0.77334218,
+        "max_drawdown": -0.18721026
+      },
+      "benchmark": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.0117537,
+        "cagr": 0.00250931,
+        "annualized_volatility": 0.18691771,
+        "sharpe_zero_rate": 0.10726231,
+        "max_drawdown": -0.33886957
+      },
+      "maximum_loss_from_initial_cny": 1989.02,
+      "orders": 97,
+      "cost_cny": 1689.56,
+      "cash_never_negative": true,
+      "cost_model": {
+        "one_way_cost_rate": 0.005,
+        "minimum_cost_cny": 15
+      }
+    }
+  ],
+  "calendar_windows": [
+    {
+      "period": [
+        "2022-01-01",
+        "2022-12-31"
+      ],
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2022-12-30",
+        "observations": 241,
+        "total_return": -0.16382668,
+        "cagr": -0.16475349,
+        "annualized_volatility": 0.10895733,
+        "sharpe_zero_rate": -1.66187047,
+        "max_drawdown": -0.17655671
+      },
+      "benchmark": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2022-12-30",
+        "observations": 241,
+        "total_return": -0.21397089,
+        "cagr": -0.21514302,
+        "annualized_volatility": 0.21097533,
+        "sharpe_zero_rate": -1.08748999,
+        "max_drawdown": -0.28601721
+      },
+      "maximum_loss_from_initial_cny": 1859.95,
+      "orders": 16,
+      "cost_cny": 86.97,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2023-01-01",
+        "2023-12-31"
+      ],
+      "strategy": {
+        "start": "2023-01-01",
+        "first_market_date": "2023-01-03",
+        "end": "2023-12-29",
+        "observations": 242,
+        "total_return": 0.09281219,
+        "cagr": 0.09368333,
+        "annualized_volatility": 0.07241243,
+        "sharpe_zero_rate": 1.31262148,
+        "max_drawdown": -0.0424233
+      },
+      "benchmark": {
+        "start": "2023-01-01",
+        "first_market_date": "2023-01-03",
+        "end": "2023-12-29",
+        "observations": 242,
+        "total_return": -0.10243517,
+        "cagr": -0.1033056,
+        "annualized_volatility": 0.14010144,
+        "sharpe_zero_rate": -0.73346105,
+        "max_drawdown": -0.207428
+      },
+      "maximum_loss_from_initial_cny": 61.46,
+      "orders": 18,
+      "cost_cny": 102.58,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2024-01-01",
+        "2024-12-31"
+      ],
+      "strategy": {
+        "start": "2024-01-01",
+        "first_market_date": "2024-01-02",
+        "end": "2024-12-31",
+        "observations": 242,
+        "total_return": 0.28493791,
+        "cagr": 0.28515857,
+        "annualized_volatility": 0.11443002,
+        "sharpe_zero_rate": 2.3398933,
+        "max_drawdown": -0.08044779
+      },
+      "benchmark": {
+        "start": "2024-01-01",
+        "first_market_date": "2024-01-02",
+        "end": "2024-12-31",
+        "observations": 242,
+        "total_return": 0.1752501,
+        "cagr": 0.17538009,
+        "annualized_volatility": 0.23183529,
+        "sharpe_zero_rate": 0.84007671,
+        "max_drawdown": -0.12745211
+      },
+      "maximum_loss_from_initial_cny": 53.32,
+      "orders": 21,
+      "cost_cny": 109.62,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2025-01-01",
+        "2025-12-31"
+      ],
+      "strategy": {
+        "start": "2025-01-01",
+        "first_market_date": "2025-01-02",
+        "end": "2025-12-31",
+        "observations": 243,
+        "total_return": 0.30848729,
+        "cagr": 0.309696,
+        "annualized_volatility": 0.13075105,
+        "sharpe_zero_rate": 2.19933936,
+        "max_drawdown": -0.06029344
+      },
+      "benchmark": {
+        "start": "2025-01-01",
+        "first_market_date": "2025-01-02",
+        "end": "2025-12-31",
+        "observations": 243,
+        "total_return": 0.21197449,
+        "cagr": 0.2127749,
+        "annualized_volatility": 0.1552136,
+        "sharpe_zero_rate": 1.36302958,
+        "max_drawdown": -0.10535852
+      },
+      "maximum_loss_from_initial_cny": 332.28,
+      "orders": 29,
+      "cost_cny": 176.14,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2026-01-01",
+        "2026-08-31"
+      ],
+      "strategy": {
+        "start": "2026-01-01",
+        "first_market_date": "2026-01-05",
+        "end": "2026-08-31",
+        "observations": 160,
+        "total_return": 0.05305,
+        "cagr": 0.08114068,
+        "annualized_volatility": 0.13181678,
+        "sharpe_zero_rate": 0.68348649,
+        "max_drawdown": -0.07093519
+      },
+      "benchmark": {
+        "start": "2026-01-01",
+        "first_market_date": "2026-01-05",
+        "end": "2026-08-31",
+        "observations": 160,
+        "total_return": 0.0037821,
+        "cagr": 0.00571381,
+        "annualized_volatility": 0.18638263,
+        "sharpe_zero_rate": 0.12474042,
+        "max_drawdown": -0.09680067
+      },
+      "maximum_loss_from_initial_cny": 0.0,
+      "orders": 13,
+      "cost_cny": 65.0,
+      "cash_never_negative": true
+    }
+  ],
+  "rolling_windows": [
+    {
+      "period": [
+        "2022-01-01",
+        "2023-06-30"
+      ],
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2023-06-30",
+        "observations": 359,
+        "total_return": -0.13863111,
+        "cagr": -0.09517444,
+        "annualized_volatility": 0.09860501,
+        "sharpe_zero_rate": -1.01274369,
+        "max_drawdown": -0.17655671
+      },
+      "benchmark": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2023-06-30",
+        "observations": 359,
+        "total_return": -0.21229089,
+        "cagr": -0.147791,
+        "annualized_volatility": 0.18986305,
+        "sharpe_zero_rate": -0.78718749,
+        "max_drawdown": -0.28601721
+      },
+      "maximum_loss_from_initial_cny": 1859.95,
+      "orders": 22,
+      "cost_cny": 121.61,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2022-04-01",
+        "2023-09-30"
+      ],
+      "strategy": {
+        "start": "2022-04-01",
+        "first_market_date": "2022-04-01",
+        "end": "2023-09-28",
+        "observations": 366,
+        "total_return": -0.03805684,
+        "cagr": -0.02566789,
+        "annualized_volatility": 0.0716358,
+        "sharpe_zero_rate": -0.33713324,
+        "max_drawdown": -0.09060899
+      },
+      "benchmark": {
+        "start": "2022-04-01",
+        "first_market_date": "2022-04-01",
+        "end": "2023-09-28",
+        "observations": 366,
+        "total_return": -0.09119112,
+        "cagr": -0.06207309,
+        "annualized_volatility": 0.17310981,
+        "sharpe_zero_rate": -0.29404979,
+        "max_drawdown": -0.22087523
+      },
+      "maximum_loss_from_initial_cny": 864.15,
+      "orders": 21,
+      "cost_cny": 121.57,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2022-07-01",
+        "2023-12-31"
+      ],
+      "strategy": {
+        "start": "2022-07-01",
+        "first_market_date": "2022-07-01",
+        "end": "2023-12-29",
+        "observations": 367,
+        "total_return": 0.09262902,
+        "cagr": 0.06105175,
+        "annualized_volatility": 0.06247232,
+        "sharpe_zero_rate": 1.00494807,
+        "max_drawdown": -0.0424306
+      },
+      "benchmark": {
+        "start": "2022-07-01",
+        "first_market_date": "2022-07-01",
+        "end": "2023-12-29",
+        "observations": 367,
+        "total_return": -0.22155072,
+        "cagr": -0.15425806,
+        "annualized_volatility": 0.15379581,
+        "sharpe_zero_rate": -1.04139733,
+        "max_drawdown": -0.25054334
+      },
+      "maximum_loss_from_initial_cny": 266.11,
+      "orders": 20,
+      "cost_cny": 117.42,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2022-10-01",
+        "2024-03-31"
+      ],
+      "strategy": {
+        "start": "2022-10-01",
+        "first_market_date": "2022-10-10",
+        "end": "2024-03-29",
+        "observations": 360,
+        "total_return": 0.2266322,
+        "cagr": 0.14671343,
+        "annualized_volatility": 0.06895167,
+        "sharpe_zero_rate": 2.10870784,
+        "max_drawdown": -0.04262775
+      },
+      "benchmark": {
+        "start": "2022-10-01",
+        "first_market_date": "2022-10-10",
+        "end": "2024-03-29",
+        "observations": 360,
+        "total_return": -0.05971966,
+        "cagr": -0.0404281,
+        "annualized_volatility": 0.1621991,
+        "sharpe_zero_rate": -0.18519007,
+        "max_drawdown": -0.23890262
+      },
+      "maximum_loss_from_initial_cny": 107.66,
+      "orders": 25,
+      "cost_cny": 142.48,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2023-01-01",
+        "2024-06-30"
+      ],
+      "strategy": {
+        "start": "2023-01-01",
+        "first_market_date": "2023-01-03",
+        "end": "2024-06-28",
+        "observations": 359,
+        "total_return": 0.30012219,
+        "cagr": 0.19269867,
+        "annualized_volatility": 0.08351057,
+        "sharpe_zero_rate": 2.24848285,
+        "max_drawdown": -0.04573951
+      },
+      "benchmark": {
+        "start": "2023-01-01",
+        "first_market_date": "2023-01-03",
+        "end": "2024-06-28",
+        "observations": 359,
+        "total_return": -0.08704517,
+        "cagr": -0.05931321,
+        "annualized_volatility": 0.14090423,
+        "sharpe_zero_rate": -0.3835417,
+        "max_drawdown": -0.23521739
+      },
+      "maximum_loss_from_initial_cny": 61.46,
+      "orders": 29,
+      "cost_cny": 157.58,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2023-04-01",
+        "2024-09-30"
+      ],
+      "strategy": {
+        "start": "2023-04-01",
+        "first_market_date": "2023-04-03",
+        "end": "2024-09-30",
+        "observations": 364,
+        "total_return": 0.27347185,
+        "cagr": 0.17483516,
+        "annualized_volatility": 0.09984441,
+        "sharpe_zero_rate": 1.7267695,
+        "max_drawdown": -0.0798526
+      },
+      "benchmark": {
+        "start": "2023-04-01",
+        "first_market_date": "2023-04-03",
+        "end": "2024-09-30",
+        "observations": 364,
+        "total_return": 0.0640497,
+        "cagr": 0.04224665,
+        "annualized_volatility": 0.17867245,
+        "sharpe_zero_rate": 0.32785233,
+        "max_drawdown": -0.22701338
+      },
+      "maximum_loss_from_initial_cny": 256.48,
+      "orders": 28,
+      "cost_cny": 148.38,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2023-07-01",
+        "2024-12-31"
+      ],
+      "strategy": {
+        "start": "2023-07-01",
+        "first_market_date": "2023-07-03",
+        "end": "2024-12-31",
+        "observations": 366,
+        "total_return": 0.35561986,
+        "cagr": 0.22436648,
+        "annualized_volatility": 0.10240822,
+        "sharpe_zero_rate": 2.09772242,
+        "max_drawdown": -0.07914367
+      },
+      "benchmark": {
+        "start": "2023-07-01",
+        "first_market_date": "2023-07-03",
+        "end": "2024-12-31",
+        "observations": 366,
+        "total_return": 0.05280795,
+        "cagr": 0.03482975,
+        "annualized_volatility": 0.20666084,
+        "sharpe_zero_rate": 0.27374166,
+        "max_drawdown": -0.21448951
+      },
+      "maximum_loss_from_initial_cny": 140.2,
+      "orders": 32,
+      "cost_cny": 164.5,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2023-10-01",
+        "2025-03-31"
+      ],
+      "strategy": {
+        "start": "2023-10-01",
+        "first_market_date": "2023-10-09",
+        "end": "2025-03-31",
+        "observations": 359,
+        "total_return": 0.41395898,
+        "cagr": 0.26023529,
+        "annualized_volatility": 0.10602237,
+        "sharpe_zero_rate": 2.34755037,
+        "max_drawdown": -0.07984348
+      },
+      "benchmark": {
+        "start": "2023-10-01",
+        "first_market_date": "2023-10-09",
+        "end": "2025-03-31",
+        "observations": 359,
+        "total_return": 0.08141966,
+        "cagr": 0.0536566,
+        "annualized_volatility": 0.20739345,
+        "sharpe_zero_rate": 0.36762669,
+        "max_drawdown": -0.14356687
+      },
+      "maximum_loss_from_initial_cny": 33.54,
+      "orders": 32,
+      "cost_cny": 183.61,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2024-01-01",
+        "2025-06-30"
+      ],
+      "strategy": {
+        "start": "2024-01-01",
+        "first_market_date": "2024-01-02",
+        "end": "2025-06-30",
+        "observations": 359,
+        "total_return": 0.36727854,
+        "cagr": 0.23277086,
+        "annualized_volatility": 0.12668618,
+        "sharpe_zero_rate": 1.79785257,
+        "max_drawdown": -0.08044779
+      },
+      "benchmark": {
+        "start": "2024-01-01",
+        "first_market_date": "2024-01-02",
+        "end": "2025-06-30",
+        "observations": 359,
+        "total_return": 0.1896501,
+        "cagr": 0.12318724,
+        "annualized_volatility": 0.21088929,
+        "sharpe_zero_rate": 0.68298274,
+        "max_drawdown": -0.16645385
+      },
+      "maximum_loss_from_initial_cny": 53.32,
+      "orders": 37,
+      "cost_cny": 214.42,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2024-04-01",
+        "2025-09-30"
+      ],
+      "strategy": {
+        "start": "2024-04-01",
+        "first_market_date": "2024-04-01",
+        "end": "2025-09-30",
+        "observations": 367,
+        "total_return": 0.46799216,
+        "cagr": 0.29219172,
+        "annualized_volatility": 0.13051185,
+        "sharpe_zero_rate": 2.08646614,
+        "max_drawdown": -0.07817186
+      },
+      "benchmark": {
+        "start": "2024-04-01",
+        "first_market_date": "2024-04-01",
+        "end": "2025-09-30",
+        "observations": 367,
+        "total_return": 0.37236189,
+        "cagr": 0.23535667,
+        "annualized_volatility": 0.20661175,
+        "sharpe_zero_rate": 1.15511548,
+        "max_drawdown": -0.16615367
+      },
+      "maximum_loss_from_initial_cny": 248.99,
+      "orders": 35,
+      "cost_cny": 211.67,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2024-07-01",
+        "2025-12-31"
+      ],
+      "strategy": {
+        "start": "2024-07-01",
+        "first_market_date": "2024-07-01",
+        "end": "2025-12-31",
+        "observations": 368,
+        "total_return": 0.41790847,
+        "cagr": 0.26204761,
+        "annualized_volatility": 0.13082879,
+        "sharpe_zero_rate": 1.89431156,
+        "max_drawdown": -0.07904359
+      },
+      "benchmark": {
+        "start": "2024-07-01",
+        "first_market_date": "2024-07-01",
+        "end": "2025-12-31",
+        "observations": 368,
+        "total_return": 0.4047258,
+        "cagr": 0.25421482,
+        "annualized_volatility": 0.21276504,
+        "sharpe_zero_rate": 1.20008813,
+        "max_drawdown": -0.16857026
+      },
+      "maximum_loss_from_initial_cny": 371.41,
+      "orders": 41,
+      "cost_cny": 249.41,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2024-10-01",
+        "2026-03-31"
+      ],
+      "strategy": {
+        "start": "2024-10-01",
+        "first_market_date": "2024-10-08",
+        "end": "2026-03-31",
+        "observations": 360,
+        "total_return": 0.44023349,
+        "cagr": 0.2763937,
+        "annualized_volatility": 0.134375,
+        "sharpe_zero_rate": 1.96882117,
+        "max_drawdown": -0.06113799
+      },
+      "benchmark": {
+        "start": "2024-10-01",
+        "first_market_date": "2024-10-08",
+        "end": "2026-03-31",
+        "observations": 360,
+        "total_return": 0.00249315,
+        "cagr": 0.00166712,
+        "annualized_volatility": 0.18600949,
+        "sharpe_zero_rate": 0.10369878,
+        "max_drawdown": -0.16694658
+      },
+      "maximum_loss_from_initial_cny": 0.0,
+      "orders": 40,
+      "cost_cny": 241.56,
+      "cash_never_negative": true
+    },
+    {
+      "period": [
+        "2025-01-01",
+        "2026-06-30"
+      ],
+      "strategy": {
+        "start": "2025-01-01",
+        "first_market_date": "2025-01-02",
+        "end": "2026-06-30",
+        "observations": 359,
+        "total_return": 0.45115452,
+        "cagr": 0.28344666,
+        "annualized_volatility": 0.13369248,
+        "sharpe_zero_rate": 2.0232135,
+        "max_drawdown": -0.06135524
+      },
+      "benchmark": {
+        "start": "2025-01-01",
+        "first_market_date": "2025-01-02",
+        "end": "2026-06-30",
+        "observations": 359,
+        "total_return": 0.31311449,
+        "cagr": 0.20028518,
+        "annualized_volatility": 0.16204306,
+        "sharpe_zero_rate": 1.2617584,
+        "max_drawdown": -0.10535852
+      },
+      "maximum_loss_from_initial_cny": 332.28,
+      "orders": 40,
+      "cost_cny": 232.47,
+      "cash_never_negative": true
+    }
+  ],
+  "summary": {
+    "positive_calendar_windows": 4,
+    "positive_rolling_windows": 11,
+    "rolling_windows_beating_benchmark": 13,
+    "worst_rolling_loss_from_initial_cny": 1859.95
+  },
+  "checks": {
+    "all_full_period_cost_scenarios_positive": true,
+    "all_full_period_cost_scenarios_within_drawdown_limit": true,
+    "minimum_positive_calendar_windows": true,
+    "minimum_positive_rolling_windows": true,
+    "minimum_rolling_windows_beating_executable_benchmark": true,
+    "maximum_rolling_loss_from_initial_cny": true,
+    "cash_never_negative": true
+  },
+  "result": "PASS",
+  "interpretation_limit": "All windows reuse data available during or after strategy discovery. Passing supports robustness to slicing and costs, not independent future profitability.",
+  "capital_authorized": false,
+  "orders_authorized": false
+}

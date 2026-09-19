@@ -1,0 +1,21 @@
+{
+  "experiment_id": "UP-CN-0001",
+  "market_confirmation": "2026-09-07 user confirmed existing Huatai mainland ETF account; research only",
+  "assets": ["510300", "510500", "159915", "513500", "518880"],
+  "selection": "Retain previous five-risk-ETF baseline universe, not selected using this comparison; historical selection bias remains.",
+  "data_dir": "data/audit/etf-accounting-2026-09-05-v4",
+  "reference": "research/capital_readiness/300k-accounting-replay-v4.json",
+  "initial_cny": 300000,
+  "pause_loss_cny": 100000,
+  "capital_interpretation": "Previously discussed capital and loss budget reused as research scenarios, not renewed funding or investor mandate.",
+  "commission_each_side": 0.003,
+  "slippage_bps": [30, 100],
+  "fee_basis": "Existing user screenshot scenario, minimum CNY 5 in shared engine. Personal negotiated fee unknown; linked broker-profile page is investor education, not verified fee schedule.",
+  "grid_units": 4,
+  "years": [2022, 2023, 2024, 2025],
+  "arms": ["up_monthly", "equal_monthly", "equal_buy_hold"],
+  "review_rule": "Report all paired annual differences and drawdowns; descriptive reused historical evidence only. No significance, clean OOS, promotion or future profit claim.",
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false
+}

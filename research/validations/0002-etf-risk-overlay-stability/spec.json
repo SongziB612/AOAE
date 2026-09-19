@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "validation_id": "VAL-0002-etf-risk-overlay-stability",
+  "title": "Independent VectorBT and stability audit of the volatility-controlled ETF overlay",
+  "frozen_inputs": {
+    "overlay_spec_path": "research/hypotheses/0006-volatility-controlled-etf-overlay/spec.json",
+    "overlay_spec_sha256": "2d2a6f59a7879d6ebfcb2dbcf6603422147f473a0b580eecf7abaceaf44e7999",
+    "overlay_result_path": "research/hypotheses/0006-volatility-controlled-etf-overlay/result.json",
+    "overlay_result_sha256": "b75b7be5559f24a8244b7988904fad63b66e0462658c1139e7aa9e2198242962",
+    "raw_price_hashes_source": "overlay_result.inputs.price_sha256"
+  },
+  "external_engine": {
+    "name": "vectorbt",
+    "commit": "34b6d5935e3ea3eccd549e2592bc0f455b8045f5",
+    "independent_reimplementation_of_weights": true
+  },
+  "tests": {
+    "full_period_reproduction": {
+      "maximum_total_return_difference": 0.005,
+      "maximum_max_drawdown_difference": 0.005
+    },
+    "rolling_windows": {
+      "length_common_observations": 504,
+      "step_common_observations": 126,
+      "minimum_fraction_positive_return": 0.8,
+      "minimum_fraction_beating_champion_return": 0.6,
+      "minimum_fraction_lower_drawdown_than_champion": 0.8
+    },
+    "cost_stress": {
+      "one_way_cost_bps": 50,
+      "minimum_cagr": 0.0,
+      "drawdown_floor": -0.25
+    },
+    "leave_one_risk_asset_out": {
+      "assets": ["510300", "510500", "159915", "513500", "518880"],
+      "minimum_variants_with_positive_cagr": 4,
+      "minimum_variants_beating_benchmark_cagr": 3,
+      "drawdown_floor": -0.35
+    }
+  },
+  "decision_rule": "all_declared_checks_must_pass",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "next_step_if_pass": "retain as a separate prospective shadow arm without replacing the champion",
+  "next_step_if_fail": "remove from prospective contest without tuning on these diagnostics"
+}

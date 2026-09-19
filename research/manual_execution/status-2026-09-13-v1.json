@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-13T13:59:32.714936+00:00",
+  "status": "WAIT_NO_SIGNAL",
+  "classification": "PAPER_REHEARSAL_ONLY_NOT_A_LIVE_ORDER",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false,
+  "legs": [],
+  "request_sha256": "5634b2c422982a5bcd81585d9cd6767c2ee1ba8d2ca5eabeaf560e2da386a68b",
+  "reason": "No supplied admitted signal; never infer a trade from an old backtest.",
+  "ticket_id": "381c76080d7b4873bd204977d001f44051825a171bc9795c32b177e731dac979"
+}

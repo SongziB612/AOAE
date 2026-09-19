@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checked_costed_runs": 144,
+  "maximum_accounting_error": 2.834172241512889e-16,
+  "scope": "Independent arithmetic/finite-mixture identities, oracle labelling and synthetic participation only; not economic OOS validation.",
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "result_sha256": "aaa7368ca7b3a8e8fc040aa0c98f0b7f0c902615e04b7afb903e9ba03d268270"
+}

@@ -1,0 +1,29 @@
+{
+  "engineering_status": "FAIL",
+  "failure": "RuntimeError: tests failed; see retained log",
+  "checks": [
+    {
+      "name": "dependencies",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "name": "tests",
+      "passed": false,
+      "returncode": 1
+    }
+  ],
+  "artifacts_sha256": {
+    "dependencies.log": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+    "tests.log": "ff72917500671cc9f58af6878d0da8223a9d914857f3c4942bb1234b82a89c0c"
+  },
+  "protocol_sha256": "0f083c1c0ddb97f710e8602d907c52e6e565a437172897cba393f60ec46a3420",
+  "verifier_sha256": "76a5354acb7191ea76200c326712d2e96a1c04fc5134f35f74d7ee73192aa3ee",
+  "preflight_source_sha256": "62edc0c03d25ae8e981731e14d65ce95adc30b31596968c85ccecf412b2e7a1f",
+  "real_data_preflight": null,
+  "research_verdict": "RESEARCH",
+  "capital_readiness": "NOT_READY",
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "interpretation": "Engineering closure only; no real-data profitability validated or new final holdout accessed."
+}

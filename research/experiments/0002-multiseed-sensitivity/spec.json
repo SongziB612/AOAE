@@ -1,0 +1,65 @@
+{
+  "acceptance": {
+    "confidence_level": 0.95,
+    "minimum_seed_pass_rate": 0.9,
+    "minimum_wilson_lower_bound": 0.8
+  },
+  "base_experiment": {
+    "canonical_sha256": "dd14ab88a8b6034d67ba0983f2304ed27f0e99d7f0a85b81499a978451d06c89",
+    "spec_path": "../0001-synthetic-mean-reversion/spec.json"
+  },
+  "bias_controls": [
+    "All 32 seeds are fixed in this specification before execution.",
+    "Every declared seed is reported; no seed may be discarded or selected as representative.",
+    "The base experiment is bound by a canonical content digest.",
+    "Acceptance thresholds are fixed before any multi-seed result is generated.",
+    "The strategy, split, costs, and original per-seed decision rule remain unchanged."
+  ],
+  "capital_authorized": false,
+  "confidence": "infrastructure_sensitivity_only",
+  "experiment_id": "EXP-0002-multiseed-sensitivity",
+  "failure_modes": [
+    "Multiple seeds explore sampling variability but do not create independent real market regimes.",
+    "The same deliberately simplified AR(1) process is used for every seed.",
+    "The Wilson interval treats seed outcomes as Bernoulli trials and does not repair model misspecification.",
+    "Passing this gate remains evidence about research infrastructure, not tradable alpha."
+  ],
+  "hypothesis": "The unchanged EXP-0001 rule will pass on at least 90% of 32 preregistered seeds, and the two-sided 95% Wilson lower confidence bound for its seed-level pass probability will be at least 80%.",
+  "next_experiment": "Introduce a negative control with no injected autocorrelation and require the multi-seed gate to reject it before considering any real market dataset.",
+  "schema_version": 1,
+  "seeds": [
+    20260903,
+    20260904,
+    20260905,
+    20260906,
+    20260907,
+    20260908,
+    20260909,
+    20260910,
+    20260911,
+    20260912,
+    20260913,
+    20260914,
+    20260915,
+    20260916,
+    20260917,
+    20260918,
+    20260919,
+    20260920,
+    20260921,
+    20260922,
+    20260923,
+    20260924,
+    20260925,
+    20260926,
+    20260927,
+    20260928,
+    20260929,
+    20260930,
+    20260931,
+    20260932,
+    20260933,
+    20260934
+  ],
+  "title": "Preregistered multi-seed sensitivity gate"
+}

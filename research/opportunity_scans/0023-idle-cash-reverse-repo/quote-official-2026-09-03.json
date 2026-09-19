@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "record_type": "official_reverse_repo_reference_rate_snapshot",
+  "captured_at": "2026-09-04T23:55:00+08:00",
+  "source": {
+    "provider": "Shanghai Stock Exchange",
+    "url": "https://bond.sse.com.cn/data/standard/repocurve/onerepo/",
+    "classification": "official_historical_reference_rate_not_proof_of_broker_executability"
+  },
+  "quotes": {
+    "GC001": {
+      "代码": "204001",
+      "名称": "GC001",
+      "交易日期": "2026-09-03",
+      "最新价": 1.408,
+      "五日均值": 1.38
+    }
+  },
+  "orders_placed": 0,
+  "capital_authorized": false
+}

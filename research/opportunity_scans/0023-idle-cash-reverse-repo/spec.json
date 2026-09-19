@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "record_type": "preregistered_idle_cash_opportunity_scan",
+  "hypothesis": "A regulated exchange reverse-repurchase or broker cash-sweep facility can improve the return on the ETF strategy's idle cash after all fees without impairing the next monthly rebalance.",
+  "account_cny": 10000,
+  "minimum_test_notional_cny": 1000,
+  "comparison_baseline": "cash earning zero in the existing simulator",
+  "required_inputs": [
+    "selected licensed broker and written fee schedule",
+    "product eligibility for the user",
+    "actual executable yield quote",
+    "settlement and next-day purchasing-power rules",
+    "next ETF rebalance liquidity requirement"
+  ],
+  "decision_rule": {
+    "incremental_net_cny_must_be_positive": true,
+    "must_not_delay_or_reduce_required_ETF_rebalance": true,
+    "principal_and_counterparty_risks_must_be_documented": true
+  },
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

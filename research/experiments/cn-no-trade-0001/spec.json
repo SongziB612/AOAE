@@ -1,0 +1,17 @@
+{
+  "experiment_id": "CN-NO-TRADE-0001",
+  "created_on": "2026-09-12",
+  "status": "PREDECLARED_BEFORE_THIS_CHALLENGER_RUN_NOT_CLEAN_PREREGISTRATION",
+  "hypothesis": "Suppressing small drift-only rebalances can reduce transaction cost without materially degrading net return or risk.",
+  "mechanism": "Avoid paying spread and commission on weak portfolio changes; no new alpha forecast is assumed.",
+  "reference": "research/experiments/cn-value-0001/result-v1.json",
+  "bands": [0.0, 0.025, 0.05, 0.1],
+  "primary_band": 0.05,
+  "policy": "Skip monthly rebalance only if selected assets unchanged, maximum prior-close weight deviation <= band, and desired gross exposure has not decreased from the previous monthly target. Never suppress pause exits, new entries or removals.",
+  "evaluation": "Retain all four years and all four cost scenarios. No best-band selection. Primary band must improve net PnL in at least three of four years in every cost scenario and worsen drawdown by no more than one percentage point in any scenario-year to remain a research candidate.",
+  "known_search_history": "Existing source years were repeatedly examined; all four bands count as this batch's explicit variants, including zero-band control. Total family search count remains unknown.",
+  "clean_oos_observations": 0,
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "source_methods": ["https://arxiv.org/html/2411.07949v2", "https://www.cvxportfolio.com/en/stable/costs.html", "https://skfolio.org/auto_examples/mean_risk/plot_6_transaction_costs.html"]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "provider": "AKShare fund_etf_hist_em backed by Eastmoney",
+  "adapter_version": "1.18.94",
+  "adjustment": "qfq",
+  "files": {
+    "510300": {
+      "rows": 2834,
+      "first_date": "2015-01-05",
+      "last_date": "2026-08-31",
+      "sha256": "b585f1eb4bc8711fe43e0a7637913ea09a745225b7716f8c980d9263ed52066a"
+    },
+    "510500": {
+      "rows": 2832,
+      "first_date": "2015-01-05",
+      "last_date": "2026-08-31",
+      "sha256": "c2464afdbc996e39fe64118f4521c7f87112a8b85b5ce4408206947d71a3e5f4"
+    },
+    "159915": {
+      "rows": 2833,
+      "first_date": "2015-01-05",
+      "last_date": "2026-08-31",
+      "sha256": "db05d10e2e184fafa3e124a287034c378a0ca6cc04c00fa3f82ed653f73435bc"
+    },
+    "513500": {
+      "rows": 2833,
+      "first_date": "2015-01-05",
+      "last_date": "2026-08-31",
+      "sha256": "3e869c6c2f7b78bade5c7334afa0c88698c94283514a9863aa0349ddd7eaa55f"
+    },
+    "518880": {
+      "rows": 2834,
+      "first_date": "2015-01-05",
+      "last_date": "2026-08-31",
+      "sha256": "85ec4f2f19b9b2098fff16888e2d712d8ee7c7d9b1cf075310c70ac68eb2b326"
+    },
+    "511010": {
+      "rows": 2834,
+      "first_date": "2015-01-05",
+      "last_date": "2026-08-31",
+      "sha256": "90e677a00b701565fd1a9d8a52fbdc9afb566bea6ab7cff331acbce9d3ae6948"
+    }
+  },
+  "checks": {
+    "all_symbols_present": true,
+    "dates_unique": true,
+    "required_values_positive": true
+  },
+  "redistribution_authorized": false
+}

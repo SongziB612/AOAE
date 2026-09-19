@@ -1,0 +1,65 @@
+{
+  "capital_authorized": false,
+  "confidence": "single_holdout_one_step_temporal_structure_only",
+  "data": {
+    "first_date": "2022-01-03",
+    "last_date": "2022-12-30",
+    "missing_required_rows": 0,
+    "rows": 249,
+    "snapshot_bytes": 343983,
+    "snapshot_sha256": "5c23dd00388b2d21455870b30a321397416d1c061a7d94f1bee85239811d3b24",
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2022"
+  },
+  "decision": "temporal_structure_not_supported",
+  "evidence": {
+    "lag1_pearson_correlation": 0.001996332761,
+    "mean_spread_change_bps": 0.556451612903,
+    "opposite_nonzero_direction_rate": 0.521126760563
+  },
+  "failure_modes": [
+    "Daily mean reversion documented for yield factors need not apply to the 2s10s spread change or to this regime.",
+    "A one-year holdout may not represent other monetary-policy, inflation, or volatility regimes.",
+    "CMT values are theoretical constant-maturity par yields rather than executable transaction prices.",
+    "Statistical reversal can be too small, unstable, or costly to trade even if the threshold passes.",
+    "Overlapping lag pairs create serial dependence, so this gate is an effect-size screen rather than an inference claim."
+  ],
+  "hypothesis": "On the untouched 2022 Treasury holdout, consecutive changes in the 2-year-minus-10-year CMT spread will have lag-1 Pearson correlation at or below -0.10.",
+  "hypothesis_id": "HYP-0003-treasury-slope-change-reversal",
+  "method": {
+    "benchmark_correlation": 0.0,
+    "bias_controls": [
+      "The 2022 source snapshot must not enter the project before this specification is committed.",
+      "The entire 2022 period is a single untouched holdout; no training or parameter selection is performed.",
+      "Only one decision metric and one threshold are permitted.",
+      "The predictor uses only the immediately preceding published observation; no same-observation or future value enters it.",
+      "All changes use consecutive published observations with no calendar interpolation or missing-value imputation.",
+      "The result cannot be represented as a strategy, net return, or capital authorization."
+    ],
+    "imputation": "none",
+    "lag_pairs": 247,
+    "maximum_lag1_correlation": -0.1,
+    "metric": "pearson_correlation",
+    "minimum_lag_pairs": 200,
+    "predictor_lag_observations": 1,
+    "trading_costs": "not_applicable_no_trading",
+    "transformation": "lag1_of_consecutive_observation_2s10s_spread_change_basis_points",
+    "trial_count": 1
+  },
+  "next_experiment": "If supported, test the unchanged effect on a new holdout before defining a strategy; if falsified, preserve the failure and stop this daily-reversal branch.",
+  "preregistration_commit": "b618128",
+  "record_type": "preregistered_real_data_temporal_structure_test",
+  "result": {
+    "checks": {
+      "dates_unique_and_increasing": true,
+      "dates_within_holdout": true,
+      "maximum_lag1_correlation_met": false,
+      "minimum_lag_pairs_met": true,
+      "required_fields_complete": true,
+      "row_count_within_bounds": true
+    },
+    "interpretation": "The untouched holdout falsified or could not evaluate the preregistered one-observation slope-change reversal hypothesis.",
+    "status": "FAIL"
+  },
+  "schema_version": 1,
+  "strategy_mining_authorized": false
+}

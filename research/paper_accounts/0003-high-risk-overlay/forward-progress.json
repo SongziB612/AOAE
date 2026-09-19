@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "account_id": "PAPER-0003-high-risk-overlay",
+  "record_type": "forward_paper_evaluation_progress",
+  "evaluation_start_date": "2026-09-04",
+  "scheduled_90_day_review_date": "2026-12-04",
+  "as_of": "2026-09-04",
+  "elapsed_calendar_days": 0,
+  "required_calendar_days": 90,
+  "processed_new_market_days": 0,
+  "first_eligible_signal": "PENDING_FIRST_COMMON_MONTH_END_AFTER_2026-09-04",
+  "generated_rebalances": 0,
+  "starting_equity_cny": 10000.0,
+  "current_equity_cny": 10000.0,
+  "net_pnl_cny": 0.0,
+  "maximum_drawdown_fraction": 0.0,
+  "automation": {
+    "task_name": "AOAE_ETF_Paper_EOD",
+    "verified_state": "Ready",
+    "last_run_at_verification": "2026-09-04 16:30:00",
+    "last_task_result": 0,
+    "next_run_at_verification": "2026-09-07 16:30:00",
+    "missed_runs": 0,
+    "schedule": "Monday-Friday 16:30 Asia/Shanghai",
+    "start_when_available": true
+  },
+  "completion_rule": "Do not complete early with backfilled prices. Review only after the scheduled date using snapshots generated from data available on each run date.",
+  "status": "ACTIVE_WAITING_FOR_FORWARD_TIME",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

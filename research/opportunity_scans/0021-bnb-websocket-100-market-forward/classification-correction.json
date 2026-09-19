@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "correction_date": "2026-09-04",
+  "source_spec": "spec.json",
+  "reason": "The original implementation incorrectly required a visible ask at every preregistered offset and therefore conflated valid no-liquidity observations with transport failures.",
+  "raw_records_are_immutable": true,
+  "corrected_technical_completeness_rule": {
+    "opening_reference_tick_required": true,
+    "closing_reference_tick_required": true,
+    "all_preregistered_offsets_required": [120, 60, 30, 15, 5],
+    "at_least_one_clob_book_event_required": true,
+    "allowed_point_statuses": ["QUOTED_ONLY", "NO_ASK"],
+    "no_ask_interpretation": "valid no-trade observation with zero executable PnL"
+  },
+  "forbidden": [
+    "changing a raw record",
+    "treating NO_ASK as a fill",
+    "dropping a technically complete losing market",
+    "authorizing capital from the correction"
+  ],
+  "capital_authorized": false,
+  "orders_authorized": false
+}

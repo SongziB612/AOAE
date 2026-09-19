@@ -1,0 +1,32 @@
+{
+  "experiment_id": "UP-0002-net-expert-scoring",
+  "periods": 252,
+  "periods_per_year": 252,
+  "seeds": [17, 31, 73],
+  "worlds": ["high_vol_low_corr", "high_vol_high_corr", "low_vol_low_corr", "one_way_trend", "relative_mean_reversion", "crash_correlation_spike", "permanent_loser", "trend_reversal"],
+  "grid_points": 101,
+  "cost_multipliers": [1, 10],
+  "distress_threshold": 0.2,
+  "costs": {
+    "commission_bps": 2,
+    "half_spread_bps": 2,
+    "slippage_bps": 3,
+    "impact_bps_at_full_volume": 100,
+    "volume_to_account_equity": 100,
+    "maximum_participation": 0.01
+  },
+  "arms": ["equal_daily", "gross_scored_up", "net_scored_up"],
+  "single_mechanism_change": "Replace virtual expert gross wealth with virtual expert net wealth; allocator execution stays identical.",
+  "trend_reversal_definition": "First half price relatives [1.008,0.998]; second half swapped; no reset or forgetting.",
+  "development_rejection_rule": {
+    "all_world_cost_groups_median_paired_log_improvement_at_least": -0.00000001,
+    "at_least_one_group_median_paired_log_improvement_above": 0.000001,
+    "all_world_cost_groups_median_paired_max_drawdown_change_at_least": -0.000001,
+    "no_additional_distress_breaches": true
+  },
+  "rule_scope": "Fixed before this run; descriptive development screen, not statistical significance or capital eligibility.",
+  "real_out_of_sample_evidence": false,
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false
+}

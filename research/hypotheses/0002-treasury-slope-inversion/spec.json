@@ -1,0 +1,52 @@
+{
+  "benchmark": {
+    "description": "no dominant slope sign",
+    "inversion_rate": 0.5
+  },
+  "bias_controls": [
+    "The 2023 source snapshot must not enter the project before this specification is committed.",
+    "The entire 2023 period is a single untouched holdout; no training or parameter selection is performed.",
+    "Only one decision metric and one threshold are permitted.",
+    "Every complete published observation is used with no calendar interpolation or missing-value imputation.",
+    "The result describes contemporaneous slope structure and cannot be represented as prediction or tradable alpha."
+  ],
+  "capital_authorized": false,
+  "confidence": "single_holdout_slope_structure_only",
+  "data": {
+    "availability_policy": "official_archive_snapshot",
+    "local_path": "data/raw/treasury/daily_treasury_yield_curve_2023.xml",
+    "maximum_rows": 270,
+    "minimum_rows": 240,
+    "period_end": "2023-12-31",
+    "period_start": "2023-01-01",
+    "required_fields": [
+      "BC_2YEAR",
+      "BC_10YEAR"
+    ],
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2023"
+  },
+  "decision_rule": {
+    "minimum_inversion_rate": 0.8,
+    "minimum_observations": 240
+  },
+  "failure_modes": [
+    "One calendar year may not represent other monetary-policy or inflation regimes.",
+    "CMT values are theoretical constant-maturity par yields, not transaction prices.",
+    "A persistent inverted curve does not establish causation, future returns, timing ability, or a profitable trade.",
+    "The selected 2-year and 10-year tenors do not describe every part of the yield curve."
+  ],
+  "hypothesis": "On the untouched 2023 Treasury holdout, the 2-year CMT yield will exceed the 10-year CMT yield on at least 80% of complete published observations.",
+  "hypothesis_id": "HYP-0002-treasury-slope-inversion",
+  "method": {
+    "imputation": "none",
+    "metric": "share_of_observations_above_zero",
+    "trading_costs": "not_applicable_no_trading",
+    "transformation": "two_year_minus_ten_year_spread_basis_points",
+    "trial_count": 1
+  },
+  "next_experiment": "If supported, preregister one temporal slope hypothesis on a new untouched holdout; if falsified, preserve the failure and reassess the regime premise.",
+  "preregistration_state": "locked_before_download",
+  "schema_version": 1,
+  "strategy_mining_authorized": false,
+  "title": "Untouched 2023 Treasury 2-year/10-year persistent inversion"
+}

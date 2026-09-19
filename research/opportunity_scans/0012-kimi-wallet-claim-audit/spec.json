@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "scan_id": "SCAN-0012-kimi-wallet-claim-audit",
+  "source": "User-supplied social-media claim",
+  "wallet": "0x75973C667CeC880353450BE3A6F17C5da67B4421",
+  "claimed_profit_usd": 917000,
+  "claimed_agent_loops": 917,
+  "claimed_model": "Kimi K3",
+  "known_data_exposure": "Official leaderboard and trade summaries were inspected before formalizing this exploratory audit; this is not a preregistered hypothesis.",
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

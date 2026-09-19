@@ -1,0 +1,16 @@
+{
+  "pilot": {"mode": "MANUAL_PAPER_PREPARATION", "approved_capital_cny": null, "approved_loss_limit_cny": null},
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false,
+  "gates": [
+    {"id": "user_confirmed_commission", "status": "PASS", "evidence": ["research/manual_execution/account-fees-user-confirmed-v1.json"], "json_assertions": [{"source": "research/manual_execution/account-fees-user-confirmed-v1.json", "path": ["fees", "commission_rate"], "equals": "0.0002"}, {"source": "research/manual_execution/account-fees-user-confirmed-v1.json", "path": ["fees", "minimum_cny"], "equals": "5"}]},
+    {"id": "historical_repricing_accounting_not_profitability", "status": "PASS", "evidence": ["research/experiments/cn-fees-0001/result-v1.json", "research/experiments/cn-fees-0001/independent-audit-v1.json"], "json_assertions": [{"source": "research/experiments/cn-fees-0001/independent-audit-v1.json", "path": ["status"], "equals": "PASS"}]},
+    {"id": "manual_paper_bridge_and_reconciliation", "status": "PASS", "evidence": ["src/aoae/manual_bridge.py", "src/aoae/manual_ticket.py", "scripts/prepare_current_manual_ticket.py", "tests/test_manual_bridge.py", "tests/test_manual_ticket.py", "research/manual_execution/journal-ticket-2026-09-13-v1.json", "research/manual_execution/engineering-reconciliation-v1.json"]},
+    {"id": "reviewed_market_inputs_and_tradability", "status": "PENDING_LOCAL_WORK", "evidence": ["docs/manual-execution.zh-CN.md", "src/aoae/reviewed_signal.py"], "note": "Source/calendar/action review and independently evidenced instrument tradability remain necessary; hashes do not certify truth."},
+    {"id": "manual_delay_execution_validation", "status": "PENDING_LOCAL_WORK", "evidence": ["docs/manual-execution.zh-CN.md", "research/experiments/cn-fees-0001/REPORT.zh-CN.md"], "note": "No admitted historical intraday delay replay or measured current manual fills; 30/100bps scenarios do not replace these."},
+    {"id": "independent_forward_net_economics", "status": "PENDING_EXTERNAL_TIME", "evidence": ["research/experiments/cn-fees-0001/result-v1.json", "research/manual_execution/journal-ticket-2026-09-13-v1.json"], "note": "Zero clean OOS in reused historical results; no current pending signal. Passing days alone is insufficient."},
+    {"id": "fresh_account_snapshot_and_all_charges", "status": "PENDING_EXTERNAL_ACCOUNT", "evidence": ["research/manual_execution/account-fees-user-confirmed-v1.json"], "note": "Actual available cash not freshly verified; other charges unverified; account and quote snapshots needed only when a valid signal exists."},
+    {"id": "specific_capital_and_loss_authorization", "status": "PENDING_USER_APPROVAL", "evidence": ["research/manual_execution/account-fees-user-confirmed-v1.json"], "note": "Broad preparation request and historical 300000 simulation do not grant trading authority or set a current approved loss budget."}
+  ]
+}

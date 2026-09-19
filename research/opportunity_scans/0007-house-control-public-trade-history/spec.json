@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "scan_id": "SCAN-0007-house-control-public-trade-history",
+  "fill_result": "research/opportunity_scans/0006-house-control-forward-fill-monitor/result.json",
+  "after_utc": "2026-08-05T00:00:00Z",
+  "per_market_limit": 10000,
+  "legs": [
+    {
+      "name": "D Senate, D House — YES",
+      "condition_id": "0x16c63b7cc37f012b9f59ee164ec03877914c701d06d48291ae8d6fc08a088b0d",
+      "token": "34722410608062854697106861099776685947172185964394483545370684749662285977831"
+    },
+    {
+      "name": "R Senate, D House — YES",
+      "condition_id": "0x998bc71817b2d76921d1999ce0f3431cfd5945583667a371280ca2b430b0c06e",
+      "token": "6302359956133594764084277082169634158291609371270652093164054687145970756151"
+    },
+    {
+      "name": "Balance Other — YES",
+      "condition_id": "0x7987a821b8032824f1805ee39eb5dfb8f64603e4e9e673259eb76f82b439fd3d",
+      "token": "35477631289241705233759154026285946627439635224019448868888132647783862821489"
+    },
+    {
+      "name": "Democratic House control — NO",
+      "condition_id": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4",
+      "token": "33156410999665902694791064431724433042010245771106314074312009703157423879038"
+    }
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

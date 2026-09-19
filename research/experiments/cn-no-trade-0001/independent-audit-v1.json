@@ -1,0 +1,521 @@
+{
+  "status": "PASS",
+  "paths_checked": 64,
+  "checks": [
+    {
+      "year": 2022,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.025,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.025,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.025,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.1,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.025,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 30,
+      "band": 0.1,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "screenshot_stress",
+      "slippage_bps": 100,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.025,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 30,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.025,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "unconfirmed_lower_fee",
+      "slippage_bps": 100,
+      "band": 0.1,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "scope": "Independent fee, funded cash, position, corporate-action, daily NAV and terminal exit-cost reconciliation; not independent signal validation or real fills.",
+  "result_sha256": "175e4e0d478deca94e94879eaf22bdf097f8ed3d6120c443e4e6a78a23318446",
+  "auditor_sha256": "42f8f83c2c713ba1d9e91bf069dc0cf7c4749ae33cc550aa168f018f437dcca2"
+}

@@ -1,0 +1,63 @@
+{
+  "capital_authorized": false,
+  "confidence": "single_holdout_economic_structure_only",
+  "data": {
+    "first_date": "2025-01-02",
+    "last_date": "2025-12-31",
+    "missing_required_rows": 0,
+    "rows": 249,
+    "snapshot_bytes": 345104,
+    "snapshot_sha256": "587aa3cdb7f9fab90ba0e43fba9c280ee88b03d50bed1a25571c53f597b48a06",
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2025"
+  },
+  "decision": "economic_structure_supported",
+  "evidence": {
+    "mean_10y_change_bps": -0.157258064516,
+    "mean_2y_change_bps": -0.314516129032,
+    "pearson_correlation": 0.790870676108,
+    "same_direction_rate": 0.818548387097
+  },
+  "failure_modes": [
+    "One calendar year may not represent other monetary-policy or volatility regimes.",
+    "CMT values are theoretical constant-maturity par yields, not transaction prices.",
+    "Correlation does not establish causation, predictability, or a profitable trade.",
+    "Daily observations can share common macroeconomic shocks without offering an exploitable edge."
+  ],
+  "hypothesis": "On the untouched 2025 Treasury holdout, consecutive-observation daily changes in the 2-year and 10-year CMT yields will have Pearson correlation of at least 0.50.",
+  "hypothesis_id": "HYP-0001-treasury-yield-comovement",
+  "method": {
+    "benchmark_correlation": 0.0,
+    "bias_controls": [
+      "The 2025 source snapshot must not enter the project before this specification is committed.",
+      "The entire 2025 period is a single untouched holdout; no training or parameter selection is performed.",
+      "Only one metric and one threshold are permitted.",
+      "Changes use consecutive published observations with no calendar interpolation or missing-value imputation.",
+      "The result is an economic-structure check and cannot be represented as tradable alpha."
+    ],
+    "imputation": "none",
+    "metric": "pearson_correlation",
+    "minimum_correlation": 0.5,
+    "minimum_paired_changes": 200,
+    "paired_changes": 248,
+    "trading_costs": "not_applicable_no_trading",
+    "transformation": "consecutive_observation_first_difference_basis_points",
+    "trial_count": 1
+  },
+  "next_experiment": "If supported, preregister a separate slope-factor hypothesis on a new holdout; if falsified, preserve the failure and reassess the common-factor premise.",
+  "preregistration_commit": "d7d1bca",
+  "record_type": "preregistered_real_data_economic_structure_test",
+  "result": {
+    "checks": {
+      "dates_unique_and_increasing": true,
+      "dates_within_holdout": true,
+      "minimum_correlation_met": true,
+      "minimum_paired_changes_met": true,
+      "required_fields_complete": true,
+      "row_count_within_bounds": true
+    },
+    "interpretation": "The untouched holdout supports the preregistered common-movement threshold. This is economic structure, not predictability or alpha.",
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "strategy_mining_authorized": false
+}

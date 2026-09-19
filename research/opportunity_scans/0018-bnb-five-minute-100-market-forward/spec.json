@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "record_type": "preregistered_read_only_latency_probe",
+  "hypothesis": "The public Chainlink reference can imply the eventual BNB five-minute direction while a fee-adjusted executable ask remains available.",
+  "asset": "bnb",
+  "chainlink_symbol": "bnb/usd",
+  "market_slug_prefix": "bnb-updown-5m-",
+  "interval_seconds": 300,
+  "market_count": 100,
+  "decision_seconds_before_end": [120, 60, 30, 15, 5],
+  "book_poll_seconds": 1.0,
+  "settlement_tick_tolerance_seconds": 15,
+  "minimum_order_size_shares": 5,
+  "interpretation_gate": {
+    "minimum_independent_markets": 100,
+    "requires_positive_total_fee_adjusted_pnl_at_a_preregistered_offset": true,
+    "requires_fill_or_execution_simulation": true,
+    "requires_independent_replay": true
+  },
+  "limitations": [
+    "Quoted best asks are not fill confirmations and omit adverse movement during order submission.",
+    "All five decision offsets are reported and multiple-testing correction is required before selecting one.",
+    "RTDS opening and closing ticks remain reference evidence until checked against resolution artifacts.",
+    "No batch result authorizes deployment or capital."
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

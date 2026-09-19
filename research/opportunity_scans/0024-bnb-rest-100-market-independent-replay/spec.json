@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "record_type": "post_capture_independent_replay_and_execution_spec",
+  "source_batch": "../0018-bnb-five-minute-100-market-forward/result.json",
+  "source_market_count": 100,
+  "decision_seconds_before_end": [120, 60, 30, 15, 5],
+  "primary_execution_delay_ms": 1000,
+  "sensitivity_delays_ms": [0, 250, 500, 2000],
+  "shares_per_attempt": 5,
+  "minimum_initial_and_execution_depth": 5,
+  "adverse_slippage_per_share": 0.01,
+  "minimum_attempts_per_offset": 30,
+  "minimum_fill_rate_per_attempt": 0.8,
+  "multiple_testing": {
+    "offset_alternatives": 5,
+    "family_alpha": 0.05,
+    "bonferroni_one_sided_lower_quantile": 0.01,
+    "circular_block_length_markets": 5,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 1818
+  },
+  "limitations": [
+    "This specification was frozen after 98 batch outcomes had already been summarized, so it is an audit and not an untouched profitability test.",
+    "REST snapshots are approximately one second apart and can miss adverse movement between polls.",
+    "Displayed depth plus delayed repricing is executable-quote evidence, not a fill confirmation.",
+    "No result authorizes deployment or capital."
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

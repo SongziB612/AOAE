@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scan_id": "SCAN-0010-house-control-hybrid-completion",
+  "fill_result": "research/opportunity_scans/0006-house-control-forward-fill-monitor/result.json",
+  "queue_result": "research/opportunity_scans/0009-house-control-queue-depth-corrected/result.json",
+  "maker_legs": [
+    "D Senate, D House — YES",
+    "R Senate, D House — YES",
+    "Balance Other — YES"
+  ],
+  "completion_leg": "Democratic House control — NO",
+  "taker_fee_rate": 0.04,
+  "minimum_terminal_payoff_per_set": 1.0,
+  "diagnostic_set_size": 5,
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

@@ -1,0 +1,11 @@
+{
+  "overlap_bars": 10408,
+  "changed_bars": [],
+  "manifest_sha256": {
+    "data\\audit\\sina-etf-minutes-2026-09-14-v1\\manifest.json": "a7c4b062e877f1a68b2a12998de0edeaf4bfab6826336561f51c9e04ff7903d9",
+    "data\\audit\\sina-etf-minutes-2026-09-15-v1\\manifest.json": "3bd3224e530b78564b2c941d71a24f3bbc2d6099968b8397a1b95c17307e08e6"
+  },
+  "status": "OVERLAP_UNCHANGED",
+  "limits": "Two retrospective capture vintages only; not proof of historical first availability or fills.",
+  "capital_authorized": false
+}

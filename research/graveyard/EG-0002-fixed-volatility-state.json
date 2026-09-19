@@ -1,0 +1,13 @@
+{
+  "strategy_id": "EG-0002",
+  "verdict": "REJECT",
+  "date_killed": "2026-09-15",
+  "idea": "Separate EG memory using a fixed causal 20-period volatility label",
+  "parameters": {"window":20,"threshold":0.02,"learning_rate":0.05},
+  "failure_reason": "Negative paired net log increment in high-volatility low-correlation worlds; no improvement to permanent-loser failure",
+  "result": "research/experiments/eg-0002/result-v1.json",
+  "code_version": "Source hashes recorded in result",
+  "tests_failed": ["Predeclared all-world positive mean paired increment screen"],
+  "limits": "Synthetic descriptive rejection of this fixed specification; independent accounting review pending",
+  "capital_authorized": false
+}

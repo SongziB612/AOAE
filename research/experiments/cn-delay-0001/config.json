@@ -1,0 +1,21 @@
+{
+  "experiment_id": "CN-DELAY-0001",
+  "reference": "research/capital_readiness/300k-accounting-replay-v4.json",
+  "strategy_spec": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+  "data_dir": "data/audit/etf-accounting-2026-09-05-v4",
+  "fee_evidence": "research/manual_execution/account-fees-user-confirmed-v1.json",
+  "years": [2022, 2023, 2024, 2025],
+  "initial_cny": 300000,
+  "pause_loss_cny": 100000,
+  "commission_scenarios": {"user_confirmed_rate": 0.0002},
+  "slippage_bps": [30, 100],
+  "lookback": 63,
+  "target_volatility": 0.12,
+  "arms": ["existing_momentum", "equal_monthly", "equal_vol_target", "equal_buy_hold"],
+  "execution_price_field": "close",
+  "question": "Fixed ex-post same-day close fill sensitivity versus existing open fill result. No reselection, no intraday optimal time search.",
+  "control": "research/experiments/cn-fees-0001/result-v1.json",
+  "limits": ["Full-session delay scenario, not 1-5 minute manual-delay validation or a worst-case bound.", "Prior-session signals and lot sizing unchanged; ex-post close used only for modeled fill and liquidity/cash feasibility.", "Signal execution window would be expired: this is an isolated diagnostic, not an admissible order or a recommendation to wait until close.", "Four reused years; no clean OOS; all four strategies and both costs retained; actual account cash is not 300000.", "Original action/tradability/liquidity limits and terminal exit haircut remain; no fill guarantee."],
+  "capital_authorized": false,
+  "orders_authorized": false
+}

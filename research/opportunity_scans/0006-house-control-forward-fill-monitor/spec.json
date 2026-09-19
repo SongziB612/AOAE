@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scan_id": "SCAN-0006-house-control-forward-fill-monitor",
+  "portfolio_spec": "research/opportunity_scans/0005-house-control-superhedge/spec.json",
+  "observation_seconds": 600,
+  "quote_policy": "one_tick_below_initial_best_ask",
+  "fill_evidence": [
+    "best_bid_ask.best_ask <= paper_bid",
+    "price_change.price_changes[].best_ask <= paper_bid",
+    "SELL last_trade_price.price <= paper_bid"
+  ],
+  "interpretation": "Evidence is necessary but not sufficient: public messages do not reveal queue position or guarantee filled size.",
+  "partial_fill_risk": "For one hypothetical set, report the full spend on individually evidenced legs as worst-case loss until all four legs have evidence.",
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

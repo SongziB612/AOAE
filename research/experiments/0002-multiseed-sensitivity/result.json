@@ -1,0 +1,337 @@
+{
+  "base_experiment": {
+    "canonical_spec_sha256": "dd14ab88a8b6034d67ba0983f2304ed27f0e99d7f0a85b81499a978451d06c89",
+    "experiment_id": "EXP-0001-synthetic-mean-reversion",
+    "seed_override_only": true
+  },
+  "capital_authorized": false,
+  "confidence": "infrastructure_sensitivity_only",
+  "decision": "multiseed_infrastructure_validated",
+  "evidence": {
+    "aggregate": {
+      "control_oos_mean_net_return": {
+        "maximum": 1.636913e-05,
+        "mean": -0.000474273393,
+        "median": -0.000492444739,
+        "minimum": -0.000872414529,
+        "p10": -0.000722506992,
+        "p90": -0.000207788231,
+        "sample_standard_deviation": 0.000201170553
+      },
+      "failure_count": 0,
+      "mean_net_return_advantage": {
+        "maximum": 0.002213719948,
+        "mean": 0.002004237163,
+        "median": 0.002035999284,
+        "minimum": 0.001748172377,
+        "p10": 0.001834425741,
+        "p90": 0.002143596542,
+        "sample_standard_deviation": 0.000120940884
+      },
+      "pass_count": 32,
+      "pass_rate": 1.0,
+      "seed_count": 32,
+      "structured_oos_mean_net_return": {
+        "maximum": 0.002059837367,
+        "mean": 0.00152996377,
+        "median": 0.001525651768,
+        "minimum": 0.000932519775,
+        "p10": 0.001345765205,
+        "p90": 0.00177763439,
+        "sample_standard_deviation": 0.000232717628
+      },
+      "wilson_lower_bound_95": 0.892820801745
+    },
+    "seed_results": [
+      {
+        "control_oos_mean_net_return": -0.000593860405,
+        "mean_net_return_advantage": 0.002058849823,
+        "seed": 20260903,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 15.825825656694,
+        "structured_oos_mean_net_return": 0.001464989418
+      },
+      {
+        "control_oos_mean_net_return": -0.000154262157,
+        "mean_net_return_advantage": 0.002213719948,
+        "seed": 20260904,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 54.244684586834,
+        "structured_oos_mean_net_return": 0.002059457791
+      },
+      {
+        "control_oos_mean_net_return": -0.000489423897,
+        "mean_net_return_advantage": 0.001904800791,
+        "seed": 20260905,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 14.216014038223,
+        "structured_oos_mean_net_return": 0.001415376894
+      },
+      {
+        "control_oos_mean_net_return": -0.000569282155,
+        "mean_net_return_advantage": 0.002144243581,
+        "seed": 20260906,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 20.050382059974,
+        "structured_oos_mean_net_return": 0.001574961426
+      },
+      {
+        "control_oos_mean_net_return": -0.00019723482,
+        "mean_net_return_advantage": 0.00186384992,
+        "seed": 20260907,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 24.285854936285,
+        "structured_oos_mean_net_return": 0.0016666151
+      },
+      {
+        "control_oos_mean_net_return": -0.000567912119,
+        "mean_net_return_advantage": 0.001976102241,
+        "seed": 20260908,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 14.124652341035,
+        "structured_oos_mean_net_return": 0.001408190122
+      },
+      {
+        "control_oos_mean_net_return": -0.000320801193,
+        "mean_net_return_advantage": 0.001748172377,
+        "seed": 20260909,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 14.699995221819,
+        "structured_oos_mean_net_return": 0.001427371184
+      },
+      {
+        "control_oos_mean_net_return": -0.000861883159,
+        "mean_net_return_advantage": 0.001794402934,
+        "seed": 20260910,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 4.871138718332,
+        "structured_oos_mean_net_return": 0.000932519775
+      },
+      {
+        "control_oos_mean_net_return": -0.000404420739,
+        "mean_net_return_advantage": 0.001859377438,
+        "seed": 20260911,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 15.624459840122,
+        "structured_oos_mean_net_return": 0.001454956699
+      },
+      {
+        "control_oos_mean_net_return": -0.000300201461,
+        "mean_net_return_advantage": 0.001976653775,
+        "seed": 20260912,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 24.865408871914,
+        "structured_oos_mean_net_return": 0.001676452314
+      },
+      {
+        "control_oos_mean_net_return": -0.000614099446,
+        "mean_net_return_advantage": 0.002045154614,
+        "seed": 20260913,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 14.672397729712,
+        "structured_oos_mean_net_return": 0.001431055168
+      },
+      {
+        "control_oos_mean_net_return": -0.000743396487,
+        "mean_net_return_advantage": 0.00183165333,
+        "seed": 20260914,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 6.972947162547,
+        "structured_oos_mean_net_return": 0.001088256843
+      },
+      {
+        "control_oos_mean_net_return": -0.000520351795,
+        "mean_net_return_advantage": 0.002091238522,
+        "seed": 20260915,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 19.808344171824,
+        "structured_oos_mean_net_return": 0.001570886727
+      },
+      {
+        "control_oos_mean_net_return": -0.000517015553,
+        "mean_net_return_advantage": 0.002106494521,
+        "seed": 20260916,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 20.734640360143,
+        "structured_oos_mean_net_return": 0.001589478968
+      },
+      {
+        "control_oos_mean_net_return": -0.000435391438,
+        "mean_net_return_advantage": 0.002178042285,
+        "seed": 20260917,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 28.276951601635,
+        "structured_oos_mean_net_return": 0.001742650847
+      },
+      {
+        "control_oos_mean_net_return": -0.000722555256,
+        "mean_net_return_advantage": 0.002148408351,
+        "seed": 20260918,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 14.65599672838,
+        "structured_oos_mean_net_return": 0.001425853095
+      },
+      {
+        "control_oos_mean_net_return": -0.000478034572,
+        "mean_net_return_advantage": 0.001816944362,
+        "seed": 20260919,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 12.113504761365,
+        "structured_oos_mean_net_return": 0.00133890979
+      },
+      {
+        "control_oos_mean_net_return": -0.000533564573,
+        "mean_net_return_advantage": 0.002137773195,
+        "seed": 20260920,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 21.202769376793,
+        "structured_oos_mean_net_return": 0.001604208622
+      },
+      {
+        "control_oos_mean_net_return": -0.00052185159,
+        "mean_net_return_advantage": 0.001990395477,
+        "seed": 20260921,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 15.907092145244,
+        "structured_oos_mean_net_return": 0.001468543887
+      },
+      {
+        "control_oos_mean_net_return": -0.000466568919,
+        "mean_net_return_advantage": 0.002052081546,
+        "seed": 20260922,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 20.442265978222,
+        "structured_oos_mean_net_return": 0.001585512627
+      },
+      {
+        "control_oos_mean_net_return": -0.000558959649,
+        "mean_net_return_advantage": 0.002076966084,
+        "seed": 20260923,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 17.780843138195,
+        "structured_oos_mean_net_return": 0.001518006435
+      },
+      {
+        "control_oos_mean_net_return": -0.000495465581,
+        "mean_net_return_advantage": 0.002028762682,
+        "seed": 20260924,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 18.337329668279,
+        "structured_oos_mean_net_return": 0.001533297101
+      },
+      {
+        "control_oos_mean_net_return": 1.636913e-05,
+        "mean_net_return_advantage": 0.002043468237,
+        "seed": 20260925,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 54.235747781283,
+        "structured_oos_mean_net_return": 0.002059837367
+      },
+      {
+        "control_oos_mean_net_return": -0.000505543827,
+        "mean_net_return_advantage": 0.001913007764,
+        "seed": 20260926,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 14.002354657235,
+        "structured_oos_mean_net_return": 0.001407463937
+      },
+      {
+        "control_oos_mean_net_return": -0.000472074722,
+        "mean_net_return_advantage": 0.002084841284,
+        "seed": 20260927,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 21.757931882009,
+        "structured_oos_mean_net_return": 0.001612766562
+      },
+      {
+        "control_oos_mean_net_return": -0.000213570773,
+        "mean_net_return_advantage": 0.001896040676,
+        "seed": 20260928,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 24.949406574895,
+        "structured_oos_mean_net_return": 0.001682469903
+      },
+      {
+        "control_oos_mean_net_return": -0.000872414529,
+        "mean_net_return_advantage": 0.002033441289,
+        "seed": 20260929,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 8.198983967941,
+        "structured_oos_mean_net_return": 0.00116102676
+      },
+      {
+        "control_oos_mean_net_return": -0.000427331958,
+        "mean_net_return_advantage": 0.001886364028,
+        "seed": 20260930,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 15.713018055117,
+        "structured_oos_mean_net_return": 0.00145903207
+      },
+      {
+        "control_oos_mean_net_return": -0.00047377395,
+        "mean_net_return_advantage": 0.002043950171,
+        "seed": 20260931,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 19.757995287799,
+        "structured_oos_mean_net_return": 0.001570176221
+      },
+      {
+        "control_oos_mean_net_return": -0.000207145726,
+        "mean_net_return_advantage": 0.002038557279,
+        "seed": 20260932,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 34.127144106688,
+        "structured_oos_mean_net_return": 0.001831411553
+      },
+      {
+        "control_oos_mean_net_return": -0.000232652649,
+        "mean_net_return_advantage": 0.002014174099,
+        "seed": 20260933,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 30.669228611225,
+        "structured_oos_mean_net_return": 0.00178152145
+      },
+      {
+        "control_oos_mean_net_return": -0.000722072613,
+        "mean_net_return_advantage": 0.002137656608,
+        "seed": 20260934,
+        "status": "PASS",
+        "structured_oos_cumulative_net_return": 14.199750733072,
+        "structured_oos_mean_net_return": 0.001415583995
+      }
+    ]
+  },
+  "experiment_id": "EXP-0002-multiseed-sensitivity",
+  "failure_modes": [
+    "Multiple seeds explore sampling variability but do not create independent real market regimes.",
+    "The same deliberately simplified AR(1) process is used for every seed.",
+    "The Wilson interval treats seed outcomes as Bernoulli trials and does not repair model misspecification.",
+    "Passing this gate remains evidence about research infrastructure, not tradable alpha."
+  ],
+  "hypothesis": "The unchanged EXP-0001 rule will pass on at least 90% of 32 preregistered seeds, and the two-sided 95% Wilson lower confidence bound for its seed-level pass probability will be at least 80%.",
+  "method": {
+    "bias_controls": [
+      "All 32 seeds are fixed in this specification before execution.",
+      "Every declared seed is reported; no seed may be discarded or selected as representative.",
+      "The base experiment is bound by a canonical content digest.",
+      "Acceptance thresholds are fixed before any multi-seed result is generated.",
+      "The strategy, split, costs, and original per-seed decision rule remain unchanged."
+    ],
+    "confidence_interval": "two_sided_wilson_95_percent",
+    "declared_seed_count": 32,
+    "minimum_seed_pass_rate": 0.9,
+    "minimum_wilson_lower_bound": 0.8,
+    "seed_policy": "preregistered_exhaustive_no_filtering"
+  },
+  "next_experiment": "Introduce a negative control with no injected autocorrelation and require the multi-seed gate to reject it before considering any real market dataset.",
+  "record_type": "synthetic_multiseed_sensitivity_gate",
+  "result": {
+    "checks": {
+      "seed_pass_rate_at_least_minimum": true,
+      "wilson_lower_bound_at_least_minimum": true
+    },
+    "interpretation": "The deliberately injected structure survived the preregistered seed sensitivity gate. This validates infrastructure stability only, not a market edge.",
+    "status": "PASS"
+  },
+  "schema_version": 1
+}

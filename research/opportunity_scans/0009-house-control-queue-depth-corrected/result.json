@@ -1,0 +1,83 @@
+{
+  "capital_authorized": false,
+  "captured_at_utc": "2026-09-04T04:47:55.290603Z",
+  "captures": [
+    {
+      "byte_count": 2769,
+      "http_date": "Fri, 04 Sep 2026 04:47:50 GMT",
+      "name": "D Senate, D House — YES",
+      "sha256": "0cfb1310b4b33104fc030fa8158dca29e8d5c34b45004a49453d6d268b339057"
+    },
+    {
+      "byte_count": 2010,
+      "http_date": "Fri, 04 Sep 2026 04:47:51 GMT",
+      "name": "R Senate, D House — YES",
+      "sha256": "f7f7878f4fe16a31018df1bdeae87f61f50c21f91a2601356c601e59af228a81"
+    },
+    {
+      "byte_count": 2498,
+      "http_date": "Fri, 04 Sep 2026 04:47:53 GMT",
+      "name": "Balance Other — YES",
+      "sha256": "98a629a752d6875615944d8b91f26e2a17c75e0aaef0793cfe22d5d17a914d9a"
+    },
+    {
+      "byte_count": 2042,
+      "http_date": "Fri, 04 Sep 2026 04:47:54 GMT",
+      "name": "Democratic House control — NO",
+      "sha256": "5a0a658713c379e52a1bd3ead5b89ab75e81fde4394d38df093a9511b0d444bf"
+    }
+  ],
+  "decision": "continue_forward_queue_study",
+  "legs": [
+    {
+      "current_best_ask": 0.5,
+      "current_best_bid": 0.49,
+      "displayed_buy_size_at_or_above_paper_bid": 11178.17,
+      "historical_daily_taker_sell_volume_at_or_below_bid": 3710.23979961,
+      "name": "D Senate, D House — YES",
+      "optimistic_static_queue_clearance_days": 3.0128,
+      "paper_bid": 0.49
+    },
+    {
+      "current_best_ask": 0.36,
+      "current_best_bid": 0.35,
+      "displayed_buy_size_at_or_above_paper_bid": 19742.42,
+      "historical_daily_taker_sell_volume_at_or_below_bid": 936.22519704,
+      "name": "R Senate, D House — YES",
+      "optimistic_static_queue_clearance_days": 21.0873,
+      "paper_bid": 0.35
+    },
+    {
+      "current_best_ask": 0.004,
+      "current_best_bid": 0.002,
+      "displayed_buy_size_at_or_above_paper_bid": 0,
+      "historical_daily_taker_sell_volume_at_or_below_bid": 459.56408237,
+      "name": "Balance Other — YES",
+      "optimistic_static_queue_clearance_days": 0.0,
+      "paper_bid": 0.003
+    },
+    {
+      "current_best_ask": 0.11,
+      "current_best_bid": 0.1,
+      "displayed_buy_size_at_or_above_paper_bid": 32633.98,
+      "historical_daily_taker_sell_volume_at_or_below_bid": 11.25948973,
+      "name": "Democratic House control — NO",
+      "optimistic_static_queue_clearance_days": 2898.3534,
+      "paper_bid": 0.1
+    }
+  ],
+  "method": {
+    "authentication_used": false,
+    "clearance_assumption": "Historical taker-sell flow remains constant and is entirely available to clear displayed queue; cancellations, new orders, priority and regime changes are ignored.",
+    "historical_days": 30.19763844,
+    "orders_placed": 0,
+    "queue_assumption": "A new paper buy joins behind all displayed buy size at the same or better price."
+  },
+  "record_type": "public_orderbook_queue_depth_diagnostic",
+  "result": {
+    "bottleneck_leg": "Democratic House control — NO",
+    "bottleneck_optimistic_clearance_days": 2898.3534,
+    "interpretation": "This is an optimistic diagnostic, not a fill forecast or guarantee."
+  },
+  "schema_version": 1
+}

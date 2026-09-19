@@ -1,0 +1,5257 @@
+{
+  "status": "RESEARCH_ONLY_UNVERIFIED_CORPORATE_ACTION_ASSUMPTIONS",
+  "initial_capital_cny": 300000,
+  "pause_loss_cny": 100000,
+  "commission_rate_each_side": 0.003,
+  "minimum_commission_cny": 5,
+  "method": "Causal total-return signal index; raw prior-close sized targets; raw next-open simulated fills; cash receivables; next-open loss pause liquidation.",
+  "input_sha256": {
+    "F:\\AOAE\\scripts\\run_300k_accounting_replay.py": "5f45e5f5f99ce85cb6e4ae8450465c94dab094d31d8656e9cddb584ad48fd83c",
+    "src\\aoae\\corporate_action_replay.py": "f4ced1043b8a651432a0c24214df5cbca0429d5ec5b2e5f193fb46d9d1d1a61d",
+    "src\\aoae\\etf_risk_overlay.py": "71d612212c383f4d3e798057c39dd7a5a93601e3da5cf1deb3bedc7cf0600427",
+    "src\\aoae\\etf_momentum.py": "a112b6f5f8b993c66ef09ca4b273f7554b5495ebcf6a6a92c4128f16788da90a",
+    "src\\aoae\\small_account.py": "d00974968e528f0b3cd41095db84592eff99633a08eae2a4ebf1a28e4844d7e0",
+    "research\\hypotheses\\0004-cn-etf-dual-momentum\\spec.json": "9e351225eaf37dec65c87e06b9dbd183c27c900df0c00aff2ac0f83503e461ef",
+    "data\\audit\\etf-accounting-2026-09-05-v4\\manifest.json": "41396b7e327fcf3f1c2a9a12da21a4dd0aeb146529865bb8d0281cbfe9549d1a",
+    "data\\audit\\etf-distributions-2026-09-05-v1\\manifest.json": "4c7a85102d633ca61725ec38f47c38186e1c87041d3d1e7dcc9b2a45e0a91c0f"
+  },
+  "price_sha256": {
+    "510300": "c31426731a8cbecc2199a03a2ae72bd82d188bd5b20f67da5cd52e9d19ee6b40",
+    "510500": "1495d1febdb78b49b1c18ca3ebfe0aa3263824ffa0fff5528101c72d6ddb3ff5",
+    "159915": "f9c9dfad6e1ef4c3857937990714e0f01e972395ff577d897672e0e45c1ae552",
+    "513500": "e1e734c0f7df7b82f62a4245af0ea79d578978a09e91f0e6484104a5be7cc113",
+    "518880": "17991dc17b2d85452e391c0fec2f2eab4102caf415c6dba6d261f52805bee108",
+    "511010": "e920f1e1cc82e604000c5d3404dc176da1b3de18ec8987acc7ad214858d2ee30"
+  },
+  "price_audit": [
+    {
+      "symbol": "510300",
+      "overlap_days": 2830,
+      "days_different_close_above_0_001": 2680,
+      "largest_absolute_close_difference": 0.799
+    },
+    {
+      "symbol": "510500",
+      "overlap_days": 2830,
+      "days_different_close_above_0_001": 2796,
+      "largest_absolute_close_difference": 4.354
+    },
+    {
+      "symbol": "159915",
+      "overlap_days": 2830,
+      "days_different_close_above_0_001": 0,
+      "largest_absolute_close_difference": 0.001
+    },
+    {
+      "symbol": "513500",
+      "overlap_days": 2830,
+      "days_different_close_above_0_001": 1757,
+      "largest_absolute_close_difference": 1.448
+    },
+    {
+      "symbol": "518880",
+      "overlap_days": 2830,
+      "days_different_close_above_0_001": 0,
+      "largest_absolute_close_difference": 0.001
+    },
+    {
+      "symbol": "511010",
+      "overlap_days": 2830,
+      "days_different_close_above_0_001": 2782,
+      "largest_absolute_close_difference": 4.49
+    }
+  ],
+  "payment_date_mode": "cross_provider_published_dates",
+  "cross_provider_cash_event_audit": [
+    {
+      "symbol": "510300",
+      "ex_date": "2015-01-20",
+      "payment_date": "2015-01-23",
+      "cash_per_share": 0.034999999999999996
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2016-01-20",
+      "payment_date": "2016-01-25",
+      "cash_per_share": 0.051000000000000004
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2017-01-23",
+      "payment_date": "2017-01-26",
+      "cash_per_share": 0.05500000000000001
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2018-01-23",
+      "payment_date": "2018-01-26",
+      "cash_per_share": 0.046
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2019-01-16",
+      "payment_date": "2019-01-21",
+      "cash_per_share": 0.059
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2019-12-11",
+      "payment_date": "2019-12-16",
+      "cash_per_share": 0.062
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2021-01-18",
+      "payment_date": "2021-01-21",
+      "cash_per_share": 0.072
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2022-01-19",
+      "payment_date": "2022-01-24",
+      "cash_per_share": 0.075
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2023-01-16",
+      "payment_date": "2023-01-19",
+      "cash_per_share": 0.064
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2024-01-18",
+      "payment_date": "2024-01-23",
+      "cash_per_share": 0.06899999999999999
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2025-06-18",
+      "payment_date": "2025-06-27",
+      "cash_per_share": 0.088
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2026-01-19",
+      "payment_date": "2026-01-27",
+      "cash_per_share": 0.123
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2024-05-17",
+      "payment_date": "2024-05-22",
+      "cash_per_share": 0.087
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2025-01-16",
+      "payment_date": "2025-01-21",
+      "cash_per_share": 0.091
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2026-01-16",
+      "payment_date": "2026-01-21",
+      "cash_per_share": 0.062
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2026-07-15",
+      "payment_date": "2026-07-20",
+      "cash_per_share": 0.149
+    },
+    {
+      "symbol": "511010",
+      "ex_date": "2015-10-09",
+      "payment_date": "2015-10-14",
+      "cash_per_share": 1.0
+    },
+    {
+      "symbol": "511010",
+      "ex_date": "2025-09-23",
+      "payment_date": "2025-09-26",
+      "cash_per_share": 1.45
+    },
+    {
+      "symbol": "511010",
+      "ex_date": "2025-12-26",
+      "payment_date": "2025-12-31",
+      "cash_per_share": 0.6542
+    },
+    {
+      "symbol": "511010",
+      "ex_date": "2026-03-25",
+      "payment_date": "2026-03-30",
+      "cash_per_share": 0.5715
+    },
+    {
+      "symbol": "511010",
+      "ex_date": "2026-06-25",
+      "payment_date": "2026-06-30",
+      "cash_per_share": 0.8144
+    }
+  ],
+  "inferred_actions": [
+    {
+      "symbol": "510300",
+      "date": "2012-12-18",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.033,
+      "payment_date": null
+    },
+    {
+      "symbol": "510300",
+      "date": "2014-01-21",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.048,
+      "payment_date": null
+    },
+    {
+      "symbol": "510300",
+      "date": "2015-01-20",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.035,
+      "payment_date": "2015-01-23"
+    },
+    {
+      "symbol": "510300",
+      "date": "2016-01-20",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.051000000000000004,
+      "payment_date": "2016-01-25"
+    },
+    {
+      "symbol": "510300",
+      "date": "2017-01-23",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.05499999999999999,
+      "payment_date": "2017-01-26"
+    },
+    {
+      "symbol": "510300",
+      "date": "2018-01-23",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.04600000000000001,
+      "payment_date": "2018-01-26"
+    },
+    {
+      "symbol": "510300",
+      "date": "2019-01-16",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.059,
+      "payment_date": "2019-01-21"
+    },
+    {
+      "symbol": "510300",
+      "date": "2019-12-11",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.062,
+      "payment_date": "2019-12-16"
+    },
+    {
+      "symbol": "510300",
+      "date": "2021-01-18",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.07200000000000001,
+      "payment_date": "2021-01-21"
+    },
+    {
+      "symbol": "510300",
+      "date": "2022-01-19",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.07500000000000001,
+      "payment_date": "2022-01-24"
+    },
+    {
+      "symbol": "510300",
+      "date": "2023-01-16",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.06399999999999995,
+      "payment_date": "2023-01-19"
+    },
+    {
+      "symbol": "510300",
+      "date": "2024-01-18",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.06900000000000006,
+      "payment_date": "2024-01-23"
+    },
+    {
+      "symbol": "510300",
+      "date": "2025-06-18",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.08799999999999997,
+      "payment_date": "2025-06-27"
+    },
+    {
+      "symbol": "510300",
+      "date": "2026-01-19",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.123,
+      "payment_date": "2026-01-27"
+    },
+    {
+      "symbol": "510500",
+      "date": "2015-04-15",
+      "ratio": 0.28032483,
+      "cash_per_old_share": 0.0,
+      "payment_date": null
+    },
+    {
+      "symbol": "510500",
+      "date": "2022-08-26",
+      "ratio": 1.14539,
+      "cash_per_old_share": 0.0,
+      "payment_date": null
+    },
+    {
+      "symbol": "510500",
+      "date": "2024-05-17",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.087,
+      "payment_date": "2024-05-22"
+    },
+    {
+      "symbol": "510500",
+      "date": "2025-01-16",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.091,
+      "payment_date": "2025-01-21"
+    },
+    {
+      "symbol": "510500",
+      "date": "2026-01-16",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.062,
+      "payment_date": "2026-01-21"
+    },
+    {
+      "symbol": "510500",
+      "date": "2026-07-15",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.14900000000000002,
+      "payment_date": "2026-07-20"
+    },
+    {
+      "symbol": "513500",
+      "date": "2022-03-30",
+      "ratio": 2.0,
+      "cash_per_old_share": 0.0,
+      "payment_date": null
+    },
+    {
+      "symbol": "511010",
+      "date": "2013-06-03",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.28,
+      "payment_date": null
+    },
+    {
+      "symbol": "511010",
+      "date": "2015-10-09",
+      "ratio": 1.0,
+      "cash_per_old_share": 1.0,
+      "payment_date": "2015-10-14"
+    },
+    {
+      "symbol": "511010",
+      "date": "2025-09-23",
+      "ratio": 1.0,
+      "cash_per_old_share": 1.45,
+      "payment_date": "2025-09-26"
+    },
+    {
+      "symbol": "511010",
+      "date": "2025-12-26",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.6541999999999999,
+      "payment_date": "2025-12-31"
+    },
+    {
+      "symbol": "511010",
+      "date": "2026-03-25",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.5715000000000003,
+      "payment_date": "2026-03-30"
+    },
+    {
+      "symbol": "511010",
+      "date": "2026-06-25",
+      "ratio": 1.0,
+      "cash_per_old_share": 0.8144,
+      "payment_date": "2026-06-30"
+    }
+  ],
+  "scenario_count": 135,
+  "summary": [
+    {
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "overlapping_windows": 45,
+      "worst_pnl_cny": -51130.75,
+      "worst_start": "2022-01-01",
+      "best_pnl_cny": 127750.59,
+      "best_start": "2025-03-01",
+      "median_pnl_cny": 62829.77,
+      "losing_windows": 4,
+      "paused_windows": 0
+    },
+    {
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "overlapping_windows": 45,
+      "worst_pnl_cny": -54890.91,
+      "worst_start": "2022-01-01",
+      "best_pnl_cny": 119316.18,
+      "best_start": "2025-03-01",
+      "median_pnl_cny": 59506.2,
+      "losing_windows": 5,
+      "paused_windows": 0
+    },
+    {
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "overlapping_windows": 45,
+      "worst_pnl_cny": -63444.1,
+      "worst_start": "2022-01-01",
+      "best_pnl_cny": 100442.93,
+      "best_start": "2025-03-01",
+      "median_pnl_cny": 50122.13,
+      "losing_windows": 8,
+      "paused_windows": 0
+    }
+  ],
+  "windows": [
+    {
+      "start": "2022-01-01",
+      "end": "2022-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": -51130.75,
+      "maximum_loss_from_initial_cny": 57580.24,
+      "metrics": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2022-12-30",
+        "observations": 241,
+        "total_return": -0.17043583,
+        "cagr": -0.17139607,
+        "annualized_volatility": 0.11609539,
+        "sharpe_zero_rate": -1.62426772,
+        "max_drawdown": -0.19193414
+      },
+      "order_count": 18,
+      "state": {
+        "paused": false,
+        "cost_cny": 3978.35,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 248869.25,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2022-01-01",
+      "end": "2022-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": -54890.91,
+      "maximum_loss_from_initial_cny": 60875.78,
+      "metrics": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2022-12-30",
+        "observations": 241,
+        "total_return": -0.18296971,
+        "cagr": -0.18399245,
+        "annualized_volatility": 0.11629545,
+        "sharpe_zero_rate": -1.75802493,
+        "max_drawdown": -0.20291927
+      },
+      "order_count": 20,
+      "state": {
+        "paused": false,
+        "cost_cny": 7918.91,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 245109.09,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2022-01-01",
+      "end": "2022-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": -63444.1,
+      "maximum_loss_from_initial_cny": 68395.32,
+      "metrics": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2022-12-30",
+        "observations": 241,
+        "total_return": -0.21148035,
+        "cagr": -0.21264076,
+        "annualized_volatility": 0.1179544,
+        "sharpe_zero_rate": -2.04617571,
+        "max_drawdown": -0.22798439
+      },
+      "order_count": 19,
+      "state": {
+        "paused": false,
+        "cost_cny": 16944.7,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 236555.9,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2022-02-01",
+      "end": "2023-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": -21354.01,
+      "maximum_loss_from_initial_cny": 33280.02,
+      "metrics": {
+        "start": "2022-02-01",
+        "first_market_date": "2022-02-07",
+        "end": "2023-01-31",
+        "observations": 238,
+        "total_return": -0.07118003,
+        "cagr": -0.07141552,
+        "annualized_volatility": 0.10320036,
+        "sharpe_zero_rate": -0.70584521,
+        "max_drawdown": -0.13436712
+      },
+      "order_count": 17,
+      "state": {
+        "paused": false,
+        "cost_cny": 4244.01,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 7.09,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 62900,
+          "518880": 48800
+        }
+      }
+    },
+    {
+      "start": "2022-02-01",
+      "end": "2023-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": -25472.79,
+      "maximum_loss_from_initial_cny": 36019.65,
+      "metrics": {
+        "start": "2022-02-01",
+        "first_market_date": "2022-02-07",
+        "end": "2023-01-31",
+        "observations": 238,
+        "total_return": -0.08490931,
+        "cagr": -0.08518811,
+        "annualized_volatility": 0.10383158,
+        "sharpe_zero_rate": -0.85273156,
+        "max_drawdown": -0.14070502
+      },
+      "order_count": 19,
+      "state": {
+        "paused": false,
+        "cost_cny": 8428.89,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 34.61,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 62200,
+          "518880": 48000
+        }
+      }
+    },
+    {
+      "start": "2022-02-01",
+      "end": "2023-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": -34838.71,
+      "maximum_loss_from_initial_cny": 42352.04,
+      "metrics": {
+        "start": "2022-02-01",
+        "first_market_date": "2022-02-07",
+        "end": "2023-01-31",
+        "observations": 238,
+        "total_return": -0.11612902,
+        "cagr": -0.11650362,
+        "annualized_volatility": 0.10662161,
+        "sharpe_zero_rate": -1.17221259,
+        "max_drawdown": -0.15548406
+      },
+      "order_count": 17,
+      "state": {
+        "paused": false,
+        "cost_cny": 17933.21,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 156.99,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 60500,
+          "518880": 46200
+        }
+      }
+    },
+    {
+      "start": "2022-03-01",
+      "end": "2023-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": -23229.97,
+      "maximum_loss_from_initial_cny": 33954.66,
+      "metrics": {
+        "start": "2022-03-01",
+        "first_market_date": "2022-03-01",
+        "end": "2023-02-28",
+        "observations": 242,
+        "total_return": -0.07743323,
+        "cagr": -0.07768853,
+        "annualized_volatility": 0.09102136,
+        "sharpe_zero_rate": -0.87638774,
+        "max_drawdown": -0.11325329
+      },
+      "order_count": 17,
+      "state": {
+        "paused": false,
+        "cost_cny": 4264.97,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 139858.53,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 34100
+        }
+      }
+    },
+    {
+      "start": "2022-03-01",
+      "end": "2023-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": -27437.84,
+      "maximum_loss_from_initial_cny": 36428.37,
+      "metrics": {
+        "start": "2022-03-01",
+        "first_market_date": "2022-03-01",
+        "end": "2023-02-28",
+        "observations": 242,
+        "total_return": -0.09145947,
+        "cagr": -0.09175868,
+        "annualized_volatility": 0.09193184,
+        "sharpe_zero_rate": -1.04027218,
+        "max_drawdown": -0.12142791
+      },
+      "order_count": 18,
+      "state": {
+        "paused": false,
+        "cost_cny": 8475.34,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 137658.16,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 33600
+        }
+      }
+    },
+    {
+      "start": "2022-03-01",
+      "end": "2023-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": -36966.71,
+      "maximum_loss_from_initial_cny": 42019.68,
+      "metrics": {
+        "start": "2022-03-01",
+        "first_market_date": "2022-03-01",
+        "end": "2023-02-28",
+        "observations": 242,
+        "total_return": -0.12322238,
+        "cagr": -0.12361823,
+        "annualized_volatility": 0.09529731,
+        "sharpe_zero_rate": -1.38888298,
+        "max_drawdown": -0.14006559
+      },
+      "order_count": 18,
+      "state": {
+        "paused": false,
+        "cost_cny": 18061.41,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 132144.29,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 32600
+        }
+      }
+    },
+    {
+      "start": "2022-04-01",
+      "end": "2023-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": -7029.64,
+      "maximum_loss_from_initial_cny": 27402.19,
+      "metrics": {
+        "start": "2022-04-01",
+        "first_market_date": "2022-04-01",
+        "end": "2023-03-31",
+        "observations": 243,
+        "total_return": -0.02343213,
+        "cagr": -0.02351165,
+        "annualized_volatility": 0.07154615,
+        "sharpe_zero_rate": -0.30797538,
+        "max_drawdown": -0.09437766
+      },
+      "order_count": 15,
+      "state": {
+        "paused": false,
+        "cost_cny": 3658.64,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 141851.06,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 35300
+        }
+      }
+    },
+    {
+      "start": "2022-04-01",
+      "end": "2023-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": -10768.73,
+      "maximum_loss_from_initial_cny": 29238.33,
+      "metrics": {
+        "start": "2022-04-01",
+        "first_market_date": "2022-04-01",
+        "end": "2023-03-31",
+        "observations": 243,
+        "total_return": -0.03589577,
+        "cagr": -0.03601679,
+        "annualized_volatility": 0.07208744,
+        "sharpe_zero_rate": -0.4898823,
+        "max_drawdown": -0.09786349
+      },
+      "order_count": 16,
+      "state": {
+        "paused": false,
+        "cost_cny": 7263.53,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 140252.47,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 34800
+        }
+      }
+    },
+    {
+      "start": "2022-04-01",
+      "end": "2023-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": -19228.74,
+      "maximum_loss_from_initial_cny": 33451.3,
+      "metrics": {
+        "start": "2022-04-01",
+        "first_market_date": "2022-04-01",
+        "end": "2023-03-31",
+        "observations": 243,
+        "total_return": -0.0640958,
+        "cagr": -0.06430867,
+        "annualized_volatility": 0.07488946,
+        "sharpe_zero_rate": -0.87978678,
+        "max_drawdown": -0.11150433
+      },
+      "order_count": 15,
+      "state": {
+        "paused": false,
+        "cost_cny": 15476.24,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 136073.46,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 33800
+        }
+      }
+    },
+    {
+      "start": "2022-05-01",
+      "end": "2023-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 252.99,
+      "maximum_loss_from_initial_cny": 18625.93,
+      "metrics": {
+        "start": "2022-05-01",
+        "first_market_date": "2022-05-05",
+        "end": "2023-04-28",
+        "observations": 243,
+        "total_return": 0.0008433,
+        "cagr": 0.00085088,
+        "annualized_volatility": 0.05790416,
+        "sharpe_zero_rate": 0.0439405,
+        "max_drawdown": -0.06208644
+      },
+      "order_count": 15,
+      "state": {
+        "paused": false,
+        "cost_cny": 3577.91,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 464.39,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 24000,
+          "159915": 0,
+          "513500": 0,
+          "518880": 34700
+        }
+      }
+    },
+    {
+      "start": "2022-05-01",
+      "end": "2023-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": -3370.45,
+      "maximum_loss_from_initial_cny": 19882.02,
+      "metrics": {
+        "start": "2022-05-01",
+        "first_market_date": "2022-05-05",
+        "end": "2023-04-28",
+        "observations": 243,
+        "total_return": -0.01123482,
+        "cagr": -0.01133511,
+        "annualized_volatility": 0.05877608,
+        "sharpe_zero_rate": -0.17006018,
+        "max_drawdown": -0.06627341
+      },
+      "order_count": 16,
+      "state": {
+        "paused": false,
+        "cost_cny": 7104.15,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 443.25,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 23700,
+          "159915": 0,
+          "513500": 0,
+          "518880": 34300
+        }
+      }
+    },
+    {
+      "start": "2022-05-01",
+      "end": "2023-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": -11628.65,
+      "maximum_loss_from_initial_cny": 22808.28,
+      "metrics": {
+        "start": "2022-05-01",
+        "first_market_date": "2022-05-05",
+        "end": "2023-04-28",
+        "observations": 243,
+        "total_return": -0.03876216,
+        "cagr": -0.03910326,
+        "annualized_volatility": 0.06249383,
+        "sharpe_zero_rate": -0.62480573,
+        "max_drawdown": -0.07602761
+      },
+      "order_count": 15,
+      "state": {
+        "paused": false,
+        "cost_cny": 15122.55,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 17.35,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 23000,
+          "159915": 0,
+          "513500": 0,
+          "518880": 33500
+        }
+      }
+    },
+    {
+      "start": "2022-06-01",
+      "end": "2023-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 7180.86,
+      "maximum_loss_from_initial_cny": 10064.17,
+      "metrics": {
+        "start": "2022-06-01",
+        "first_market_date": "2022-06-01",
+        "end": "2023-05-31",
+        "observations": 244,
+        "total_return": 0.02393618,
+        "cagr": 0.02401936,
+        "annualized_volatility": 0.05511467,
+        "sharpe_zero_rate": 0.47070631,
+        "max_drawdown": -0.04198615
+      },
+      "order_count": 13,
+      "state": {
+        "paused": false,
+        "cost_cny": 2762.64,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 705.26,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 24800,
+          "159915": 0,
+          "513500": 0,
+          "518880": 35600
+        }
+      }
+    },
+    {
+      "start": "2022-06-01",
+      "end": "2023-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 4374.72,
+      "maximum_loss_from_initial_cny": 10514.09,
+      "metrics": {
+        "start": "2022-06-01",
+        "first_market_date": "2022-06-01",
+        "end": "2023-05-31",
+        "observations": 244,
+        "total_return": 0.01458241,
+        "cagr": 0.01463285,
+        "annualized_volatility": 0.05546559,
+        "sharpe_zero_rate": 0.29718414,
+        "max_drawdown": -0.04206311
+      },
+      "order_count": 14,
+      "state": {
+        "paused": false,
+        "cost_cny": 5494.68,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 427.02,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 24600,
+          "159915": 0,
+          "513500": 0,
+          "518880": 35300
+        }
+      }
+    },
+    {
+      "start": "2022-06-01",
+      "end": "2023-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": -2004.31,
+      "maximum_loss_from_initial_cny": 11516.52,
+      "metrics": {
+        "start": "2022-06-01",
+        "first_market_date": "2022-06-01",
+        "end": "2023-05-31",
+        "observations": 244,
+        "total_return": -0.00668103,
+        "cagr": -0.0067039,
+        "annualized_volatility": 0.05754904,
+        "sharpe_zero_rate": -0.09164005,
+        "max_drawdown": -0.04208619
+      },
+      "order_count": 14,
+      "state": {
+        "paused": false,
+        "cost_cny": 11755.81,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 585.99,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 24100,
+          "159915": 0,
+          "513500": 0,
+          "518880": 34500
+        }
+      }
+    },
+    {
+      "start": "2022-07-01",
+      "end": "2023-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 8568.71,
+      "maximum_loss_from_initial_cny": 8247.44,
+      "metrics": {
+        "start": "2022-07-01",
+        "first_market_date": "2022-07-01",
+        "end": "2023-06-30",
+        "observations": 243,
+        "total_return": 0.02856236,
+        "cagr": 0.02866184,
+        "annualized_volatility": 0.058275,
+        "sharpe_zero_rate": 0.53020457,
+        "max_drawdown": -0.03891674
+      },
+      "order_count": 14,
+      "state": {
+        "paused": false,
+        "cost_cny": 2840.49,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 401.01,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 26800,
+          "159915": 0,
+          "513500": 0,
+          "518880": 33300
+        }
+      }
+    },
+    {
+      "start": "2022-07-01",
+      "end": "2023-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 5747.9,
+      "maximum_loss_from_initial_cny": 8694.09,
+      "metrics": {
+        "start": "2022-07-01",
+        "first_market_date": "2022-07-01",
+        "end": "2023-06-30",
+        "observations": 243,
+        "total_return": 0.01915966,
+        "cagr": 0.01922608,
+        "annualized_volatility": 0.05867098,
+        "sharpe_zero_rate": 0.36467933,
+        "max_drawdown": -0.03898271
+      },
+      "order_count": 16,
+      "state": {
+        "paused": false,
+        "cost_cny": 5649.3,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 713.4,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 26500,
+          "159915": 0,
+          "513500": 0,
+          "518880": 33000
+        }
+      }
+    },
+    {
+      "start": "2022-07-01",
+      "end": "2023-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": -843.48,
+      "maximum_loss_from_initial_cny": 9736.26,
+      "metrics": {
+        "start": "2022-07-01",
+        "first_market_date": "2022-07-01",
+        "end": "2023-06-30",
+        "observations": 243,
+        "total_return": -0.00281162,
+        "cagr": -0.00282126,
+        "annualized_volatility": 0.06084768,
+        "sharpe_zero_rate": -0.01767319,
+        "max_drawdown": -0.03956399
+      },
+      "order_count": 15,
+      "state": {
+        "paused": false,
+        "cost_cny": 12070.88,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 213.82,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 26000,
+          "159915": 0,
+          "513500": 0,
+          "518880": 32300
+        }
+      }
+    },
+    {
+      "start": "2022-08-01",
+      "end": "2023-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 13879.24,
+      "maximum_loss_from_initial_cny": 1293.54,
+      "metrics": {
+        "start": "2022-08-01",
+        "first_market_date": "2022-08-01",
+        "end": "2023-07-31",
+        "observations": 243,
+        "total_return": 0.04626413,
+        "cagr": 0.04642663,
+        "annualized_volatility": 0.05956505,
+        "sharpe_zero_rate": 0.81710612,
+        "max_drawdown": -0.03881281
+      },
+      "order_count": 17,
+      "state": {
+        "paused": false,
+        "cost_cny": 3840.26,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 165.44,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 103000,
+          "518880": 35200
+        }
+      }
+    },
+    {
+      "start": "2022-08-01",
+      "end": "2023-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 9979.27,
+      "maximum_loss_from_initial_cny": 2598.95,
+      "metrics": {
+        "start": "2022-08-01",
+        "first_market_date": "2022-08-01",
+        "end": "2023-07-31",
+        "observations": 243,
+        "total_return": 0.03326422,
+        "cagr": 0.03338034,
+        "annualized_volatility": 0.06010342,
+        "sharpe_zero_rate": 0.59455959,
+        "max_drawdown": -0.04166605
+      },
+      "order_count": 18,
+      "state": {
+        "paused": false,
+        "cost_cny": 7626.23,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 8.97,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 102000,
+          "518880": 34700
+        }
+      }
+    },
+    {
+      "start": "2022-08-01",
+      "end": "2023-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 1122.47,
+      "maximum_loss_from_initial_cny": 6736.59,
+      "metrics": {
+        "start": "2022-08-01",
+        "first_market_date": "2022-08-01",
+        "end": "2023-07-31",
+        "observations": 243,
+        "total_return": 0.00374157,
+        "cagr": 0.00375444,
+        "annualized_volatility": 0.06311224,
+        "sharpe_zero_rate": 0.09279845,
+        "max_drawdown": -0.04919802
+      },
+      "order_count": 18,
+      "state": {
+        "paused": false,
+        "cost_cny": 16245.03,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 269.67,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 99800,
+          "518880": 33400
+        }
+      }
+    },
+    {
+      "start": "2022-09-01",
+      "end": "2023-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 18799.59,
+      "maximum_loss_from_initial_cny": 886.22,
+      "metrics": {
+        "start": "2022-09-01",
+        "first_market_date": "2022-09-01",
+        "end": "2023-08-31",
+        "observations": 243,
+        "total_return": 0.0626653,
+        "cagr": 0.06288713,
+        "annualized_volatility": 0.06319479,
+        "sharpe_zero_rate": 1.02899492,
+        "max_drawdown": -0.03890624
+      },
+      "order_count": 18,
+      "state": {
+        "paused": false,
+        "cost_cny": 3933.61,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 452.79,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 93000,
+          "518880": 38700
+        }
+      }
+    },
+    {
+      "start": "2022-09-01",
+      "end": "2023-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 14790.99,
+      "maximum_loss_from_initial_cny": 2184.06,
+      "metrics": {
+        "start": "2022-09-01",
+        "first_market_date": "2022-09-01",
+        "end": "2023-08-31",
+        "observations": 243,
+        "total_return": 0.04930331,
+        "cagr": 0.04947674,
+        "annualized_volatility": 0.06369381,
+        "sharpe_zero_rate": 0.81535922,
+        "max_drawdown": -0.04168265
+      },
+      "order_count": 19,
+      "state": {
+        "paused": false,
+        "cost_cny": 7810.51,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 399.49,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 91900,
+          "518880": 38200
+        }
+      }
+    },
+    {
+      "start": "2022-09-01",
+      "end": "2023-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 5528.57,
+      "maximum_loss_from_initial_cny": 6311.51,
+      "metrics": {
+        "start": "2022-09-01",
+        "first_market_date": "2022-09-01",
+        "end": "2023-08-31",
+        "observations": 243,
+        "total_return": 0.01842858,
+        "cagr": 0.01849244,
+        "annualized_volatility": 0.06654024,
+        "sharpe_zero_rate": 0.3177519,
+        "max_drawdown": -0.04924584
+      },
+      "order_count": 19,
+      "state": {
+        "paused": false,
+        "cost_cny": 16683.63,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 273.57,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 89200,
+          "518880": 37100
+        }
+      }
+    },
+    {
+      "start": "2022-10-01",
+      "end": "2023-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 5909.88,
+      "maximum_loss_from_initial_cny": 4195.22,
+      "metrics": {
+        "start": "2022-10-01",
+        "first_market_date": "2022-10-10",
+        "end": "2023-09-28",
+        "observations": 242,
+        "total_return": 0.01969959,
+        "cagr": 0.0198782,
+        "annualized_volatility": 0.06710979,
+        "sharpe_zero_rate": 0.33613314,
+        "max_drawdown": -0.03886055
+      },
+      "order_count": 20,
+      "state": {
+        "paused": false,
+        "cost_cny": 4062.02,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 393.98,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 74100,
+          "518880": 44300
+        }
+      }
+    },
+    {
+      "start": "2022-10-01",
+      "end": "2023-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 1852.71,
+      "maximum_loss_from_initial_cny": 5976.48,
+      "metrics": {
+        "start": "2022-10-01",
+        "first_market_date": "2022-10-10",
+        "end": "2023-09-28",
+        "observations": 242,
+        "total_return": 0.00617569,
+        "cagr": 0.00623131,
+        "annualized_volatility": 0.06766599,
+        "sharpe_zero_rate": 0.12844622,
+        "max_drawdown": -0.04168724
+      },
+      "order_count": 19,
+      "state": {
+        "paused": false,
+        "cost_cny": 8066.39,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 25.81,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 73100,
+          "518880": 43800
+        }
+      }
+    },
+    {
+      "start": "2022-10-01",
+      "end": "2023-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": -7401.85,
+      "maximum_loss_from_initial_cny": 10090.89,
+      "metrics": {
+        "start": "2022-10-01",
+        "first_market_date": "2022-10-10",
+        "end": "2023-09-28",
+        "observations": 242,
+        "total_return": -0.02467284,
+        "cagr": -0.02489157,
+        "annualized_volatility": 0.07044643,
+        "sharpe_zero_rate": -0.33416124,
+        "max_drawdown": -0.04919312
+      },
+      "order_count": 20,
+      "state": {
+        "paused": false,
+        "cost_cny": 17197.85,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 70.75,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 71000,
+          "518880": 42400
+        }
+      }
+    },
+    {
+      "start": "2022-11-01",
+      "end": "2023-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 11660.48,
+      "maximum_loss_from_initial_cny": 2312.23,
+      "metrics": {
+        "start": "2022-11-01",
+        "first_market_date": "2022-11-01",
+        "end": "2023-10-31",
+        "observations": 243,
+        "total_return": 0.03886827,
+        "cagr": 0.03900431,
+        "annualized_volatility": 0.06833461,
+        "sharpe_zero_rate": 0.61276064,
+        "max_drawdown": -0.04405781
+      },
+      "order_count": 19,
+      "state": {
+        "paused": false,
+        "cost_cny": 3271.02,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 98.48,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 86000,
+          "518880": 40800
+        }
+      }
+    },
+    {
+      "start": "2022-11-01",
+      "end": "2023-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 8323.83,
+      "maximum_loss_from_initial_cny": 3202.07,
+      "metrics": {
+        "start": "2022-11-01",
+        "first_market_date": "2022-11-01",
+        "end": "2023-10-31",
+        "observations": 243,
+        "total_return": 0.0277461,
+        "cagr": 0.02784269,
+        "annualized_volatility": 0.0687217,
+        "sharpe_zero_rate": 0.44724324,
+        "max_drawdown": -0.04439386
+      },
+      "order_count": 20,
+      "state": {
+        "paused": false,
+        "cost_cny": 6511.47,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 73.53,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 85300,
+          "518880": 40300
+        }
+      }
+    },
+    {
+      "start": "2022-11-01",
+      "end": "2023-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 836.95,
+      "maximum_loss_from_initial_cny": 5251.43,
+      "metrics": {
+        "start": "2022-11-01",
+        "first_market_date": "2022-11-01",
+        "end": "2023-10-31",
+        "observations": 243,
+        "total_return": 0.00278985,
+        "cagr": 0.00279944,
+        "annualized_volatility": 0.07094458,
+        "sharpe_zero_rate": 0.07607119,
+        "max_drawdown": -0.05431529
+      },
+      "order_count": 20,
+      "state": {
+        "paused": false,
+        "cost_cny": 13911.75,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 35.95,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 83000,
+          "518880": 39400
+        }
+      }
+    },
+    {
+      "start": "2022-12-01",
+      "end": "2023-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 19638.16,
+      "maximum_loss_from_initial_cny": 2312.23,
+      "metrics": {
+        "start": "2022-12-01",
+        "first_market_date": "2022-12-01",
+        "end": "2023-11-30",
+        "observations": 243,
+        "total_return": 0.06546052,
+        "cagr": 0.06569255,
+        "annualized_volatility": 0.07100998,
+        "sharpe_zero_rate": 0.9614905,
+        "max_drawdown": -0.04405781
+      },
+      "order_count": 21,
+      "state": {
+        "paused": false,
+        "cost_cny": 3336.94,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 118.96,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 93600,
+          "518880": 38400
+        }
+      }
+    },
+    {
+      "start": "2022-12-01",
+      "end": "2023-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 16158.43,
+      "maximum_loss_from_initial_cny": 3202.07,
+      "metrics": {
+        "start": "2022-12-01",
+        "first_market_date": "2022-12-01",
+        "end": "2023-11-30",
+        "observations": 243,
+        "total_return": 0.05386144,
+        "cagr": 0.05405131,
+        "annualized_volatility": 0.07139669,
+        "sharpe_zero_rate": 0.79763715,
+        "max_drawdown": -0.04439386
+      },
+      "order_count": 22,
+      "state": {
+        "paused": false,
+        "cost_cny": 6637.97,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 5.83,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 92600,
+          "518880": 38000
+        }
+      }
+    },
+    {
+      "start": "2022-12-01",
+      "end": "2023-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 8307.42,
+      "maximum_loss_from_initial_cny": 5251.43,
+      "metrics": {
+        "start": "2022-12-01",
+        "first_market_date": "2022-12-01",
+        "end": "2023-11-30",
+        "observations": 243,
+        "total_return": 0.0276914,
+        "cagr": 0.02778781,
+        "annualized_volatility": 0.07356223,
+        "sharpe_zero_rate": 0.42174411,
+        "max_drawdown": -0.05431529
+      },
+      "order_count": 22,
+      "state": {
+        "paused": false,
+        "cost_cny": 14182.08,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 112.42,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 90100,
+          "518880": 37100
+        }
+      }
+    },
+    {
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 28688.99,
+      "maximum_loss_from_initial_cny": 2312.23,
+      "metrics": {
+        "start": "2023-01-01",
+        "first_market_date": "2023-01-03",
+        "end": "2023-12-29",
+        "observations": 242,
+        "total_return": 0.09562996,
+        "cagr": 0.09652868,
+        "annualized_volatility": 0.07494618,
+        "sharpe_zero_rate": 1.30651832,
+        "max_drawdown": -0.04405781
+      },
+      "order_count": 23,
+      "state": {
+        "paused": false,
+        "cost_cny": 3349.81,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 405.09,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 94900,
+          "518880": 37900
+        }
+      }
+    },
+    {
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 25100.79,
+      "maximum_loss_from_initial_cny": 3202.07,
+      "metrics": {
+        "start": "2023-01-01",
+        "first_market_date": "2023-01-03",
+        "end": "2023-12-29",
+        "observations": 242,
+        "total_return": 0.08366931,
+        "cagr": 0.08445135,
+        "annualized_volatility": 0.07533374,
+        "sharpe_zero_rate": 1.14839992,
+        "max_drawdown": -0.04439386
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 6663.71,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 279.09,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 93900,
+          "518880": 37500
+        }
+      }
+    },
+    {
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 16996.26,
+      "maximum_loss_from_initial_cny": 5251.43,
+      "metrics": {
+        "start": "2023-01-01",
+        "first_market_date": "2023-01-03",
+        "end": "2023-12-29",
+        "observations": 242,
+        "total_return": 0.0566542,
+        "cagr": 0.05717711,
+        "annualized_volatility": 0.07743935,
+        "sharpe_zero_rate": 0.77969067,
+        "max_drawdown": -0.05431529
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 14241.84,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 44.66,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 91600,
+          "518880": 36600
+        }
+      }
+    },
+    {
+      "start": "2023-02-01",
+      "end": "2024-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 28068.77,
+      "maximum_loss_from_initial_cny": 3836.47,
+      "metrics": {
+        "start": "2023-02-01",
+        "first_market_date": "2023-02-01",
+        "end": "2024-01-31",
+        "observations": 248,
+        "total_return": 0.09356255,
+        "cagr": 0.09389849,
+        "annualized_volatility": 0.07402972,
+        "sharpe_zero_rate": 1.26475203,
+        "max_drawdown": -0.04404187
+      },
+      "order_count": 22,
+      "state": {
+        "paused": false,
+        "cost_cny": 2428.63,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 358.97,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 95700,
+          "518880": 36000
+        }
+      }
+    },
+    {
+      "start": "2023-02-01",
+      "end": "2024-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 25462.09,
+      "maximum_loss_from_initial_cny": 4287.35,
+      "metrics": {
+        "start": "2023-02-01",
+        "first_market_date": "2023-02-01",
+        "end": "2024-01-31",
+        "observations": 248,
+        "total_return": 0.08487362,
+        "cagr": 0.08517716,
+        "annualized_volatility": 0.07435873,
+        "sharpe_zero_rate": 1.15043451,
+        "max_drawdown": -0.04432905
+      },
+      "order_count": 23,
+      "state": {
+        "paused": false,
+        "cost_cny": 4833.11,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 319.99,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 95000,
+          "518880": 35700
+        }
+      }
+    },
+    {
+      "start": "2023-02-01",
+      "end": "2024-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 19513.92,
+      "maximum_loss_from_initial_cny": 8866.71,
+      "metrics": {
+        "start": "2023-02-01",
+        "first_market_date": "2023-02-01",
+        "end": "2024-01-31",
+        "observations": 248,
+        "total_return": 0.06504639,
+        "cagr": 0.0652769,
+        "annualized_volatility": 0.07587243,
+        "sharpe_zero_rate": 0.88188342,
+        "max_drawdown": -0.05428201
+      },
+      "order_count": 22,
+      "state": {
+        "paused": false,
+        "cost_cny": 10365.48,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 176.82,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 93200,
+          "518880": 35100
+        }
+      }
+    },
+    {
+      "start": "2023-03-01",
+      "end": "2024-02-29",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 38022.29,
+      "maximum_loss_from_initial_cny": 562.75,
+      "metrics": {
+        "start": "2023-03-01",
+        "first_market_date": "2023-03-01",
+        "end": "2024-02-29",
+        "observations": 243,
+        "total_return": 0.12674098,
+        "cagr": 0.12683307,
+        "annualized_volatility": 0.0764727,
+        "sharpe_zero_rate": 1.65668001,
+        "max_drawdown": -0.04404818
+      },
+      "order_count": 23,
+      "state": {
+        "paused": false,
+        "cost_cny": 2558.21,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 261.99,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 84400,
+          "518880": 40500
+        }
+      }
+    },
+    {
+      "start": "2023-03-01",
+      "end": "2024-02-29",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 35244.0,
+      "maximum_loss_from_initial_cny": 1586.42,
+      "metrics": {
+        "start": "2023-03-01",
+        "first_market_date": "2023-03-01",
+        "end": "2024-02-29",
+        "observations": 243,
+        "total_return": 0.11747998,
+        "cagr": 0.117565,
+        "annualized_volatility": 0.07683588,
+        "sharpe_zero_rate": 1.53776516,
+        "max_drawdown": -0.04439866
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 5098.0,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 118.2,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 83700,
+          "518880": 40200
+        }
+      }
+    },
+    {
+      "start": "2023-03-01",
+      "end": "2024-02-29",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 28811.4,
+      "maximum_loss_from_initial_cny": 6850.64,
+      "metrics": {
+        "start": "2023-03-01",
+        "first_market_date": "2023-03-01",
+        "end": "2024-02-29",
+        "observations": 243,
+        "total_return": 0.096038,
+        "cagr": 0.09610685,
+        "annualized_volatility": 0.07848895,
+        "sharpe_zero_rate": 1.25092618,
+        "max_drawdown": -0.05432111
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 10948.6,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 61.2,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 82200,
+          "518880": 39400
+        }
+      }
+    },
+    {
+      "start": "2023-04-01",
+      "end": "2024-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 55069.38,
+      "maximum_loss_from_initial_cny": 8053.0,
+      "metrics": {
+        "start": "2023-04-01",
+        "first_market_date": "2023-04-03",
+        "end": "2024-03-29",
+        "observations": 241,
+        "total_return": 0.18356461,
+        "cagr": 0.18480162,
+        "annualized_volatility": 0.07922865,
+        "sharpe_zero_rate": 2.26442705,
+        "max_drawdown": -0.04402995
+      },
+      "order_count": 23,
+      "state": {
+        "paused": false,
+        "cost_cny": 2585.82,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 347.78,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 69600,
+          "518880": 44000
+        }
+      }
+    },
+    {
+      "start": "2023-04-01",
+      "end": "2024-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 51972.07,
+      "maximum_loss_from_initial_cny": 10277.54,
+      "metrics": {
+        "start": "2023-04-01",
+        "first_market_date": "2023-04-03",
+        "end": "2024-03-29",
+        "observations": 241,
+        "total_return": 0.17324022,
+        "cagr": 0.17440267,
+        "annualized_volatility": 0.07963823,
+        "sharpe_zero_rate": 2.13807421,
+        "max_drawdown": -0.04435956
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 5161.33,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 228.87,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 69100,
+          "518880": 43600
+        }
+      }
+    },
+    {
+      "start": "2023-04-01",
+      "end": "2024-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 44896.38,
+      "maximum_loss_from_initial_cny": 15378.17,
+      "metrics": {
+        "start": "2023-04-01",
+        "first_market_date": "2023-04-03",
+        "end": "2024-03-29",
+        "observations": 241,
+        "total_return": 0.14965462,
+        "cagr": 0.15064884,
+        "annualized_volatility": 0.08158574,
+        "sharpe_zero_rate": 1.82853308,
+        "max_drawdown": -0.05459582
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 11057.92,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 364.98,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 67700,
+          "518880": 42700
+        }
+      }
+    },
+    {
+      "start": "2023-05-01",
+      "end": "2024-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 51278.36,
+      "maximum_loss_from_initial_cny": 10196.81,
+      "metrics": {
+        "start": "2023-05-01",
+        "first_market_date": "2023-05-04",
+        "end": "2024-04-30",
+        "observations": 242,
+        "total_return": 0.17092787,
+        "cagr": 0.17105443,
+        "annualized_volatility": 0.08505545,
+        "sharpe_zero_rate": 1.97479076,
+        "max_drawdown": -0.04610726
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 2662.94,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 599.96,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 78000,
+          "518880": 40400
+        }
+      }
+    },
+    {
+      "start": "2023-05-01",
+      "end": "2024-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 48186.1,
+      "maximum_loss_from_initial_cny": 12363.07,
+      "metrics": {
+        "start": "2023-05-01",
+        "first_market_date": "2023-05-04",
+        "end": "2024-04-30",
+        "observations": 242,
+        "total_return": 0.16062032,
+        "cagr": 0.16073873,
+        "annualized_volatility": 0.08544278,
+        "sharpe_zero_rate": 1.85839611,
+        "max_drawdown": -0.04616501
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 5288.2,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 148.3,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 77400,
+          "518880": 40100
+        }
+      }
+    },
+    {
+      "start": "2023-05-01",
+      "end": "2024-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 41090.95,
+      "maximum_loss_from_initial_cny": 17329.27,
+      "metrics": {
+        "start": "2023-05-01",
+        "first_market_date": "2023-05-04",
+        "end": "2024-04-30",
+        "observations": 242,
+        "total_return": 0.13696983,
+        "cagr": 0.1370698,
+        "annualized_volatility": 0.0871603,
+        "sharpe_zero_rate": 1.57737242,
+        "max_drawdown": -0.05776422
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 11314.55,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 94.75,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 75800,
+          "518880": 39300
+        }
+      }
+    },
+    {
+      "start": "2023-06-01",
+      "end": "2024-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 63825.35,
+      "maximum_loss_from_initial_cny": 4979.94,
+      "metrics": {
+        "start": "2023-06-01",
+        "first_market_date": "2023-06-01",
+        "end": "2024-05-31",
+        "observations": 242,
+        "total_return": 0.21275116,
+        "cagr": 0.21291139,
+        "annualized_volatility": 0.08998319,
+        "sharpe_zero_rate": 2.2778408,
+        "max_drawdown": -0.04615623
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 2831.25,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 119.15,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 96900,
+          "518880": 35300
+        }
+      }
+    },
+    {
+      "start": "2023-06-01",
+      "end": "2024-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 60484.5,
+      "maximum_loss_from_initial_cny": 7143.95,
+      "metrics": {
+        "start": "2023-06-01",
+        "first_market_date": "2023-06-01",
+        "end": "2024-05-31",
+        "observations": 242,
+        "total_return": 0.20161499,
+        "cagr": 0.20176616,
+        "annualized_volatility": 0.09037713,
+        "sharpe_zero_rate": 2.16193125,
+        "max_drawdown": -0.04614388
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 5642.0,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 7.5,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 96000,
+          "518880": 35000
+        }
+      }
+    },
+    {
+      "start": "2023-06-01",
+      "end": "2024-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 52786.64,
+      "maximum_loss_from_initial_cny": 12118.09,
+      "metrics": {
+        "start": "2023-06-01",
+        "first_market_date": "2023-06-01",
+        "end": "2024-05-31",
+        "observations": 242,
+        "total_return": 0.17595548,
+        "cagr": 0.17608603,
+        "annualized_volatility": 0.09217531,
+        "sharpe_zero_rate": 1.87751173,
+        "max_drawdown": -0.04615881
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 12092.36,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 25.14,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 93800,
+          "518880": 34300
+        }
+      }
+    },
+    {
+      "start": "2023-07-01",
+      "end": "2024-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 80977.72,
+      "maximum_loss_from_initial_cny": 4015.57,
+      "metrics": {
+        "start": "2023-07-01",
+        "first_market_date": "2023-07-03",
+        "end": "2024-06-28",
+        "observations": 241,
+        "total_return": 0.26992573,
+        "cagr": 0.27180807,
+        "annualized_volatility": 0.09057417,
+        "sharpe_zero_rate": 2.80506499,
+        "max_drawdown": -0.04613983
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 2014.48,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 10.02,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 108900,
+          "518880": 31400
+        }
+      }
+    },
+    {
+      "start": "2023-07-01",
+      "end": "2024-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 78554.09,
+      "maximum_loss_from_initial_cny": 5237.93,
+      "metrics": {
+        "start": "2023-07-01",
+        "first_market_date": "2023-07-03",
+        "end": "2024-06-28",
+        "observations": 241,
+        "total_return": 0.26184697,
+        "cagr": 0.26366734,
+        "annualized_volatility": 0.09085526,
+        "sharpe_zero_rate": 2.72314538,
+        "max_drawdown": -0.0461661
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 4016.51,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 25.49,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 108200,
+          "518880": 31200
+        }
+      }
+    },
+    {
+      "start": "2023-07-01",
+      "end": "2024-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 72942.41,
+      "maximum_loss_from_initial_cny": 8088.45,
+      "metrics": {
+        "start": "2023-07-01",
+        "first_market_date": "2023-07-03",
+        "end": "2024-06-28",
+        "observations": 241,
+        "total_return": 0.24314136,
+        "cagr": 0.24481951,
+        "annualized_volatility": 0.09189908,
+        "sharpe_zero_rate": 2.5231648,
+        "max_drawdown": -0.04616526
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 8622.79,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 80.41,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 106400,
+          "518880": 30800
+        }
+      }
+    },
+    {
+      "start": "2023-08-01",
+      "end": "2024-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 77322.4,
+      "maximum_loss_from_initial_cny": 8317.94,
+      "metrics": {
+        "start": "2023-08-01",
+        "first_market_date": "2023-08-01",
+        "end": "2024-07-31",
+        "observations": 243,
+        "total_return": 0.25774132,
+        "cagr": 0.25793888,
+        "annualized_volatility": 0.10099801,
+        "sharpe_zero_rate": 2.40604416,
+        "max_drawdown": -0.05825983
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 1922.1,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 103.2,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 106300,
+          "518880": 31300
+        }
+      }
+    },
+    {
+      "start": "2023-08-01",
+      "end": "2024-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 74979.18,
+      "maximum_loss_from_initial_cny": 9446.05,
+      "metrics": {
+        "start": "2023-08-01",
+        "first_market_date": "2023-08-01",
+        "end": "2024-07-31",
+        "observations": 243,
+        "total_return": 0.24993061,
+        "cagr": 0.25012161,
+        "annualized_volatility": 0.10118857,
+        "sharpe_zero_rate": 2.33779956,
+        "max_drawdown": -0.05824249
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 3831.22,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 210.78,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 105600,
+          "518880": 31100
+        }
+      }
+    },
+    {
+      "start": "2023-08-01",
+      "end": "2024-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 69621.08,
+      "maximum_loss_from_initial_cny": 12068.17,
+      "metrics": {
+        "start": "2023-08-01",
+        "first_market_date": "2023-08-01",
+        "end": "2024-07-31",
+        "observations": 243,
+        "total_return": 0.23207025,
+        "cagr": 0.23224638,
+        "annualized_volatility": 0.10205125,
+        "sharpe_zero_rate": 2.1725145,
+        "max_drawdown": -0.05821083
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 8226.62,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 492.68,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 104100,
+          "518880": 30600
+        }
+      }
+    },
+    {
+      "start": "2023-09-01",
+      "end": "2024-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 81524.18,
+      "maximum_loss_from_initial_cny": 9517.31,
+      "metrics": {
+        "start": "2023-09-01",
+        "first_market_date": "2023-09-01",
+        "end": "2024-08-30",
+        "observations": 242,
+        "total_return": 0.27174727,
+        "cagr": 0.27279756,
+        "annualized_volatility": 0.11129281,
+        "sharpe_zero_rate": 2.30604684,
+        "max_drawdown": -0.08135695
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 1871.42,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 29528.18,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 88900,
+          "518880": 31900
+        }
+      }
+    },
+    {
+      "start": "2023-09-01",
+      "end": "2024-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 79242.48,
+      "maximum_loss_from_initial_cny": 10509.02,
+      "metrics": {
+        "start": "2023-09-01",
+        "first_market_date": "2023-09-01",
+        "end": "2024-08-30",
+        "observations": 242,
+        "total_return": 0.2641416,
+        "cagr": 0.26515954,
+        "annualized_volatility": 0.11143206,
+        "sharpe_zero_rate": 2.24719383,
+        "max_drawdown": -0.08164958
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 3724.42,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 29339.88,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 88400,
+          "518880": 31700
+        }
+      }
+    },
+    {
+      "start": "2023-09-01",
+      "end": "2024-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 74090.24,
+      "maximum_loss_from_initial_cny": 12729.75,
+      "metrics": {
+        "start": "2023-09-01",
+        "first_market_date": "2023-09-01",
+        "end": "2024-08-30",
+        "observations": 242,
+        "total_return": 0.24696748,
+        "cagr": 0.24791298,
+        "annualized_volatility": 0.1119864,
+        "sharpe_zero_rate": 2.10930922,
+        "max_drawdown": -0.0823098
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 7966.66,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 28770.04,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 87200,
+          "518880": 31300
+        }
+      }
+    },
+    {
+      "start": "2023-10-01",
+      "end": "2024-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 94439.17,
+      "maximum_loss_from_initial_cny": 1447.38,
+      "metrics": {
+        "start": "2023-10-01",
+        "first_market_date": "2023-10-09",
+        "end": "2024-09-30",
+        "observations": 241,
+        "total_return": 0.31479722,
+        "cagr": 0.31504371,
+        "annualized_volatility": 0.11115891,
+        "sharpe_zero_rate": 2.63154405,
+        "max_drawdown": -0.08135158
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 2009.63,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 76209.07,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 61800,
+          "518880": 35100
+        }
+      }
+    },
+    {
+      "start": "2023-10-01",
+      "end": "2024-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 92033.54,
+      "maximum_loss_from_initial_cny": 2334.53,
+      "metrics": {
+        "start": "2023-10-01",
+        "first_market_date": "2023-10-09",
+        "end": "2024-09-30",
+        "observations": 241,
+        "total_return": 0.30677847,
+        "cagr": 0.30701797,
+        "annualized_volatility": 0.11131776,
+        "sharpe_zero_rate": 2.57041871,
+        "max_drawdown": -0.0816603
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 4007.66,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 75708.04,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 61400,
+          "518880": 34900
+        }
+      }
+    },
+    {
+      "start": "2023-10-01",
+      "end": "2024-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 86519.8,
+      "maximum_loss_from_initial_cny": 4376.06,
+      "metrics": {
+        "start": "2023-10-01",
+        "first_market_date": "2023-10-09",
+        "end": "2024-09-30",
+        "observations": 241,
+        "total_return": 0.28839932,
+        "cagr": 0.28862296,
+        "annualized_volatility": 0.11206138,
+        "sharpe_zero_rate": 2.42179499,
+        "max_drawdown": -0.08233886
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 8577.2,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 74003.5,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 60600,
+          "518880": 34500
+        }
+      }
+    },
+    {
+      "start": "2023-11-01",
+      "end": "2024-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 107607.1,
+      "maximum_loss_from_initial_cny": 98.43,
+      "metrics": {
+        "start": "2023-11-01",
+        "first_market_date": "2023-11-01",
+        "end": "2024-10-31",
+        "observations": 242,
+        "total_return": 0.35869032,
+        "cagr": 0.3589756,
+        "annualized_volatility": 0.1120309,
+        "sharpe_zero_rate": 2.906963,
+        "max_drawdown": -0.08133017
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 1985.8,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 66638.4,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 58000,
+          "518880": 36900
+        }
+      }
+    },
+    {
+      "start": "2023-11-01",
+      "end": "2024-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 105217.31,
+      "maximum_loss_from_initial_cny": 990.95,
+      "metrics": {
+        "start": "2023-11-01",
+        "first_market_date": "2023-11-01",
+        "end": "2024-10-31",
+        "observations": 242,
+        "total_return": 0.35072438,
+        "cagr": 0.35100255,
+        "annualized_volatility": 0.112128,
+        "sharpe_zero_rate": 2.84986476,
+        "max_drawdown": -0.08166428
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 3955.89,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 66267.61,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 57600,
+          "518880": 36700
+        }
+      }
+    },
+    {
+      "start": "2023-11-01",
+      "end": "2024-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 99711.57,
+      "maximum_loss_from_initial_cny": 3055.55,
+      "metrics": {
+        "start": "2023-11-01",
+        "first_market_date": "2023-11-01",
+        "end": "2024-10-31",
+        "observations": 242,
+        "total_return": 0.33237191,
+        "cagr": 0.33263381,
+        "annualized_volatility": 0.11275803,
+        "sharpe_zero_rate": 2.70807787,
+        "max_drawdown": -0.08232912
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 8456.43,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 65210.57,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 56900,
+          "518880": 36200
+        }
+      }
+    },
+    {
+      "start": "2023-12-01",
+      "end": "2024-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 101159.46,
+      "maximum_loss_from_initial_cny": 1303.08,
+      "metrics": {
+        "start": "2023-12-01",
+        "first_market_date": "2023-12-01",
+        "end": "2024-11-29",
+        "observations": 241,
+        "total_return": 0.33719821,
+        "cagr": 0.33853321,
+        "annualized_volatility": 0.11596066,
+        "sharpe_zero_rate": 2.67977221,
+        "max_drawdown": -0.08134807
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 2098.04,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 13929.76,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 62100,
+          "518880": 42500
+        }
+      }
+    },
+    {
+      "start": "2023-12-01",
+      "end": "2024-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 98623.43,
+      "maximum_loss_from_initial_cny": 2192.05,
+      "metrics": {
+        "start": "2023-12-01",
+        "first_market_date": "2023-12-01",
+        "end": "2024-11-29",
+        "observations": 241,
+        "total_return": 0.32874477,
+        "cagr": 0.33004236,
+        "annualized_volatility": 0.11614202,
+        "sharpe_zero_rate": 2.61860358,
+        "max_drawdown": -0.08164997
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 4161.07,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 13825.23,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 61800,
+          "518880": 42200
+        }
+      }
+    },
+    {
+      "start": "2023-12-01",
+      "end": "2024-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 92855.58,
+      "maximum_loss_from_initial_cny": 4249.49,
+      "metrics": {
+        "start": "2023-12-01",
+        "first_market_date": "2023-12-01",
+        "end": "2024-11-29",
+        "observations": 241,
+        "total_return": 0.30951859,
+        "cagr": 0.3107318,
+        "annualized_volatility": 0.11688512,
+        "sharpe_zero_rate": 2.47215906,
+        "max_drawdown": -0.08228539
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 8907.12,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 13574.98,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 60900,
+          "518880": 41600
+        }
+      }
+    },
+    {
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 88988.22,
+      "maximum_loss_from_initial_cny": 2092.33,
+      "metrics": {
+        "start": "2024-01-01",
+        "first_market_date": "2024-01-02",
+        "end": "2024-12-31",
+        "observations": 242,
+        "total_return": 0.29662739,
+        "cagr": 0.2968581,
+        "annualized_volatility": 0.11793459,
+        "sharpe_zero_rate": 2.35386404,
+        "max_drawdown": -0.08135056
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 2226.68,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 102.62,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 77600,
+          "518880": 37300
+        }
+      }
+    },
+    {
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 86372.1,
+      "maximum_loss_from_initial_cny": 2985.3,
+      "metrics": {
+        "start": "2024-01-01",
+        "first_market_date": "2024-01-02",
+        "end": "2024-12-31",
+        "observations": 242,
+        "total_return": 0.287907,
+        "cagr": 0.28813021,
+        "annualized_volatility": 0.11799108,
+        "sharpe_zero_rate": 2.29317364,
+        "max_drawdown": -0.08161712
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 4442.7,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 185.5,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 76900,
+          "518880": 37100
+        }
+      }
+    },
+    {
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 80359.82,
+      "maximum_loss_from_initial_cny": 5045.43,
+      "metrics": {
+        "start": "2024-01-01",
+        "first_market_date": "2024-01-02",
+        "end": "2024-12-31",
+        "observations": 242,
+        "total_return": 0.26786607,
+        "cagr": 0.26807219,
+        "annualized_volatility": 0.11861042,
+        "sharpe_zero_rate": 2.14398782,
+        "max_drawdown": -0.08231561
+      },
+      "order_count": 24,
+      "state": {
+        "paused": false,
+        "cost_cny": 9537.48,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 108.22,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 0,
+          "513500": 75800,
+          "518880": 36500
+        }
+      }
+    },
+    {
+      "start": "2024-02-01",
+      "end": "2025-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 84928.89,
+      "maximum_loss_from_initial_cny": 0.0,
+      "metrics": {
+        "start": "2024-02-01",
+        "first_market_date": "2024-02-01",
+        "end": "2025-01-27",
+        "observations": 238,
+        "total_return": 0.2830963,
+        "cagr": 0.28686732,
+        "annualized_volatility": 0.12012308,
+        "sharpe_zero_rate": 2.25845633,
+        "max_drawdown": -0.08136523
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 3057.61,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 116437.29,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 24000,
+          "513500": 100100,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-02-01",
+      "end": "2025-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 81618.45,
+      "maximum_loss_from_initial_cny": 816.49,
+      "metrics": {
+        "start": "2024-02-01",
+        "first_market_date": "2024-02-01",
+        "end": "2025-01-27",
+        "observations": 238,
+        "total_return": 0.27206149,
+        "cagr": 0.27567036,
+        "annualized_volatility": 0.12027136,
+        "sharpe_zero_rate": 2.17969941,
+        "max_drawdown": -0.08161881
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 6101.15,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 114850.05,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 23800,
+          "513500": 99500,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-02-01",
+      "end": "2025-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 73741.81,
+      "maximum_loss_from_initial_cny": 2881.18,
+      "metrics": {
+        "start": "2024-02-01",
+        "first_market_date": "2024-02-01",
+        "end": "2025-01-27",
+        "observations": 238,
+        "total_return": 0.24580602,
+        "cagr": 0.24903368,
+        "annualized_volatility": 0.12111317,
+        "sharpe_zero_rate": 1.98287596,
+        "max_drawdown": -0.08228407
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 13059.89,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 110875.81,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 23500,
+          "513500": 98000,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-03-01",
+      "end": "2025-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 62829.77,
+      "maximum_loss_from_initial_cny": 641.49,
+      "metrics": {
+        "start": "2024-03-01",
+        "first_market_date": "2024-03-01",
+        "end": "2025-02-28",
+        "observations": 241,
+        "total_return": 0.20943255,
+        "cagr": 0.21022256,
+        "annualized_volatility": 0.12238089,
+        "sharpe_zero_rate": 1.68654702,
+        "max_drawdown": -0.08135005
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 3109.83,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 78301.77,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 51300,
+          "513500": 86300,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-03-01",
+      "end": "2025-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 59506.2,
+      "maximum_loss_from_initial_cny": 1533.79,
+      "metrics": {
+        "start": "2024-03-01",
+        "first_market_date": "2024-03-01",
+        "end": "2025-02-28",
+        "observations": 241,
+        "total_return": 0.19835399,
+        "cagr": 0.19909887,
+        "annualized_volatility": 0.12262086,
+        "sharpe_zero_rate": 1.60495177,
+        "max_drawdown": -0.08167546
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 6184.6,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 77251.8,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 50900,
+          "513500": 85600,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-03-01",
+      "end": "2025-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 51882.72,
+      "maximum_loss_from_initial_cny": 3597.58,
+      "metrics": {
+        "start": "2024-03-01",
+        "first_market_date": "2024-03-01",
+        "end": "2025-02-28",
+        "observations": 241,
+        "total_return": 0.17294241,
+        "cagr": 0.17358511,
+        "annualized_volatility": 0.12362356,
+        "sharpe_zero_rate": 1.41151271,
+        "max_drawdown": -0.08234222
+      },
+      "order_count": 25,
+      "state": {
+        "paused": false,
+        "cost_cny": 13229.48,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 75210.72,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 49900,
+          "513500": 83900,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-04-01",
+      "end": "2025-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 50661.61,
+      "maximum_loss_from_initial_cny": 7933.25,
+      "metrics": {
+        "start": "2024-04-01",
+        "first_market_date": "2024-04-01",
+        "end": "2025-03-31",
+        "observations": 241,
+        "total_return": 0.16887204,
+        "cagr": 0.16949855,
+        "annualized_volatility": 0.12254121,
+        "sharpe_zero_rate": 1.39321693,
+        "max_drawdown": -0.08134894
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 4035.39,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 469.61,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 52800,
+          "513500": 0,
+          "518880": 34400
+        }
+      }
+    },
+    {
+      "start": "2024-04-01",
+      "end": "2025-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 46261.71,
+      "maximum_loss_from_initial_cny": 8831.7,
+      "metrics": {
+        "start": "2024-04-01",
+        "first_market_date": "2024-04-01",
+        "end": "2025-03-31",
+        "observations": 241,
+        "total_return": 0.1542057,
+        "cagr": 0.15477427,
+        "annualized_volatility": 0.12280809,
+        "sharpe_zero_rate": 1.28287855,
+        "max_drawdown": -0.08164747
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 8014.89,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 607.71,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 52300,
+          "513500": 0,
+          "518880": 33900
+        }
+      }
+    },
+    {
+      "start": "2024-04-01",
+      "end": "2025-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 36197.9,
+      "maximum_loss_from_initial_cny": 10914.3,
+      "metrics": {
+        "start": "2024-04-01",
+        "first_market_date": "2024-04-01",
+        "end": "2025-03-31",
+        "observations": 241,
+        "total_return": 0.12065968,
+        "cagr": 0.12109817,
+        "annualized_volatility": 0.12424478,
+        "sharpe_zero_rate": 1.02111438,
+        "max_drawdown": -0.08227161
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 17082.4,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 527.5,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 51200,
+          "513500": 0,
+          "518880": 32800
+        }
+      }
+    },
+    {
+      "start": "2024-05-01",
+      "end": "2025-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 64509.39,
+      "maximum_loss_from_initial_cny": 0.0,
+      "metrics": {
+        "start": "2024-05-01",
+        "first_market_date": "2024-05-06",
+        "end": "2025-04-30",
+        "observations": 242,
+        "total_return": 0.2150313,
+        "cagr": 0.21584425,
+        "annualized_volatility": 0.14485705,
+        "sharpe_zero_rate": 1.47375382,
+        "max_drawdown": -0.08136775
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 3984.11,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 229.99,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 57400,
+          "513500": 0,
+          "518880": 34000
+        }
+      }
+    },
+    {
+      "start": "2024-05-01",
+      "end": "2025-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 60135.27,
+      "maximum_loss_from_initial_cny": 816.03,
+      "metrics": {
+        "start": "2024-05-01",
+        "first_market_date": "2024-05-06",
+        "end": "2025-04-30",
+        "observations": 242,
+        "total_return": 0.20045091,
+        "cagr": 0.2012043,
+        "annualized_volatility": 0.144933,
+        "sharpe_zero_rate": 1.38624732,
+        "max_drawdown": -0.08163097
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 7925.53,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 188.97,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 56700,
+          "513500": 0,
+          "518880": 33600
+        }
+      }
+    },
+    {
+      "start": "2024-05-01",
+      "end": "2025-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 50122.13,
+      "maximum_loss_from_initial_cny": 2887.55,
+      "metrics": {
+        "start": "2024-05-01",
+        "first_market_date": "2024-05-06",
+        "end": "2025-04-30",
+        "observations": 242,
+        "total_return": 0.16707377,
+        "cagr": 0.16769314,
+        "annualized_volatility": 0.14564035,
+        "sharpe_zero_rate": 1.17845859,
+        "max_drawdown": -0.08229731
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 16887.97,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 720.43,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 55100,
+          "513500": 0,
+          "518880": 32600
+        }
+      }
+    },
+    {
+      "start": "2024-06-01",
+      "end": "2025-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 57036.6,
+      "maximum_loss_from_initial_cny": 678.18,
+      "metrics": {
+        "start": "2024-06-01",
+        "first_market_date": "2024-06-03",
+        "end": "2025-05-30",
+        "observations": 241,
+        "total_return": 0.190122,
+        "cagr": 0.19140666,
+        "annualized_volatility": 0.14394627,
+        "sharpe_zero_rate": 1.33743358,
+        "max_drawdown": -0.08133662
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 4251.4,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 146770.4,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 43100,
+          "513500": 0,
+          "518880": 17000
+        }
+      }
+    },
+    {
+      "start": "2024-06-01",
+      "end": "2025-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 52492.52,
+      "maximum_loss_from_initial_cny": 1564.39,
+      "metrics": {
+        "start": "2024-06-01",
+        "first_market_date": "2024-06-03",
+        "end": "2025-05-30",
+        "observations": 241,
+        "total_return": 0.17497508,
+        "cagr": 0.17615001,
+        "annualized_volatility": 0.14383237,
+        "sharpe_zero_rate": 1.24519345,
+        "max_drawdown": -0.08162293
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 8448.08,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 144686.12,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 42600,
+          "513500": 0,
+          "518880": 16800
+        }
+      }
+    },
+    {
+      "start": "2024-06-01",
+      "end": "2025-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 41995.6,
+      "maximum_loss_from_initial_cny": 3772.3,
+      "metrics": {
+        "start": "2024-06-01",
+        "first_market_date": "2024-06-03",
+        "end": "2025-05-30",
+        "observations": 241,
+        "total_return": 0.13998533,
+        "cagr": 0.14091147,
+        "annualized_volatility": 0.14452765,
+        "sharpe_zero_rate": 1.02103985,
+        "max_drawdown": -0.08231576
+      },
+      "order_count": 26,
+      "state": {
+        "paused": false,
+        "cost_cny": 18039.4,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 139306.0,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 41500,
+          "513500": 0,
+          "518880": 16400
+        }
+      }
+    },
+    {
+      "start": "2024-07-01",
+      "end": "2025-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 46163.96,
+      "maximum_loss_from_initial_cny": 11974.51,
+      "metrics": {
+        "start": "2024-07-01",
+        "first_market_date": "2024-07-01",
+        "end": "2025-06-30",
+        "observations": 242,
+        "total_return": 0.15387986,
+        "cagr": 0.15444716,
+        "annualized_volatility": 0.14181415,
+        "sharpe_zero_rate": 1.12285315,
+        "max_drawdown": -0.08132325
+      },
+      "order_count": 27,
+      "state": {
+        "paused": false,
+        "cost_cny": 4816.04,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 89184.96,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 36800,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 15100
+        }
+      }
+    },
+    {
+      "start": "2024-07-01",
+      "end": "2025-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 40981.95,
+      "maximum_loss_from_initial_cny": 12946.02,
+      "metrics": {
+        "start": "2024-07-01",
+        "first_market_date": "2024-07-01",
+        "end": "2025-06-30",
+        "observations": 242,
+        "total_return": 0.13660652,
+        "cagr": 0.13710642,
+        "annualized_volatility": 0.14173802,
+        "sharpe_zero_rate": 1.0125063,
+        "max_drawdown": -0.08172473
+      },
+      "order_count": 27,
+      "state": {
+        "paused": false,
+        "cost_cny": 9564.55,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 87058.55,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 36400,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 14900
+        }
+      }
+    },
+    {
+      "start": "2024-07-01",
+      "end": "2025-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 29151.02,
+      "maximum_loss_from_initial_cny": 15210.11,
+      "metrics": {
+        "start": "2024-07-01",
+        "first_market_date": "2024-07-01",
+        "end": "2025-06-30",
+        "observations": 242,
+        "total_return": 0.09717006,
+        "cagr": 0.09751951,
+        "annualized_volatility": 0.14258477,
+        "sharpe_zero_rate": 0.74932344,
+        "max_drawdown": -0.08259493
+      },
+      "order_count": 27,
+      "state": {
+        "paused": false,
+        "cost_cny": 20385.08,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 83264.82,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 35300,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 14400
+        }
+      }
+    },
+    {
+      "start": "2024-08-01",
+      "end": "2025-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 46520.01,
+      "maximum_loss_from_initial_cny": 18023.71,
+      "metrics": {
+        "start": "2024-08-01",
+        "first_market_date": "2024-08-01",
+        "end": "2025-07-31",
+        "observations": 242,
+        "total_return": 0.15506671,
+        "cagr": 0.15563866,
+        "annualized_volatility": 0.13397944,
+        "sharpe_zero_rate": 1.18841945,
+        "max_drawdown": -0.06287964
+      },
+      "order_count": 27,
+      "state": {
+        "paused": false,
+        "cost_cny": 4637.19,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 71828.01,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 39400,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 15100
+        }
+      }
+    },
+    {
+      "start": "2024-08-01",
+      "end": "2025-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 41502.07,
+      "maximum_loss_from_initial_cny": 18863.82,
+      "metrics": {
+        "start": "2024-08-01",
+        "first_market_date": "2024-08-01",
+        "end": "2025-07-31",
+        "observations": 242,
+        "total_return": 0.13834024,
+        "cagr": 0.13884687,
+        "annualized_volatility": 0.13403828,
+        "sharpe_zero_rate": 1.07457177,
+        "max_drawdown": -0.06318158
+      },
+      "order_count": 27,
+      "state": {
+        "paused": false,
+        "cost_cny": 9219.43,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 70357.57,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 38900,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 14900
+        }
+      }
+    },
+    {
+      "start": "2024-08-01",
+      "end": "2025-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 29948.21,
+      "maximum_loss_from_initial_cny": 20824.07,
+      "metrics": {
+        "start": "2024-08-01",
+        "first_market_date": "2024-08-01",
+        "end": "2025-07-31",
+        "observations": 242,
+        "total_return": 0.09982737,
+        "cagr": 0.10018681,
+        "annualized_volatility": 0.13511299,
+        "sharpe_zero_rate": 0.80171428,
+        "max_drawdown": -0.07832474
+      },
+      "order_count": 27,
+      "state": {
+        "paused": false,
+        "cost_cny": 19617.69,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 67880.21,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 37600,
+          "510500": 0,
+          "159915": 0,
+          "513500": 0,
+          "518880": 14400
+        }
+      }
+    },
+    {
+      "start": "2024-09-01",
+      "end": "2025-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 73602.14,
+      "maximum_loss_from_initial_cny": 5500.33,
+      "metrics": {
+        "start": "2024-09-01",
+        "first_market_date": "2024-09-02",
+        "end": "2025-08-29",
+        "observations": 241,
+        "total_return": 0.24534048,
+        "cagr": 0.24779601,
+        "annualized_volatility": 0.12731243,
+        "sharpe_zero_rate": 1.86703765,
+        "max_drawdown": -0.06286683
+      },
+      "order_count": 28,
+      "state": {
+        "paused": false,
+        "cost_cny": 5537.56,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 161.84,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 30700,
+          "159915": 0,
+          "513500": 0,
+          "518880": 20600
+        }
+      }
+    },
+    {
+      "start": "2024-09-01",
+      "end": "2025-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 67389.26,
+      "maximum_loss_from_initial_cny": 6226.97,
+      "metrics": {
+        "start": "2024-09-01",
+        "first_market_date": "2024-09-02",
+        "end": "2025-08-29",
+        "observations": 241,
+        "total_return": 0.22463087,
+        "cagr": 0.22686085,
+        "annualized_volatility": 0.12745871,
+        "sharpe_zero_rate": 1.72734745,
+        "max_drawdown": -0.06328355
+      },
+      "order_count": 28,
+      "state": {
+        "paused": false,
+        "cost_cny": 10977.24,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 548.36,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 30300,
+          "159915": 0,
+          "513500": 0,
+          "518880": 20100
+        }
+      }
+    },
+    {
+      "start": "2024-09-01",
+      "end": "2025-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 53129.78,
+      "maximum_loss_from_initial_cny": 7922.45,
+      "metrics": {
+        "start": "2024-09-01",
+        "first_market_date": "2024-09-02",
+        "end": "2025-08-29",
+        "observations": 241,
+        "total_return": 0.17709926,
+        "cagr": 0.17882364,
+        "annualized_volatility": 0.12912933,
+        "sharpe_zero_rate": 1.38586308,
+        "max_drawdown": -0.07830651
+      },
+      "order_count": 28,
+      "state": {
+        "paused": false,
+        "cost_cny": 23308.12,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 167.28,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 29300,
+          "159915": 0,
+          "513500": 0,
+          "518880": 19200
+        }
+      }
+    },
+    {
+      "start": "2024-10-01",
+      "end": "2025-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 115007.3,
+      "maximum_loss_from_initial_cny": 194.99,
+      "metrics": {
+        "start": "2024-10-01",
+        "first_market_date": "2024-10-08",
+        "end": "2025-09-30",
+        "observations": 244,
+        "total_return": 0.38335765,
+        "cagr": 0.38490013,
+        "annualized_volatility": 0.13291299,
+        "sharpe_zero_rate": 2.59015737,
+        "max_drawdown": -0.06290934
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 6829.8,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 562.0,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 39400,
+          "513500": 0,
+          "518880": 34500
+        }
+      }
+    },
+    {
+      "start": "2024-10-01",
+      "end": "2025-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 106712.93,
+      "maximum_loss_from_initial_cny": 935.99,
+      "metrics": {
+        "start": "2024-10-01",
+        "first_market_date": "2024-10-08",
+        "end": "2025-09-30",
+        "observations": 244,
+        "total_return": 0.35570978,
+        "cagr": 0.35712734,
+        "annualized_volatility": 0.13271189,
+        "sharpe_zero_rate": 2.43657054,
+        "max_drawdown": -0.06312247
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 13533.07,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 356.83,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 38700,
+          "513500": 0,
+          "518880": 33800
+        }
+      }
+    },
+    {
+      "start": "2024-10-01",
+      "end": "2025-09-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 87805.37,
+      "maximum_loss_from_initial_cny": 2664.97,
+      "metrics": {
+        "start": "2024-10-01",
+        "first_market_date": "2024-10-08",
+        "end": "2025-09-30",
+        "observations": 244,
+        "total_return": 0.29268457,
+        "cagr": 0.2938247,
+        "annualized_volatility": 0.13380829,
+        "sharpe_zero_rate": 2.04985039,
+        "max_drawdown": -0.07828312
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 28584.33,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 451.07,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 37200,
+          "513500": 0,
+          "518880": 32100
+        }
+      }
+    },
+    {
+      "start": "2024-11-01",
+      "end": "2025-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 105465.77,
+      "maximum_loss_from_initial_cny": 5796.9,
+      "metrics": {
+        "start": "2024-11-01",
+        "first_market_date": "2024-11-01",
+        "end": "2025-10-31",
+        "observations": 243,
+        "total_return": 0.35155258,
+        "cagr": 0.35295152,
+        "annualized_volatility": 0.14105205,
+        "sharpe_zero_rate": 2.28706236,
+        "max_drawdown": -0.0628491
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 7962.03,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 192261.57,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 17900,
+          "159915": 25300,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-11-01",
+      "end": "2025-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 95835.17,
+      "maximum_loss_from_initial_cny": 8175.78,
+      "metrics": {
+        "start": "2024-11-01",
+        "first_market_date": "2024-11-01",
+        "end": "2025-10-31",
+        "observations": 243,
+        "total_return": 0.31945056,
+        "cagr": 0.32070725,
+        "annualized_volatility": 0.14005822,
+        "sharpe_zero_rate": 2.12412338,
+        "max_drawdown": -0.06321742
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 15731.13,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 186444.77,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 17600,
+          "159915": 24800,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-11-01",
+      "end": "2025-10-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 74454.96,
+      "maximum_loss_from_initial_cny": 15091.12,
+      "metrics": {
+        "start": "2024-11-01",
+        "first_market_date": "2024-11-01",
+        "end": "2025-10-31",
+        "observations": 243,
+        "total_return": 0.24818319,
+        "cagr": 0.24913379,
+        "annualized_volatility": 0.139697,
+        "sharpe_zero_rate": 1.7166773,
+        "max_drawdown": -0.07834967
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 33186.14,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 174495.96,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 16800,
+          "159915": 23700,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-12-01",
+      "end": "2025-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 90601.12,
+      "maximum_loss_from_initial_cny": 10593.3,
+      "metrics": {
+        "start": "2024-12-01",
+        "first_market_date": "2024-12-02",
+        "end": "2025-11-28",
+        "observations": 242,
+        "total_return": 0.30200374,
+        "cagr": 0.30509224,
+        "annualized_volatility": 0.14043185,
+        "sharpe_zero_rate": 2.02848142,
+        "max_drawdown": -0.06289075
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 7819.08,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 218323.62,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 15000,
+          "159915": 21500,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-12-01",
+      "end": "2025-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 81453.88,
+      "maximum_loss_from_initial_cny": 13409.16,
+      "metrics": {
+        "start": "2024-12-01",
+        "first_market_date": "2024-12-02",
+        "end": "2025-11-28",
+        "observations": 242,
+        "total_return": 0.27151295,
+        "cagr": 0.274258,
+        "annualized_volatility": 0.13942995,
+        "sharpe_zero_rate": 1.86492136,
+        "max_drawdown": -0.06324209
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 15469.12,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 212834.38,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 14700,
+          "159915": 21000,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2024-12-01",
+      "end": "2025-11-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 60715.95,
+      "maximum_loss_from_initial_cny": 19954.09,
+      "metrics": {
+        "start": "2024-12-01",
+        "first_market_date": "2024-12-02",
+        "end": "2025-11-28",
+        "observations": 242,
+        "total_return": 0.20238651,
+        "cagr": 0.20437775,
+        "annualized_volatility": 0.13893538,
+        "sharpe_zero_rate": 1.45177636,
+        "max_drawdown": -0.07819794
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 32515.75,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 201142.95,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 13900,
+          "159915": 19900,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 96046.55,
+      "maximum_loss_from_initial_cny": 10966.95,
+      "metrics": {
+        "start": "2025-01-01",
+        "first_market_date": "2025-01-02",
+        "end": "2025-12-31",
+        "observations": 243,
+        "total_return": 0.32015516,
+        "cagr": 0.32141494,
+        "annualized_volatility": 0.13871705,
+        "sharpe_zero_rate": 2.14728583,
+        "max_drawdown": -0.06291255
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 7583.45,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 167539.35,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 29100,
+          "513500": 0,
+          "518880": 14600
+        }
+      }
+    },
+    {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 87260.9,
+      "maximum_loss_from_initial_cny": 12803.28,
+      "metrics": {
+        "start": "2025-01-01",
+        "first_market_date": "2025-01-02",
+        "end": "2025-12-31",
+        "observations": 243,
+        "total_return": 0.29086966,
+        "cagr": 0.29200195,
+        "annualized_volatility": 0.13760889,
+        "sharpe_zero_rate": 1.99425091,
+        "max_drawdown": -0.06282903
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 14996.8,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 163137.0,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 28600,
+          "513500": 0,
+          "518880": 14300
+        }
+      }
+    },
+    {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 67574.79,
+      "maximum_loss_from_initial_cny": 17150.4,
+      "metrics": {
+        "start": "2025-01-01",
+        "first_market_date": "2025-01-02",
+        "end": "2025-12-31",
+        "observations": 243,
+        "total_return": 0.22524929,
+        "cagr": 0.22610434,
+        "annualized_volatility": 0.13708211,
+        "sharpe_zero_rate": 1.60637896,
+        "max_drawdown": -0.06687264
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 31675.51,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 154421.99,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 27200,
+          "513500": 0,
+          "518880": 13600
+        }
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2026-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 122852.29,
+      "maximum_loss_from_initial_cny": 12010.16,
+      "metrics": {
+        "start": "2025-02-01",
+        "first_market_date": "2025-02-05",
+        "end": "2026-01-30",
+        "observations": 245,
+        "total_return": 0.40950764,
+        "cagr": 0.41250959,
+        "annualized_volatility": 0.14187804,
+        "sharpe_zero_rate": 2.56138694,
+        "max_drawdown": -0.0628965
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 7507.11,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 160973.49,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 33300,
+          "513500": 0,
+          "518880": 13700
+        }
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2026-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 113643.87,
+      "maximum_loss_from_initial_cny": 13777.72,
+      "metrics": {
+        "start": "2025-02-01",
+        "first_market_date": "2025-02-05",
+        "end": "2026-01-30",
+        "observations": 245,
+        "total_return": 0.3788129,
+        "cagr": 0.38156093,
+        "annualized_volatility": 0.14093603,
+        "sharpe_zero_rate": 2.41668693,
+        "max_drawdown": -0.06288649
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 14852.63,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 157402.27,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 32600,
+          "513500": 0,
+          "518880": 13400
+        }
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2026-01-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 92602.18,
+      "maximum_loss_from_initial_cny": 17874.1,
+      "metrics": {
+        "start": "2025-02-01",
+        "first_market_date": "2025-02-05",
+        "end": "2026-01-30",
+        "observations": 245,
+        "total_return": 0.30867393,
+        "cagr": 0.31085789,
+        "annualized_volatility": 0.14054776,
+        "sharpe_zero_rate": 2.04048373,
+        "max_drawdown": -0.06718848
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 31370.02,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 149736.38,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 30900,
+          "513500": 0,
+          "518880": 12700
+        }
+      }
+    },
+    {
+      "start": "2025-03-01",
+      "end": "2026-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 127750.59,
+      "maximum_loss_from_initial_cny": 5318.36,
+      "metrics": {
+        "start": "2025-03-01",
+        "first_market_date": "2025-03-03",
+        "end": "2026-02-27",
+        "observations": 241,
+        "total_return": 0.42583531,
+        "cagr": 0.42897405,
+        "annualized_volatility": 0.15229965,
+        "sharpe_zero_rate": 2.51402739,
+        "max_drawdown": -0.06912539
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 6980.71,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 147555.39,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 45800,
+          "513500": 0,
+          "518880": 11800
+        }
+      }
+    },
+    {
+      "start": "2025-03-01",
+      "end": "2026-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 119316.18,
+      "maximum_loss_from_initial_cny": 6315.1,
+      "metrics": {
+        "start": "2025-03-01",
+        "first_market_date": "2025-03-03",
+        "end": "2026-02-27",
+        "observations": 241,
+        "total_return": 0.39772059,
+        "cagr": 0.40062453,
+        "annualized_volatility": 0.15155449,
+        "sharpe_zero_rate": 2.38807587,
+        "max_drawdown": -0.06942341
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 13812.02,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 144278.48,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 44900,
+          "513500": 0,
+          "518880": 11600
+        }
+      }
+    },
+    {
+      "start": "2025-03-01",
+      "end": "2026-02-28",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 100442.93,
+      "maximum_loss_from_initial_cny": 8465.44,
+      "metrics": {
+        "start": "2025-03-01",
+        "first_market_date": "2025-03-03",
+        "end": "2026-02-27",
+        "observations": 241,
+        "total_return": 0.33480977,
+        "cagr": 0.33720124,
+        "annualized_volatility": 0.1512022,
+        "sharpe_zero_rate": 2.07444372,
+        "max_drawdown": -0.07040619
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 29206.97,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 137473.73,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 42900,
+          "513500": 0,
+          "518880": 11100
+        }
+      }
+    },
+    {
+      "start": "2025-04-01",
+      "end": "2026-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 93426.37,
+      "maximum_loss_from_initial_cny": 20272.59,
+      "metrics": {
+        "start": "2025-04-01",
+        "first_market_date": "2025-04-01",
+        "end": "2026-03-31",
+        "observations": 242,
+        "total_return": 0.31142122,
+        "cagr": 0.31264274,
+        "annualized_volatility": 0.15650208,
+        "sharpe_zero_rate": 1.88361155,
+        "max_drawdown": -0.0752421
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 6799.23,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 195010.17,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 39800,
+          "513500": 0,
+          "518880": 7400
+        }
+      }
+    },
+    {
+      "start": "2025-04-01",
+      "end": "2026-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 85538.51,
+      "maximum_loss_from_initial_cny": 21146.14,
+      "metrics": {
+        "start": "2025-04-01",
+        "first_market_date": "2025-04-01",
+        "end": "2026-03-31",
+        "observations": 242,
+        "total_return": 0.28512837,
+        "cagr": 0.28623594,
+        "annualized_volatility": 0.15597645,
+        "sharpe_zero_rate": 1.75411454,
+        "max_drawdown": -0.07647393
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 13461.79,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 190637.81,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 39000,
+          "513500": 0,
+          "518880": 7300
+        }
+      }
+    },
+    {
+      "start": "2025-04-01",
+      "end": "2026-03-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 68041.14,
+      "maximum_loss_from_initial_cny": 23149.27,
+      "metrics": {
+        "start": "2025-04-01",
+        "first_market_date": "2025-04-01",
+        "end": "2026-03-31",
+        "observations": 242,
+        "total_return": 0.22680381,
+        "cagr": 0.22766528,
+        "annualized_volatility": 0.15568448,
+        "sharpe_zero_rate": 1.44621566,
+        "max_drawdown": -0.07782684
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 28526.46,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 182429.44,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 0,
+          "159915": 37300,
+          "513500": 0,
+          "518880": 6900
+        }
+      }
+    },
+    {
+      "start": "2025-05-01",
+      "end": "2026-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 92814.77,
+      "maximum_loss_from_initial_cny": 5455.74,
+      "metrics": {
+        "start": "2025-05-01",
+        "first_market_date": "2025-05-06",
+        "end": "2026-04-30",
+        "observations": 242,
+        "total_return": 0.30938258,
+        "cagr": 0.3105952,
+        "annualized_volatility": 0.13076439,
+        "sharpe_zero_rate": 2.21304055,
+        "max_drawdown": -0.0754223
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 6642.23,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 234928.97,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 12300,
+          "159915": 0,
+          "513500": 0,
+          "518880": 5600
+        }
+      }
+    },
+    {
+      "start": "2025-05-01",
+      "end": "2026-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 85353.21,
+      "maximum_loss_from_initial_cny": 5995.88,
+      "metrics": {
+        "start": "2025-05-01",
+        "first_market_date": "2025-05-06",
+        "end": "2026-04-30",
+        "observations": 242,
+        "total_return": 0.2845107,
+        "cagr": 0.28561561,
+        "annualized_volatility": 0.12987541,
+        "sharpe_zero_rate": 2.07340756,
+        "max_drawdown": -0.07611314
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 13163.99,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 230964.21,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 12000,
+          "159915": 0,
+          "513500": 0,
+          "518880": 5500
+        }
+      }
+    },
+    {
+      "start": "2025-05-01",
+      "end": "2026-04-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 68184.06,
+      "maximum_loss_from_initial_cny": 7256.2,
+      "metrics": {
+        "start": "2025-05-01",
+        "first_market_date": "2025-05-06",
+        "end": "2026-04-30",
+        "observations": 242,
+        "total_return": 0.22728019,
+        "cagr": 0.22814364,
+        "annualized_volatility": 0.12910348,
+        "sharpe_zero_rate": 1.71713528,
+        "max_drawdown": -0.0781154
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 27931.24,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 219102.66,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 11600,
+          "159915": 0,
+          "513500": 0,
+          "518880": 5300
+        }
+      }
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2026-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 101075.46,
+      "maximum_loss_from_initial_cny": 1108.22,
+      "metrics": {
+        "start": "2025-06-01",
+        "first_market_date": "2025-06-03",
+        "end": "2026-05-29",
+        "observations": 241,
+        "total_return": 0.33691821,
+        "cagr": 0.34040795,
+        "annualized_volatility": 0.13270409,
+        "sharpe_zero_rate": 2.35557046,
+        "max_drawdown": -0.07545319
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 6660.54,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 213936.06,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 10500,
+          "159915": 24300,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2026-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 93519.26,
+      "maximum_loss_from_initial_cny": 1786.45,
+      "metrics": {
+        "start": "2025-06-01",
+        "first_market_date": "2025-06-03",
+        "end": "2026-05-29",
+        "observations": 241,
+        "total_return": 0.31173087,
+        "cagr": 0.31493032,
+        "annualized_volatility": 0.13164852,
+        "sharpe_zero_rate": 2.22219615,
+        "max_drawdown": -0.07583334
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 13192.24,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 209689.66,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 10300,
+          "159915": 23900,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2026-05-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 76455.16,
+      "maximum_loss_from_initial_cny": 3368.97,
+      "metrics": {
+        "start": "2025-06-01",
+        "first_market_date": "2025-06-03",
+        "end": "2026-05-29",
+        "observations": 241,
+        "total_return": 0.25485053,
+        "cagr": 0.25741069,
+        "annualized_volatility": 0.13117956,
+        "sharpe_zero_rate": 1.87600975,
+        "max_drawdown": -0.07828212
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 28005.94,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 200055.76,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 9900,
+          "159915": 22900,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 113214.72,
+      "maximum_loss_from_initial_cny": 0.0,
+      "metrics": {
+        "start": "2025-07-01",
+        "first_market_date": "2025-07-01",
+        "end": "2026-06-30",
+        "observations": 242,
+        "total_return": 0.37738242,
+        "cagr": 0.37889773,
+        "annualized_volatility": 0.13928705,
+        "sharpe_zero_rate": 2.46483437,
+        "max_drawdown": -0.07518986
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 6669.68,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 219034.32,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 11200,
+          "159915": 20900,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 105395.46,
+      "maximum_loss_from_initial_cny": 636.06,
+      "metrics": {
+        "start": "2025-07-01",
+        "first_market_date": "2025-07-01",
+        "end": "2026-06-30",
+        "observations": 242,
+        "total_return": 0.35131818,
+        "cagr": 0.35271608,
+        "annualized_volatility": 0.13860825,
+        "sharpe_zero_rate": 2.33255801,
+        "max_drawdown": -0.07661533
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 13232.84,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 214799.46,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 11000,
+          "159915": 20500,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 87889.32,
+      "maximum_loss_from_initial_cny": 2293.5,
+      "metrics": {
+        "start": "2025-07-01",
+        "first_market_date": "2025-07-01",
+        "end": "2026-06-30",
+        "observations": 242,
+        "total_return": 0.2929644,
+        "cagr": 0.29410574,
+        "annualized_volatility": 0.13786825,
+        "sharpe_zero_rate": 2.01059679,
+        "max_drawdown": -0.07759869
+      },
+      "order_count": 30,
+      "state": {
+        "paused": false,
+        "cost_cny": 28096.38,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 205817.92,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 10500,
+          "159915": 19600,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-08-01",
+      "end": "2026-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 74079.88,
+      "maximum_loss_from_initial_cny": 548.16,
+      "metrics": {
+        "start": "2025-08-01",
+        "first_market_date": "2025-08-01",
+        "end": "2026-07-31",
+        "observations": 242,
+        "total_return": 0.24693294,
+        "cagr": 0.24787829,
+        "annualized_volatility": 0.14926153,
+        "sharpe_zero_rate": 1.6148285,
+        "max_drawdown": -0.08790536
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 5797.02,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 240768.28,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 10500,
+          "159915": 16200,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-08-01",
+      "end": "2026-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 68204.58,
+      "maximum_loss_from_initial_cny": 1440.12,
+      "metrics": {
+        "start": "2025-08-01",
+        "first_market_date": "2025-08-01",
+        "end": "2026-07-31",
+        "observations": 242,
+        "total_return": 0.22734861,
+        "cagr": 0.22821234,
+        "annualized_volatility": 0.14833203,
+        "sharpe_zero_rate": 1.51282119,
+        "max_drawdown": -0.08782596
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 11517.92,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 237403.38,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 10300,
+          "159915": 15900,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-08-01",
+      "end": "2026-07-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 54322.86,
+      "maximum_loss_from_initial_cny": 3498.46,
+      "metrics": {
+        "start": "2025-08-01",
+        "first_market_date": "2025-08-01",
+        "end": "2026-07-31",
+        "observations": 242,
+        "total_return": 0.18107619,
+        "cagr": 0.18175139,
+        "annualized_volatility": 0.14716037,
+        "sharpe_zero_rate": 1.25159939,
+        "max_drawdown": -0.09110168
+      },
+      "order_count": 29,
+      "state": {
+        "paused": false,
+        "cost_cny": 24520.04,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 228542.46,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 9900,
+          "159915": 15300,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-09-01",
+      "end": "2026-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 0,
+      "net_pnl_cny": 49538.77,
+      "maximum_loss_from_initial_cny": 0.0,
+      "metrics": {
+        "start": "2025-09-01",
+        "first_market_date": "2025-09-01",
+        "end": "2026-08-31",
+        "observations": 242,
+        "total_return": 0.16512925,
+        "cagr": 0.16574091,
+        "annualized_volatility": 0.1483601,
+        "sharpe_zero_rate": 1.14711793,
+        "max_drawdown": -0.08756674
+      },
+      "order_count": 28,
+      "state": {
+        "paused": false,
+        "cost_cny": 4399.53,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 234817.67,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 8500,
+          "159915": 13600,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-09-01",
+      "end": "2026-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 30,
+      "net_pnl_cny": 44729.14,
+      "maximum_loss_from_initial_cny": 273.41,
+      "metrics": {
+        "start": "2025-09-01",
+        "first_market_date": "2025-09-01",
+        "end": "2026-08-31",
+        "observations": 242,
+        "total_return": 0.14909713,
+        "cagr": 0.14964567,
+        "annualized_volatility": 0.14742363,
+        "sharpe_zero_rate": 1.05557415,
+        "max_drawdown": -0.08786362
+      },
+      "order_count": 28,
+      "state": {
+        "paused": false,
+        "cost_cny": 8721.96,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 231495.94,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 8400,
+          "159915": 13400,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    },
+    {
+      "start": "2025-09-01",
+      "end": "2026-08-31",
+      "assumed_payment_lag_sessions": 0,
+      "slippage_bps": 100,
+      "net_pnl_cny": 34348.44,
+      "maximum_loss_from_initial_cny": 2389.56,
+      "metrics": {
+        "start": "2025-09-01",
+        "first_market_date": "2025-09-01",
+        "end": "2026-08-31",
+        "observations": 242,
+        "total_return": 0.1144948,
+        "cagr": 0.11490976,
+        "annualized_volatility": 0.14605903,
+        "sharpe_zero_rate": 0.84602447,
+        "max_drawdown": -0.09137426
+      },
+      "order_count": 28,
+      "state": {
+        "paused": false,
+        "cost_cny": 18692.96,
+        "split_fraction_writeoff_cny": 0.0,
+        "ending_cash_cny": 224887.74,
+        "ending_receivables_cny": 0,
+        "ending_positions": {
+          "510300": 0,
+          "510500": 8100,
+          "159915": 13000,
+          "513500": 0,
+          "518880": 0
+        }
+      }
+    }
+  ],
+  "benchmark_windows": [
+    {
+      "start": "2022-01-01",
+      "net_pnl_cny": -61799.49,
+      "paused": false
+    },
+    {
+      "start": "2022-02-01",
+      "net_pnl_cny": -27675.9,
+      "paused": false
+    },
+    {
+      "start": "2022-03-01",
+      "net_pnl_cny": -31186.27,
+      "paused": false
+    },
+    {
+      "start": "2022-04-01",
+      "net_pnl_cny": -6976.47,
+      "paused": false
+    },
+    {
+      "start": "2022-05-01",
+      "net_pnl_cny": 6358.46,
+      "paused": false
+    },
+    {
+      "start": "2022-06-01",
+      "net_pnl_cny": -18045.23,
+      "paused": false
+    },
+    {
+      "start": "2022-07-01",
+      "net_pnl_cny": -39613.81,
+      "paused": false
+    },
+    {
+      "start": "2022-08-01",
+      "net_pnl_cny": -5901.43,
+      "paused": false
+    },
+    {
+      "start": "2022-09-01",
+      "net_pnl_cny": -18178.52,
+      "paused": false
+    },
+    {
+      "start": "2022-10-01",
+      "net_pnl_cny": -4795.77,
+      "paused": false
+    },
+    {
+      "start": "2022-11-01",
+      "net_pnl_cny": 8433.82,
+      "paused": false
+    },
+    {
+      "start": "2022-12-01",
+      "net_pnl_cny": -28303.21,
+      "paused": false
+    },
+    {
+      "start": "2023-01-01",
+      "net_pnl_cny": -30099.99,
+      "paused": false
+    },
+    {
+      "start": "2023-02-01",
+      "net_pnl_cny": -64295.65,
+      "paused": false
+    },
+    {
+      "start": "2023-03-01",
+      "net_pnl_cny": -38072.17,
+      "paused": false
+    },
+    {
+      "start": "2023-04-01",
+      "net_pnl_cny": -35276.48,
+      "paused": false
+    },
+    {
+      "start": "2023-05-01",
+      "net_pnl_cny": -27496.8,
+      "paused": false
+    },
+    {
+      "start": "2023-06-01",
+      "net_pnl_cny": -13390.25,
+      "paused": false
+    },
+    {
+      "start": "2023-07-01",
+      "net_pnl_cny": -27372.24,
+      "paused": false
+    },
+    {
+      "start": "2023-08-01",
+      "net_pnl_cny": -38506.04,
+      "paused": false
+    },
+    {
+      "start": "2023-09-01",
+      "net_pnl_cny": -32399.68,
+      "paused": false
+    },
+    {
+      "start": "2023-10-01",
+      "net_pnl_cny": 41430.92,
+      "paused": false
+    },
+    {
+      "start": "2023-11-01",
+      "net_pnl_cny": 27371.52,
+      "paused": false
+    },
+    {
+      "start": "2023-12-01",
+      "net_pnl_cny": 40814.97,
+      "paused": false
+    },
+    {
+      "start": "2024-01-01",
+      "net_pnl_cny": 48335.78,
+      "paused": false
+    },
+    {
+      "start": "2024-02-01",
+      "net_pnl_cny": 64034.18,
+      "paused": false
+    },
+    {
+      "start": "2024-03-01",
+      "net_pnl_cny": 40166.69,
+      "paused": false
+    },
+    {
+      "start": "2024-04-01",
+      "net_pnl_cny": 35596.39,
+      "paused": false
+    },
+    {
+      "start": "2024-05-01",
+      "net_pnl_cny": 16720.7,
+      "paused": false
+    },
+    {
+      "start": "2024-06-01",
+      "net_pnl_cny": 29745.66,
+      "paused": false
+    },
+    {
+      "start": "2024-07-01",
+      "net_pnl_cny": 48057.67,
+      "paused": false
+    },
+    {
+      "start": "2024-08-01",
+      "net_pnl_cny": 61270.98,
+      "paused": false
+    },
+    {
+      "start": "2024-09-01",
+      "net_pnl_cny": 113576.37,
+      "paused": false
+    },
+    {
+      "start": "2024-10-01",
+      "net_pnl_cny": 9284.1,
+      "paused": false
+    },
+    {
+      "start": "2024-11-01",
+      "net_pnl_cny": 64387.44,
+      "paused": false
+    },
+    {
+      "start": "2024-12-01",
+      "net_pnl_cny": 52370.54,
+      "paused": false
+    },
+    {
+      "start": "2025-01-01",
+      "net_pnl_cny": 59048.81,
+      "paused": false
+    },
+    {
+      "start": "2025-02-01",
+      "net_pnl_cny": 73406.24,
+      "paused": false
+    },
+    {
+      "start": "2025-03-01",
+      "net_pnl_cny": 68410.44,
+      "paused": false
+    },
+    {
+      "start": "2025-04-01",
+      "net_pnl_cny": 49456.78,
+      "paused": false
+    },
+    {
+      "start": "2025-05-01",
+      "net_pnl_cny": 86339.96,
+      "paused": false
+    },
+    {
+      "start": "2025-06-01",
+      "net_pnl_cny": 87906.46,
+      "paused": false
+    },
+    {
+      "start": "2025-07-01",
+      "net_pnl_cny": 85245.19,
+      "paused": false
+    },
+    {
+      "start": "2025-08-01",
+      "net_pnl_cny": 43303.44,
+      "paused": false
+    },
+    {
+      "start": "2025-09-01",
+      "net_pnl_cny": 11216.26,
+      "paused": false
+    }
+  ],
+  "strategy_beats_simple_benchmark_windows_at_selected_payment_mode_30bps": 38,
+  "interpretation_limits": [
+    "Factor interpretation, completeness, share rounding and actual payment dates are not independently verified.",
+    "Payment delays 0/5/10 sessions are assumptions, not actual dates or proven bounds.",
+    "Changing from QFQ signals to a causal total-return index changes strategy outputs; this is a challenger, not the frozen pilot.",
+    "Scenarios reuse 45 overlapping windows: neither independent trials nor a probability of future profit.",
+    "No full depth, partial fill, settlement restriction, suspension, limit price or order submission latency model.",
+    "Uses intersection calendar; symbol-specific nontrading dates may be omitted.",
+    "Commission is a scenario, not confirmed personal pricing; no terminal liquidation cost.",
+    "Stop is evaluated at observed close, cannot cap overnight or intraday loss.",
+    "Independent implementation review and untouched prospective validation remain outstanding."
+  ],
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false
+}

@@ -1,0 +1,18 @@
+{
+  "experiment_id": "CN-VALUE-0001",
+  "reference": "research/capital_readiness/300k-accounting-replay-v4.json",
+  "strategy_spec": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+  "data_dir": "data/audit/etf-accounting-2026-09-05-v4",
+  "years": [2022, 2023, 2024, 2025],
+  "initial_cny": 300000,
+  "pause_loss_cny": 100000,
+  "commission_scenarios": {"screenshot_stress": 0.003, "unconfirmed_lower_fee": 0.0003},
+  "slippage_bps": [30, 100],
+  "lookback": 63,
+  "target_volatility": 0.12,
+  "arms": ["existing_momentum", "equal_monthly", "equal_vol_target", "equal_buy_hold"],
+  "question": "Does existing selection beat simple equal weight that independently uses the same 63-session 12-percent volatility target, after fees?",
+  "trial_policy": "Fixed descriptive comparison, no tuning. All years/fees retained; lower commission is hypothetical, not user's tariff.",
+  "capital_authorized": false,
+  "orders_authorized": false
+}

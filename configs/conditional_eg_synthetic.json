@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EG-0002",
+  "baseline_config": "configs/universal_synthetic.json",
+  "learning_rate": 0.05,
+  "state_window": 20,
+  "state_threshold": 0.02,
+  "state_definition": "Sample volatility of prior 20 equal-weight mean log relatives; high if >=0.02; warmup low",
+  "hypothesis": "Separating update memory by causally observed volatility state improves net log growth over plain EG",
+  "mechanism": "Useful only if relative asset advantage persists conditionally on this observable state",
+  "variants": ["conditional_eg", "plain_eg", "equal_daily", "equal_buy_hold"],
+  "primary_screen": "Descriptive only: mean paired log increment >0 versus plain EG in every world and cost scenario; no statistical significance claim",
+  "strategy_family": "synthetic_online_portfolio",
+  "new_parameter_variants": 1,
+  "known_prior_eg_variants": 3,
+  "unknown_earlier_trials": true,
+  "no_parameter_search": true,
+  "capital_authorized": false
+}

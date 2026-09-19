@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "record_type": "independent_capital_readiness_audit",
+  "audited_result_sha256": "16d7f5557757c39f350e65a146bf1dd98f9575ced2c839e6ade6a2d0624a8d6c",
+  "checks": {
+    "spec_digest_matches": true,
+    "result_forbids_orders": true,
+    "result_forbids_capital": true,
+    "result_forbids_account_connection": true,
+    "assessment_forbids_capital": true,
+    "gate_ids_unique": true,
+    "all_evidence_digests_match": true,
+    "all_static_json_assertions_match": true,
+    "reported_gate_count_matches": true,
+    "reported_passed_count_matches": true,
+    "reported_incomplete_ids_match": true,
+    "internal_incomplete_ids_match": true,
+    "reported_controllable_completion_matches": true,
+    "reported_gate_ids_match_spec": true,
+    "static_gate_statuses_match_spec": true,
+    "decision_matches_completeness": true
+  },
+  "evidence_digest_checks": {
+    "docs/manual-execution.zh-CN.md": true,
+    "research/experiments/cn-fees-0001/REPORT.zh-CN.md": true,
+    "research/experiments/cn-fees-0001/independent-audit-v1.json": true,
+    "research/experiments/cn-fees-0001/result-v1.json": true,
+    "research/manual_execution/account-fees-user-confirmed-v1.json": true,
+    "research/manual_execution/engineering-reconciliation-v1.json": true,
+    "research/manual_execution/journal-ticket-2026-09-13-v1.json": true,
+    "scripts/prepare_current_manual_ticket.py": true,
+    "src/aoae/manual_bridge.py": true,
+    "src/aoae/manual_ticket.py": true,
+    "src/aoae/reviewed_signal.py": true,
+    "tests/test_manual_bridge.py": true,
+    "tests/test_manual_ticket.py": true
+  },
+  "static_assertion_checks": {
+    "user_confirmed_commission:0": true,
+    "user_confirmed_commission:1": true,
+    "historical_repricing_accounting_not_profitability:0": true
+  },
+  "status": "PASS",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

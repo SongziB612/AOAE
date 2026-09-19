@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "record_type": "preregistered_read_only_latency_probe",
+  "hypothesis": "REST polling overstates late BNB five-minute opportunities relative to a 250ms sampled public CLOB WebSocket book.",
+  "asset": "bnb",
+  "chainlink_symbol": "bnb/usd",
+  "market_slug_prefix": "bnb-updown-5m-",
+  "interval_seconds": 300,
+  "market_count": 1,
+  "decision_seconds_before_end": [120, 60, 30, 15, 5],
+  "book_transport": "websocket",
+  "book_sample_seconds": 0.25,
+  "settlement_tick_tolerance_seconds": 15,
+  "minimum_order_size_shares": 5,
+  "interpretation_gate": {
+    "engineering_only": true,
+    "requires_comparison_with_rest_batch": true,
+    "requires_fill_or_execution_simulation": true
+  },
+  "limitations": [
+    "One WebSocket market can diagnose transport bias but cannot validate profitability.",
+    "A visible ask is not a fill and order-submission latency remains unmodeled.",
+    "No result authorizes deployment or capital."
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

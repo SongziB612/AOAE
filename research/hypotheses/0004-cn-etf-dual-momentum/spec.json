@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0004-cn-etf-dual-momentum",
+  "title": "Monthly dual-momentum rotation across liquid China-listed ETFs",
+  "hypothesis": "A diversified monthly ETF rotation using only lagged 6-1 and 12-1 momentum can improve both compound return and drawdown versus buy-and-hold CSI 300 during the untouched 2022-2026 holdout after conservative costs.",
+  "data": {
+    "provider": "AKShare fund_etf_hist_em backed by Eastmoney",
+    "frequency": "daily",
+    "adjustment": "qfq",
+    "start_date": "2015-01-01",
+    "end_date": "2026-08-31",
+    "universe": {
+      "510300": "CSI 300 ETF",
+      "510500": "CSI 500 ETF",
+      "159915": "ChiNext ETF",
+      "513500": "S&P 500 ETF QDII",
+      "518880": "Gold ETF",
+      "511010": "Treasury bond ETF"
+    },
+    "risk_assets": ["510300", "510500", "159915", "513500", "518880"],
+    "defensive_asset": "511010",
+    "benchmark": "510300"
+  },
+  "method": {
+    "signal_frequency": "calendar_month_end",
+    "execution": "next_available_trading_day_open",
+    "momentum_windows_days": [126, 252],
+    "skip_recent_days": 21,
+    "score": "mean(return_126_to_21, return_252_to_21)",
+    "absolute_filter": "score_strictly_positive",
+    "risk_asset_count": 2,
+    "risk_asset_weighting": "equal",
+    "unused_weight": "defensive_asset",
+    "one_way_cost_bps": 15,
+    "trial_count": 1,
+    "initial_capital_cny": 100000
+  },
+  "holdout": {
+    "start_date": "2022-01-01",
+    "end_date": "2026-08-31"
+  },
+  "decision_rule": {
+    "strategy_cagr_above_zero": true,
+    "strategy_cagr_above_benchmark": true,
+    "strategy_max_drawdown_less_severe_than_benchmark": true,
+    "strategy_sharpe_above_benchmark": true
+  },
+  "known_limits": [
+    "The ETF universe is selected with present-day knowledge and therefore has selection and survivorship bias.",
+    "AKShare is an adapter over a third-party public data source rather than an exchange-grade licensed feed.",
+    "QDII ETF prices can deviate from NAV because of quota, timezone, and premium effects.",
+    "Open-price simulation does not model limit orders, partial fills, minimum commissions, or market impact.",
+    "A single holdout cannot establish future profitability."
+  ],
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "next_experiment": "If the holdout passes, independently reproduce prices and stress costs before paper trading; otherwise reject or simplify without tuning this holdout."
+}

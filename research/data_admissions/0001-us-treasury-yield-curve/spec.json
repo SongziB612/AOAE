@@ -1,0 +1,61 @@
+{
+  "admission_id": "ADM-0001-us-treasury-yield-curve",
+  "capital_authorized": false,
+  "license": {
+    "attribution_required": true,
+    "raw_redistribution_authorized": false,
+    "status": "internal_research_only_pending_redistribution_review"
+  },
+  "next_experiment": "Create a canonical derived table and test curve-shape data invariants without evaluating a trading strategy.",
+  "quality": {
+    "maximum_missing_fraction": 0.01,
+    "maximum_rows": 270,
+    "maximum_yield_percent": 20.0,
+    "minimum_rows": 240,
+    "minimum_yield_percent": -2.0,
+    "required_fields": [
+      "BC_1MONTH",
+      "BC_2MONTH",
+      "BC_3MONTH",
+      "BC_4MONTH",
+      "BC_6MONTH",
+      "BC_1YEAR",
+      "BC_2YEAR",
+      "BC_3YEAR",
+      "BC_5YEAR",
+      "BC_7YEAR",
+      "BC_10YEAR",
+      "BC_20YEAR",
+      "BC_30YEAR"
+    ],
+    "weekend_rows_allowed": 0
+  },
+  "research_limits": {
+    "purpose": "descriptive_data_quality_only",
+    "strategy_mining_authorized": false,
+    "strategy_trials": 0
+  },
+  "schema_version": 1,
+  "snapshot": {
+    "local_path": "data/raw/treasury/daily_treasury_yield_curve_2024.xml",
+    "period_end": "2024-12-31",
+    "period_start": "2024-01-01"
+  },
+  "source": {
+    "access_cost_usd": 0,
+    "authentication": "none",
+    "dataset": "Daily Treasury Par Yield Curve Rates",
+    "documentation_url": "https://home.treasury.gov/treasury-daily-interest-rate-xml-feed",
+    "format": "xml",
+    "official_source": true,
+    "provider": "U.S. Department of the Treasury",
+    "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2024"
+  },
+  "temporal": {
+    "observation_basis": "indicative_bid_side_quotes_at_or_near_15_30_eastern",
+    "research_available": "next_us_business_day",
+    "revisions_possible": true,
+    "timezone": "America/New_York"
+  },
+  "title": "2024 U.S. Treasury par-yield curve data admission"
+}

@@ -1,0 +1,155 @@
+{
+  "allocations": {
+    "cash": 1.0
+  },
+  "assessments": [
+    {
+      "admitted_to_autonomous_portfolio": false,
+      "checks": {
+        "capacity_estimated": true,
+        "execution_reconciled": false,
+        "forward_only": false,
+        "independent_audit_passed": true,
+        "minimum_execution_fill_rate": false,
+        "minimum_forward_observations": false,
+        "positive_forward_net_pnl": false,
+        "positive_selection_adjusted_lcb": false,
+        "risk_limit_intact": true,
+        "selection_bias_accounted": false
+      },
+      "edge_id": "EDGE-CN-ETF-VOL-MOMENTUM",
+      "evidence_state": "HISTORICAL_ROBUSTNESS_PASS_FORWARD_PENDING",
+      "failed_checks": [
+        "minimum_forward_observations",
+        "positive_forward_net_pnl",
+        "positive_selection_adjusted_lcb",
+        "selection_bias_accounted",
+        "execution_reconciled",
+        "minimum_execution_fill_rate",
+        "forward_only"
+      ],
+      "fill_rate": 0.0,
+      "maximum_allocation_fraction": 0.0,
+      "mechanism": "medium-horizon momentum with volatility-controlled exposure",
+      "strategy_family": "cn_listed_etf_allocation"
+    },
+    {
+      "admitted_to_autonomous_portfolio": false,
+      "checks": {
+        "capacity_estimated": false,
+        "execution_reconciled": false,
+        "forward_only": false,
+        "independent_audit_passed": true,
+        "minimum_execution_fill_rate": false,
+        "minimum_forward_observations": false,
+        "positive_forward_net_pnl": true,
+        "positive_selection_adjusted_lcb": true,
+        "risk_limit_intact": true,
+        "selection_bias_accounted": false
+      },
+      "edge_id": "EDGE-BNB-5M-LATENCY",
+      "evidence_state": "PARTIAL_POST_CAPTURE_DIAGNOSTIC",
+      "failed_checks": [
+        "minimum_forward_observations",
+        "selection_bias_accounted",
+        "execution_reconciled",
+        "minimum_execution_fill_rate",
+        "capacity_estimated",
+        "forward_only"
+      ],
+      "fill_rate": 0.7692307692307693,
+      "maximum_allocation_fraction": 0.0,
+      "mechanism": "reference-price displacement before binary-market settlement",
+      "strategy_family": "bnb_five_minute_latency"
+    },
+    {
+      "admitted_to_autonomous_portfolio": false,
+      "checks": {
+        "capacity_estimated": false,
+        "execution_reconciled": false,
+        "forward_only": true,
+        "independent_audit_passed": true,
+        "minimum_execution_fill_rate": false,
+        "minimum_forward_observations": false,
+        "positive_forward_net_pnl": false,
+        "positive_selection_adjusted_lcb": false,
+        "risk_limit_intact": true,
+        "selection_bias_accounted": true
+      },
+      "edge_id": "EDGE-POLITICAL-SUPERHEDGE",
+      "evidence_state": "FORWARD_FILL_CHECK_FAILED",
+      "failed_checks": [
+        "minimum_forward_observations",
+        "positive_forward_net_pnl",
+        "positive_selection_adjusted_lcb",
+        "execution_reconciled",
+        "minimum_execution_fill_rate",
+        "capacity_estimated"
+      ],
+      "fill_rate": 0.25,
+      "maximum_allocation_fraction": 0.0,
+      "mechanism": "cross-market logical complete-set pricing constraint",
+      "strategy_family": "prediction_market_complete_set"
+    },
+    {
+      "admitted_to_autonomous_portfolio": false,
+      "checks": {
+        "capacity_estimated": true,
+        "execution_reconciled": false,
+        "forward_only": true,
+        "independent_audit_passed": false,
+        "minimum_execution_fill_rate": false,
+        "minimum_forward_observations": false,
+        "positive_forward_net_pnl": false,
+        "positive_selection_adjusted_lcb": false,
+        "risk_limit_intact": true,
+        "selection_bias_accounted": true
+      },
+      "edge_id": "EDGE-IDLE-CASH-REPO",
+      "evidence_state": "POSITIVE_SCENARIO_ECONOMICS_OPERATIONS_UNCONFIRMED",
+      "failed_checks": [
+        "minimum_forward_observations",
+        "positive_forward_net_pnl",
+        "positive_selection_adjusted_lcb",
+        "independent_audit_passed",
+        "execution_reconciled",
+        "minimum_execution_fill_rate"
+      ],
+      "fill_rate": 0.0,
+      "maximum_allocation_fraction": 0.0,
+      "mechanism": "exchange reverse repo or broker cash sweep without impairing ETF liquidity",
+      "strategy_family": "regulated_idle_cash_yield"
+    }
+  ],
+  "autonomous_portfolio_ready": false,
+  "broker_connection_authorized": false,
+  "candidates_sha256": "dfebc5293b7640a831211eed5a3f4601b0083a505a57a83cb6baac6ce8b53fb5",
+  "capital_authorized": false,
+  "decision": "RESEARCH_MORE_ALL_CASH",
+  "evaluated_at_utc": "2026-09-04T15:54:30.790264Z",
+  "evidence_source_sha256": {
+    "EDGE-BNB-5M-LATENCY": {
+      "research/opportunity_scans/0018-bnb-five-minute-100-market-forward/result.json": "79e7e8a0b3d98b1ff45629641244d87c0534c4a6e2ed9fde0c40ef1d57c9d39e",
+      "research/opportunity_scans/0024-bnb-rest-100-market-independent-replay/partial-result.json": "94c21ae486e1dd4490e733f1d8b471fcb0ffb47ebc18f43d516143f4da14ce45"
+    },
+    "EDGE-CN-ETF-VOL-MOMENTUM": {
+      "research/hypotheses/0010-high-risk-executable-overlay/result.json": "bd57d304aa8a693f0e551e3dd7f3c8c4ea191b381d94068a4915a1f1b82bff79",
+      "research/hypotheses/0012-high-risk-overlay-robustness/result.json": "8fdab7586ea2f366d32c77660e12454d9b7b9e14356be90d327f10714b994022",
+      "research/paper_accounts/0003-high-risk-overlay/forward-progress.json": "fb13405b461004b348d36ac3520db3f47012e7561966ed4abb2063762b4ba4bb"
+    },
+    "EDGE-IDLE-CASH-REPO": {
+      "research/opportunity_scans/0023-idle-cash-reverse-repo/quote-official-2026-09-03.json": "e7ea21d64dc64e53ae17a6f5267b5d266d1189fcccdf071b83906f8509e65b24",
+      "research/opportunity_scans/0023-idle-cash-reverse-repo/result-v1.json": "a443f0445f5101e1f47c6e1bc627ca79adb06c665539409050edf6af63beab9f",
+      "research/opportunity_scans/0023-idle-cash-reverse-repo/spec.json": "15000afbd9c2b6734b83eeb7113beeb352e003891f49a6d14e6f558ec2a283c3"
+    },
+    "EDGE-POLITICAL-SUPERHEDGE": {
+      "research/opportunity_scans/0011-house-control-one-hour-forward/result.json": "71aa2e430d6513144c2e27b02d2d4c1c4662989a975eaa7b5969f002fd30fe2d"
+    }
+  },
+  "gross_exposure": 0.0,
+  "leverage_allowed": false,
+  "orders_authorized": false,
+  "record_type": "autonomous_edge_portfolio_status",
+  "schema_version": 1,
+  "spec_sha256": "d87ab615aea79d01a5adea2e5c381737333b16d7c590d616ea216cc92a7fe4c9"
+}

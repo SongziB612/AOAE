@@ -1,0 +1,40 @@
+{
+  "capital_authorized": false,
+  "decision": "forward_monitor_three_maker_legs",
+  "economics_per_set": {
+    "break_even_completion_price_including_fee": 0.15184838,
+    "completion_taker_fee": 0.003916,
+    "completion_taker_price": 0.11,
+    "locked_margin_if_completed_at_observed_ask": 0.043084,
+    "maker_cost": 0.843,
+    "minimum_terminal_payoff": 1.0,
+    "return_on_completed_cost": 0.04502381,
+    "total_cost": 0.956916,
+    "worst_case_loss_before_completion": 0.843
+  },
+  "method": {
+    "authentication_used": false,
+    "completion_leg": "Democratic House control — NO",
+    "completion_order_assumption": "Immediate taker buy only after all three maker legs fill; price and displayed size can change before then.",
+    "maker_legs": [
+      "D Senate, D House — YES",
+      "R Senate, D House — YES",
+      "Balance Other — YES"
+    ],
+    "orders_placed": 0,
+    "taker_fee_formula": "rate * price * (1 - price)"
+  },
+  "minimum_size_diagnostic": {
+    "capital_if_completed": 4.78458,
+    "profit_if_completed": 0.21542,
+    "sets": 5.0,
+    "worst_case_loss_before_completion": 4.215
+  },
+  "record_type": "hybrid_superhedge_completion_diagnostic",
+  "result": {
+    "execution_candidate": true,
+    "interpretation": "Positive completion arithmetic does not establish that maker legs fill, that the completion ask persists, or that cross-market resolutions remain consistent.",
+    "positive_at_observed_completion_ask": true
+  },
+  "schema_version": 1
+}

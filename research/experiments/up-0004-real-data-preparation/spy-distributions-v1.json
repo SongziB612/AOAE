@@ -1,0 +1,22 @@
+{
+  "scope": "SPY only, ex-dates in 2007-2025; currently published issuer table, not historical announcement archive.",
+  "status": "REVIEW_REQUIRED",
+  "issuer_events": 76,
+  "vendor_events": 76,
+  "matched_dates": 76,
+  "unmatched_dates": [],
+  "maximum_amount_difference_usd_per_share": 0.003430999999999962,
+  "exact_amount_mismatches_above_1e_9": 75,
+  "declared_rounding_tolerance_usd": 0.0005001,
+  "payable_delay_calendar_days_min": 40,
+  "payable_delay_calendar_days_max": 47,
+  "source_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/spdr-etf-historical-distributions.xlsx",
+  "issuer_sha256": "1b952f87ca60ece4080b446d6c3b580f640d893ed33641797a2dd22dd61beca9",
+  "vendor_sha256": "72fa7e74c80db6b3c4c2ce061b0c265d2d025b7378ff9ce4782a1062b9544546",
+  "auditor_sha256": "8fd0802894c10086740ba8eaed6932972d10241a43605d94607853f191b05b95",
+  "historical_announcement_times_verified": false,
+  "investor_tax_verified": false,
+  "other_five_etfs_verified": false,
+  "data_admitted": false,
+  "capital_authorized": false
+}

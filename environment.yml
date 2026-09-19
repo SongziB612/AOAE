@@ -1,0 +1,15 @@
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12.14
+  - pip=26.2.1
+  - numpy=2.5.2
+  - pandas=3.0.5
+  - scipy=1.18.0
+  - scikit-learn=1.9.0
+  - websockets=17.1
+  - pip:
+      - akshare==1.18.94
+      - plotly==6.5.0
+      - vectorbt @ git+https://github.com/polakowo/vectorbt.git@34b6d5935e3ea3eccd549e2592bc0f455b8045f5

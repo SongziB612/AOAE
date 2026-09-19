@@ -1,0 +1,19 @@
+{
+  "experiment_id": "CN-FEES-0001",
+  "reference": "research/capital_readiness/300k-accounting-replay-v4.json",
+  "strategy_spec": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+  "data_dir": "data/audit/etf-accounting-2026-09-05-v4",
+  "fee_evidence": "research/manual_execution/account-fees-user-confirmed-v1.json",
+  "years": [2022, 2023, 2024, 2025],
+  "initial_cny": 300000,
+  "pause_loss_cny": 100000,
+  "commission_scenarios": {"user_confirmed_rate": 0.0002},
+  "slippage_bps": [30, 100],
+  "lookback": 63,
+  "target_volatility": 0.12,
+  "arms": ["existing_momentum", "equal_monthly", "equal_vol_target", "equal_buy_hold"],
+  "question": "Reprice unchanged historical strategies at the user-confirmed commission, CNY 5 floor; no parameter selection.",
+  "limits": "30-100bps cost stress is not a historical intraday manual-delay replay. Capital is hypothetical and reset each year; actual available account cash is not 300000. Other charges remain unverified. Pause is not a guaranteed loss bound or approved risk budget.",
+  "capital_authorized": false,
+  "orders_authorized": false
+}

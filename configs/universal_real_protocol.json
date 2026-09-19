@@ -1,0 +1,28 @@
+{
+  "protocol_id": "UP-REAL-0001",
+  "created_date": "2026-09-06",
+  "status": "LOCKED_FOR_DATA_ADMISSION_ONLY",
+  "universe": ["SPY", "QQQ", "IWM", "TLT", "GLD", "DBC"],
+  "selection_limit": "Named today, not a historically selected survivor-free universe; do not claim universe-selection alpha.",
+  "development_periods": {
+    "train": ["2007-01-01", "2014-12-31"],
+    "validation": ["2015-01-01", "2018-12-31"],
+    "test": ["2019-01-01", "2025-12-31"]
+  },
+  "final_holdout": {
+    "start": "2026-09-07",
+    "end": "2027-09-06",
+    "release_not_before": "2027-09-07",
+    "access": "SEALED_NO_RESEARCH_READ",
+    "limit": "Prospective interval, not a promise of adequate power or a capital deployment date. Candidate must be frozen before its first eligible observation; later candidates require a new future holdout."
+  },
+  "purge_sessions": 21,
+  "embargo_sessions": 21,
+  "max_label_horizon_sessions": 21,
+  "manifest_path": "data/admitted/up_us_etf/manifest.json",
+  "required_evidence": ["raw_bars", "corporate_actions", "availability_vintages", "exchange_calendar", "inception_and_universe", "research_permission", "execution_costs"],
+  "timing": "Signals use only observations available before next-session order submission; distributions are receivables on ex-date and spendable only on payment date. No same-close fills.",
+  "promotion": "No automatic promotion. Data review, execution engine, locked candidate, family trial ledger, independent OOS economics and forward execution must all pass separately.",
+  "capital_authorized": false,
+  "orders_authorized": false
+}

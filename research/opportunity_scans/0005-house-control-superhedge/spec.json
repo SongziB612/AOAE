@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "portfolio_id": "PORT-0001-house-control-superhedge",
+  "title": "Four-leg House-control superhedge",
+  "logic": "Buy YES on D-Senate/D-House, R-Senate/D-House, and Balance-Other, plus NO on Democratic House control. Every possible state pays at least one dollar; a non-Democratic House state combined with Balance-Other pays two.",
+  "minimum_terminal_payoff_per_set": 1.0,
+  "legs": [
+    {"name": "D Senate, D House — YES", "token": "34722410608062854697106861099776685947172185964394483545370684749662285977831", "tick": 0.01},
+    {"name": "R Senate, D House — YES", "token": "6302359956133594764084277082169634158291609371270652093164054687145970756151", "tick": 0.01},
+    {"name": "Balance Other — YES", "token": "35477631289241705233759154026285946627439635224019448868888132647783862821489", "tick": 0.001},
+    {"name": "Democratic House control — NO", "token": "33156410999665902694791064431724433042010245771106314074312009703157423879038", "tick": 0.01}
+  ],
+  "quote_policy": "one_tick_below_initial_best_ask",
+  "orders_authorized": false,
+  "capital_authorized": false
+}

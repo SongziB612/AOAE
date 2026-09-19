@@ -1,0 +1,91 @@
+{
+  "assessment": {
+    "admitted": false,
+    "capital_authorized": false,
+    "checks": {
+      "executable_quote_confirmed": false,
+      "positive_net_income_after_fees": true,
+      "product_eligibility_confirmed": false,
+      "settlement_preserves_next_rebalance": false,
+      "written_fee_schedule_confirmed": true
+    },
+    "failed_checks": [
+      "product_eligibility_confirmed",
+      "settlement_preserves_next_rebalance",
+      "executable_quote_confirmed"
+    ]
+  },
+  "capital_authorized": false,
+  "decision": "BLOCKED_INPUTS",
+  "evidence": {
+    "huatai_fee_schedule_url": "https://www.htsc.com.cn/browser/tjjd/investment.do",
+    "observed_gc001_annual_rate_percent": 1.408,
+    "quote_path": "research\\opportunity_scans\\0023-idle-cash-reverse-repo\\quote-official-2026-09-03.json",
+    "quote_sha256": "e7ea21d64dc64e53ae17a6f5267b5d266d1189fcccdf071b83906f8509e65b24",
+    "spec_path": "research\\opportunity_scans\\0023-idle-cash-reverse-repo\\spec.json",
+    "spec_sha256": "15000afbd9c2b6734b83eeb7113beeb352e003891f49a6d14e6f558ec2a283c3",
+    "user_fee_schedule_evidence": "conversation screenshot: general pledge repo minimum commission CNY 0.01"
+  },
+  "interpretation": "The public quote makes the hypothetical economics measurable, but it is not an executable broker quote. Written commission, eligibility, and settlement behavior remain unconfirmed.",
+  "orders_placed": 0,
+  "record_type": "idle_cash_reverse_repo_screen",
+  "scenarios": [
+    {
+      "actual_occupancy_days": 1,
+      "annual_rate_percent": 1.408,
+      "break_even_annual_rate_percent": 0.36500000000000005,
+      "commission_cny": 0.030000000000000002,
+      "gross_interest_cny": 0.11572602739726026,
+      "net_income_cny": 0.08572602739726026,
+      "notional_cny": 3000.0,
+      "scenario_inputs": {
+        "actual_occupancy_days": 1,
+        "commission_rate_from_huatai_public_schedule": 1e-05,
+        "minimum_commission_cny_from_user_account_schedule": 0.01
+      }
+    },
+    {
+      "actual_occupancy_days": 3,
+      "annual_rate_percent": 1.408,
+      "break_even_annual_rate_percent": 0.12166666666666669,
+      "commission_cny": 0.030000000000000002,
+      "gross_interest_cny": 0.34717808219178076,
+      "net_income_cny": 0.31717808219178073,
+      "notional_cny": 3000.0,
+      "scenario_inputs": {
+        "actual_occupancy_days": 3,
+        "commission_rate_from_huatai_public_schedule": 1e-05,
+        "minimum_commission_cny_from_user_account_schedule": 0.01
+      }
+    },
+    {
+      "actual_occupancy_days": 1,
+      "annual_rate_percent": 1.408,
+      "break_even_annual_rate_percent": 0.36500000000000005,
+      "commission_cny": 0.1,
+      "gross_interest_cny": 0.3857534246575342,
+      "net_income_cny": 0.28575342465753417,
+      "notional_cny": 10000.0,
+      "scenario_inputs": {
+        "actual_occupancy_days": 1,
+        "commission_rate_from_huatai_public_schedule": 1e-05,
+        "minimum_commission_cny_from_user_account_schedule": 0.01
+      }
+    },
+    {
+      "actual_occupancy_days": 3,
+      "annual_rate_percent": 1.408,
+      "break_even_annual_rate_percent": 0.12166666666666669,
+      "commission_cny": 0.1,
+      "gross_interest_cny": 1.1572602739726028,
+      "net_income_cny": 1.0572602739726027,
+      "notional_cny": 10000.0,
+      "scenario_inputs": {
+        "actual_occupancy_days": 3,
+        "commission_rate_from_huatai_public_schedule": 1e-05,
+        "minimum_commission_cny_from_user_account_schedule": 0.01
+      }
+    }
+  ],
+  "schema_version": 1
+}

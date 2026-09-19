@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aoae"
+version = "0.1.0"
+description = "Auditable research infrastructure for the AOAE project"
+requires-python = "==3.12.*"
+dependencies = [
+  "akshare==1.18.94",
+  "numpy==2.5.2",
+  "pandas==3.0.5",
+  "plotly==6.5.0",
+  "scipy==1.18.0",
+  "scikit-learn==1.9.0",
+  "vectorbt @ git+https://github.com/polakowo/vectorbt.git@34b6d5935e3ea3eccd549e2592bc0f455b8045f5",
+  "websockets==17.1",
+]
+
+[project.scripts]
+aoae = "aoae.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

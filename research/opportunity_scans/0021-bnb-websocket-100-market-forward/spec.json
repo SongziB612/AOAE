@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "record_type": "preregistered_read_only_latency_probe",
+  "hypothesis": "At one or more preregistered offsets, the Chainlink-implied side retains at least five shares of CLOB ask depth and positive fee-adjusted expectancy under sub-second book observation.",
+  "asset": "bnb",
+  "chainlink_symbol": "bnb/usd",
+  "market_slug_prefix": "bnb-updown-5m-",
+  "interval_seconds": 300,
+  "market_count": 100,
+  "decision_seconds_before_end": [120, 60, 30, 15, 5],
+  "book_transport": "websocket",
+  "book_sample_seconds": 0.25,
+  "settlement_tick_tolerance_seconds": 15,
+  "minimum_order_size_shares": 5,
+  "interpretation_gate": {
+    "minimum_independent_markets": 100,
+    "requires_positive_total_fee_adjusted_pnl_at_a_preregistered_offset": true,
+    "requires_maximum_drawdown_within_1000_cny_limit": true,
+    "requires_fixed_delay_execution_simulation": true,
+    "requires_multiple_testing_correction": true,
+    "requires_independent_replay": true
+  },
+  "limitations": [
+    "Visible depth is not a fill confirmation.",
+    "All offsets remain separate alternatives and may not be summed or selected post hoc.",
+    "No batch result authorizes deployment or capital."
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

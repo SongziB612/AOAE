@@ -1,0 +1,320 @@
+{
+  "fixture": {
+    "dates": [
+      "2024-01-02",
+      "2024-01-03",
+      "2024-01-04",
+      "2024-01-05",
+      "2024-01-08",
+      "2024-01-09",
+      "2024-01-10",
+      "2024-01-11"
+    ],
+    "symbols": [
+      "A",
+      "B"
+    ],
+    "opens": [
+      {
+        "A": 10.0,
+        "B": 20.0
+      },
+      {
+        "A": 10.0,
+        "B": 20.0
+      },
+      {
+        "A": 9.0,
+        "B": 20.0
+      },
+      {
+        "A": 9.0,
+        "B": 20.0
+      },
+      {
+        "A": 8.0,
+        "B": 20.0
+      },
+      {
+        "A": 5.0,
+        "B": 20.0
+      },
+      {
+        "A": 5.0,
+        "B": 20.0
+      },
+      {
+        "A": 5.0,
+        "B": 20.0
+      }
+    ],
+    "closes": [
+      {
+        "A": 10.0,
+        "B": 20.0
+      },
+      {
+        "A": 10.0,
+        "B": 20.0
+      },
+      {
+        "A": 9.0,
+        "B": 20.0
+      },
+      {
+        "A": 9.0,
+        "B": 20.0
+      },
+      {
+        "A": 8.0,
+        "B": 20.0
+      },
+      {
+        "A": 5.0,
+        "B": 20.0
+      },
+      {
+        "A": 5.0,
+        "B": 20.0
+      },
+      {
+        "A": 5.0,
+        "B": 20.0
+      }
+    ],
+    "opening_capacity": [
+      {
+        "A": 1000.0,
+        "B": 2000.0
+      },
+      {
+        "A": 1000.0,
+        "B": 2000.0
+      },
+      {
+        "A": 900.0,
+        "B": 2000.0
+      },
+      {
+        "A": 900.0,
+        "B": 2000.0
+      },
+      {
+        "A": 800.0,
+        "B": 2000.0
+      },
+      {
+        "A": 500.0,
+        "B": 2000.0
+      },
+      {
+        "A": 500.0,
+        "B": 2000.0
+      },
+      {
+        "A": 500.0,
+        "B": 2000.0
+      }
+    ],
+    "targets": {
+      "2024-01-03": {
+        "A": 1.0,
+        "B": 0.0
+      },
+      "2024-01-05": {
+        "A": 0.0,
+        "B": 1.0
+      },
+      "2024-01-08": {
+        "A": 1.0,
+        "B": 0.0
+      }
+    },
+    "actions": [
+      {
+        "symbol": "A",
+        "ex_date": "2024-01-04",
+        "known_date": "2024-01-02",
+        "payment_date": "2024-01-09",
+        "cash_per_share": 1.0
+      }
+    ],
+    "settings": {
+      "initial": 10000.0,
+      "commission_bps": 5.0,
+      "minimum_fee": 1.0,
+      "adverse_bps": 10.0,
+      "settlement_sessions": 1,
+      "pause_loss": 1000.0
+    },
+    "result": {
+      "rows": [
+        {
+          "date": "2024-01-02",
+          "cash": 10000.0,
+          "receivable": 0,
+          "positions": {
+            "A": 0,
+            "B": 0
+          },
+          "equity": 10000.0,
+          "paused": false
+        },
+        {
+          "date": "2024-01-03",
+          "cash": 5.025010000003022,
+          "receivable": 0,
+          "positions": {
+            "A": 998,
+            "B": 0
+          },
+          "equity": 9985.025010000003,
+          "paused": false
+        },
+        {
+          "date": "2024-01-04",
+          "cash": 5.025010000003022,
+          "receivable": 998.0,
+          "positions": {
+            "A": 998,
+            "B": 0
+          },
+          "equity": 9985.025010000003,
+          "paused": false
+        },
+        {
+          "date": "2024-01-05",
+          "cash": 0.9790600000030212,
+          "receivable": 9089.9,
+          "positions": {
+            "A": 98,
+            "B": 0
+          },
+          "equity": 9972.879060000003,
+          "paused": false
+        },
+        {
+          "date": "2024-01-08",
+          "cash": 1683.2758600000034,
+          "receivable": 998.0,
+          "positions": {
+            "A": 898,
+            "B": 0
+          },
+          "equity": 9865.275860000003,
+          "paused": false
+        },
+        {
+          "date": "2024-01-09",
+          "cash": 2681.2758600000034,
+          "receivable": 0,
+          "positions": {
+            "A": 898,
+            "B": 0
+          },
+          "equity": 7171.275860000003,
+          "paused": true
+        },
+        {
+          "date": "2024-01-10",
+          "cash": 2680.027110000003,
+          "receivable": 2497.5,
+          "positions": {
+            "A": 398,
+            "B": 0
+          },
+          "equity": 7167.527110000003,
+          "paused": true
+        },
+        {
+          "date": "2024-01-11",
+          "cash": 5176.527110000003,
+          "receivable": 1988.01,
+          "positions": {
+            "A": 0,
+            "B": 0
+          },
+          "equity": 7164.537110000003,
+          "paused": true
+        }
+      ],
+      "orders": [
+        {
+          "date": "2024-01-03",
+          "signal_date": "2024-01-02",
+          "symbol": "A",
+          "side": "BUY",
+          "quantity": 998,
+          "price": 10.009999999999998,
+          "fee": 4.994989999999999,
+          "paused_liquidation": false
+        },
+        {
+          "date": "2024-01-05",
+          "signal_date": "2024-01-04",
+          "symbol": "A",
+          "side": "SELL",
+          "quantity": 900,
+          "price": 8.991,
+          "fee": 4.04595,
+          "paused_liquidation": false
+        },
+        {
+          "date": "2024-01-08",
+          "signal_date": "2024-01-05",
+          "symbol": "A",
+          "side": "BUY",
+          "quantity": 800,
+          "price": 8.008,
+          "fee": 3.2032,
+          "paused_liquidation": false
+        },
+        {
+          "date": "2024-01-10",
+          "signal_date": "2024-01-09",
+          "symbol": "A",
+          "side": "SELL",
+          "quantity": 500,
+          "price": 4.995,
+          "fee": 1.24875,
+          "paused_liquidation": true
+        },
+        {
+          "date": "2024-01-11",
+          "signal_date": "2024-01-10",
+          "symbol": "A",
+          "side": "SELL",
+          "quantity": 398,
+          "price": 4.995,
+          "fee": 1.0,
+          "paused_liquidation": true
+        }
+      ],
+      "capital_authorized": false,
+      "information_class": "RAW_PRICE_EXECUTION_SCENARIO_NOT_VERIFIED_FILLS",
+      "limits": [
+        "No split/FX/withholding/tax support; caller must reject datasets requiring these.",
+        "Opening capacity and adverse fills are assumptions unless independently measured.",
+        "Daily cash dividend publication must precede ex-date; intraday announcements unsupported.",
+        "Cash-account settlement delay is configured, not inferred from exchange rules.",
+        "Loss threshold triggers next-session attempts; gaps/capacity may exceed loss budget."
+      ]
+    }
+  },
+  "independent_audit": {
+    "status": "PASS",
+    "sessions": 8,
+    "orders": 5,
+    "maximum_absolute_error": 3.4e-12,
+    "capital_authorized": false,
+    "scope": "Independent cash, receivables, holdings, price, fee, capacity and pause reconstruction; not validation of target optimality, real fills or data truth."
+  },
+  "verdict": "RESEARCH",
+  "interpretation": "Deterministic engineering fixture; no real historical backtest, no independent market sample.",
+  "capital_authorized": false,
+  "source_sha256": {
+    "src/aoae/universal_execution.py": "e25f965b82afa2f2b4333bf35bf9abf0f63682f6a9821b2806f0e870c8f1cccb",
+    "scripts/audit_universal_execution.py": "30b1586e9d3938329a0763928f3f022060e9360cc53b717392b6de656c35543d",
+    "scripts/run_up_execution_checks.py": "08686d817af63570144ec6cbba44920095a2d60dd1bdca08ee6d4145c2c31edf"
+  }
+}

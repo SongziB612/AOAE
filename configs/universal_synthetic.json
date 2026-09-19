@@ -1,0 +1,24 @@
+{
+  "experiment_id": "UP-0001-synthetic-rejection-baselines",
+  "periods": 252,
+  "periods_per_year": 252,
+  "seeds": [17, 31, 73],
+  "worlds": ["high_vol_low_corr", "high_vol_high_corr", "low_vol_low_corr", "one_way_trend", "relative_mean_reversion", "crash_correlation_spike", "permanent_loser"],
+  "grid_points": 101,
+  "cost_multipliers": [1, 10],
+  "distress_threshold": 0.2,
+  "costs": {
+    "commission_bps": 2,
+    "half_spread_bps": 2,
+    "slippage_bps": 3,
+    "impact_bps_at_full_volume": 100,
+    "volume_to_account_equity": 100,
+    "maximum_participation": 0.01
+  },
+  "variants": ["fixed_asset0_buy_hold", "equal_buy_hold", "equal_daily", "equal_5session", "equal_21session", "bcrp_ex_post", "universal_grid"],
+  "development_only": true,
+  "parameters_selected_on_final_holdout": false,
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false
+}

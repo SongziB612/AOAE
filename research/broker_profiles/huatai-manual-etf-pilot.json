@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "record_type": "broker_preflight_profile",
+  "broker": "Huatai Securities",
+  "account_opened": true,
+  "evidence": {
+    "account_opened": "user statement in project conversation",
+    "published_fee_schedule": "https://www.htsc.com.cn/browser/tjjd/investment.do",
+    "user_fee_schedule_screenshot": "ETF/fund commission no more than 3 per mille, minimum CNY 5; general pledge repo minimum CNY 0.01"
+  },
+  "etf_cost_model": {
+    "conservative_one_way_rate": 0.003,
+    "minimum_commission_per_order_cny": 5,
+    "personal_negotiated_rate_known": false,
+    "safe_to_model_using_published_maximum": true
+  },
+  "pilot_execution": {
+    "mode": "manual_human_confirmed_limit_orders_only",
+    "api_required": false,
+    "automatic_trading_allowed": false,
+    "credentials_may_be_stored": false
+  },
+  "external_account_checks_pending": [
+    "ETF trading permission and eligible instrument page visible in the account",
+    "available-cash and maximum-order-quantity behavior confirmed in the order ticket",
+    "exchange reverse-repo permission and settlement display confirmed if idle-cash layer is used"
+  ],
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

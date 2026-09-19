@@ -1,0 +1,171 @@
+{
+  "capital_authorized": false,
+  "decision": "paper_fill_study",
+  "event": {
+    "explicit_other_leg": true,
+    "leg_count": 5,
+    "slug": "balance-of-power-2026-midterms",
+    "title": "Balance of Power: 2026 Midterms"
+  },
+  "method": {
+    "authentication_used": false,
+    "interval_seconds": 2.0,
+    "orders_placed": 0,
+    "samples": 5
+  },
+  "observations": [
+    {
+      "best_asks": [
+        0.51,
+        0.01,
+        0.36,
+        0.11,
+        0.003
+      ],
+      "best_bids": [
+        0.5,
+        0.008,
+        0.35,
+        0.1,
+        0.002
+      ],
+      "leg_count": 5,
+      "maker": {
+        "all_legs_fill_guaranteed": false,
+        "complete_set_bid_cost": 0.96,
+        "payoff_if_every_leg_fills": 0.04
+      },
+      "observed_at_utc": "2026-09-03T07:18:11.709459Z",
+      "taker": {
+        "complete_set_cost": 1.01664364,
+        "displayed_capacity_sets": 2643.82,
+        "net_payoff": -0.01664364,
+        "profitable_before_external_costs": false
+      }
+    },
+    {
+      "best_asks": [
+        0.51,
+        0.01,
+        0.36,
+        0.11,
+        0.003
+      ],
+      "best_bids": [
+        0.5,
+        0.008,
+        0.35,
+        0.1,
+        0.002
+      ],
+      "leg_count": 5,
+      "maker": {
+        "all_legs_fill_guaranteed": false,
+        "complete_set_bid_cost": 0.96,
+        "payoff_if_every_leg_fills": 0.04
+      },
+      "observed_at_utc": "2026-09-03T07:18:26.443000Z",
+      "taker": {
+        "complete_set_cost": 1.01664364,
+        "displayed_capacity_sets": 2643.82,
+        "net_payoff": -0.01664364,
+        "profitable_before_external_costs": false
+      }
+    },
+    {
+      "best_asks": [
+        0.51,
+        0.01,
+        0.36,
+        0.11,
+        0.003
+      ],
+      "best_bids": [
+        0.5,
+        0.008,
+        0.35,
+        0.1,
+        0.002
+      ],
+      "leg_count": 5,
+      "maker": {
+        "all_legs_fill_guaranteed": false,
+        "complete_set_bid_cost": 0.96,
+        "payoff_if_every_leg_fills": 0.04
+      },
+      "observed_at_utc": "2026-09-03T07:18:39.797984Z",
+      "taker": {
+        "complete_set_cost": 1.01664364,
+        "displayed_capacity_sets": 2643.82,
+        "net_payoff": -0.01664364,
+        "profitable_before_external_costs": false
+      }
+    },
+    {
+      "best_asks": [
+        0.51,
+        0.01,
+        0.36,
+        0.11,
+        0.003
+      ],
+      "best_bids": [
+        0.5,
+        0.008,
+        0.35,
+        0.1,
+        0.002
+      ],
+      "leg_count": 5,
+      "maker": {
+        "all_legs_fill_guaranteed": false,
+        "complete_set_bid_cost": 0.96,
+        "payoff_if_every_leg_fills": 0.04
+      },
+      "observed_at_utc": "2026-09-03T07:18:51.646374Z",
+      "taker": {
+        "complete_set_cost": 1.01664364,
+        "displayed_capacity_sets": 2643.82,
+        "net_payoff": -0.01664364,
+        "profitable_before_external_costs": false
+      }
+    },
+    {
+      "best_asks": [
+        0.51,
+        0.01,
+        0.36,
+        0.11,
+        0.003
+      ],
+      "best_bids": [
+        0.5,
+        0.008,
+        0.35,
+        0.1,
+        0.002
+      ],
+      "leg_count": 5,
+      "maker": {
+        "all_legs_fill_guaranteed": false,
+        "complete_set_bid_cost": 0.96,
+        "payoff_if_every_leg_fills": 0.04
+      },
+      "observed_at_utc": "2026-09-03T07:18:56.626985Z",
+      "taker": {
+        "complete_set_cost": 1.01664364,
+        "displayed_capacity_sets": 2643.82,
+        "net_payoff": -0.01664364,
+        "profitable_before_external_costs": false
+      }
+    }
+  ],
+  "record_type": "exploratory_read_only_complete_set_probe",
+  "result": {
+    "maker_payoff_if_all_legs_fill_max": 0.04,
+    "maker_payoff_if_all_legs_fill_min": 0.04,
+    "status": "NO_TAKER_EDGE",
+    "taker_positive_samples": 0
+  },
+  "schema_version": 1
+}

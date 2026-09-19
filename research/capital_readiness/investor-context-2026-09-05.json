@@ -1,0 +1,12 @@
+{
+  "record_type": "user_disclosed_investor_context_not_authorization",
+  "user_disclosed_investors": true,
+  "investors_contribution_to_300000_cny": "unknown",
+  "investor_mandate_risk_limits_redemption_and_fee_terms": "unknown",
+  "personal_loss_tolerance_applies_to_investors": false,
+  "interpretation": "Do not infer third-party loss consent, capital ownership, discretionary authority or guaranteed-return obligations from the user's personal loss tolerance.",
+  "research_can_continue_without_further_questions": true,
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false
+}

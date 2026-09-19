@@ -1,0 +1,26 @@
+{
+  "classification": "SYNTHETIC_ENGINEERING_FIXTURE_NOT_MARKET_DATA",
+  "freeze": {"frozen_at_utc": "2026-09-05T00:00:00+00:00", "arms": ["model"]},
+  "captured_at": "2026-09-30T16:00:00+08:00",
+  "signal": {
+    "signal_close_at": "2026-09-30T15:00:00+08:00",
+    "execution_not_before": "2026-10-08T09:30:00+08:00",
+    "execution_expires_at": "2026-10-08T10:00:00+08:00",
+    "review_status": "VERIFIED_CALENDAR_ACTIONS_AND_DATA",
+    "review_evidence_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "input_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "weights": {"model": {"510300": 0.5}}
+  },
+  "arm": "model",
+  "account": {
+    "as_of": "2026-10-08T09:31:00+08:00",
+    "available_cash_cny": "10000",
+    "positions": {},
+    "available_to_sell": {},
+    "open_orders": []
+  },
+  "quotes": {
+    "510300": {"as_of": "2026-10-08T09:31:00+08:00", "bid": "3.999", "ask": "4.000", "tick_size": "0.001", "tradable": true}
+  },
+  "fees": {"commission_rate": "0.003", "minimum_cny": "5", "basis": "Engineering assumption only; not confirmed account tariff"}
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "simulation_id": "SIM-0013-small-capital-hybrid",
+  "economics_result": "research/opportunity_scans/0010-house-control-hybrid-completion/result.json",
+  "capital_cny": 10000,
+  "maximum_loss_cny": 1000,
+  "usd_cny": 6.7787,
+  "fx_date": "2026-09-04",
+  "fx_source": "China Foreign Exchange Trade System central parity",
+  "orders_authorized": false,
+  "capital_authorized": false
+}

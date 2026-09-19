@@ -1,0 +1,70 @@
+{
+  "capital_authorized": false,
+  "decision": "continue_or_reprice_paper_test",
+  "event": {
+    "explicit_other_leg": true,
+    "leg_count": 5,
+    "slug": "balance-of-power-2026-midterms",
+    "title": "Balance of Power: 2026 Midterms"
+  },
+  "legs": [
+    {
+      "cross_events": 0,
+      "name": "Democrats Sweep",
+      "paper_bid": 0.5,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "name": "D Senate, R House",
+      "paper_bid": 0.009,
+      "tick": 0.001,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "name": "R Senate, D House",
+      "paper_bid": 0.35,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "name": "Republicans Sweep",
+      "paper_bid": 0.1,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "name": "Other",
+      "paper_bid": 0.002,
+      "tick": 0.001,
+      "trade_events_at_or_below_bid": 0
+    }
+  ],
+  "method": {
+    "authentication_used": false,
+    "fill_evidence": "public best-ask cross or SELL trade at/below paper bid; queue position is unknown",
+    "message_counts": {
+      "PONG": 4,
+      "book": 5,
+      "new_market": 4,
+      "price_change": 43
+    },
+    "orders_placed": 0,
+    "quote_policy": "one_tick_below_initial_best_ask"
+  },
+  "observed_from_utc": "2026-09-03T07:33:10.908370Z",
+  "observed_until_utc": "2026-09-03T07:33:58.630406Z",
+  "record_type": "aggressive_forward_websocket_paper_fill_probe",
+  "result": {
+    "all_legs_with_fill_evidence": false,
+    "complete_set_cost_if_all_fill": 0.961,
+    "legs_with_fill_evidence": 0,
+    "locked_payoff_if_all_fill": 0.039,
+    "status": "INCOMPLETE_FILL_EVIDENCE"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "tests_passed": 212,
+  "attributed_existing_paths": 64,
+  "maximum_daily_reconciliation_error_cny": 1.7462298274040222e-10,
+  "byte_identical_reproduction": true,
+  "result_sha256": "60c3a219fb26de32ffba33aec10c7dd53bac77680d4a9dd853d7ce4b2c6d15d0",
+  "new_strategy_trials": 0,
+  "factor_alpha_established": false,
+  "clean_oos_count": 0,
+  "capital_authorized": false,
+  "orders_authorized": false
+}

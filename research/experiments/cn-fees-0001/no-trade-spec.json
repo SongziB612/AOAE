@@ -1,0 +1,11 @@
+{
+  "experiment_id": "CN-FEES-0001-NO-TRADE",
+  "reference": "research/experiments/cn-fees-0001/result-v1.json",
+  "bands": [0.0, 0.05],
+  "primary_band": 0.05,
+  "hypothesis": "Reprice the previously fixed no-trade candidate at the confirmed commission; do not optimize band.",
+  "known_search_history": "Four original bands already tested. These are repricings of two existing policies, not clean independent trials. Total family search remains unknown.",
+  "clean_oos_observations": 0,
+  "capital_authorized": false,
+  "orders_authorized": false
+}

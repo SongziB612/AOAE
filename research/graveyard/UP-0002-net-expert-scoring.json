@@ -1,0 +1,16 @@
+{
+  "strategy_id": "UP-0002",
+  "name": "Replace gross virtual expert scoring with net virtual expert scoring",
+  "status": "REJECT",
+  "date_killed": "2026-09-06",
+  "verdict_scope": "This exact candidate upgrade under the locked descriptive development rule; transaction costs remain mandatory.",
+  "failure_reason": "Some scenario groups have worse paired net log growth or drawdown. Mixed tiny improvements do not establish stable incremental value.",
+  "parameters": "configs/net_expert_challenge.json",
+  "backtest": "research/experiments/up-0002-net-expert-scoring/result-v1.json",
+  "code_version": "source_sha256 in result-v1.json",
+  "tests_failed": ["all_groups_log_growth_noninferior", "all_groups_drawdown_noninferior"],
+  "implementation_audits": ["accounting-audit-v1.json PASS", "scoring-audit-v1.json PASS"],
+  "multiple_testing_note": "144 dependent synthetic evaluations; no significance or empirical OOS claim.",
+  "capital_authorized": false,
+  "orders_authorized": false
+}

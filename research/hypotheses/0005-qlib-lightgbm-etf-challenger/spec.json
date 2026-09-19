@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0005-qlib-lightgbm-etf-challenger",
+  "title": "Frozen Qlib LightGBM challenger for monthly ETF rotation",
+  "status_context": "Designed after the champion holdout was observed; this is a qualification test, not a pristine holdout and cannot authorize replacement or capital.",
+  "inputs": {
+    "champion_spec_path": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+    "champion_result_path": "research/hypotheses/0004-cn-etf-dual-momentum/result.json",
+    "data_hashes_source": "champion_result.inputs.price_sha256",
+    "risk_assets": ["510300", "510500", "159915", "513500", "518880"],
+    "defensive_asset": "511010",
+    "benchmark": "510300"
+  },
+  "dataset": {
+    "frequency": "calendar_month_end",
+    "execution": "next_common_trading_day_open",
+    "label": "return_from_next_open_after_signal_to_next_open_after_following_month_end",
+    "features": ["return_21", "return_63", "return_126", "return_252", "return_126_skip_21", "return_252_skip_21", "volatility_21", "volatility_63", "drawdown_252", "volume_ratio_21_63"],
+    "training": ["2016-01-01", "2020-12-31"],
+    "validation": ["2021-01-01", "2021-12-31"],
+    "qualification": ["2022-01-01", "2026-08-31"],
+    "label_must_be_fully_realized_inside_segment": true
+  },
+  "model": {
+    "framework": "Qlib LGBModel",
+    "qlib_version": "0.9.7",
+    "lightgbm_version": "4.7.0",
+    "loss": "mse",
+    "learning_rate": 0.03,
+    "num_leaves": 7,
+    "max_depth": 3,
+    "min_data_in_leaf": 20,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l1": 0.1,
+    "lambda_l2": 1.0,
+    "num_boost_round": 200,
+    "early_stopping_rounds": 20,
+    "seed": 42,
+    "num_threads": 1,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "portfolio": {
+    "positive_prediction_required": true,
+    "top_n": 2,
+    "risk_weight_each": 0.5,
+    "unused_weight": "defensive_asset",
+    "one_way_cost_bps": 15,
+    "initial_capital_cny": 100000
+  },
+  "decision_rule": {
+    "qualification_total_return_positive": true,
+    "qualification_cagr_above_champion": true,
+    "qualification_max_drawdown_less_severe_than_champion": true,
+    "qualification_sharpe_above_champion": true,
+    "mean_monthly_spearman_ic_above_zero": true
+  },
+  "trial_count": 1,
+  "telemetry_policy": "Qlib R.log_metrics may be disabled because it is not part of model fitting and conflicts with the isolated minimal environment; training parameters and predictions may not be altered.",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "replacement_authorized": false,
+  "next_step_if_pass": "run champion and challenger prospectively from the next valid month-end for at least three months",
+  "next_step_if_fail": "reject the challenger without tuning on the qualification period"
+}

@@ -1,0 +1,10 @@
+{
+  "year": 2026,
+  "reviewed_on": "2026-09-10",
+  "exchanges": ["SSE", "SZSE"],
+  "weekend_closed": true,
+  "holiday_ranges": [["2026-01-01", "2026-01-03"], ["2026-02-15", "2026-02-23"], ["2026-04-04", "2026-04-06"], ["2026-05-01", "2026-05-05"], ["2026-06-19", "2026-06-21"], ["2026-09-25", "2026-09-27"], ["2026-10-01", "2026-10-07"]],
+  "sources": ["https://www.sse.com.cn/disclosure/dealinstruc/closed/c/c_20251222_10802510.shtml", "https://dataclouds.cninfo.com.cn/sjother2/regulatory/2025/20251222/50b258f0d89b4076b459eb746a7e100d.pdf"],
+  "limits": ["Manually transcribed published exchange holidays; no individual ETF suspension or settlement certification.", "Unexpected closures require a new reviewed calendar version. No extrapolation into 2027."],
+  "capital_authorized": false
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scan_id": "SCAN-0009-house-control-queue-depth-corrected",
+  "supersedes_invalid_scan": "SCAN-0008-house-control-queue-depth",
+  "bug_fix": "Preserve zero-day queue estimates when selecting the maximum bottleneck.",
+  "portfolio_spec": "research/opportunity_scans/0005-house-control-superhedge/spec.json",
+  "fill_result": "research/opportunity_scans/0006-house-control-forward-fill-monitor/result.json",
+  "history_result": "research/opportunity_scans/0007-house-control-public-trade-history/result.json",
+  "legs": [
+    {"name": "D Senate, D House — YES", "token": "34722410608062854697106861099776685947172185964394483545370684749662285977831"},
+    {"name": "R Senate, D House — YES", "token": "6302359956133594764084277082169634158291609371270652093164054687145970756151"},
+    {"name": "Balance Other — YES", "token": "35477631289241705233759154026285946627439635224019448868888132647783862821489"},
+    {"name": "Democratic House control — NO", "token": "33156410999665902694791064431724433042010245771106314074312009703157423879038"}
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

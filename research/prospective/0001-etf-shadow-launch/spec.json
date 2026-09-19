@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PRO-0001-etf-shadow-launch",
+  "created_date": "2026-09-03",
+  "purpose": "Create the first paper-only shadow order from the frozen ETF champion and observe the rejected Qlib challenger separately.",
+  "champion_spec": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+  "champion_result": "research/hypotheses/0004-cn-etf-dual-momentum/result.json",
+  "qlib_spec": "research/hypotheses/0005-qlib-lightgbm-etf-challenger/spec.json",
+  "qlib_result": "research/hypotheses/0005-qlib-lightgbm-etf-challenger/result.json",
+  "data": {
+    "provider": "AKShare fund_etf_hist_em backed by Eastmoney",
+    "start_date": "2015-01-01",
+    "end_date": "2026-09-02",
+    "adjustment": "qfq",
+    "universe": ["510300", "510500", "159915", "513500", "518880", "511010"]
+  },
+  "signal_date": "2026-08-31",
+  "paper_execution_date": "2026-09-01",
+  "launch_classification": "backfilled_launch_order_created_after_execution_date; excluded_from_prospective_performance claims",
+  "champion_method_frozen": true,
+  "qlib_observer_method_frozen": true,
+  "one_way_cost_bps": 15,
+  "initial_paper_capital_cny": 100000,
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false,
+  "next_clean_signal_date": "2026-09-30_or_last_common_trading_day_of_month"
+}

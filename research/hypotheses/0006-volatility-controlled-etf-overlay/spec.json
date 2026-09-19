@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0006-volatility-controlled-etf-overlay",
+  "title": "Frozen inverse-volatility and 12 percent volatility-target overlay",
+  "status_context": "Designed after the champion holdout and the backfilled September 2026 launch loss were observed. Historical results are diagnostic only and cannot authorize replacement or capital.",
+  "base_signal": {
+    "spec_path": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+    "result_path": "research/hypotheses/0004-cn-etf-dual-momentum/result.json",
+    "signal_and_positive_filter_unchanged": true,
+    "selected_asset_count_unchanged": 2
+  },
+  "risk_overlay": {
+    "daily_return_lookback": 63,
+    "annualization_days": 252,
+    "selected_asset_weighting": "inverse_trailing_realized_volatility",
+    "portfolio_volatility_estimator": "sample_covariance_of_trailing_daily_close_returns",
+    "target_annualized_volatility": 0.12,
+    "risk_exposure_formula": "min(selected_count / 2, target_volatility / estimated_selected_portfolio_volatility)",
+    "minimum_risk_exposure": 0.0,
+    "maximum_risk_exposure": 1.0,
+    "must_never_exceed_base_signal_risk_exposure": true,
+    "unused_weight": "511010 defensive ETF",
+    "execution": "next_common_trading_day_open",
+    "one_way_cost_bps": 15,
+    "lookahead_forbidden": true
+  },
+  "diagnostic_period": ["2022-01-01", "2026-08-31"],
+  "decision_rule": {
+    "total_return_positive": true,
+    "cagr_at_least_80_percent_of_champion": true,
+    "max_drawdown_at_least_10_percent_less_severe_than_champion": true,
+    "calmar_ratio_above_champion": true,
+    "sharpe_above_champion": true
+  },
+  "trial_count": 1,
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "replacement_authorized": false,
+  "next_step_if_pass": "add as a separate arm at the next clean month-end prospective shadow test",
+  "next_step_if_fail": "reject without tuning on the diagnostic period"
+}

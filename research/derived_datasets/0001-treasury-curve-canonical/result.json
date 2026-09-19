@@ -1,0 +1,54 @@
+{
+  "capital_authorized": false,
+  "decision": "canonical_descriptive_table_validated",
+  "derivation_id": "DER-0001-treasury-curve-canonical",
+  "evidence": {
+    "column_count": 19,
+    "first_date": "2024-01-02",
+    "inverted_10y_2y_rows": 166,
+    "inverted_10y_3m_rows": 238,
+    "last_date": "2024-12-31",
+    "maximum_absolute_10y_daily_change_bps": 19,
+    "maximum_absolute_2y_daily_change_bps": 28,
+    "row_count": 250,
+    "spread_10y_2y_bps_maximum": 33,
+    "spread_10y_2y_bps_minimum": -47,
+    "spread_10y_3m_bps_maximum": 31,
+    "spread_10y_3m_bps_minimum": -157,
+    "spread_30y_10y_bps_maximum": 35,
+    "spread_30y_10y_bps_minimum": 9
+  },
+  "input": {
+    "admission_id": "ADM-0001-us-treasury-yield-curve",
+    "admission_result_canonical_sha256": "b16748bba11d8e0c767bfb668bb86a614acc5045142c6be8a22905e24096abfb",
+    "raw_snapshot_sha256": "d216da08ff934cb60add3980e1f4a82b9a6fbcd227182d4307ca857bce1cf4db"
+  },
+  "next_experiment": "Preregister one economic curve-shape hypothesis, one benchmark, and one falsification rule before any backtest.",
+  "output": {
+    "bytes": 23296,
+    "columns": 19,
+    "format": "csv",
+    "redistribution_authorized": false,
+    "rows": 250,
+    "sha256": "378e0c4a2b7d845db08137e894187cdd72f18d4886eef95f5ea75c7020768ecd"
+  },
+  "record_type": "canonical_real_data_derivation",
+  "research_purpose": "descriptive_curve_invariants_only",
+  "result": {
+    "checks": {
+      "capital_disabled": true,
+      "columns_match_contract": true,
+      "dates_unique_and_increasing": true,
+      "first_change_is_blank": true,
+      "prohibited_strategy_columns_absent": true,
+      "redistribution_disabled": true,
+      "spread_identities_exact": true,
+      "strategy_trials_zero": true
+    },
+    "interpretation": "The admitted snapshot was converted to a deterministic descriptive table. No signal, return, position, PnL, Sharpe, strategy trial, or capital authorization was introduced.",
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "strategy_mining_authorized": false,
+  "strategy_trials": 0
+}

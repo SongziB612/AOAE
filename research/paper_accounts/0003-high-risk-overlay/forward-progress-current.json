@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-09-04",
+  "broker_connection_authorized": false,
+  "capital_authorized": false,
+  "completion_rule": "Backfilled prices cannot accelerate the review date.",
+  "current_equity_cny": 10000.0,
+  "elapsed_calendar_days": 0,
+  "evaluation_start_date": "2026-09-04",
+  "first_eligible_signal": "PENDING_FIRST_COMMON_MONTH_END",
+  "first_order_lot_feasible": null,
+  "generated_rebalances": 0,
+  "maximum_drawdown_fraction": 0.0,
+  "net_pnl_cny": 0.0,
+  "orders_authorized": false,
+  "processed_new_market_days": 0,
+  "record_type": "forward_paper_evaluation_current_progress",
+  "review_date_elapsed": false,
+  "scheduled_review_date": "2026-12-04",
+  "schema_version": 1,
+  "snapshot_sha256": {
+    "F:\\AOAE\\data\\runtime\\paper_account\\high_risk_snapshots\\2026-09-04.json": "aa35623935e45320959bf772c7f803b18caba39470f2c93741e9766ce73181d6"
+  },
+  "status": "ACTIVE_WAITING_FOR_FORWARD_TIME"
+}

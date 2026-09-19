@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PRO-0002-etf-three-arm-forward",
+  "created_date": "2026-09-03",
+  "start_rule": "first common month-end signal strictly after 2026-09-03",
+  "expected_first_signal": "2026-09-last-common-trading-day",
+  "execution": "next_common_trading_day_open",
+  "minimum_observation_months": 3,
+  "preferred_observation_months": 6,
+  "initial_paper_capital_per_arm_cny": 100000,
+  "arms": {
+    "benchmark": "510300 buy and hold",
+    "champion": "HYP-0004 frozen monthly dual momentum",
+    "risk_overlay": "HYP-0006 frozen inverse-volatility plus 12 percent volatility target"
+  },
+  "observer_only": {
+    "qlib": "HYP-0005; records signals but cannot win or replace because it failed the drawdown gate"
+  },
+  "monthly_record": [
+    "signal timestamp and input hashes",
+    "target weights",
+    "next-open paper fills",
+    "transaction costs",
+    "daily equity",
+    "drawdown",
+    "data-source discrepancies"
+  ],
+  "no_strategy_or_parameter_changes_during_observation": true,
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false,
+  "replacement_authorized": false
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0013-regime-concentrated-etf",
+  "title": "1000 CNY high-conviction regime-concentrated ETF sleeve",
+  "status_context": "One fixed post-discovery historical diagnostic. It may reject the challenger but cannot authorize capital.",
+  "economic_mechanism": "Medium-horizon fund-flow persistence may reward concentrating a small sleeve in the strongest positive-trend liquid ETF, while absolute momentum and volatility scaling move the sleeve toward cash when the state weakens.",
+  "frozen_base_spec": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+  "data_dir": "data/raw/cn_etf",
+  "period": ["2022-01-01", "2026-08-31"],
+  "method": {
+    "signal_frequency": "calendar_month_end",
+    "execution": "next_available_trading_day_open",
+    "momentum_windows_days": [126, 252],
+    "skip_recent_days": 21,
+    "positive_score_required": true,
+    "risk_asset_count": 1,
+    "volatility_lookback_days": 63,
+    "target_annualized_volatility": 0.30,
+    "maximum_risk_exposure": 1.0,
+    "initial_and_maximum_capital_cny": 1000,
+    "buy_lot_size_shares": 100,
+    "one_way_cost_rate": 0.0015,
+    "minimum_cost_per_order_cny": 5,
+    "leverage": false,
+    "shorting": false,
+    "parameter_trials": 1
+  },
+  "decision_rule": {
+    "net_total_return_positive": true,
+    "must_beat_executable_510300_buy_and_hold": true,
+    "maximum_historical_loss_cny_not_above": 1000,
+    "cash_never_negative": true,
+    "minimum_positive_calendar_years": 3
+  },
+  "known_limits": [
+    "The period and universe were already observed in prior research, so this is not clean forward evidence.",
+    "Present-day universe selection creates survivorship and selection bias.",
+    "Daily bars cannot prove live fills during gaps.",
+    "The entire 1000 CNY sleeve can be lost."
+  ],
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

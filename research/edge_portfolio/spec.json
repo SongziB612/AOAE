@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "record_type": "autonomous_edge_portfolio_gate",
+  "objective": "Combine multiple independently validated net economic edges without forcing exposure or using leverage.",
+  "gross_exposure_cap": 1.0,
+  "allocation_method": "equal allocation across admitted edges subject to per-edge caps; residual remains cash",
+  "admission_requires": [
+    "preregistered minimum forward observations",
+    "positive net forward PnL after costs",
+    "positive selection-adjusted lower confidence bound",
+    "independent audit",
+    "reconciled execution and minimum fill rate",
+    "estimated capacity",
+    "no risk-limit breach"
+  ],
+  "leverage_allowed": false,
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

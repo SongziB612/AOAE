@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0014-3000-pilot-execution-stress",
+  "record_type": "explicit_execution_cost_stress",
+  "inputs": {
+    "spec_sha256": "6aa193325924c7930f7941dda4137350571cdef4e7ee93d82838152f8d67ff02",
+    "strategy_spec_sha256": "9e351225eaf37dec65c87e06b9dbd183c27c900df0c00aff2ac0f83503e461ef",
+    "pilot_spec_sha256": "62e60c282daaf6c7d9e8ee0e7c9a0525a118c19bd0217fe0b3b8be8e18afe50d",
+    "price_sha256": {
+      "510300": "b585f1eb4bc8711fe43e0a7637913ea09a745225b7716f8c980d9263ed52066a",
+      "510500": "c2464afdbc996e39fe64118f4521c7f87112a8b85b5ce4408206947d71a3e5f4",
+      "159915": "db05d10e2e184fafa3e124a287034c378a0ca6cc04c00fa3f82ed653f73435bc",
+      "513500": "3e869c6c2f7b78bade5c7334afa0c88698c94283514a9863aa0349ddd7eaa55f",
+      "518880": "85ec4f2f19b9b2098fff16888e2d712d8ee7c7d9b1cf075310c70ac68eb2b326",
+      "511010": "90e677a00b701565fd1a9d8a52fbdc9afb566bea6ab7cff331acbce9d3ae6948"
+    }
+  },
+  "scenarios": [
+    {
+      "scenario": {
+        "name": "published_max_commission",
+        "commission_rate": 0.003,
+        "minimum_commission_cny": 5,
+        "slippage_bps": 0
+      },
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.5331511,
+        "cagr": 0.09598152,
+        "annualized_volatility": 0.09955175,
+        "sharpe_zero_rate": 1.00911294,
+        "max_drawdown": -0.15516543
+      },
+      "maximum_loss_from_initial_cny": 497.6,
+      "orders": 69,
+      "total_commission_and_slippage_cny": 350.74,
+      "cash_never_negative": true
+    },
+    {
+      "scenario": {
+        "name": "plus_10bps_slippage",
+        "commission_rate": 0.003,
+        "minimum_commission_cny": 5,
+        "slippage_bps": 10
+      },
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.4985172,
+        "cagr": 0.09062376,
+        "annualized_volatility": 0.09984513,
+        "sharpe_zero_rate": 0.95531151,
+        "max_drawdown": -0.1580608
+      },
+      "maximum_loss_from_initial_cny": 508.15,
+      "orders": 68,
+      "total_commission_and_slippage_cny": 399.07,
+      "cash_never_negative": true
+    },
+    {
+      "scenario": {
+        "name": "plus_30bps_slippage",
+        "commission_rate": 0.003,
+        "minimum_commission_cny": 5,
+        "slippage_bps": 30
+      },
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.4553674,
+        "cagr": 0.08381079,
+        "annualized_volatility": 0.1004417,
+        "sharpe_zero_rate": 0.88524262,
+        "max_drawdown": -0.16386531
+      },
+      "maximum_loss_from_initial_cny": 529.24,
+      "orders": 66,
+      "total_commission_and_slippage_cny": 492.88,
+      "cash_never_negative": true
+    },
+    {
+      "scenario": {
+        "name": "plus_100bps_disaster_slippage",
+        "commission_rate": 0.003,
+        "minimum_commission_cny": 5,
+        "slippage_bps": 100
+      },
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.22779163,
+        "cagr": 0.04499681,
+        "annualized_volatility": 0.1012664,
+        "sharpe_zero_rate": 0.50358665,
+        "max_drawdown": -0.20006132
+      },
+      "maximum_loss_from_initial_cny": 649.3,
+      "orders": 70,
+      "total_commission_and_slippage_cny": 872.53,
+      "cash_never_negative": true
+    }
+  ],
+  "checks": {
+    "all_scenarios_total_return_positive": true,
+    "all_scenarios_maximum_loss_within_limit": true,
+    "all_scenarios_cash_never_negative": true
+  },
+  "result": "PASS",
+  "interpretation_limit": "Historical adverse-fill stress is not live fill evidence and cannot replace forward observation.",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

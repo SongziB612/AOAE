@@ -1,0 +1,1278 @@
+{
+  "status": "DESCRIPTIVE_ATTRIBUTION_NOT_CAPITAL_EVIDENCE",
+  "summary": {
+    "champion": {
+      "median_net_pnl_cny": 57812.67,
+      "worst_net_pnl_cny": -54890.91,
+      "best_net_pnl_cny": 117665.95,
+      "losing_windows": 5,
+      "champion_outperforms_windows": 0,
+      "champion_minus_comparator_median_paired_cny": 0.0,
+      "worst_window_max_drawdown": -0.20291927
+    },
+    "equal_weight": {
+      "median_net_pnl_cny": 49296.63,
+      "worst_net_pnl_cny": -45863.17,
+      "best_net_pnl_cny": 136294.52,
+      "losing_windows": 13,
+      "champion_outperforms_windows": 20,
+      "champion_minus_comparator_median_paired_cny": -1065.34,
+      "worst_window_max_drawdown": -0.18946895
+    },
+    "exposure_matched_equal_weight": {
+      "median_net_pnl_cny": 34441.55,
+      "worst_net_pnl_cny": -45214.7,
+      "best_net_pnl_cny": 108433.45,
+      "losing_windows": 16,
+      "champion_outperforms_windows": 35,
+      "champion_minus_comparator_median_paired_cny": 9769.99,
+      "worst_window_max_drawdown": -0.17940577
+    }
+  },
+  "overlapping_windows": 45,
+  "portfolios": [
+    {
+      "start": "2022-01-01",
+      "end": "2022-12-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": -54890.91,
+          "max_drawdown": -0.20291927,
+          "orders": 20,
+          "cost_cny": 7918.91,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -45863.17,
+          "max_drawdown": -0.18946895,
+          "orders": 55,
+          "cost_cny": 2504.4,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -45214.7,
+          "max_drawdown": -0.17940577,
+          "orders": 53,
+          "cost_cny": 4281.77,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-02-01",
+      "end": "2023-01-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": -27119.75,
+          "max_drawdown": -0.14070502,
+          "orders": 19,
+          "cost_cny": 8428.89,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -11638.99,
+          "max_drawdown": -0.12919199,
+          "orders": 56,
+          "cost_cny": 2542.37,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -14094.42,
+          "max_drawdown": -0.1202436,
+          "orders": 53,
+          "cost_cny": 6099.83,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-03-01",
+      "end": "2023-02-28",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": -28247.27,
+          "max_drawdown": -0.12142791,
+          "orders": 18,
+          "cost_cny": 8475.34,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -15747.89,
+          "max_drawdown": -0.13024187,
+          "orders": 54,
+          "cost_cny": 2520.92,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -15185.34,
+          "max_drawdown": -0.11929574,
+          "orders": 53,
+          "cost_cny": 6168.16,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-04-01",
+      "end": "2023-03-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": -11662.6,
+          "max_drawdown": -0.09786349,
+          "orders": 16,
+          "cost_cny": 7263.53,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -1523.96,
+          "max_drawdown": -0.11245888,
+          "orders": 56,
+          "cost_cny": 2509.25,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -5054.84,
+          "max_drawdown": -0.09609788,
+          "orders": 54,
+          "cost_cny": 6342.54,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-05-01",
+      "end": "2023-04-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": -5147.56,
+          "max_drawdown": -0.06627341,
+          "orders": 16,
+          "cost_cny": 7104.15,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 14897.11,
+          "max_drawdown": -0.11235423,
+          "orders": 55,
+          "cost_cny": 2499.32,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 8240.28,
+          "max_drawdown": -0.05746579,
+          "orders": 55,
+          "cost_cny": 7495.0,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-06-01",
+      "end": "2023-05-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 2551.04,
+          "max_drawdown": -0.04206311,
+          "orders": 14,
+          "cost_cny": 5494.68,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 3616.38,
+          "max_drawdown": -0.11234268,
+          "orders": 55,
+          "cost_cny": 2475.84,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -1086.43,
+          "max_drawdown": -0.05729196,
+          "orders": 52,
+          "cost_cny": 5638.53,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-07-01",
+      "end": "2023-06-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 3917.69,
+          "max_drawdown": -0.03898271,
+          "orders": 16,
+          "cost_cny": 5649.3,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -5152.39,
+          "max_drawdown": -0.11233533,
+          "orders": 56,
+          "cost_cny": 2377.54,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -2385.57,
+          "max_drawdown": -0.05731145,
+          "orders": 50,
+          "cost_cny": 5503.95,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-08-01",
+      "end": "2023-07-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 8119.44,
+          "max_drawdown": -0.04166605,
+          "orders": 18,
+          "cost_cny": 7626.23,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 5415.17,
+          "max_drawdown": -0.11257029,
+          "orders": 54,
+          "cost_cny": 2337.64,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 6259.17,
+          "max_drawdown": -0.0574135,
+          "orders": 49,
+          "cost_cny": 5525.83,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-09-01",
+      "end": "2023-08-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 12904.64,
+          "max_drawdown": -0.04168265,
+          "orders": 19,
+          "cost_cny": 7810.51,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 2209.18,
+          "max_drawdown": -0.08353559,
+          "orders": 55,
+          "cost_cny": 2347.85,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 74.06,
+          "max_drawdown": -0.05352293,
+          "orders": 49,
+          "cost_cny": 5562.73,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-10-01",
+      "end": "2023-09-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 41.75,
+          "max_drawdown": -0.04168724,
+          "orders": 19,
+          "cost_cny": 8066.39,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 10503.07,
+          "max_drawdown": -0.05921558,
+          "orders": 56,
+          "cost_cny": 2389.72,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -392.91,
+          "max_drawdown": -0.05927249,
+          "orders": 51,
+          "cost_cny": 5742.49,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-11-01",
+      "end": "2023-10-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 6474.33,
+          "max_drawdown": -0.04439386,
+          "orders": 20,
+          "cost_cny": 6511.47,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 5067.78,
+          "max_drawdown": -0.09314122,
+          "orders": 57,
+          "cost_cny": 2365.33,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -3295.66,
+          "max_drawdown": -0.09313889,
+          "orders": 45,
+          "cost_cny": 3988.31,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2022-12-01",
+      "end": "2023-11-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 14261.52,
+          "max_drawdown": -0.04439386,
+          "orders": 22,
+          "cost_cny": 6637.97,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -11149.78,
+          "max_drawdown": -0.09313485,
+          "orders": 56,
+          "cost_cny": 2335.96,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -2160.07,
+          "max_drawdown": -0.09313889,
+          "orders": 50,
+          "cost_cny": 4038.06,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-01-01",
+      "end": "2023-12-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 23151.86,
+          "max_drawdown": -0.04439386,
+          "orders": 24,
+          "cost_cny": 6663.71,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -814.05,
+          "max_drawdown": -0.09300716,
+          "orders": 54,
+          "cost_cny": 2333.72,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -1946.74,
+          "max_drawdown": -0.09313889,
+          "orders": 54,
+          "cost_cny": 4088.56,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-02-01",
+      "end": "2024-01-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 23511.23,
+          "max_drawdown": -0.04432905,
+          "orders": 23,
+          "cost_cny": 4833.11,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -36245.26,
+          "max_drawdown": -0.12607119,
+          "orders": 55,
+          "cost_cny": 2314.96,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -35667.68,
+          "max_drawdown": -0.12615771,
+          "orders": 56,
+          "cost_cny": 2246.32,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-03-01",
+      "end": "2024-02-29",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 33233.24,
+          "max_drawdown": -0.04439866,
+          "orders": 24,
+          "cost_cny": 5098.0,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -8846.09,
+          "max_drawdown": -0.13523808,
+          "orders": 58,
+          "cost_cny": 2382.42,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -10596.81,
+          "max_drawdown": -0.13510459,
+          "orders": 55,
+          "cost_cny": 2332.77,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-04-01",
+      "end": "2024-03-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 49861.61,
+          "max_drawdown": -0.04435956,
+          "orders": 25,
+          "cost_cny": 5161.33,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -4209.85,
+          "max_drawdown": -0.1354074,
+          "orders": 55,
+          "cost_cny": 2409.53,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -4209.85,
+          "max_drawdown": -0.1354074,
+          "orders": 55,
+          "cost_cny": 2409.53,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-05-01",
+      "end": "2024-04-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 46097.87,
+          "max_drawdown": -0.04616501,
+          "orders": 25,
+          "cost_cny": 5288.2,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 539.44,
+          "max_drawdown": -0.13526866,
+          "orders": 56,
+          "cost_cny": 2436.05,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 539.44,
+          "max_drawdown": -0.13526866,
+          "orders": 56,
+          "cost_cny": 2436.05,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-06-01",
+      "end": "2024-05-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 58321.64,
+          "max_drawdown": -0.04614388,
+          "orders": 25,
+          "cost_cny": 5642.0,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 5335.47,
+          "max_drawdown": -0.13528394,
+          "orders": 59,
+          "cost_cny": 2461.2,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 5335.47,
+          "max_drawdown": -0.13528394,
+          "orders": 59,
+          "cost_cny": 2461.2,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-07-01",
+      "end": "2024-06-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 76282.92,
+          "max_drawdown": -0.0461661,
+          "orders": 24,
+          "cost_cny": 4016.51,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -6594.96,
+          "max_drawdown": -0.13529728,
+          "orders": 58,
+          "cost_cny": 2447.8,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -6594.96,
+          "max_drawdown": -0.13529728,
+          "orders": 58,
+          "cost_cny": 2447.8,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-08-01",
+      "end": "2024-07-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 72730.57,
+          "max_drawdown": -0.05824249,
+          "orders": 24,
+          "cost_cny": 3831.22,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -11266.05,
+          "max_drawdown": -0.13993834,
+          "orders": 58,
+          "cost_cny": 2473.83,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -11266.05,
+          "max_drawdown": -0.13993834,
+          "orders": 58,
+          "cost_cny": 2473.83,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-09-01",
+      "end": "2024-08-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 77143.06,
+          "max_drawdown": -0.08164958,
+          "orders": 24,
+          "cost_cny": 3724.42,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -9032.77,
+          "max_drawdown": -0.11473662,
+          "orders": 58,
+          "cost_cny": 2466.56,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": -8346.79,
+          "max_drawdown": -0.11473662,
+          "orders": 59,
+          "cost_cny": 2578.37,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-10-01",
+      "end": "2024-09-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 90135.59,
+          "max_drawdown": -0.0816603,
+          "orders": 24,
+          "cost_cny": 4007.66,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 57475.97,
+          "max_drawdown": -0.09084674,
+          "orders": 55,
+          "cost_cny": 2484.28,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 47068.3,
+          "max_drawdown": -0.09084674,
+          "orders": 57,
+          "cost_cny": 2752.86,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-11-01",
+      "end": "2024-10-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 103183.62,
+          "max_drawdown": -0.08166428,
+          "orders": 24,
+          "cost_cny": 3955.89,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 64137.96,
+          "max_drawdown": -0.09104896,
+          "orders": 56,
+          "cost_cny": 2754.62,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 53264.7,
+          "max_drawdown": -0.09104896,
+          "orders": 57,
+          "cost_cny": 2963.51,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2023-12-01",
+      "end": "2024-11-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 96314.64,
+          "max_drawdown": -0.08164997,
+          "orders": 24,
+          "cost_cny": 4161.07,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 70292.37,
+          "max_drawdown": -0.08882367,
+          "orders": 54,
+          "cost_cny": 2777.24,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 58697.61,
+          "max_drawdown": -0.08262659,
+          "orders": 56,
+          "cost_cny": 3189.15,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-01-01",
+      "end": "2024-12-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 84054.98,
+          "max_drawdown": -0.08161712,
+          "orders": 24,
+          "cost_cny": 4442.7,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 65533.34,
+          "max_drawdown": -0.08881872,
+          "orders": 55,
+          "cost_cny": 2809.56,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 54158.27,
+          "max_drawdown": -0.08266583,
+          "orders": 57,
+          "cost_cny": 3245.27,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-02-01",
+      "end": "2025-01-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 80017.84,
+          "max_drawdown": -0.08161881,
+          "orders": 25,
+          "cost_cny": 6101.15,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 90641.79,
+          "max_drawdown": -0.08879091,
+          "orders": 58,
+          "cost_cny": 2817.51,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 79254.27,
+          "max_drawdown": -0.08270563,
+          "orders": 59,
+          "cost_cny": 3935.03,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-03-01",
+      "end": "2025-02-28",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 57812.67,
+          "max_drawdown": -0.08167546,
+          "orders": 25,
+          "cost_cny": 6184.6,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 63581.0,
+          "max_drawdown": -0.08885216,
+          "orders": 56,
+          "cost_cny": 2701.28,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 51052.32,
+          "max_drawdown": -0.08270624,
+          "orders": 58,
+          "cost_cny": 3853.55,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-04-01",
+      "end": "2025-03-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 44187.79,
+          "max_drawdown": -0.08164747,
+          "orders": 26,
+          "cost_cny": 8014.89,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 50893.3,
+          "max_drawdown": -0.08875473,
+          "orders": 58,
+          "cost_cny": 2720.09,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 37838.67,
+          "max_drawdown": -0.08267687,
+          "orders": 60,
+          "cost_cny": 4167.87,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-05-01",
+      "end": "2025-04-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 57975.59,
+          "max_drawdown": -0.08163097,
+          "orders": 26,
+          "cost_cny": 7925.53,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 41390.4,
+          "max_drawdown": -0.12060988,
+          "orders": 56,
+          "cost_cny": 2734.17,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 28488.27,
+          "max_drawdown": -0.12239467,
+          "orders": 58,
+          "cost_cny": 4147.13,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-06-01",
+      "end": "2025-05-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 51245.68,
+          "max_drawdown": -0.08162293,
+          "orders": 26,
+          "cost_cny": 8448.08,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 51311.71,
+          "max_drawdown": -0.1206124,
+          "orders": 57,
+          "cost_cny": 2782.68,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 36593.22,
+          "max_drawdown": -0.12231964,
+          "orders": 59,
+          "cost_cny": 4943.87,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-07-01",
+      "end": "2025-06-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 39458.41,
+          "max_drawdown": -0.08172473,
+          "orders": 27,
+          "cost_cny": 9564.55,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 71457.72,
+          "max_drawdown": -0.12062472,
+          "orders": 56,
+          "cost_cny": 2752.2,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 51730.4,
+          "max_drawdown": -0.12240008,
+          "orders": 58,
+          "cost_cny": 5231.44,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-08-01",
+      "end": "2025-07-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 39875.21,
+          "max_drawdown": -0.06318158,
+          "orders": 27,
+          "cost_cny": 9219.43,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 84187.85,
+          "max_drawdown": -0.12043799,
+          "orders": 58,
+          "cost_cny": 2768.69,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 60853.02,
+          "max_drawdown": -0.12226006,
+          "orders": 58,
+          "cost_cny": 5030.15,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-09-01",
+      "end": "2025-08-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 65188.22,
+          "max_drawdown": -0.06328355,
+          "orders": 28,
+          "cost_cny": 10977.24,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 136294.52,
+          "max_drawdown": -0.12058487,
+          "orders": 58,
+          "cost_cny": 2803.86,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 108433.45,
+          "max_drawdown": -0.12252556,
+          "orders": 58,
+          "cost_cny": 5148.55,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-10-01",
+      "end": "2025-09-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 104274.8,
+          "max_drawdown": -0.06312247,
+          "orders": 29,
+          "cost_cny": 13533.07,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 55632.26,
+          "max_drawdown": -0.15422812,
+          "orders": 57,
+          "cost_cny": 2618.47,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 51245.0,
+          "max_drawdown": -0.14192189,
+          "orders": 57,
+          "cost_cny": 4396.41,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-11-01",
+      "end": "2025-10-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 94578.83,
+          "max_drawdown": -0.06321742,
+          "orders": 30,
+          "cost_cny": 15731.13,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 98719.68,
+          "max_drawdown": -0.12067671,
+          "orders": 56,
+          "cost_cny": 2519.78,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 84239.01,
+          "max_drawdown": -0.12217224,
+          "orders": 57,
+          "cost_cny": 5638.74,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2024-12-01",
+      "end": "2025-11-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 80442.17,
+          "max_drawdown": -0.06324209,
+          "orders": 30,
+          "cost_cny": 15469.12,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 83590.13,
+          "max_drawdown": -0.12049137,
+          "orders": 56,
+          "cost_cny": 2537.3,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 72728.03,
+          "max_drawdown": -0.12080291,
+          "orders": 58,
+          "cost_cny": 5760.38,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-01-01",
+      "end": "2025-12-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 85916.15,
+          "max_drawdown": -0.06282903,
+          "orders": 30,
+          "cost_cny": 14996.8,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 98968.55,
+          "max_drawdown": -0.12058759,
+          "orders": 58,
+          "cost_cny": 2574.66,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 83459.76,
+          "max_drawdown": -0.11542776,
+          "orders": 58,
+          "cost_cny": 4986.08,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2026-01-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 112106.42,
+          "max_drawdown": -0.06288649,
+          "orders": 30,
+          "cost_cny": 14852.63,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 126579.4,
+          "max_drawdown": -0.12088723,
+          "orders": 54,
+          "cost_cny": 2570.3,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 98980.62,
+          "max_drawdown": -0.11587163,
+          "orders": 56,
+          "cost_cny": 5019.85,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-03-01",
+      "end": "2026-02-28",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 117665.95,
+          "max_drawdown": -0.06942341,
+          "orders": 29,
+          "cost_cny": 13812.02,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 121477.28,
+          "max_drawdown": -0.10682133,
+          "orders": 59,
+          "cost_cny": 2648.52,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 95230.36,
+          "max_drawdown": -0.10682133,
+          "orders": 58,
+          "cost_cny": 5116.27,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-04-01",
+      "end": "2026-03-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 84369.11,
+          "max_drawdown": -0.07647393,
+          "orders": 29,
+          "cost_cny": 13461.79,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 86810.04,
+          "max_drawdown": -0.12100255,
+          "orders": 57,
+          "cost_cny": 2606.99,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 78473.12,
+          "max_drawdown": -0.09580539,
+          "orders": 58,
+          "cost_cny": 5370.56,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-05-01",
+      "end": "2026-04-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 84426.88,
+          "max_drawdown": -0.07611314,
+          "orders": 30,
+          "cost_cny": 13163.99,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 126185.4,
+          "max_drawdown": -0.12104638,
+          "orders": 57,
+          "cost_cny": 2668.25,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 98754.44,
+          "max_drawdown": -0.06511292,
+          "orders": 58,
+          "cost_cny": 4239.02,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-06-01",
+      "end": "2026-05-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 92416.28,
+          "max_drawdown": -0.07583334,
+          "orders": 30,
+          "cost_cny": 13192.24,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 133094.01,
+          "max_drawdown": -0.12093916,
+          "orders": 58,
+          "cost_cny": 2714.86,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 100380.67,
+          "max_drawdown": -0.06578939,
+          "orders": 59,
+          "cost_cny": 4353.09,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-07-01",
+      "end": "2026-06-30",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 104251.88,
+          "max_drawdown": -0.07661533,
+          "orders": 30,
+          "cost_cny": 13232.84,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 121348.85,
+          "max_drawdown": -0.12059665,
+          "orders": 57,
+          "cost_cny": 2696.34,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 91001.56,
+          "max_drawdown": -0.06525949,
+          "orders": 58,
+          "cost_cny": 4295.16,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-08-01",
+      "end": "2026-07-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 67419.78,
+          "max_drawdown": -0.08782596,
+          "orders": 29,
+          "cost_cny": 11517.92,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 68359.45,
+          "max_drawdown": -0.12050647,
+          "orders": 58,
+          "cost_cny": 2784.84,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 64651.3,
+          "max_drawdown": -0.06586447,
+          "orders": 58,
+          "cost_cny": 4348.54,
+          "paused": false
+        }
+      }
+    },
+    {
+      "start": "2025-09-01",
+      "end": "2026-08-31",
+      "portfolios": {
+        "champion": {
+          "net_pnl_after_exit_haircut_cny": 44049.74,
+          "max_drawdown": -0.08786362,
+          "orders": 28,
+          "cost_cny": 8721.96,
+          "paused": false
+        },
+        "equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 49296.63,
+          "max_drawdown": -0.12038651,
+          "orders": 56,
+          "cost_cny": 2746.26,
+          "paused": false
+        },
+        "exposure_matched_equal_weight": {
+          "net_pnl_after_exit_haircut_cny": 34441.55,
+          "max_drawdown": -0.06500713,
+          "orders": 59,
+          "cost_cny": 4105.34,
+          "paused": false
+        }
+      }
+    }
+  ],
+  "input_sha256": {
+    "research\\capital_readiness\\first-principles-comparison-spec.json": "646c1d3525bdb8578d5f0ec5131db0611fe3b64c1e90b13a6f97724089397e34",
+    "research\\capital_readiness\\300k-accounting-replay-v4.json": "785d2ad99ad9fdbef30aea664130383a9a92742a06364378fc01ae3113613eb7",
+    "research\\hypotheses\\0004-cn-etf-dual-momentum\\spec.json": "9e351225eaf37dec65c87e06b9dbd183c27c900df0c00aff2ac0f83503e461ef",
+    "F:\\AOAE\\scripts\\challenge_300k_baselines.py": "91209cda18923f7a107a533f6646760ef1e17acfbc996f8ebbac7f04b7825612",
+    "src\\aoae\\corporate_action_replay.py": "001e4088a8292c190386da96804caaaae90b3d84a62a86ff139881140cda4dbd",
+    "src\\aoae\\independent_cash_ledger.py": "a4dd222b1f1e8ed21b38a8a2675d44c8d2a55b35415dccb6b6d9e1ff006d1070",
+    "src\\aoae\\etf_risk_overlay.py": "71d612212c383f4d3e798057c39dd7a5a93601e3da5cf1deb3bedc7cf0600427",
+    "src\\aoae\\etf_momentum.py": "a112b6f5f8b993c66ef09ca4b273f7554b5495ebcf6a6a92c4128f16788da90a",
+    "src\\aoae\\small_account.py": "d00974968e528f0b3cd41095db84592eff99633a08eae2a4ebf1a28e4844d7e0"
+  },
+  "price_sha256": {
+    "510300": "c31426731a8cbecc2199a03a2ae72bd82d188bd5b20f67da5cd52e9d19ee6b40",
+    "510500": "1495d1febdb78b49b1c18ca3ebfe0aa3263824ffa0fff5528101c72d6ddb3ff5",
+    "159915": "f9c9dfad6e1ef4c3857937990714e0f01e972395ff577d897672e0e45c1ae552",
+    "513500": "e1e734c0f7df7b82f62a4245af0ea79d578978a09e91f0e6484104a5be7cc113",
+    "518880": "17991dc17b2d85452e391c0fec2f2eab4102caf415c6dba6d261f52805bee108",
+    "511010": "e920f1e1cc82e604000c5d3404dc176da1b3de18ec8987acc7ad214858d2ee30"
+  },
+  "interpretation_limits": [
+    "Same data reused; no independent holdout and no probability estimate.",
+    "Equal weight differs in risk exposure; exposure-matched version inherits timing from champion.",
+    "Shared strategy engine; independent ledger checks accounting, not selection validity.",
+    "All earlier corporate-action and unmeasured execution limitations remain.",
+    "Market exposure is not an identified structural payer; no proven risk of ruin estimate."
+  ],
+  "capital_authorized": false,
+  "orders_authorized": false
+}

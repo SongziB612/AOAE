@@ -1,0 +1,430 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0011-moonshot-etf-breakout",
+  "record_type": "post_registration_moonshot_qualification",
+  "inputs": {
+    "spec_sha256": "d53744003d3f8f50455cf9180a5ab8aab265320124a2f0d962f57d0409f6a35b",
+    "manifest_sha256": "0f5351d84489ad2c3cf8d222992cf146bda608bc4c1f4250102e3c88a33a74c3",
+    "price_sha256": {
+      "510300": "42f83f734bba82c66e0f30e7c5e3e7516fe197238565639b1851131ce3414787",
+      "510500": "cecb35d0ad7f8246ed7685d193775d48d22054008a0454a6d3b3af62c04489ab",
+      "159915": "f6a3743ea284538597ca9f15d6e0a90966aef45bdb517f716365a0ed5c6aefc8",
+      "512480": "6b49ff813d427fb341fb933626216f867b57fe34fb8e3509cd1069dd15333c33",
+      "512660": "9e3b4c132b95bd8045f39e7e89513ea177519fcd296e0f66d7eb57f450f45b70",
+      "512170": "d1e65a8831b6760ee4f473000a33275822ed4c11d068791677cb288540ecf4bd",
+      "515790": "c707ddc29b19ba533e5fdf06d57a3332e32d9f877b4af2ee19f7ebf03a998ff1",
+      "513500": "b682a65bd7559578857def4d899d7454c5b88bd6b2a7f4c45a9388e06988a5b9",
+      "518880": "32f8b9677914f6381fd3e8d0ab8df7b8a976142d03fe5ecb554d0d6a761b0379"
+    }
+  },
+  "strategy": {
+    "start": "2022-01-01",
+    "first_market_date": "2022-01-04",
+    "end": "2026-08-31",
+    "observations": 1128,
+    "total_return": 0.04049577,
+    "cagr": 0.00855041,
+    "annualized_volatility": 0.30536166,
+    "sharpe_zero_rate": 0.2269489,
+    "max_drawdown": -0.53703713
+  },
+  "executable_159915_buy_and_hold": {
+    "start": "2022-01-01",
+    "first_market_date": "2022-01-04",
+    "end": "2026-08-31",
+    "observations": 1128,
+    "total_return": 0.06336253,
+    "cagr": 0.01326366,
+    "annualized_volatility": 0.31240075,
+    "sharpe_zero_rate": 0.19809514,
+    "max_drawdown": -0.51009366
+  },
+  "closed_trades": 19,
+  "profit_factor": 1.030452,
+  "maximum_loss_from_initial_cny": 193.6,
+  "events": [
+    {
+      "type": "ENTRY",
+      "signal_date": "2022-01-04",
+      "execution_date": "2022-01-05",
+      "symbol": "513500",
+      "quantity": 1000,
+      "price_after_slippage": 2.894892,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2022-01-19",
+      "execution_date": "2022-01-20",
+      "symbol": "513500",
+      "quantity": 1000,
+      "price_after_slippage": 2.720277,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": -184.61
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2022-02-15",
+      "execution_date": "2022-02-16",
+      "symbol": "518880",
+      "quantity": 700,
+      "price_after_slippage": 3.697694,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2022-05-16",
+      "execution_date": "2022-05-17",
+      "symbol": "518880",
+      "quantity": 700,
+      "price_after_slippage": 3.868128,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 109.3
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2022-06-13",
+      "execution_date": "2022-06-14",
+      "symbol": "515790",
+      "quantity": 1900,
+      "price_after_slippage": 1.528527,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2022-08-31",
+      "execution_date": "2022-09-01",
+      "symbol": "515790",
+      "quantity": 1900,
+      "price_after_slippage": 1.603395,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 132.25
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2022-10-10",
+      "execution_date": "2022-10-11",
+      "symbol": "518880",
+      "quantity": 800,
+      "price_after_slippage": 3.807804,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2023-02-17",
+      "execution_date": "2023-02-20",
+      "symbol": "518880",
+      "quantity": 800,
+      "price_after_slippage": 4.003992,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 146.95
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2023-03-03",
+      "execution_date": "2023-03-06",
+      "symbol": "512660",
+      "quantity": 2700,
+      "price_after_slippage": 1.176175,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2023-03-20",
+      "execution_date": "2023-03-21",
+      "symbol": "512660",
+      "quantity": 2700,
+      "price_after_slippage": 1.119879,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": -162.0
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2023-03-23",
+      "execution_date": "2023-03-24",
+      "symbol": "512480",
+      "quantity": 3000,
+      "price_after_slippage": 0.98098,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2023-05-04",
+      "execution_date": "2023-05-05",
+      "symbol": "512480",
+      "quantity": 3000,
+      "price_after_slippage": 0.932067,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": -156.74
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2023-05-05",
+      "execution_date": "2023-05-08",
+      "symbol": "518880",
+      "quantity": 600,
+      "price_after_slippage": 4.362358,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2023-09-28",
+      "execution_date": "2023-10-09",
+      "symbol": "518880",
+      "quantity": 600,
+      "price_after_slippage": 4.3956,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 9.95
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2023-10-20",
+      "execution_date": "2023-10-23",
+      "symbol": "518880",
+      "quantity": 600,
+      "price_after_slippage": 4.57457,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2023-11-21",
+      "execution_date": "2023-11-22",
+      "symbol": "518880",
+      "quantity": 600,
+      "price_after_slippage": 4.518477,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": -43.66
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2023-12-04",
+      "execution_date": "2023-12-05",
+      "symbol": "518880",
+      "quantity": 600,
+      "price_after_slippage": 4.58458,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2024-01-25",
+      "execution_date": "2024-01-26",
+      "symbol": "518880",
+      "quantity": 600,
+      "price_after_slippage": 4.618377,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 10.28
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2024-01-30",
+      "execution_date": "2024-01-31",
+      "symbol": "513500",
+      "quantity": 1700,
+      "price_after_slippage": 1.67167,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2024-04-16",
+      "execution_date": "2024-04-17",
+      "symbol": "513500",
+      "quantity": 1700,
+      "price_after_slippage": 1.740258,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 106.6
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2024-04-29",
+      "execution_date": "2024-04-30",
+      "symbol": "510300",
+      "quantity": 800,
+      "price_after_slippage": 3.618615,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2024-05-30",
+      "execution_date": "2024-05-31",
+      "symbol": "510300",
+      "quantity": 800,
+      "price_after_slippage": 3.598398,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": -26.17
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2024-06-06",
+      "execution_date": "2024-06-07",
+      "symbol": "513500",
+      "quantity": 1500,
+      "price_after_slippage": 1.87187,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2024-07-25",
+      "execution_date": "2024-07-26",
+      "symbol": "513500",
+      "quantity": 1500,
+      "price_after_slippage": 1.899099,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 30.84
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2024-09-13",
+      "execution_date": "2024-09-18",
+      "symbol": "518880",
+      "quantity": 500,
+      "price_after_slippage": 5.626621,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2024-11-13",
+      "execution_date": "2024-11-14",
+      "symbol": "518880",
+      "quantity": 500,
+      "price_after_slippage": 5.718276,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 35.83
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2024-11-14",
+      "execution_date": "2024-11-15",
+      "symbol": "513500",
+      "quantity": 1400,
+      "price_after_slippage": 2.106104,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2025-01-13",
+      "execution_date": "2025-01-14",
+      "symbol": "513500",
+      "quantity": 1400,
+      "price_after_slippage": 2.149848,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": 51.24
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2025-01-17",
+      "execution_date": "2025-01-20",
+      "symbol": "518880",
+      "quantity": 500,
+      "price_after_slippage": 6.097091,
+      "cost_cny": 5.0
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2025-05-15",
+      "execution_date": "2025-05-16",
+      "symbol": "518880",
+      "quantity": 500,
+      "price_after_slippage": 7.187805,
+      "cost_cny": 5.39,
+      "trade_net_pnl_cny": 534.97
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2025-05-29",
+      "execution_date": "2025-05-30",
+      "symbol": "513500",
+      "quantity": 1700,
+      "price_after_slippage": 2.003001,
+      "cost_cny": 5.11
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2025-11-21",
+      "execution_date": "2025-11-24",
+      "symbol": "513500",
+      "quantity": 1700,
+      "price_after_slippage": 2.379618,
+      "cost_cny": 6.07,
+      "trade_net_pnl_cny": 629.07
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2025-12-19",
+      "execution_date": "2025-12-22",
+      "symbol": "512660",
+      "quantity": 3300,
+      "price_after_slippage": 1.266265,
+      "cost_cny": 6.27
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2026-03-13",
+      "execution_date": "2026-03-16",
+      "symbol": "512660",
+      "quantity": 3300,
+      "price_after_slippage": 1.413585,
+      "cost_cny": 7.0,
+      "trade_net_pnl_cny": 472.89
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2026-04-10",
+      "execution_date": "2026-04-13",
+      "symbol": "159915",
+      "quantity": 1300,
+      "price_after_slippage": 3.43343,
+      "cost_cny": 6.7
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2026-06-08",
+      "execution_date": "2026-06-09",
+      "symbol": "159915",
+      "quantity": 1300,
+      "price_after_slippage": 3.873123,
+      "cost_cny": 7.55,
+      "trade_net_pnl_cny": 557.35
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2026-06-17",
+      "execution_date": "2026-06-18",
+      "symbol": "512480",
+      "quantity": 2100,
+      "price_after_slippage": 2.386384,
+      "cost_cny": 7.52
+    },
+    {
+      "type": "EXIT",
+      "signal_date": "2026-07-03",
+      "execution_date": "2026-07-06",
+      "symbol": "512480",
+      "quantity": 2100,
+      "price_after_slippage": 1.35864,
+      "cost_cny": 5.0,
+      "trade_net_pnl_cny": -2170.78
+    },
+    {
+      "type": "ENTRY",
+      "signal_date": "2026-08-04",
+      "execution_date": "2026-08-05",
+      "symbol": "512170",
+      "quantity": 9200,
+      "price_after_slippage": 0.334334,
+      "cost_cny": 5.0
+    }
+  ],
+  "checks": {
+    "net_total_return_positive": true,
+    "minimum_closed_trades": true,
+    "profit_factor_above_one": true,
+    "maximum_loss_not_above_funded_sleeve": true,
+    "beats_executable_159915_buy_and_hold": false
+  },
+  "result": {
+    "status": "FAIL",
+    "decision": "reject this exact rule without tuning the qualification period"
+  },
+  "orders_authorized": false,
+  "capital_authorized": false
+}

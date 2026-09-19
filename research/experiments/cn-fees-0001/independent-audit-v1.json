@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "paths_checked": 16,
+  "checks": [
+    {
+      "year": 2022,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2022,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2023,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2024,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "band": 0.05,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "band": 0.0,
+      "max_nav_error_cny": 0.0,
+      "status": "PASS"
+    },
+    {
+      "year": 2025,
+      "fee_scenario": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "band": 0.05,
+      "max_nav_error_cny": 5.820766091346741e-11,
+      "status": "PASS"
+    }
+  ],
+  "scope": "Independent fee, funded cash, position, corporate-action, daily NAV and terminal exit-cost reconciliation; not independent signal validation or real fills.",
+  "result_sha256": "505bca88c55ad6e302f7c4c3ba77737db96897f8904c5a7ec09b279481150814",
+  "auditor_sha256": "a9a4d487958bb8645b22d451346766e3c8c1610a1f0f1faee4b833be954b4e7c"
+}

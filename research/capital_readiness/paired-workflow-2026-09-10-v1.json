@@ -1,0 +1,63 @@
+{
+  "day": "2026-09-10",
+  "plan": {
+    "is_session": true,
+    "next_session": "2026-09-11",
+    "is_month_end": false,
+    "signal_schedule": "NOT_A_SIGNAL_DAY",
+    "instrument_suspensions_verified": false
+  },
+  "stages": [
+    "IDLE_CASH_NOT_A_STRATEGY_EVALUATION_DAY",
+    "NOT_A_MONTH_END_SIGNAL_DAY"
+  ],
+  "blockers": [],
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "journal_head_sha256": "ece71f0bbf607c9543c76bdbf7cf7ed919ed7d4576f7a90e1d93b056b70d1f75",
+  "comparison": {
+    "arms": {
+      "causal_total_return_momentum_overlay": {
+        "equity_cny": "300000",
+        "net_pnl_cny": "0",
+        "modeled_cost_cny": "0",
+        "max_drawdown": "0",
+        "modeled_fills": 0,
+        "paused": false
+      },
+      "monthly_same_universe_equal_weight": {
+        "equity_cny": "300000",
+        "net_pnl_cny": "0",
+        "modeled_cost_cny": "0",
+        "max_drawdown": "0",
+        "modeled_fills": 0,
+        "paused": false
+      },
+      "monthly_same_universe_exposure_matched_equal_weight": {
+        "equity_cny": "300000",
+        "net_pnl_cny": "0",
+        "modeled_cost_cny": "0",
+        "max_drawdown": "0",
+        "modeled_fills": 0,
+        "paused": false
+      }
+    },
+    "model_minus_baseline_cny": {
+      "monthly_same_universe_equal_weight": "0",
+      "monthly_same_universe_exposure_matched_equal_weight": "0"
+    },
+    "saved_signals": 0,
+    "modeled_days": 0,
+    "observed_broker_fills": 0,
+    "realized_real_money_profit_cny": "0",
+    "valuation_note": "Marked NAV after modeled costs; not liquidation proceeds or observed fills.",
+    "profitability_established": false,
+    "capital_authorized": false
+  },
+  "status": "WORKFLOW_PASS_NOT_CAPITAL_APPROVAL",
+  "pre_capital_unresolved": [
+    "Complete independently reviewed source bundles and instrument tradability evidence.",
+    "Independent forward net economics and measured execution, not modeled fills.",
+    "Account-specific fees/permissions and explicit real-capital authorization."
+  ]
+}

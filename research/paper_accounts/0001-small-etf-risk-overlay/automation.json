@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "task_name": "AOAE_ETF_Paper_EOD",
+  "created_date": "2026-09-03",
+  "state_at_verification": "Ready",
+  "schedule": "Monday-Friday 16:30 Asia/Shanghai local machine time",
+  "last_verified_date": "2026-09-04",
+  "last_run_at_verification": "2026-09-04 16:30:00",
+  "last_task_result_at_verification": 0,
+  "next_run_at_verification": "2026-09-07 16:30:00",
+  "missed_runs_at_verification": 0,
+  "execute": "powershell.exe",
+  "arguments": "-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File \"F:\\AOAE\\scripts\\daily_paper_cycle.ps1\"",
+  "runtime_output_root": "data/runtime/paper_account",
+  "data_policy": "all symbols must share the same latest market date; otherwise fail closed",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false,
+  "operational_note": "the computer must be available for the local Windows task to run; StartWhenAvailable is enabled"
+}

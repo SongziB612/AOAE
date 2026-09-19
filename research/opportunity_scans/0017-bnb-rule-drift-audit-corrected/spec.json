@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "record_type": "public_market_rule_drift_audit",
+  "supersedes_invalid_probe": "0016-bnb-rule-drift-audit",
+  "markets": [
+    {
+      "label": "wallet_session_2026_07_17",
+      "slug": "bnb-updown-5m-1784279400",
+      "condition_id": "0x478807c8809f3dd5acd82819d1a93ca5961f4a509499e8784b97919405b1d810"
+    },
+    {"label": "thirty_second_twap_2026_08_07", "slug": "bnb-updown-5m-1786108800"},
+    {"label": "sixty_second_twap_2026_09_03", "slug": "bnb-updown-5m-1788420000"}
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

@@ -1,0 +1,108 @@
+{
+  "status": "RESEARCH_ONLY_NO_TRANSFERS_OR_NETTING",
+  "rows": [
+    {
+      "year": 2022,
+      "slippage_bps": 30,
+      "fee_scenario": "user_confirmed_rate",
+      "segregated_sleeve_pnl_cny": "-46429.26",
+      "naively_scaled_large_accounts_pnl_cny": "-46477.9000",
+      "nonlinear_scale_difference_cny": "48.6400",
+      "difference_vs_large_equal_monthly_cny": "-2093.93",
+      "difference_vs_large_momentum_cny": "4961.59",
+      "sleeve_initial_total_cny": 300000,
+      "maximum_independent_ledger_error": 2.9103830456733704e-11
+    },
+    {
+      "year": 2022,
+      "slippage_bps": 100,
+      "fee_scenario": "user_confirmed_rate",
+      "segregated_sleeve_pnl_cny": "-51922.76",
+      "naively_scaled_large_accounts_pnl_cny": "-51988.7475",
+      "nonlinear_scale_difference_cny": "65.9875",
+      "difference_vs_large_equal_monthly_cny": "-3169.53",
+      "difference_vs_large_momentum_cny": "8127.29",
+      "sleeve_initial_total_cny": 300000,
+      "maximum_independent_ledger_error": 2.1827872842550278e-11
+    },
+    {
+      "year": 2023,
+      "slippage_bps": 30,
+      "fee_scenario": "user_confirmed_rate",
+      "segregated_sleeve_pnl_cny": "7505.46",
+      "naively_scaled_large_accounts_pnl_cny": "7821.1025",
+      "nonlinear_scale_difference_cny": "-315.6425",
+      "difference_vs_large_equal_monthly_cny": "6716.14",
+      "difference_vs_large_momentum_cny": "-19835.13",
+      "sleeve_initial_total_cny": 300000,
+      "maximum_independent_ledger_error": 2.9103830456733704e-11
+    },
+    {
+      "year": 2023,
+      "slippage_bps": 100,
+      "fee_scenario": "user_confirmed_rate",
+      "segregated_sleeve_pnl_cny": "1651.46",
+      "naively_scaled_large_accounts_pnl_cny": "1829.4700",
+      "nonlinear_scale_difference_cny": "-178.0100",
+      "difference_vs_large_equal_monthly_cny": "5508.23",
+      "difference_vs_large_momentum_cny": "-15283.32",
+      "sleeve_initial_total_cny": 300000,
+      "maximum_independent_ledger_error": 2.9103830456733704e-11
+    },
+    {
+      "year": 2024,
+      "slippage_bps": 30,
+      "fee_scenario": "user_confirmed_rate",
+      "segregated_sleeve_pnl_cny": "71894.28",
+      "naively_scaled_large_accounts_pnl_cny": "72664.3400",
+      "nonlinear_scale_difference_cny": "-770.0600",
+      "difference_vs_large_equal_monthly_cny": "3989.97",
+      "difference_vs_large_momentum_cny": "-15674.48",
+      "sleeve_initial_total_cny": 300000,
+      "maximum_independent_ledger_error": 2.9103830456733704e-11
+    },
+    {
+      "year": 2024,
+      "slippage_bps": 100,
+      "fee_scenario": "user_confirmed_rate",
+      "segregated_sleeve_pnl_cny": "65188.37",
+      "naively_scaled_large_accounts_pnl_cny": "65957.6000",
+      "nonlinear_scale_difference_cny": "-769.2300",
+      "difference_vs_large_equal_monthly_cny": "3582.74",
+      "difference_vs_large_momentum_cny": "-13651.86",
+      "sleeve_initial_total_cny": 300000,
+      "maximum_independent_ledger_error": 2.9103830456733704e-11
+    },
+    {
+      "year": 2025,
+      "slippage_bps": 30,
+      "fee_scenario": "user_confirmed_rate",
+      "segregated_sleeve_pnl_cny": "93655.96",
+      "naively_scaled_large_accounts_pnl_cny": "94678.6400",
+      "nonlinear_scale_difference_cny": "-1022.6800",
+      "difference_vs_large_equal_monthly_cny": "-7738.53",
+      "difference_vs_large_momentum_cny": "-1068.72",
+      "sleeve_initial_total_cny": 300000,
+      "maximum_independent_ledger_error": 2.9103830456733704e-11
+    },
+    {
+      "year": 2025,
+      "slippage_bps": 100,
+      "fee_scenario": "user_confirmed_rate",
+      "segregated_sleeve_pnl_cny": "83215.74",
+      "naively_scaled_large_accounts_pnl_cny": "84262.7075",
+      "nonlinear_scale_difference_cny": "-1046.9675",
+      "difference_vs_large_equal_monthly_cny": "-11583.47",
+      "difference_vs_large_momentum_cny": "10161.31",
+      "sleeve_initial_total_cny": 300000,
+      "maximum_independent_ledger_error": 2.9103830456733704e-11
+    }
+  ],
+  "inputs": {
+    "research\\experiments\\cn-fees-0001\\reproduction-2026-09-15.json": "098f81e4c0933c4e1267c0df3c49567233b91999832c06b020ba24f2bcccc57e",
+    "research\\experiments\\meta-sleeve-0002\\result-v1.json": "a84c65e2515f702c5c5dce9f26c56b72de7cc728de06f84c811d02c5901e4146",
+    "F:\\AOAE\\scripts\\compare_sleeve_scale.py": "2c4b49ae2c05929184347e3aa030b71acf0a3bf56f8dc28bbc2b896315889762"
+  },
+  "limits": "Scale difference mixes discrete lots, minimum fees, idle cash and path-dependent decisions; not pure commission drag. Separate annual resets, no clean OOS.",
+  "capital_authorized": false
+}

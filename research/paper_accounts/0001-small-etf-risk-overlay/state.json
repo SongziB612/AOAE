@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "account_id": "PAPER-0001-small-etf-risk-overlay",
+  "mode": "local_broker_independent_simulation",
+  "spec_sha256": "a49f0c1584dea5686f8e1d7d6bdac05f530211f3155db12ccd3d807a8f2d8cb0",
+  "as_of": "2026-09-03",
+  "status": "ACTIVE_WAITING_FOR_FIRST_ELIGIBLE_SIGNAL",
+  "cash_cny": 10000.0,
+  "positions": {},
+  "market_value_cny": 0.0,
+  "equity_cny": 10000.0,
+  "realized_pnl_cny": 0.0,
+  "unrealized_pnl_cny": 0.0,
+  "drawdown_fraction": 0.0,
+  "risk_budget": {
+    "maximum_acceptable_loss_cny": 1000,
+    "pause_new_risk_at_loss_cny": 800,
+    "remaining_to_pause_cny": 800,
+    "remaining_to_maximum_acceptable_loss_cny": 1000
+  },
+  "execution_constraints": {
+    "buy_lot_size_shares": 100,
+    "maximum_risk_asset_market_value_cny": 4000.0,
+    "defensive_asset": "cash",
+    "minimum_cost_per_order_cny": 5
+  },
+  "next_event": "wait for first common calendar-month-end close strictly after 2026-09-03; create paper order for next common open",
+  "feasibility_diagnostic": {
+    "status": "PASS",
+    "result_path": "research/hypotheses/0007-small-account-executable/result.json",
+    "historical_cagr": 0.03855386,
+    "historical_max_drawdown": -0.08840596,
+    "maximum_loss_from_initial_cny": 935.2,
+    "warning": "only 64.80 CNY of historical buffer remains below the 1000 CNY loss limit; future loss can be larger"
+  },
+  "events": [
+    {
+      "date": "2026-09-03",
+      "type": "ACCOUNT_OPENED",
+      "cash_change_cny": 10000.0,
+      "note": "local simulation only; no broker, position, order, or real capital"
+    },
+    {
+      "date": "2026-09-03",
+      "type": "SMALL_ACCOUNT_FEASIBILITY_PASS",
+      "cash_change_cny": 0.0,
+      "note": "integer-lot diagnostic passed; account remains cash-only until the first eligible future signal"
+    }
+  ],
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

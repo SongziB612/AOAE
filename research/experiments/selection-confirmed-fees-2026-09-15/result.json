@@ -1,0 +1,802 @@
+{
+  "status": "DESCRIPTIVE_SUBSET_ONLY_FULL_FAMILY_BLOCKED",
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "clean_oos_observations": 0,
+  "full_family_dsr": null,
+  "full_family_pbo": null,
+  "rows": [
+    {
+      "year": 2022,
+      "fee": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "matrix": "2022-user_confirmed_rate-30.json",
+      "dsr_scope": "Sensitivity only: variance from four comparison arms, not full research population.",
+      "model_dsr": [
+        {
+          "dsr_iid_sensitivity": 0.023602345616530407,
+          "sharpe_per_period": -0.1028860760086549,
+          "benchmark_per_period": 0.02211650550979193,
+          "assumed_independent_trials": 6,
+          "trial_sharpe_variance": 0.00028936916397038804,
+          "observations": 241,
+          "skewness": -0.6278974190800205,
+          "pearson_kurtosis": 7.379451205673513,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.015910813320061112,
+          "sharpe_per_period": -0.1028860760086549,
+          "benchmark_per_period": 0.032332666021856235,
+          "assumed_independent_trials": 20,
+          "trial_sharpe_variance": 0.00028936916397038804,
+          "observations": 241,
+          "skewness": -0.6278974190800205,
+          "pearson_kurtosis": 7.379451205673513,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.01025869832666454,
+          "sharpe_per_period": -0.1028860760086549,
+          "benchmark_per_period": 0.043047717104032365,
+          "assumed_independent_trials": 100,
+          "trial_sharpe_variance": 0.00028936916397038804,
+          "observations": 241,
+          "skewness": -0.6278974190800205,
+          "pearson_kurtosis": 7.379451205673513,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.005995522202876247,
+          "sharpe_per_period": -0.1028860760086549,
+          "benchmark_per_period": 0.05537239779319429,
+          "assumed_independent_trials": 1000,
+          "trial_sharpe_variance": 0.00028936916397038804,
+          "observations": 241,
+          "skewness": -0.6278974190800205,
+          "pearson_kurtosis": 7.379451205673513,
+          "serial_dependence_adjusted": false
+        }
+      ],
+      "pbo": {
+        "subset_pbo": 0.5857142857142857,
+        "splits": 70,
+        "blocks": 8,
+        "block_sizes": [
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "method": "BALANCED_BLOCK_CSCV_EXTENSION",
+        "is_tied_selection_splits": 0,
+        "tie_policy": "Average IS winners; half failure at OOS median (explicit neutral-tie extension).",
+        "chronological_holdout": false,
+        "purged_or_embargoed": false
+      }
+    },
+    {
+      "year": 2022,
+      "fee": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "matrix": "2022-user_confirmed_rate-100.json",
+      "dsr_scope": "Sensitivity only: variance from four comparison arms, not full research population.",
+      "model_dsr": [
+        {
+          "dsr_iid_sensitivity": 0.007380512717024945,
+          "sharpe_per_period": -0.12186153776196247,
+          "benchmark_per_period": 0.029534005912374563,
+          "assumed_independent_trials": 6,
+          "trial_sharpe_variance": 0.000516016927712482,
+          "observations": 241,
+          "skewness": -0.7901436491620492,
+          "pearson_kurtosis": 6.826298106905777,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.003931475496652348,
+          "sharpe_per_period": -0.12186153776196247,
+          "benchmark_per_period": 0.043176493186482506,
+          "assumed_independent_trials": 20,
+          "trial_sharpe_variance": 0.000516016927712482,
+          "observations": 241,
+          "skewness": -0.7901436491620492,
+          "pearson_kurtosis": 6.826298106905777,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.0019364236696480797,
+          "sharpe_per_period": -0.12186153776196247,
+          "benchmark_per_period": 0.0574851904565949,
+          "assumed_independent_trials": 100,
+          "trial_sharpe_variance": 0.000516016927712482,
+          "observations": 241,
+          "skewness": -0.7901436491620492,
+          "pearson_kurtosis": 6.826298106905777,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.0008069248729571377,
+          "sharpe_per_period": -0.12186153776196247,
+          "benchmark_per_period": 0.07394335977184589,
+          "assumed_independent_trials": 1000,
+          "trial_sharpe_variance": 0.000516016927712482,
+          "observations": 241,
+          "skewness": -0.7901436491620492,
+          "pearson_kurtosis": 6.826298106905777,
+          "serial_dependence_adjusted": false
+        }
+      ],
+      "pbo": {
+        "subset_pbo": 0.5714285714285714,
+        "splits": 70,
+        "blocks": 8,
+        "block_sizes": [
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "method": "BALANCED_BLOCK_CSCV_EXTENSION",
+        "is_tied_selection_splits": 0,
+        "tie_policy": "Average IS winners; half failure at OOS median (explicit neutral-tie extension).",
+        "chronological_holdout": false,
+        "purged_or_embargoed": false
+      }
+    },
+    {
+      "year": 2023,
+      "fee": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "matrix": "2023-user_confirmed_rate-30.json",
+      "dsr_scope": "Sensitivity only: variance from four comparison arms, not full research population.",
+      "model_dsr": [
+        {
+          "dsr_iid_sensitivity": 0.682275690684276,
+          "sharpe_per_period": 0.07847655428400774,
+          "benchmark_per_period": 0.04770489976249661,
+          "assumed_independent_trials": 6,
+          "trial_sharpe_variance": 0.0013463104259698244,
+          "observations": 242,
+          "skewness": -0.14351377385318118,
+          "pearson_kurtosis": 3.6768667802356445,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.5535286008921165,
+          "sharpe_per_period": 0.07847655428400774,
+          "benchmark_per_period": 0.06974097200590902,
+          "assumed_independent_trials": 20,
+          "trial_sharpe_variance": 0.0013463104259698244,
+          "observations": 242,
+          "skewness": -0.14351377385318118,
+          "pearson_kurtosis": 3.6768667802356445,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.412356436349596,
+          "sharpe_per_period": 0.07847655428400774,
+          "benchmark_per_period": 0.09285314212694966,
+          "assumed_independent_trials": 100,
+          "trial_sharpe_variance": 0.0013463104259698244,
+          "observations": 242,
+          "skewness": -0.14351377385318118,
+          "pearson_kurtosis": 3.6768667802356445,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.26400534872939097,
+          "sharpe_per_period": 0.07847655428400774,
+          "benchmark_per_period": 0.11943725400759633,
+          "assumed_independent_trials": 1000,
+          "trial_sharpe_variance": 0.0013463104259698244,
+          "observations": 242,
+          "skewness": -0.14351377385318118,
+          "pearson_kurtosis": 3.6768667802356445,
+          "serial_dependence_adjusted": false
+        }
+      ],
+      "pbo": {
+        "subset_pbo": 0.1,
+        "splits": 70,
+        "blocks": 8,
+        "block_sizes": [
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "method": "BALANCED_BLOCK_CSCV_EXTENSION",
+        "is_tied_selection_splits": 0,
+        "tie_policy": "Average IS winners; half failure at OOS median (explicit neutral-tie extension).",
+        "chronological_holdout": false,
+        "purged_or_embargoed": false
+      }
+    },
+    {
+      "year": 2023,
+      "fee": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "matrix": "2023-user_confirmed_rate-100.json",
+      "dsr_scope": "Sensitivity only: variance from four comparison arms, not full research population.",
+      "model_dsr": [
+        {
+          "dsr_iid_sensitivity": 0.5795023633444522,
+          "sharpe_per_period": 0.04895266970669719,
+          "benchmark_per_period": 0.0359559801904515,
+          "assumed_independent_trials": 6,
+          "trial_sharpe_variance": 0.0007648239844389033,
+          "observations": 242,
+          "skewness": -0.20184547056173321,
+          "pearson_kurtosis": 3.569403187092581,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.4777665146759707,
+          "sharpe_per_period": 0.04895266970669719,
+          "benchmark_per_period": 0.05256493610492105,
+          "assumed_independent_trials": 20,
+          "trial_sharpe_variance": 0.0007648239844389033,
+          "observations": 242,
+          "skewness": -0.20184547056173321,
+          "pearson_kurtosis": 3.569403187092581,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.3727190360506979,
+          "sharpe_per_period": 0.04895266970669719,
+          "benchmark_per_period": 0.06998496497339783,
+          "assumed_independent_trials": 100,
+          "trial_sharpe_variance": 0.0007648239844389033,
+          "observations": 242,
+          "skewness": -0.20184547056173321,
+          "pearson_kurtosis": 3.569403187092581,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.2630549219991515,
+          "sharpe_per_period": 0.04895266970669719,
+          "benchmark_per_period": 0.09002185436882906,
+          "assumed_independent_trials": 1000,
+          "trial_sharpe_variance": 0.0007648239844389033,
+          "observations": 242,
+          "skewness": -0.20184547056173321,
+          "pearson_kurtosis": 3.569403187092581,
+          "serial_dependence_adjusted": false
+        }
+      ],
+      "pbo": {
+        "subset_pbo": 0.18571428571428572,
+        "splits": 70,
+        "blocks": 8,
+        "block_sizes": [
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "method": "BALANCED_BLOCK_CSCV_EXTENSION",
+        "is_tied_selection_splits": 0,
+        "tie_policy": "Average IS winners; half failure at OOS median (explicit neutral-tie extension).",
+        "chronological_holdout": false,
+        "purged_or_embargoed": false
+      }
+    },
+    {
+      "year": 2024,
+      "fee": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "matrix": "2024-user_confirmed_rate-30.json",
+      "dsr_scope": "Sensitivity only: variance from four comparison arms, not full research population.",
+      "model_dsr": [
+        {
+          "dsr_iid_sensitivity": 0.9245808678117757,
+          "sharpe_per_period": 0.1461501976334321,
+          "benchmark_per_period": 0.04505864547273899,
+          "assumed_independent_trials": 6,
+          "trial_sharpe_variance": 0.0012010898526709304,
+          "observations": 242,
+          "skewness": -1.063974245489608,
+          "pearson_kurtosis": 8.098957850653294,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.8730235405812908,
+          "sharpe_per_period": 0.1461501976334321,
+          "benchmark_per_period": 0.06587234745662134,
+          "assumed_independent_trials": 20,
+          "trial_sharpe_variance": 0.0012010898526709304,
+          "observations": 242,
+          "skewness": -1.063974245489608,
+          "pearson_kurtosis": 8.098957850653294,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.7968946802117356,
+          "sharpe_per_period": 0.1461501976334321,
+          "benchmark_per_period": 0.08770245473646732,
+          "assumed_independent_trials": 100,
+          "trial_sharpe_variance": 0.0012010898526709304,
+          "observations": 242,
+          "skewness": -1.063974245489608,
+          "pearson_kurtosis": 8.098957850653294,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.6821640381830478,
+          "sharpe_per_period": 0.1461501976334321,
+          "benchmark_per_period": 0.11281191054501671,
+          "assumed_independent_trials": 1000,
+          "trial_sharpe_variance": 0.0012010898526709304,
+          "observations": 242,
+          "skewness": -1.063974245489608,
+          "pearson_kurtosis": 8.098957850653294,
+          "serial_dependence_adjusted": false
+        }
+      ],
+      "pbo": {
+        "subset_pbo": 0.34285714285714286,
+        "splits": 70,
+        "blocks": 8,
+        "block_sizes": [
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "method": "BALANCED_BLOCK_CSCV_EXTENSION",
+        "is_tied_selection_splits": 0,
+        "tie_policy": "Average IS winners; half failure at OOS median (explicit neutral-tie extension).",
+        "chronological_holdout": false,
+        "purged_or_embargoed": false
+      }
+    },
+    {
+      "year": 2024,
+      "fee": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "matrix": "2024-user_confirmed_rate-100.json",
+      "dsr_scope": "Sensitivity only: variance from four comparison arms, not full research population.",
+      "model_dsr": [
+        {
+          "dsr_iid_sensitivity": 0.9073648762843542,
+          "sharpe_per_period": 0.1325818141260211,
+          "benchmark_per_period": 0.0404225508075849,
+          "assumed_independent_trials": 6,
+          "trial_sharpe_variance": 0.0009666442343537253,
+          "observations": 242,
+          "skewness": -1.0283197313210508,
+          "pearson_kurtosis": 7.848284125545653,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.8545859234792195,
+          "sharpe_per_period": 0.1325818141260211,
+          "benchmark_per_period": 0.059094726082947704,
+          "assumed_independent_trials": 20,
+          "trial_sharpe_variance": 0.0009666442343537253,
+          "observations": 242,
+          "skewness": -1.0283197313210508,
+          "pearson_kurtosis": 7.848284125545653,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.7807726449000233,
+          "sharpe_per_period": 0.1325818141260211,
+          "benchmark_per_period": 0.07867872847353184,
+          "assumed_independent_trials": 100,
+          "trial_sharpe_variance": 0.0009666442343537253,
+          "observations": 242,
+          "skewness": -1.0283197313210508,
+          "pearson_kurtosis": 7.848284125545653,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.6740111691717947,
+          "sharpe_per_period": 0.1325818141260211,
+          "benchmark_per_period": 0.10120466644887502,
+          "assumed_independent_trials": 1000,
+          "trial_sharpe_variance": 0.0009666442343537253,
+          "observations": 242,
+          "skewness": -1.0283197313210508,
+          "pearson_kurtosis": 7.848284125545653,
+          "serial_dependence_adjusted": false
+        }
+      ],
+      "pbo": {
+        "subset_pbo": 0.38571428571428573,
+        "splits": 70,
+        "blocks": 8,
+        "block_sizes": [
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "method": "BALANCED_BLOCK_CSCV_EXTENSION",
+        "is_tied_selection_splits": 0,
+        "tie_policy": "Average IS winners; half failure at OOS median (explicit neutral-tie extension).",
+        "chronological_holdout": false,
+        "purged_or_embargoed": false
+      }
+    },
+    {
+      "year": 2025,
+      "fee": "user_confirmed_rate",
+      "slippage_bps": 30,
+      "matrix": "2025-user_confirmed_rate-30.json",
+      "dsr_scope": "Sensitivity only: variance from four comparison arms, not full research population.",
+      "model_dsr": [
+        {
+          "dsr_iid_sensitivity": 0.956680112882397,
+          "sharpe_per_period": 0.1336810652590966,
+          "benchmark_per_period": 0.009284793816674615,
+          "assumed_independent_trials": 6,
+          "trial_sharpe_variance": 5.0999246754255616e-05,
+          "observations": 243,
+          "skewness": -1.5889174437295308,
+          "pearson_kurtosis": 15.144456865196663,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.9509689489454336,
+          "sharpe_per_period": 0.1336810652590966,
+          "benchmark_per_period": 0.013573669557490614,
+          "assumed_independent_trials": 20,
+          "trial_sharpe_variance": 5.0999246754255616e-05,
+          "observations": 243,
+          "skewness": -1.5889174437295308,
+          "pearson_kurtosis": 15.144456865196663,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.9443484850007782,
+          "sharpe_per_period": 0.1336810652590966,
+          "benchmark_per_period": 0.01807198598406598,
+          "assumed_independent_trials": 100,
+          "trial_sharpe_variance": 5.0999246754255616e-05,
+          "observations": 243,
+          "skewness": -1.5889174437295308,
+          "pearson_kurtosis": 15.144456865196663,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.9358823401300108,
+          "sharpe_per_period": 0.1336810652590966,
+          "benchmark_per_period": 0.023246045647540195,
+          "assumed_independent_trials": 1000,
+          "trial_sharpe_variance": 5.0999246754255616e-05,
+          "observations": 243,
+          "skewness": -1.5889174437295308,
+          "pearson_kurtosis": 15.144456865196663,
+          "serial_dependence_adjusted": false
+        }
+      ],
+      "pbo": {
+        "subset_pbo": 0.8714285714285714,
+        "splits": 70,
+        "blocks": 8,
+        "block_sizes": [
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "method": "BALANCED_BLOCK_CSCV_EXTENSION",
+        "is_tied_selection_splits": 0,
+        "tie_policy": "Average IS winners; half failure at OOS median (explicit neutral-tie extension).",
+        "chronological_holdout": false,
+        "purged_or_embargoed": false
+      }
+    },
+    {
+      "year": 2025,
+      "fee": "user_confirmed_rate",
+      "slippage_bps": 100,
+      "matrix": "2025-user_confirmed_rate-100.json",
+      "dsr_scope": "Sensitivity only: variance from four comparison arms, not full research population.",
+      "model_dsr": [
+        {
+          "dsr_iid_sensitivity": 0.9204402145412448,
+          "sharpe_per_period": 0.10795491206882074,
+          "benchmark_per_period": 0.007627039237017413,
+          "assumed_independent_trials": 6,
+          "trial_sharpe_variance": 3.441368625215522e-05,
+          "observations": 243,
+          "skewness": -1.7404688315196946,
+          "pearson_kurtosis": 14.990080155806027,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.9128623742576413,
+          "sharpe_per_period": 0.10795491206882074,
+          "benchmark_per_period": 0.011150157165511326,
+          "assumed_independent_trials": 20,
+          "trial_sharpe_variance": 3.441368625215522e-05,
+          "observations": 243,
+          "skewness": -1.7404688315196946,
+          "pearson_kurtosis": 14.990080155806027,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.9043485972896822,
+          "sharpe_per_period": 0.10795491206882074,
+          "benchmark_per_period": 0.0148453211684421,
+          "assumed_independent_trials": 100,
+          "trial_sharpe_variance": 3.441368625215522e-05,
+          "observations": 243,
+          "skewness": -1.7404688315196946,
+          "pearson_kurtosis": 14.990080155806027,
+          "serial_dependence_adjusted": false
+        },
+        {
+          "dsr_iid_sensitivity": 0.8938168489134142,
+          "sharpe_per_period": 0.10795491206882074,
+          "benchmark_per_period": 0.019095577754335864,
+          "assumed_independent_trials": 1000,
+          "trial_sharpe_variance": 3.441368625215522e-05,
+          "observations": 243,
+          "skewness": -1.7404688315196946,
+          "pearson_kurtosis": 14.990080155806027,
+          "serial_dependence_adjusted": false
+        }
+      ],
+      "pbo": {
+        "subset_pbo": 0.9142857142857143,
+        "splits": 70,
+        "blocks": 8,
+        "block_sizes": [
+          31,
+          31,
+          31,
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "method": "BALANCED_BLOCK_CSCV_EXTENSION",
+        "is_tied_selection_splits": 0,
+        "tie_policy": "Average IS winners; half failure at OOS median (explicit neutral-tie extension).",
+        "chronological_holdout": false,
+        "purged_or_embargoed": false
+      }
+    }
+  ],
+  "trial_inventory": [
+    {
+      "id": "0001-treasury-yield-comovement",
+      "spec_sha256": "a01461f844421ed192ed9d0da776cdc08b1626dc6fff92e12219f0358dcaec9f",
+      "result_present": true,
+      "result_sha256": "b86fec577322330d9d89426503a468b856863c4c63c8de428e770afd853d978c",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0002-treasury-slope-inversion",
+      "spec_sha256": "3083287ed7ae824c2258b698cd3d938efdb660d183b72a2e3edf70ab5ce03037",
+      "result_present": true,
+      "result_sha256": "30037a2ca48babe034f1712a341621102f58a272f167934f68d4ed78d94601e1",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0003-treasury-slope-change-reversal",
+      "spec_sha256": "817fa43161206db0427554408f9446ccfcdf135e95abaa5476d6c02e1a3273df",
+      "result_present": true,
+      "result_sha256": "60a64186e54194c2e4c83f54fb8f81a8e36279b47db42cd93c870785c820477a",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0004-cn-etf-dual-momentum",
+      "spec_sha256": "9e351225eaf37dec65c87e06b9dbd183c27c900df0c00aff2ac0f83503e461ef",
+      "result_present": true,
+      "result_sha256": "70079a34efecaca3bc3cd3722983a898cce2294d64ae6fb4f3fc89bf66853f6a",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0005-qlib-lightgbm-etf-challenger",
+      "spec_sha256": "710667e5e7a638e2f28b29d460b9ba5265c1a0e1dc5176de3d4503dfab5b9b42",
+      "result_present": true,
+      "result_sha256": "0155b0d06501c7e4fa54a743be9079564a9bf0f061d2644bc09b9e007ca24c48",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0006-volatility-controlled-etf-overlay",
+      "spec_sha256": "2d2a6f59a7879d6ebfcb2dbcf6603422147f473a0b580eecf7abaceaf44e7999",
+      "result_present": true,
+      "result_sha256": "b75b7be5559f24a8244b7988904fad63b66e0462658c1139e7aa9e2198242962",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0007-small-account-executable",
+      "spec_sha256": "9788c7030a3bc6ff63395f6febb0c1af77d72e955513f869343c512415359ebe",
+      "result_present": true,
+      "result_sha256": "8e3650f50ddc4d0d4efba93a25ef6a0119c21245429ac3ca347520d4e399c790",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0008-volatility-budget-small-account",
+      "spec_sha256": "892eb3f4229da3853756544f8015aae88a367dc5980b7e240a2c736813c8d708",
+      "result_present": true,
+      "result_sha256": "7e2002a1dae087dcae43f5dfc95adbeb69f2e47be50eb0fc543a24d03d9587c9",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0009-risk-rescaled-forward",
+      "spec_sha256": "6a44962138847385a748b229bd3b627d51d8f254456a90948979697ad0dd72e0",
+      "result_present": false,
+      "result_sha256": null,
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0010-high-risk-executable-overlay",
+      "spec_sha256": "834b45c371a31f908d28f9e60f3bfd901fb128f7c3b2be856997b89b361547e1",
+      "result_present": true,
+      "result_sha256": "bd57d304aa8a693f0e551e3dd7f3c8c4ea191b381d94068a4915a1f1b82bff79",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0011-moonshot-etf-breakout",
+      "spec_sha256": "d53744003d3f8f50455cf9180a5ab8aab265320124a2f0d962f57d0409f6a35b",
+      "result_present": true,
+      "result_sha256": "afdf9fdb7e2e1c3a1726c84acffaef31599cf0c223acf6fcf89adeec06cee67f",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0012-high-risk-overlay-robustness",
+      "spec_sha256": "364a945e79badb5e40d2643dbad02cb2476301465a482b9bfcfb0f1002d1840d",
+      "result_present": true,
+      "result_sha256": "8fdab7586ea2f366d32c77660e12454d9b7b9e14356be90d327f10714b994022",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0013-regime-concentrated-etf",
+      "spec_sha256": "227c90fd3209ef4e6628603bf640260cc405612be7618752527c29722dab1d0f",
+      "result_present": true,
+      "result_sha256": "393a2945853d13306f6013a65bdeb2c109d6718c07718f669d33fdb2951c5408",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "0014-3000-pilot-execution-stress",
+      "spec_sha256": "6aa193325924c7930f7941dda4137350571cdef4e7ee93d82838152f8d67ff02",
+      "result_present": true,
+      "result_sha256": "a9e3f603919a62280c3a418a07c550b44aacda7ec1b87cc954fd471056f6309d",
+      "comparable_to_current_matrix": "NOT_ESTABLISHED"
+    }
+  ],
+  "prior_family_ledger": {
+    "schema_version": 1,
+    "created_at": "2026-09-04",
+    "purpose": "Conservative strategy-family accounting for selection-bias review. This ledger does not reconstruct undocumented experiments.",
+    "families": [
+      {
+        "strategy_family": "cn_listed_etf_allocation",
+        "known_strategy_choices": 6,
+        "undocumented_pre_ledger_choices": "unknown",
+        "pbo_ready": false,
+        "pbo_blocker": "Not every choice has a comparable return matrix across identical folds, and any experiments before the repository ledger are unknown.",
+        "records": [
+          {
+            "hypothesis": "0004-cn-etf-dual-momentum",
+            "role": "economic_strategy",
+            "counts_toward_known_strategy_choices": true,
+            "outcome": "PASS_then_frozen_champion",
+            "interpretation": "Original holdout result; later comparison makes the currently selected strategy part of a wider family-selection process."
+          },
+          {
+            "hypothesis": "0005-qlib-lightgbm-etf-challenger",
+            "role": "economic_strategy",
+            "counts_toward_known_strategy_choices": true,
+            "outcome": "FAIL"
+          },
+          {
+            "hypothesis": "0006-volatility-controlled-etf-overlay",
+            "role": "economic_strategy",
+            "counts_toward_known_strategy_choices": true,
+            "outcome": "PASS_as_prospective_shadow_only"
+          },
+          {
+            "hypothesis": "0007-small-account-executable",
+            "role": "execution_diagnostic",
+            "counts_toward_known_strategy_choices": false,
+            "outcome": "PASS"
+          },
+          {
+            "hypothesis": "0008-volatility-budget-small-account",
+            "role": "economic_strategy",
+            "counts_toward_known_strategy_choices": true,
+            "outcome": "FAIL"
+          },
+          {
+            "hypothesis": "0009-risk-rescaled-forward",
+            "role": "forward_design_rejected_before_signal",
+            "counts_toward_known_strategy_choices": false,
+            "outcome": "REJECTED_BEFORE_FIRST_SIGNAL"
+          },
+          {
+            "hypothesis": "0010-high-risk-executable-overlay",
+            "role": "economic_strategy",
+            "counts_toward_known_strategy_choices": true,
+            "outcome": "PASS_as_forward_paper_challenger_only"
+          },
+          {
+            "hypothesis": "0011-moonshot-etf-breakout",
+            "role": "economic_strategy",
+            "counts_toward_known_strategy_choices": true,
+            "outcome": "FAIL"
+          },
+          {
+            "hypothesis": "0012-high-risk-overlay-robustness",
+            "role": "post_discovery_robustness_audit",
+            "counts_toward_known_strategy_choices": false,
+            "outcome": "PASS_with_no_future_alpha_claim"
+          }
+        ]
+      }
+    ],
+    "policy_from_now_on": {
+      "required_fields_for_new_economic_strategy": [
+        "strategy_family",
+        "family_trial_index",
+        "known_prior_strategy_choices"
+      ],
+      "selection_adjustment_required_for_alpha_claim": true,
+      "capital_authorized": false
+    }
+  },
+  "blockers": [
+    "All historical parameter/search choices are not reconstructed.",
+    "Four comparison arms are not the six-plus historical economic candidates.",
+    "IID DSR does not correct serial dependence; CSCV is not a new chronological holdout.",
+    "Reused history and modeled fills cannot establish executable alpha."
+  ],
+  "matrix_sha256": {
+    "2022-user_confirmed_rate-30.json": "4181a73f716afeb128389b6e888bcafa82ebfb3908f3ffcd32369eb583a71de7",
+    "2022-user_confirmed_rate-100.json": "4b79893c44b686fd5a1673e36475b70406e5dca39b474480cbbfd94f52e00b81",
+    "2023-user_confirmed_rate-30.json": "1dd29b4ea24d549b52e86ba5b51bb3dbd28ebba682690f9c2fd109fcf81325a4",
+    "2023-user_confirmed_rate-100.json": "63f7fbc440c6417c4fe7bf7cd2136ab223e7722e8eecbc871218a53c8b8d1170",
+    "2024-user_confirmed_rate-30.json": "370e48f53840efd7ee5776c5fbf349aaf8dc04f8b771798ea4ecce6131bde322",
+    "2024-user_confirmed_rate-100.json": "374463a27c3e08625de56f7a64290122f02bef4cd7ce72d2d0d0a0781206c50a",
+    "2025-user_confirmed_rate-30.json": "141cc50e125c0874e76d464bd33c6c842e77e19ddc537d74d59b62c8c1f02b20",
+    "2025-user_confirmed_rate-100.json": "c53886b622d17e78a7021f08d11df10bee66c8f27ced7a256ff825aaeb81b1b4"
+  },
+  "source_sha256": {
+    "research\\experiments\\cn-fees-0001\\reproduction-2026-09-15.json": "098f81e4c0933c4e1267c0df3c49567233b91999832c06b020ba24f2bcccc57e",
+    "research\\strategy-family-ledger.json": "4bd0cfde4099fc7ac730fb4efd9b2e9b00cb70809f8d1b021881c16ae89b045e",
+    "scripts\\audit_selection_bias.py": "3fd67f82ff4c2dc628a6e2fffed76a3d27a821f337d4bbb8324103faaf353f16",
+    "src\\aoae\\selection_audit.py": "18e22856ff0ea9a35956689dcddd875a08071962fe53781d1da19900c3c8d41c"
+  },
+  "first_principles": {
+    "payer": "ETF exposure; incremental timing edge unproven",
+    "risk_of_ruin": null,
+    "net_executable_alpha": null,
+    "decision": "Do not change frozen candidate or allocate capital from subset diagnostics."
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-09-04",
+  "edges": [
+    {
+      "edge_id": "EDGE-CN-ETF-VOL-MOMENTUM",
+      "evidence_sources": [
+        "research/hypotheses/0010-high-risk-executable-overlay/result.json",
+        "research/hypotheses/0012-high-risk-overlay-robustness/result.json",
+        "research/paper_accounts/0003-high-risk-overlay/forward-progress.json"
+      ],
+      "strategy_family": "cn_listed_etf_allocation",
+      "mechanism": "medium-horizon momentum with volatility-controlled exposure",
+      "evidence_state": "HISTORICAL_ROBUSTNESS_PASS_FORWARD_PENDING",
+      "minimum_forward_observations": 3,
+      "forward_observations": 0,
+      "forward_net_pnl_after_costs": null,
+      "selection_adjusted_mean_pnl_lcb": null,
+      "selection_bias_accounted": false,
+      "independent_audit_passed": true,
+      "execution_attempts": 0,
+      "execution_fills": 0,
+      "minimum_execution_fill_rate": 0.8,
+      "execution_reconciled": false,
+      "estimated_capacity_cny": 10000,
+      "risk_limit_breached": false,
+      "forward_only": false,
+      "maximum_allocation_fraction": 0.5
+    },
+    {
+      "edge_id": "EDGE-BNB-5M-LATENCY",
+      "evidence_sources": [
+        "research/opportunity_scans/0018-bnb-five-minute-100-market-forward/result.json",
+        "research/opportunity_scans/0024-bnb-rest-100-market-independent-replay/partial-result.json"
+      ],
+      "strategy_family": "bnb_five_minute_latency",
+      "mechanism": "reference-price displacement before binary-market settlement",
+      "evidence_state": "PARTIAL_POST_CAPTURE_DIAGNOSTIC",
+      "minimum_forward_observations": 100,
+      "forward_observations": 94,
+      "forward_net_pnl_after_costs": 29.13284735,
+      "selection_adjusted_mean_pnl_lcb": 0.0475,
+      "selection_bias_accounted": false,
+      "independent_audit_passed": true,
+      "execution_attempts": 13,
+      "execution_fills": 10,
+      "minimum_execution_fill_rate": 0.8,
+      "execution_reconciled": false,
+      "estimated_capacity_cny": null,
+      "risk_limit_breached": false,
+      "forward_only": false,
+      "maximum_allocation_fraction": 0.1
+    },
+    {
+      "edge_id": "EDGE-POLITICAL-SUPERHEDGE",
+      "evidence_sources": [
+        "research/opportunity_scans/0011-house-control-one-hour-forward/result.json"
+      ],
+      "strategy_family": "prediction_market_complete_set",
+      "mechanism": "cross-market logical complete-set pricing constraint",
+      "evidence_state": "FORWARD_FILL_CHECK_FAILED",
+      "minimum_forward_observations": 100,
+      "forward_observations": 1,
+      "forward_net_pnl_after_costs": null,
+      "selection_adjusted_mean_pnl_lcb": null,
+      "selection_bias_accounted": true,
+      "independent_audit_passed": true,
+      "execution_attempts": 4,
+      "execution_fills": 1,
+      "minimum_execution_fill_rate": 1.0,
+      "execution_reconciled": false,
+      "estimated_capacity_cny": null,
+      "risk_limit_breached": false,
+      "forward_only": true,
+      "maximum_allocation_fraction": 0.05
+    },
+    {
+      "edge_id": "EDGE-IDLE-CASH-REPO",
+      "evidence_sources": [
+        "research/opportunity_scans/0023-idle-cash-reverse-repo/spec.json",
+        "research/opportunity_scans/0023-idle-cash-reverse-repo/quote-official-2026-09-03.json",
+        "research/opportunity_scans/0023-idle-cash-reverse-repo/result-v2.json",
+        "research/opportunity_scans/0023-idle-cash-reverse-repo/review.zh-CN.md"
+      ],
+      "strategy_family": "regulated_idle_cash_yield",
+      "mechanism": "exchange reverse repo or broker cash sweep without impairing ETF liquidity",
+      "evidence_state": "POSITIVE_SCENARIO_ECONOMICS_OPERATIONS_UNCONFIRMED",
+      "minimum_forward_observations": 20,
+      "forward_observations": 0,
+      "forward_net_pnl_after_costs": null,
+      "selection_adjusted_mean_pnl_lcb": null,
+      "selection_bias_accounted": true,
+      "independent_audit_passed": false,
+      "execution_attempts": 0,
+      "execution_fills": 0,
+      "minimum_execution_fill_rate": 0.95,
+      "execution_reconciled": false,
+      "estimated_capacity_cny": 10000,
+      "risk_limit_breached": false,
+      "forward_only": true,
+      "maximum_allocation_fraction": 0.5
+    },
+    {
+      "edge_id": "EDGE-CN-ETF-CONCENTRATED",
+      "evidence_sources": [
+        "research/hypotheses/0013-regime-concentrated-etf/spec.json",
+        "research/hypotheses/0013-regime-concentrated-etf/result.json",
+        "research/hypotheses/0013-regime-concentrated-etf/scale-diagnostic.json"
+      ],
+      "strategy_family": "cn_listed_etf_concentrated_momentum",
+      "mechanism": "single strongest positive-trend ETF with 30 percent volatility target",
+      "evidence_state": "HISTORICAL_DIAGNOSTIC_REJECTED",
+      "minimum_forward_observations": 3,
+      "forward_observations": 0,
+      "forward_net_pnl_after_costs": null,
+      "selection_adjusted_mean_pnl_lcb": null,
+      "selection_bias_accounted": false,
+      "independent_audit_passed": false,
+      "execution_attempts": 0,
+      "execution_fills": 0,
+      "minimum_execution_fill_rate": 0.8,
+      "execution_reconciled": false,
+      "estimated_capacity_cny": 10000,
+      "risk_limit_breached": false,
+      "forward_only": false,
+      "maximum_allocation_fraction": 0.1
+    }
+  ]
+}

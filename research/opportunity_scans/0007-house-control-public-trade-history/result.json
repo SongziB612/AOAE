@@ -1,0 +1,81 @@
+{
+  "capital_authorized": false,
+  "captured_at_utc": "2026-09-04T04:44:35.961348Z",
+  "captures": [
+    {
+      "byte_count": 4112152,
+      "http_date": "Fri, 04 Sep 2026 04:42:14 GMT",
+      "name": "D Senate, D House — YES",
+      "sha256": "9e5c0fa20a3ea7423a96966be5ed8551d4cdc89d12fab142fd8fc712281cee94"
+    },
+    {
+      "byte_count": 2551999,
+      "http_date": "Fri, 04 Sep 2026 04:42:48 GMT",
+      "name": "R Senate, D House — YES",
+      "sha256": "3ad1f7f6c62d26959174cd61d47bf0b1ec9e98ffb3c74fdc301e42f8ca7989fd"
+    },
+    {
+      "byte_count": 3746733,
+      "http_date": "Fri, 04 Sep 2026 04:43:10 GMT",
+      "name": "Balance Other — YES",
+      "sha256": "3cdd2f5d2c8dc9ab96859746ec7453be3a3eb9979f09cb73c567fab889384aba"
+    },
+    {
+      "byte_count": 7408987,
+      "http_date": "Fri, 04 Sep 2026 04:43:43 GMT",
+      "name": "Democratic House control — NO",
+      "sha256": "f374981aa2ae9be1da1c42d5813f65e8328cca42a006cf97100d2ae2ec3797fa"
+    }
+  ],
+  "decision": "continue_forward_queue_study",
+  "legs": [
+    {
+      "first_evidence_utc": "2026-08-05T01:09:08Z",
+      "last_evidence_utc": "2026-09-04T04:26:34Z",
+      "name": "D Senate, D House — YES",
+      "paper_bid": 0.49,
+      "sell_trades_at_or_below_bid": 403,
+      "sell_volume_at_or_below_bid": 112040.48
+    },
+    {
+      "first_evidence_utc": "2026-08-27T16:27:58Z",
+      "last_evidence_utc": "2026-09-03T21:51:25Z",
+      "name": "R Senate, D House — YES",
+      "paper_bid": 0.35,
+      "sell_trades_at_or_below_bid": 70,
+      "sell_volume_at_or_below_bid": 28271.79
+    },
+    {
+      "first_evidence_utc": "2026-08-13T15:40:15Z",
+      "last_evidence_utc": "2026-08-31T22:13:13Z",
+      "name": "Balance Other — YES",
+      "paper_bid": 0.003,
+      "sell_trades_at_or_below_bid": 19,
+      "sell_volume_at_or_below_bid": 13877.75
+    },
+    {
+      "first_evidence_utc": "2026-08-29T16:35:18Z",
+      "last_evidence_utc": "2026-09-03T11:45:16Z",
+      "name": "Democratic House control — NO",
+      "paper_bid": 0.1,
+      "sell_trades_at_or_below_bid": 8,
+      "sell_volume_at_or_below_bid": 340.01
+    }
+  ],
+  "method": {
+    "after_utc": "2026-08-05T00:00:00Z",
+    "authentication_used": false,
+    "endpoint": "https://data-api.polymarket.com/trades",
+    "orders_placed": 0,
+    "per_market_limit": 10000,
+    "side": "SELL",
+    "taker_only": true
+  },
+  "record_type": "public_taker_sell_history_fill_evidence",
+  "result": {
+    "all_legs_with_historical_fill_evidence": true,
+    "interpretation": "Historical taker sells at or below the paper bid show price-level activity, not queue position or a simultaneous complete-set fill.",
+    "legs_with_historical_fill_evidence": 4
+  },
+  "schema_version": 1
+}

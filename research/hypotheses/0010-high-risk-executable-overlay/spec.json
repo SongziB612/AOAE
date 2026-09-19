@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0010-high-risk-executable-overlay",
+  "title": "Executable 12% volatility ETF overlay under a 3000 CNY loss budget",
+  "status_context": "A one-trial post-holdout feasibility diagnostic triggered only by the user's larger risk budget. It cannot authorize capital.",
+  "frozen_inputs": {
+    "overlay_spec_path": "research/hypotheses/0006-volatility-controlled-etf-overlay/spec.json",
+    "overlay_spec_sha256": "2d2a6f59a7879d6ebfcb2dbcf6603422147f473a0b580eecf7abaceaf44e7999",
+    "overlay_result_path": "research/hypotheses/0006-volatility-controlled-etf-overlay/result.json",
+    "overlay_result_sha256": "b75b7be5559f24a8244b7988904fad63b66e0462658c1139e7aa9e2198242962",
+    "paper_account_spec_path": "research/paper_accounts/0003-high-risk-overlay/spec.json",
+    "paper_account_spec_sha256": "f30faa5e6f317f65c6ca8c5571f4d8fccb09979f373ebdcb4f7f38300099e1e4",
+    "champion_result_path": "research/hypotheses/0007-small-account-executable/result.json",
+    "champion_result_sha256": "8e3650f50ddc4d0d4efba93a25ef6a0119c21245429ac3ca347520d4e399c790"
+  },
+  "period": ["2022-01-01", "2026-08-31"],
+  "execution": {
+    "initial_cash_cny": 10000,
+    "risk_asset_market_value_cap_fraction": 1.0,
+    "volatility_lookback_days": 63,
+    "target_annualized_volatility": 0.12,
+    "defensive_allocation": "cash_with_zero_interest",
+    "buy_lot_size_shares": 100,
+    "one_way_cost_rate": 0.0015,
+    "minimum_cost_per_nonzero_order_cny": 5
+  },
+  "decision_rule": {
+    "cagr_must_exceed_frozen_HYP_0007": true,
+    "maximum_drawdown_not_below_negative_30_percent": true,
+    "maximum_historical_loss_cny_not_above_3000": true,
+    "cash_never_negative": true
+  },
+  "trial_count": 1,
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "replacement_authorized": false,
+  "next_step_if_pass": "initialize a separate 90-day forward paper challenger; no real capital",
+  "next_step_if_fail": "reject without parameter tuning on 2022-2026"
+}

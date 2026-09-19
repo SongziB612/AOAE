@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "validation_id": "VAL-0001-etf-champion-stability",
+  "engine": {
+    "name": "vectorbt",
+    "version": "1.1.0",
+    "commit": "34b6d5935e3ea3eccd549e2592bc0f455b8045f5",
+    "plotly_compatibility_pin": "6.5.0"
+  },
+  "full_holdout_reproduction": {
+    "vectorbt": {
+      "start": "2022-01-01",
+      "end": "2026-08-31",
+      "observations": 1128,
+      "total_return": 0.48007355,
+      "cagr": 0.08773078,
+      "max_drawdown": -0.21983308
+    },
+    "original": {
+      "start": "2022-01-01",
+      "first_market_date": "2022-01-04",
+      "end": "2026-08-31",
+      "observations": 1128,
+      "total_return": 0.48027627,
+      "cagr": 0.08776273,
+      "annualized_volatility": 0.17842262,
+      "sharpe_zero_rate": 0.58101131,
+      "max_drawdown": -0.21983345
+    },
+    "absolute_total_return_difference": 0.00020272,
+    "absolute_max_drawdown_difference": 3.7e-07
+  },
+  "benchmark": {
+    "start": "2022-01-01",
+    "end": "2026-08-31",
+    "observations": 1128,
+    "total_return": 0.02091959,
+    "cagr": 0.00445031,
+    "max_drawdown": -0.34872019
+  },
+  "rolling_windows": {
+    "count": 5,
+    "positive_fraction": 0.8,
+    "beats_benchmark_fraction": 1.0,
+    "lower_drawdown_fraction": 1.0,
+    "windows": [
+      {
+        "strategy": {
+          "start": "2022-01-04",
+          "end": "2024-01-30",
+          "observations": 504,
+          "total_return": -0.08284288,
+          "cagr": -0.04091906,
+          "max_drawdown": -0.20662418
+        },
+        "benchmark": {
+          "start": "2022-01-04",
+          "end": "2024-01-30",
+          "observations": 504,
+          "total_return": -0.33668781,
+          "cagr": -0.17990205,
+          "max_drawdown": -0.34478232
+        },
+        "positive": false,
+        "beats_benchmark": true,
+        "lower_drawdown": true
+      },
+      {
+        "strategy": {
+          "start": "2022-07-15",
+          "end": "2024-08-09",
+          "observations": 504,
+          "total_return": 0.3007399,
+          "cagr": 0.13545362,
+          "max_drawdown": -0.08449702
+        },
+        "benchmark": {
+          "start": "2022-07-15",
+          "end": "2024-08-09",
+          "observations": 504,
+          "total_return": -0.19463427,
+          "cagr": -0.09929618,
+          "max_drawdown": -0.25519139
+        },
+        "positive": true,
+        "beats_benchmark": true,
+        "lower_drawdown": true
+      },
+      {
+        "strategy": {
+          "start": "2023-01-18",
+          "end": "2025-02-21",
+          "observations": 504,
+          "total_return": 0.47594971,
+          "cagr": 0.20426865,
+          "max_drawdown": -0.08449702
+        },
+        "benchmark": {
+          "start": "2023-01-18",
+          "end": "2025-02-21",
+          "observations": 504,
+          "total_return": 0.00363636,
+          "cagr": 0.00173454,
+          "max_drawdown": -0.24152866
+        },
+        "positive": true,
+        "beats_benchmark": true,
+        "lower_drawdown": true
+      },
+      {
+        "strategy": {
+          "start": "2023-07-28",
+          "end": "2025-08-25",
+          "observations": 504,
+          "total_return": 0.54469621,
+          "cagr": 0.232753,
+          "max_drawdown": -0.10030941
+        },
+        "benchmark": {
+          "start": "2023-07-28",
+          "end": "2025-08-25",
+          "observations": 504,
+          "total_return": 0.17265048,
+          "cagr": 0.07965667,
+          "max_drawdown": -0.21945464
+        },
+        "positive": true,
+        "beats_benchmark": true,
+        "lower_drawdown": true
+      },
+      {
+        "strategy": {
+          "start": "2024-01-31",
+          "end": "2026-03-09",
+          "observations": 504,
+          "total_return": 0.75378718,
+          "cagr": 0.30626707,
+          "max_drawdown": -0.10566957
+        },
+        "benchmark": {
+          "start": "2024-01-31",
+          "end": "2026-03-09",
+          "observations": 504,
+          "total_return": 0.537363,
+          "cagr": 0.22695389,
+          "max_drawdown": -0.17067365
+        },
+        "positive": true,
+        "beats_benchmark": true,
+        "lower_drawdown": true
+      }
+    ]
+  },
+  "leave_one_risk_asset_out": [
+    {
+      "omitted": "510300",
+      "metrics": {
+        "start": "2022-01-01",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.46857559,
+        "cagr": 0.08591291,
+        "max_drawdown": -0.21983308
+      },
+      "positive": true,
+      "beats_benchmark": true,
+      "above_drawdown_floor": true
+    },
+    {
+      "omitted": "510500",
+      "metrics": {
+        "start": "2022-01-01",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.73912083,
+        "cagr": 0.12601608,
+        "max_drawdown": -0.20027219
+      },
+      "positive": true,
+      "beats_benchmark": true,
+      "above_drawdown_floor": true
+    },
+    {
+      "omitted": "159915",
+      "metrics": {
+        "start": "2022-01-01",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.5244532,
+        "cagr": 0.094645,
+        "max_drawdown": -0.24861438
+      },
+      "positive": true,
+      "beats_benchmark": true,
+      "above_drawdown_floor": true
+    },
+    {
+      "omitted": "513500",
+      "metrics": {
+        "start": "2022-01-01",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.34002562,
+        "cagr": 0.06478644,
+        "max_drawdown": -0.21983308
+      },
+      "positive": true,
+      "beats_benchmark": true,
+      "above_drawdown_floor": true
+    },
+    {
+      "omitted": "518880",
+      "metrics": {
+        "start": "2022-01-01",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.29440956,
+        "cagr": 0.05690638,
+        "max_drawdown": -0.21985616
+      },
+      "positive": true,
+      "beats_benchmark": true,
+      "above_drawdown_floor": true
+    }
+  ],
+  "checks": {
+    "external_total_return_reproduces": true,
+    "external_drawdown_reproduces": true,
+    "rolling_positive_fraction": true,
+    "rolling_beats_benchmark_fraction": true,
+    "rolling_lower_drawdown_fraction": true,
+    "loo_positive_count": true,
+    "loo_beats_benchmark_count": true,
+    "loo_drawdown_floor": true
+  },
+  "result": {
+    "status": "PASS",
+    "decision": "preregister a Qlib LightGBM challenger without changing this holdout"
+  },
+  "orders_authorized": false,
+  "capital_authorized": false
+}

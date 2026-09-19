@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0012-high-risk-overlay-robustness",
+  "title": "Post-discovery robustness audit of the frozen high-risk ETF overlay",
+  "status_context": "This audit is frozen before execution but uses data already available during strategy discovery. It can reject or delay the strategy; passing cannot by itself prove future alpha.",
+  "frozen_strategy_spec": "research/hypotheses/0010-high-risk-executable-overlay/spec.json",
+  "frozen_strategy_result": "research/hypotheses/0010-high-risk-executable-overlay/result.json",
+  "data_dir": "data/raw/cn_etf",
+  "calendar_windows": [
+    ["2022-01-01", "2022-12-31"],
+    ["2023-01-01", "2023-12-31"],
+    ["2024-01-01", "2024-12-31"],
+    ["2025-01-01", "2025-12-31"],
+    ["2026-01-01", "2026-08-31"]
+  ],
+  "rolling_windows": {
+    "start_dates": ["2022-01-01", "2022-04-01", "2022-07-01", "2022-10-01", "2023-01-01", "2023-04-01", "2023-07-01", "2023-10-01", "2024-01-01", "2024-04-01", "2024-07-01", "2024-10-01", "2025-01-01"],
+    "months": 18
+  },
+  "cost_stress": [
+    {"one_way_cost_rate": 0.0015, "minimum_cost_cny": 5},
+    {"one_way_cost_rate": 0.003, "minimum_cost_cny": 10},
+    {"one_way_cost_rate": 0.005, "minimum_cost_cny": 15}
+  ],
+  "pass_rule": {
+    "all_full_period_cost_scenarios_positive": true,
+    "all_full_period_cost_scenarios_max_drawdown_at_least": -0.30,
+    "minimum_positive_calendar_windows": 3,
+    "minimum_positive_rolling_windows": 8,
+    "minimum_rolling_windows_beating_executable_benchmark": 8,
+    "maximum_rolling_loss_from_initial_cny": 3000
+  },
+  "trial_count": 1,
+  "capital_authorized": false,
+  "orders_authorized": false
+}

@@ -1,0 +1,61 @@
+{
+  "capital_authorized": false,
+  "decision": "continue_or_reprice_paper_test",
+  "event": {
+    "leg_count": 4,
+    "slug": "PORT-0001-house-control-superhedge",
+    "title": "Four-leg House-control superhedge"
+  },
+  "legs": [
+    {
+      "cross_events": 0,
+      "name": "D Senate, D House — YES",
+      "paper_bid": 0.5,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "name": "R Senate, D House — YES",
+      "paper_bid": 0.35,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "name": "Balance Other — YES",
+      "paper_bid": 0.002,
+      "tick": 0.001,
+      "trade_events_at_or_below_bid": 0
+    },
+    {
+      "cross_events": 0,
+      "name": "Democratic House control — NO",
+      "paper_bid": 0.1,
+      "tick": 0.01,
+      "trade_events_at_or_below_bid": 0
+    }
+  ],
+  "method": {
+    "authentication_used": false,
+    "fill_evidence": "public best-ask cross or SELL trade at/below paper bid; queue position is unknown",
+    "message_counts": {
+      "PONG": 4,
+      "book": 4,
+      "price_change": 37
+    },
+    "orders_placed": 0,
+    "quote_policy": "one_tick_below_initial_best_ask"
+  },
+  "observed_from_utc": "2026-09-03T07:41:51.762404Z",
+  "observed_until_utc": "2026-09-03T07:42:39.676211Z",
+  "record_type": "aggressive_forward_websocket_paper_fill_probe",
+  "result": {
+    "all_legs_with_fill_evidence": false,
+    "complete_set_cost_if_all_fill": 0.952,
+    "legs_with_fill_evidence": 0,
+    "locked_payoff_if_all_fill": 0.048,
+    "status": "INCOMPLETE_FILL_EVIDENCE"
+  },
+  "schema_version": 1
+}

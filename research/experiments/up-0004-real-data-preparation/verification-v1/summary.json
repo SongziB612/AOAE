@@ -1,0 +1,65 @@
+{
+  "engineering_status": "PASS",
+  "failure": null,
+  "checks": [
+    {
+      "name": "tests",
+      "process_success": true
+    },
+    {
+      "name": "data_quality",
+      "process_success": true
+    },
+    {
+      "name": "issuer_comparison",
+      "process_success": true
+    },
+    {
+      "name": "execution",
+      "process_success": true
+    },
+    {
+      "name": "execution_reproduction",
+      "process_success": true
+    }
+  ],
+  "economic_status": "INSUFFICIENT_EVIDENCE",
+  "research_verdict": "RESEARCH",
+  "data_admitted": false,
+  "ready_for_capital": false,
+  "all_controllable_preparation_complete": false,
+  "remaining_internal_work": [
+    "Resolve SPY issuer/vendor amount discrepancy and historical revision semantics",
+    "Verify other ETF actions, raw-price semantics, calendar, vintages and data rights",
+    "Integrate and test tax/FX/split handling as required by actual investor/market",
+    "Freeze candidate, complete real historical/OOS matched-baseline and family-testing evaluation"
+  ],
+  "remaining_external_dependencies": [
+    "Verified broker/market access, fees, account currency and investor mandate",
+    "Future forward-execution observations; historical replay cannot supply them"
+  ],
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "artifacts_sha256": {
+    "data-quality.json": "0c08e0dd830c64f9fb8c4a75f0196d53415f03b4c2827ca09b272d48199a00c7",
+    "data_quality.log": "7c5eac794a6d44f96bf24506ce3a16722cef175c9098a6547b07f3fba7d3a77d",
+    "execution-repeat.json": "9f0c789cfac78fb0fccd0a2a590ccdd3144453551e839f7a1b0b166629cda195",
+    "execution.json": "9f0c789cfac78fb0fccd0a2a590ccdd3144453551e839f7a1b0b166629cda195",
+    "execution.log": "02103a542b1c8c531d6134176f4e8bcf208415fe0cd58e2916069317dd501778",
+    "execution_reproduction.log": "02103a542b1c8c531d6134176f4e8bcf208415fe0cd58e2916069317dd501778",
+    "issuer-comparison.json": "7ec1a1e1a473ae778f5f18348ba98692ad98fab4d5e647c302c5c92cfd2e3d9b",
+    "issuer_comparison.log": "7ec1a1e1a473ae778f5f18348ba98692ad98fab4d5e647c302c5c92cfd2e3d9b",
+    "tests.log": "ea7b650208a3c7b8b726b7b2c7e62cc697ff66b66dc7240621c8199dba0686b2"
+  },
+  "source_sha256": {
+    "scripts/verify_up_preparation.py": "31e39b992a9904bd6f1a84b59f8b4b40a1cf6886ec8e7c8b1385376c942db6d0",
+    "scripts/capture_up_etf_research.py": "55d2f0e7153f4fb0ec82414c5c068c9a2970b113d30de02b4f109e157aa5e3b1",
+    "scripts/audit_up_etf_capture.py": "5aa6e8e316add952faffde999b1c1d7cb28cfec56b8040cf579aadcfb004c247",
+    "scripts/audit_spy_distributions.py": "8fd0802894c10086740ba8eaed6932972d10241a43605d94607853f191b05b95",
+    "src/aoae/universal_temporal.py": "dd87f066bf1a8230308f65768d9eec7799721c99103b4da26fec4c773939a3b2",
+    "src/aoae/universal_execution.py": "e25f965b82afa2f2b4333bf35bf9abf0f63682f6a9821b2806f0e870c8f1cccb",
+    "scripts/audit_universal_execution.py": "30b1586e9d3938329a0763928f3f022060e9360cc53b717392b6de656c35543d",
+    "scripts/run_up_execution_checks.py": "08686d817af63570144ec6cbba44920095a2d60dd1bdca08ee6d4145c2c31edf"
+  },
+  "interpretation": "Command/audit success is not data admission. Issuer REVIEW_REQUIRED must remain unresolved until independently reconciled."
+}

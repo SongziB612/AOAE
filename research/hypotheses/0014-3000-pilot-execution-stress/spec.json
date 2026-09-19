@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0014-3000-pilot-execution-stress",
+  "title": "Exact 3000 CNY pilot under explicit commission and slippage stress",
+  "frozen_strategy_spec": "research/hypotheses/0004-cn-etf-dual-momentum/spec.json",
+  "pilot_account_spec": "research/paper_accounts/0004-3000-live-pilot-shadow/spec.json",
+  "data_dir": "data/raw/cn_etf",
+  "period": ["2022-01-01", "2026-08-31"],
+  "scenarios": [
+    {"name": "published_max_commission", "commission_rate": 0.003, "minimum_commission_cny": 5, "slippage_bps": 0},
+    {"name": "plus_10bps_slippage", "commission_rate": 0.003, "minimum_commission_cny": 5, "slippage_bps": 10},
+    {"name": "plus_30bps_slippage", "commission_rate": 0.003, "minimum_commission_cny": 5, "slippage_bps": 30},
+    {"name": "plus_100bps_disaster_slippage", "commission_rate": 0.003, "minimum_commission_cny": 5, "slippage_bps": 100}
+  ],
+  "decision_rule": {
+    "all_scenarios_total_return_positive": true,
+    "all_scenarios_maximum_loss_cny_not_above": 1000,
+    "all_scenarios_cash_never_negative": true
+  },
+  "trial_count": 1,
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

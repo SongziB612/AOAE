@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0009-risk-rescaled-forward",
+  "title": "Forward-only risk-rescaled ETF allocation",
+  "status_context": "Registered after the fixed 6% volatility-budget diagnostic failed the user's loss limit. No historical rerun of this rescaled target may authorize it.",
+  "base_signal": "HYP-0006 volatility-controlled dual momentum",
+  "forward_signal_frequency": "rejected before first signal: slow 6-1/12-1 momentum has no first-principles justification for daily turnover",
+  "risk_budget_derivation": {
+    "failed_target_annualized_volatility": 0.06,
+    "observed_maximum_loss_cny": 1095.9,
+    "user_maximum_loss_cny": 1000,
+    "proportional_target": 0.05475,
+    "registered_target_rounded_down": 0.054
+  },
+  "forward_gate": {
+    "minimum_calendar_months": 3,
+    "net_return_after_costs_must_be_positive": true,
+    "must_beat_PAPER_0001_champion": true,
+    "maximum_loss_cny": 1000,
+    "pause_equity_cny": 9200
+  },
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "replacement_authorized": false
+  ,"decision": "REJECTED_BEFORE_FIRST_SIGNAL_FIRST_PRINCIPLES_COST_REVIEW"
+}

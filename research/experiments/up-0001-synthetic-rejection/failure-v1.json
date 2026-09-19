@@ -1,0 +1,9 @@
+{
+  "failure": "NumPy boolean in identity checks was not JSON serializable",
+  "affected_output": "result-v1.json",
+  "affected_output_status": "INCOMPLETE_INVALID_DO_NOT_USE",
+  "fix": "Convert identity results to Python bool and serialize fully before creating the output file.",
+  "economic_results_selected_or_retuned": false,
+  "next_output": "result-v2.json",
+  "capital_authorized": false
+}

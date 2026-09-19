@@ -1,0 +1,36 @@
+{
+  "review_date": "2026-09-14",
+  "scope": "Selected event fields only; not exhaustive action coverage or point-in-time admission",
+  "evidence_method": "Manual transcription from primary documents read with web tool; original PDFs not locally archived",
+  "events": [
+    {
+      "symbol": "510300",
+      "ex_date": "2026-01-19",
+      "registration_date": "2026-01-16",
+      "payment_date": "2026-01-27",
+      "cash_per_share": "0.123",
+      "publication_date": "2026-01-12",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-01-12/510300_20260112_VTCZ.pdf",
+      "source_locator": "PDF page 2: distribution table; page 3: settlement mechanics",
+      "issuer_remittance_date": "2026-01-23",
+      "csdc_transfer_date": "2026-01-26",
+      "note": "Use investor payment date, not earlier remittance or settlement dates. Announcement date has day precision only."
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2026-07-15",
+      "publication_date": "2026-07-08",
+      "source_url": "https://www.sse.com.cn/assortment/options/disclo/update/c/c_20260708_10824766.shtml",
+      "source_locator": "SSE options adjustment announcement 2026 number 41",
+      "note": "Only ex-date verified; no amount, registration or payment date inferred from options adjustment notice."
+    }
+  ],
+  "unresolved_sources": [
+    {
+      "symbol": "510500",
+      "url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-01-09/510500_20260109_5K7U.pdf",
+      "status": "WEB_OPEN_FAILED_NOT_VERIFIED"
+    }
+  ],
+  "capital_authorized": false
+}

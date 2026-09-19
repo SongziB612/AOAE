@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "audit_type": "cross_provider_recent_price_check",
+  "primary": "Eastmoney qfq snapshot via fund_etf_hist_em",
+  "independent": "Sina unadjusted via fund_etf_hist_sina",
+  "note": "QFQ and raw prices may differ by a piecewise-constant cash-distribution offset; intraday offsets and end-date closes are checked.",
+  "window": {
+    "start": "2026-07-01",
+    "end": "2026-08-31"
+  },
+  "symbols": {
+    "510300": {
+      "overlap_rows": 44,
+      "qfq_adjustment_offsets": [
+        0.0
+      ],
+      "maximum_within_day_offset_error": 0.0,
+      "adjustment_consistent": true,
+      "end_close_matches_independent": true
+    },
+    "510500": {
+      "overlap_rows": 44,
+      "qfq_adjustment_offsets": [
+        -0.149,
+        0.0
+      ],
+      "maximum_within_day_offset_error": 0.0,
+      "adjustment_consistent": true,
+      "end_close_matches_independent": true
+    },
+    "159915": {
+      "overlap_rows": 44,
+      "qfq_adjustment_offsets": [
+        0.0
+      ],
+      "maximum_within_day_offset_error": 0.0,
+      "adjustment_consistent": true,
+      "end_close_matches_independent": true
+    },
+    "513500": {
+      "overlap_rows": 44,
+      "qfq_adjustment_offsets": [
+        0.0
+      ],
+      "maximum_within_day_offset_error": 0.0,
+      "adjustment_consistent": true,
+      "end_close_matches_independent": true
+    },
+    "518880": {
+      "overlap_rows": 44,
+      "qfq_adjustment_offsets": [
+        0.0
+      ],
+      "maximum_within_day_offset_error": 0.0,
+      "adjustment_consistent": true,
+      "end_close_matches_independent": true
+    },
+    "511010": {
+      "overlap_rows": 44,
+      "qfq_adjustment_offsets": [
+        0.0
+      ],
+      "maximum_within_day_offset_error": 0.0,
+      "adjustment_consistent": true,
+      "end_close_matches_independent": true
+    }
+  },
+  "checks": {
+    "all_symbols_have_40_day_overlap": true,
+    "all_adjustments_are_piecewise_consistent": true,
+    "all_end_closes_match_independent": true
+  },
+  "status": "PASS"
+}

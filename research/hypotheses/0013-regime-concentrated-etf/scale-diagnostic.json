@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "record_type": "post_result_transaction_cost_scale_diagnostic",
+  "warning": "Created after observing the 1000 CNY failure; descriptive only and not a new clean trial.",
+  "inputs": {
+    "spec_sha256": "227c90fd3209ef4e6628603bf640260cc405612be7618752527c29722dab1d0f",
+    "failed_result_sha256": "393a2945853d13306f6013a65bdeb2c109d6718c07718f669d33fdb2951c5408",
+    "price_sha256": {
+      "510300": "b585f1eb4bc8711fe43e0a7637913ea09a745225b7716f8c980d9263ed52066a",
+      "510500": "c2464afdbc996e39fe64118f4521c7f87112a8b85b5ce4408206947d71a3e5f4",
+      "159915": "db05d10e2e184fafa3e124a287034c378a0ca6cc04c00fa3f82ed653f73435bc",
+      "513500": "3e869c6c2f7b78bade5c7334afa0c88698c94283514a9863aa0349ddd7eaa55f",
+      "518880": "85ec4f2f19b9b2098fff16888e2d712d8ee7c7d9b1cf075310c70ac68eb2b326",
+      "511010": "90e677a00b701565fd1a9d8a52fbdc9afb566bea6ab7cff331acbce9d3ae6948"
+    }
+  },
+  "scales": [
+    {
+      "capital_cny": 1000.0,
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": -0.0983,
+        "cagr": -0.02194796,
+        "annualized_volatility": 0.17348323,
+        "sharpe_zero_rate": -0.04584215,
+        "max_drawdown": -0.27782358
+      },
+      "maximum_loss_from_initial_cny": 299.2,
+      "orders": 41,
+      "cost_cny": 205.0,
+      "cost_as_initial_capital_fraction": 0.205,
+      "cash_never_negative": true
+    },
+    {
+      "capital_cny": 3000.0,
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.02584528,
+        "cagr": 0.00548773,
+        "annualized_volatility": 0.19587517,
+        "sharpe_zero_rate": 0.12793434,
+        "max_drawdown": -0.25390251
+      },
+      "maximum_loss_from_initial_cny": 820.5,
+      "orders": 44,
+      "cost_cny": 220.36,
+      "cost_as_initial_capital_fraction": 0.073453,
+      "cash_never_negative": true
+    },
+    {
+      "capital_cny": 10000.0,
+      "strategy": {
+        "start": "2022-01-01",
+        "first_market_date": "2022-01-04",
+        "end": "2026-08-31",
+        "observations": 1128,
+        "total_return": 0.06026402,
+        "cagr": 0.0126297,
+        "annualized_volatility": 0.20204736,
+        "sharpe_zero_rate": 0.16674097,
+        "max_drawdown": -0.2503701
+      },
+      "maximum_loss_from_initial_cny": 2699.03,
+      "orders": 46,
+      "cost_cny": 569.83,
+      "cost_as_initial_capital_fraction": 0.056983,
+      "cash_never_negative": true
+    }
+  ],
+  "orders_authorized": false,
+  "capital_authorized": false
+}

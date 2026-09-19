@@ -1,0 +1,13 @@
+{
+  "engineering_status": "PASS",
+  "tests_passed": 206,
+  "test_command": ".venv/python.exe -m unittest discover -s tests -v",
+  "costed_runs_independently_reconciled": 24,
+  "maximum_ledger_error_cny": 1.1641532182693481e-10,
+  "byte_identical_reproduction": true,
+  "result_sha256": "4cda9d08ebe6bc7d6e5a11113e47fd28418653a83e451de654102f9875847ec1",
+  "research_verdict": "RESEARCH",
+  "economic_advantage_established": false,
+  "capital_authorized": false,
+  "orders_authorized": false
+}

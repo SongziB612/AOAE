@@ -1,0 +1,30 @@
+{
+  "record_type": "primary_document_split_timing_corrections",
+  "scope": "Two split events in the 2022 onward trading replay; not all historical corporate actions.",
+  "events": [
+    {
+      "symbol": "510500",
+      "provider_factor_date": "2022-08-26",
+      "registration_effective": "2022-08-26 after close",
+      "first_post_split_trading_date": "2022-08-29",
+      "ratio": 1.14539,
+      "rounding": "ceil",
+      "source": "https://pdf.dfcfw.com/pdf/H2_AN202208291577764682_1.pdf",
+      "issuer": "南方基金管理股份有限公司",
+      "note": "Issuer specifies end-of-day registration and round up to whole shares. Raw Aug 26 prices are still pre-split."
+    },
+    {
+      "symbol": "513500",
+      "provider_factor_date": "2022-03-30",
+      "registration_effective": "2022-03-29",
+      "first_post_split_trading_date": "2022-03-30",
+      "ratio": 2.0,
+      "rounding": "ceil",
+      "source": "https://pdf.dfcfw.com/pdf/H2_AN202203301555935458_1.pdf",
+      "issuer": "博时基金管理有限公司",
+      "note": "Issuer specifies 1:2 split and trading resumes March 30; integer input shares produce no rounding fraction."
+    }
+  ],
+  "capital_authorized": false,
+  "orders_authorized": false
+}

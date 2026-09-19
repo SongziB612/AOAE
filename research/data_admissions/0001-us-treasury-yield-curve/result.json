@@ -1,0 +1,134 @@
+{
+  "admission_id": "ADM-0001-us-treasury-yield-curve",
+  "capital_authorized": false,
+  "decision": "metadata_and_snapshot_quality_admitted",
+  "evidence": {
+    "duplicate_date_count": 0,
+    "field_quality": {
+      "BC_10YEAR": {
+        "maximum": 4.7,
+        "minimum": 3.63,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_1MONTH": {
+        "maximum": 5.56,
+        "minimum": 4.4,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_1YEAR": {
+        "maximum": 5.25,
+        "minimum": 3.88,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_20YEAR": {
+        "maximum": 4.93,
+        "minimum": 4.01,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_2MONTH": {
+        "maximum": 5.54,
+        "minimum": 4.39,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_2YEAR": {
+        "maximum": 5.04,
+        "minimum": 3.49,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_30YEAR": {
+        "maximum": 4.82,
+        "minimum": 3.94,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_3MONTH": {
+        "maximum": 5.52,
+        "minimum": 4.31,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_3YEAR": {
+        "maximum": 4.87,
+        "minimum": 3.42,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_4MONTH": {
+        "maximum": 5.53,
+        "minimum": 4.32,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_5YEAR": {
+        "maximum": 4.72,
+        "minimum": 3.41,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_6MONTH": {
+        "maximum": 5.44,
+        "minimum": 4.24,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      },
+      "BC_7YEAR": {
+        "maximum": 4.71,
+        "minimum": 3.51,
+        "missing_count": 0,
+        "missing_fraction": 0.0
+      }
+    },
+    "first_date": "2024-01-02",
+    "last_date": "2024-12-31",
+    "out_of_period_count": 0,
+    "row_count": 250,
+    "weekend_row_count": 0
+  },
+  "license": {
+    "attribution_required": true,
+    "raw_redistribution_authorized": false,
+    "status": "internal_research_only_pending_redistribution_review"
+  },
+  "next_experiment": "Create a canonical derived table and test curve-shape data invariants without evaluating a trading strategy.",
+  "record_type": "real_data_quality_admission",
+  "research_purpose": "descriptive_data_quality_only",
+  "result": {
+    "checks": {
+      "capital_disabled": true,
+      "dates_strictly_increasing": true,
+      "dates_unique": true,
+      "dates_within_declared_period": true,
+      "raw_redistribution_disabled": true,
+      "required_field_coverage": true,
+      "row_count_within_bounds": true,
+      "strategy_mining_disabled": true,
+      "weekend_rows_within_limit": true,
+      "yield_values_within_bounds": true
+    },
+    "interpretation": "The snapshot is admitted for descriptive data-quality work only; strategy mining, redistribution, and capital remain disabled.",
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "source": {
+    "dataset": "Daily Treasury Par Yield Curve Rates",
+    "documentation_url": "https://home.treasury.gov/treasury-daily-interest-rate-xml-feed",
+    "provider": "U.S. Department of the Treasury",
+    "snapshot_bytes": 284423,
+    "snapshot_sha256": "d216da08ff934cb60add3980e1f4a82b9a6fbcd227182d4307ca857bce1cf4db",
+    "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2024"
+  },
+  "strategy_mining_authorized": false,
+  "strategy_trials": 0,
+  "temporal": {
+    "observation_basis": "indicative_bid_side_quotes_at_or_near_15_30_eastern",
+    "research_available": "next_us_business_day",
+    "revisions_possible": true,
+    "timezone": "America/New_York"
+  }
+}

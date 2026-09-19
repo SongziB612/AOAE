@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "account_id": "PAPER-0002-risk-rescaled-challenger",
+  "mode": "local_broker_independent_simulation",
+  "inception_date": "2026-09-04",
+  "initial_cash_cny": 10000,
+  "broker": null,
+  "strategy": "HYP-0009-risk-rescaled-forward",
+  "strategy_spec_path": "research/hypotheses/0009-risk-rescaled-forward/spec.json",
+  "execution": {
+    "signal": "every_common_trading_day_close",
+    "fill": "next_common_trading_day_open",
+    "stale_or_backfilled_orders_forbidden": true,
+    "first_eligible_signal": "first common trading-day close strictly after 2026-09-04",
+    "buy_lot_size_shares": 100,
+    "fractional_shares_forbidden": true,
+    "defensive_511010_substitution": "cash",
+    "maximum_risk_asset_market_value_fraction": 1.0,
+    "volatility_lookback_days": 63,
+    "target_annualized_volatility": 0.054,
+    "round_target_quantity_down_to_lot": true
+  },
+  "cost_model": {
+    "one_way_rate": 0.0015,
+    "minimum_cost_per_order_cny": 5,
+    "formula": "max(5 CNY, traded_notional * 0.0015)"
+  },
+  "risk_limits": {
+    "maximum_acceptable_loss_cny": 1000,
+    "maximum_acceptable_drawdown_fraction": 0.1,
+    "pause_new_risk_at_loss_cny": 800,
+    "pause_new_risk_at_equity_cny": 9200,
+    "action_at_pause": "create next-open liquidation draft and require explicit human review; no automatic order",
+    "gap_risk_warning": "the 1000 CNY loss ceiling cannot be guaranteed because prices can gap"
+  },
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

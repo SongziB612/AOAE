@@ -1,0 +1,154 @@
+{
+  "assessment": {
+    "all_controllable_preparation_complete": false,
+    "capital_authorized": false,
+    "external_gate_ids": [
+      "independent_forward_net_economics",
+      "fresh_account_snapshot_and_all_charges",
+      "specific_capital_and_loss_authorization"
+    ],
+    "failed_gate_ids": [],
+    "gate_count": 8,
+    "incomplete_gate_ids": [
+      "reviewed_market_inputs_and_tradability",
+      "manual_delay_execution_validation",
+      "independent_forward_net_economics",
+      "fresh_account_snapshot_and_all_charges",
+      "specific_capital_and_loss_authorization"
+    ],
+    "internal_incomplete_gate_ids": [
+      "reviewed_market_inputs_and_tradability",
+      "manual_delay_execution_validation"
+    ],
+    "passed_count": 3,
+    "ready_for_capital": false
+  },
+  "broker_connection_authorized": false,
+  "capital_authorized": false,
+  "decision": "DO_NOT_FUND",
+  "evaluated_at_utc": "2026-09-13T14:34:57.565463Z",
+  "evidence_sha256": {
+    "docs/manual-execution.zh-CN.md": "09f516fa9bdd6d8bb075637ebab9374a052b5e48d54099c1b5973d75f8b42aec",
+    "research/experiments/cn-fees-0001/REPORT.zh-CN.md": "25f6b8302fc57bc66cfb39589dfb2ad0cd8bacdacb10e75dd2f61a4d275359ec",
+    "research/experiments/cn-fees-0001/independent-audit-v1.json": "a3056539e4a8da8dfae1b4c5a0eb0ae7f84893f09ffa37dedddb1aaac3df99c1",
+    "research/experiments/cn-fees-0001/result-v1.json": "ae720033c5d18af3176cbc73547b3940aa56bca5f34a8999956666faf4937758",
+    "research/manual_execution/account-fees-user-confirmed-v1.json": "7c9b367cdccc1050d10ce38374898754329986fcf3210b0513b858c4bac3b9f1",
+    "research/manual_execution/engineering-reconciliation-v1.json": "b6cdba6cb87594f7bab5a212cd7293e64fa28954d191e025c392e121b3b1cd4b",
+    "research/manual_execution/journal-ticket-2026-09-13-v1.json": "d26d4d03aa424fb68814e454ac585f60400ad2de8565e9201f96e3d4ccfd04a2",
+    "scripts/prepare_current_manual_ticket.py": "d07f27656bbe2aa743b8c3abf6dfc81cd6973de7a4d858cb16bd763ff2119c01",
+    "src/aoae/manual_bridge.py": "30d5f53f242b6e4c990e2c5047ce99138550044ddd5e16815c4e8e8d8a9d8889",
+    "src/aoae/manual_ticket.py": "e3bea44251ec2486d2aae5a7e7757d52756d0ce4a39e7fbfb405d9a094ff9471",
+    "src/aoae/reviewed_signal.py": "8fd460cf121f9026607f387696313a4d283faf58a4df4140dbec3756172862eb",
+    "tests/test_manual_bridge.py": "fe1170c96649475ec2e134a84caf5cf5abafba32e38628f904371bc063500f77",
+    "tests/test_manual_ticket.py": "90e963f966cbe68a7fcdb73a3d732b124636ecdafc4210dd073be1810b8e7911"
+  },
+  "gates": [
+    {
+      "evidence": [
+        "research/manual_execution/account-fees-user-confirmed-v1.json"
+      ],
+      "id": "user_confirmed_commission",
+      "json_assertions": [
+        {
+          "equals": "0.0002",
+          "path": [
+            "fees",
+            "commission_rate"
+          ],
+          "source": "research/manual_execution/account-fees-user-confirmed-v1.json"
+        },
+        {
+          "equals": "5",
+          "path": [
+            "fees",
+            "minimum_cny"
+          ],
+          "source": "research/manual_execution/account-fees-user-confirmed-v1.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "research/experiments/cn-fees-0001/result-v1.json",
+        "research/experiments/cn-fees-0001/independent-audit-v1.json"
+      ],
+      "id": "historical_repricing_accounting_not_profitability",
+      "json_assertions": [
+        {
+          "equals": "PASS",
+          "path": [
+            "status"
+          ],
+          "source": "research/experiments/cn-fees-0001/independent-audit-v1.json"
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "src/aoae/manual_bridge.py",
+        "src/aoae/manual_ticket.py",
+        "scripts/prepare_current_manual_ticket.py",
+        "tests/test_manual_bridge.py",
+        "tests/test_manual_ticket.py",
+        "research/manual_execution/journal-ticket-2026-09-13-v1.json",
+        "research/manual_execution/engineering-reconciliation-v1.json"
+      ],
+      "id": "manual_paper_bridge_and_reconciliation",
+      "status": "PASS"
+    },
+    {
+      "evidence": [
+        "docs/manual-execution.zh-CN.md",
+        "src/aoae/reviewed_signal.py"
+      ],
+      "id": "reviewed_market_inputs_and_tradability",
+      "note": "Source/calendar/action review and independently evidenced instrument tradability remain necessary; hashes do not certify truth.",
+      "status": "PENDING_LOCAL_WORK"
+    },
+    {
+      "evidence": [
+        "docs/manual-execution.zh-CN.md",
+        "research/experiments/cn-fees-0001/REPORT.zh-CN.md"
+      ],
+      "id": "manual_delay_execution_validation",
+      "note": "No admitted historical intraday delay replay or measured current manual fills; 30/100bps scenarios do not replace these.",
+      "status": "PENDING_LOCAL_WORK"
+    },
+    {
+      "evidence": [
+        "research/experiments/cn-fees-0001/result-v1.json",
+        "research/manual_execution/journal-ticket-2026-09-13-v1.json"
+      ],
+      "id": "independent_forward_net_economics",
+      "note": "Zero clean OOS in reused historical results; no current pending signal. Passing days alone is insufficient.",
+      "status": "PENDING_EXTERNAL_TIME"
+    },
+    {
+      "evidence": [
+        "research/manual_execution/account-fees-user-confirmed-v1.json"
+      ],
+      "id": "fresh_account_snapshot_and_all_charges",
+      "note": "Actual available cash not freshly verified; other charges unverified; account and quote snapshots needed only when a valid signal exists.",
+      "status": "PENDING_EXTERNAL_ACCOUNT"
+    },
+    {
+      "evidence": [
+        "research/manual_execution/account-fees-user-confirmed-v1.json"
+      ],
+      "id": "specific_capital_and_loss_authorization",
+      "note": "Broad preparation request and historical 300000 simulation do not grant trading authority or set a current approved loss budget.",
+      "status": "PENDING_USER_APPROVAL"
+    }
+  ],
+  "orders_authorized": false,
+  "pilot": {
+    "approved_capital_cny": null,
+    "approved_loss_limit_cny": null,
+    "mode": "MANUAL_PAPER_PREPARATION"
+  },
+  "record_type": "pre_capital_readiness_status",
+  "schema_version": 1,
+  "spec_sha256": "fd7e96bc1ea5adaaea8f66a081c6935a6e71f92c4c467bd25081149d7109338f"
+}

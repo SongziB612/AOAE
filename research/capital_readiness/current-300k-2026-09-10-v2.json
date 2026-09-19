@@ -1,0 +1,250 @@
+{
+  "candidate": "PRO-0003-raw-price-300k-paired-forward",
+  "evaluated_at_utc": "2026-09-10T15:49:49.692410+00:00",
+  "initial_simulated_cny_per_arm": 300000,
+  "freeze_integrity": {
+    "status": "INTACT",
+    "changed_inputs": [],
+    "eligible_to_collect_new_evidence": true,
+    "capital_authorized": false,
+    "note": "Integrity does not prove execution readiness, data correctness or profitability."
+  },
+  "cash_journal": {
+    "status": "VERIFIED_LOCAL_REPLAY",
+    "events": 4,
+    "head_sha256": "3ff5f0a3828920b522848f83ddfe6e8b7280ce08fce98815ba50ffc20416a5d8",
+    "state": {
+      "accounts": {
+        "causal_total_return_momentum_overlay": {
+          "cash_cny": 300000.0,
+          "positions": {},
+          "simulated_fills": 0
+        },
+        "monthly_same_universe_equal_weight": {
+          "cash_cny": 300000.0,
+          "positions": {},
+          "simulated_fills": 0
+        },
+        "monthly_same_universe_exposure_matched_equal_weight": {
+          "cash_cny": 300000.0,
+          "positions": {},
+          "simulated_fills": 0
+        }
+      },
+      "freeze_sha256": "1499f105b93079eb40e468ec402bd73c038b64da218c754e20bf3956cf49441d",
+      "market_date": "2026-09-10",
+      "checkpoints": 3,
+      "signals": 0,
+      "simulated_fills": 0,
+      "capital_authorized": false,
+      "orders_authorized": false,
+      "price_sha256": {
+        "159915": "0a4cb3abc76f1727fdd1996280eaf60373e204d536b51cf0238be90ad8dc4d06",
+        "510300": "4c69fb2653fcd3e03d3431e0751d54e8279370b2e5e58ade87bef6ad56c9402b",
+        "510500": "a9917f1dc79eeebe9d7850bed873cf5ae4cd21ee8a54f30075aa7cf76cbc274a",
+        "511010": "282f9f15a4900a16e22f97707d08c89e1544bac4e8488683a0094145e0926380",
+        "513500": "229574e66e1c0afa197b714a198aee0bc804f007753e12e2181007363a69fe10",
+        "518880": "eabed36df42b8a2c9ac6e9f63e43b67dd5ab38b770add1a6fae1980b6f0ed4bd"
+      },
+      "status": "CASH_ONLY_NO_ADMITTED_SIGNALS"
+    },
+    "limit": "Local hash chain is not external notarization and cannot detect whole-database rollback."
+  },
+  "engineering_journal": {
+    "status": "VERIFIED_LOCAL_REPLAY",
+    "events": 1,
+    "head_sha256": "ece71f0bbf607c9543c76bdbf7cf7ed919ed7d4576f7a90e1d93b056b70d1f75",
+    "state": {
+      "freeze": {
+        "arms": [
+          "causal_total_return_momentum_overlay",
+          "monthly_same_universe_equal_weight",
+          "monthly_same_universe_exposure_matched_equal_weight"
+        ],
+        "broker_connection_authorized": false,
+        "capital_authorized": false,
+        "changes_require_new_experiment_id_and_no_score_splicing": true,
+        "evaluation": "Monthly paired reports; fixed twelve-month evaluation after first eligible presaved signal; no automatic capital pass based on elapsed time.",
+        "execution_rule": "No retrospective next-open fills accepted as observed execution; late signals are missed, not backfilled.",
+        "experiment_id": "PRO-0003-raw-price-300k-paired-forward",
+        "frozen_at_utc": "2026-09-05T11:18:26.832840+00:00",
+        "funds_are_simulated_only": true,
+        "historical_data_is_not_forward_evidence": true,
+        "initial_paper_capital_per_arm_cny": 300000,
+        "input_sha256": {
+          "data/audit/etf-accounting-2026-09-05-v4/159915.csv": "f9c9dfad6e1ef4c3857937990714e0f01e972395ff577d897672e0e45c1ae552",
+          "data/audit/etf-accounting-2026-09-05-v4/510300.csv": "c31426731a8cbecc2199a03a2ae72bd82d188bd5b20f67da5cd52e9d19ee6b40",
+          "data/audit/etf-accounting-2026-09-05-v4/510500.csv": "1495d1febdb78b49b1c18ca3ebfe0aa3263824ffa0fff5528101c72d6ddb3ff5",
+          "data/audit/etf-accounting-2026-09-05-v4/511010.csv": "e920f1e1cc82e604000c5d3404dc176da1b3de18ec8987acc7ad214858d2ee30",
+          "data/audit/etf-accounting-2026-09-05-v4/513500.csv": "e1e734c0f7df7b82f62a4245af0ea79d578978a09e91f0e6484104a5be7cc113",
+          "data/audit/etf-accounting-2026-09-05-v4/518880.csv": "17991dc17b2d85452e391c0fec2f2eab4102caf415c6dba6d261f52805bee108",
+          "research/capital_readiness/300k-accounting-replay-v4.json": "785d2ad99ad9fdbef30aea664130383a9a92742a06364378fc01ae3113613eb7",
+          "research/capital_readiness/first-principles-comparison-spec.json": "646c1d3525bdb8578d5f0ec5131db0611fe3b64c1e90b13a6f97724089397e34",
+          "research/capital_readiness/verified-split-timing-2026-09-05.json": "f5441288960a72757ee3d79dca6f0673752b1169718a8c3f1599aa4475b72f86",
+          "research/hypotheses/0004-cn-etf-dual-momentum/spec.json": "9e351225eaf37dec65c87e06b9dbd183c27c900df0c00aff2ac0f83503e461ef",
+          "scripts/challenge_300k_baselines.py": "91209cda18923f7a107a533f6646760ef1e17acfbc996f8ebbac7f04b7825612",
+          "scripts/run_300k_accounting_replay.py": "46c6c5c6296707b6790312c355a78f794c774ca4fe7a8ab0f2c361933148d39f",
+          "src/aoae/corporate_action_replay.py": "001e4088a8292c190386da96804caaaae90b3d84a62a86ff139881140cda4dbd",
+          "src/aoae/etf_momentum.py": "a112b6f5f8b993c66ef09ca4b273f7554b5495ebcf6a6a92c4128f16788da90a",
+          "src/aoae/etf_risk_overlay.py": "71d612212c383f4d3e798057c39dd7a5a93601e3da5cf1deb3bedc7cf0600427",
+          "src/aoae/independent_cash_ledger.py": "a4dd222b1f1e8ed21b38a8a2675d44c8d2a55b35415dccb6b6d9e1ff006d1070",
+          "src/aoae/small_account.py": "d00974968e528f0b3cd41095db84592eff99633a08eae2a4ebf1a28e4844d7e0"
+        },
+        "live_loss_limit_guaranteed": false,
+        "missing_operational_capabilities": [
+          "timestamped pre-execution signal collector",
+          "raw daily update and verified future corporate actions",
+          "separate comparable three-arm forward ledger",
+          "measured execution evidence admission"
+        ],
+        "objective": "Measure paired after-cost incremental economics on new evidence, not maximize historical Sharpe.",
+        "observed_forward_fills": 0,
+        "observed_forward_signals": 0,
+        "orders_authorized": false,
+        "risk_pause_loss_cny": 100000,
+        "signal_rule": "First verified common month-end after freeze; save timestamped signal and inputs before its execution window.",
+        "status": "FROZEN_NOT_SCHEDULED"
+      },
+      "accounts": {
+        "causal_total_return_momentum_overlay": {
+          "cash": "300000",
+          "initial": "300000",
+          "pause_loss": "100000",
+          "positions": {},
+          "receivables": [],
+          "action_ids": [],
+          "last_date": null,
+          "paused": false,
+          "equity": "300000",
+          "peak_equity": "300000",
+          "max_drawdown": "0",
+          "cost": "0",
+          "fills": 0,
+          "capital_authorized": false
+        },
+        "monthly_same_universe_equal_weight": {
+          "cash": "300000",
+          "initial": "300000",
+          "pause_loss": "100000",
+          "positions": {},
+          "receivables": [],
+          "action_ids": [],
+          "last_date": null,
+          "paused": false,
+          "equity": "300000",
+          "peak_equity": "300000",
+          "max_drawdown": "0",
+          "cost": "0",
+          "fills": 0,
+          "capital_authorized": false
+        },
+        "monthly_same_universe_exposure_matched_equal_weight": {
+          "cash": "300000",
+          "initial": "300000",
+          "pause_loss": "100000",
+          "positions": {},
+          "receivables": [],
+          "action_ids": [],
+          "last_date": null,
+          "paused": false,
+          "equity": "300000",
+          "peak_equity": "300000",
+          "max_drawdown": "0",
+          "cost": "0",
+          "fills": 0,
+          "capital_authorized": false
+        }
+      },
+      "last_date": null,
+      "pending_signal": null,
+      "signals": [],
+      "daily": [],
+      "status": "ENGINEERING_SHADOW_NOT_CAPITAL_EVIDENCE",
+      "capital_authorized": false
+    },
+    "limit": "Local hash chain is not external notarization and cannot detect whole-database rollback."
+  },
+  "historical_accounting_status": "PASS",
+  "historical_source_still_matches": {
+    "scripts/verify_real_shadow_economics.py": true,
+    "src/aoae/shadow_accounting.py": true,
+    "research/capital_readiness/300k-accounting-replay-v4.json": true,
+    "research/hypotheses/0004-cn-etf-dual-momentum/spec.json": true
+  },
+  "latest_capture_cycle": {
+    "as_of": "2026-09-10",
+    "run_directory": "F:\\AOAE\\data\\runtime\\paired_forward\\20260910T154815149191Z-65c6e9bb",
+    "capital_authorized": false,
+    "orders_authorized": false,
+    "scope": "PUBLIC_CAPTURE_CASH_CHECKPOINT_AND_REVIEWED_SHADOW_DISPATCH",
+    "calendar_sha256": "7b42f33e0e718177c100bdd16ee9a49aa4fdf5ddc5520a33cb9244811f2b13d9",
+    "calendar_plan": {
+      "is_session": true,
+      "next_session": "2026-09-11",
+      "is_month_end": false,
+      "signal_schedule": "NOT_A_SIGNAL_DAY",
+      "instrument_suspensions_verified": false
+    },
+    "strategy_status": "DISPATCH_PASS_NOT_CAPITAL_APPROVAL",
+    "status": "PAIRED_WORKFLOW_PASS_NOT_CAPITAL_APPROVAL",
+    "attempts": [
+      {
+        "status": "CURRENT_COMPLETE",
+        "latest_market_dates": {
+          "510300": "2026-09-10",
+          "510500": "2026-09-10",
+          "159915": "2026-09-10",
+          "513500": "2026-09-10",
+          "518880": "2026-09-10",
+          "511010": "2026-09-10"
+        },
+        "directory": "F:\\AOAE\\data\\runtime\\paired_forward\\20260910T154815149191Z-65c6e9bb\\attempt-1",
+        "fetch": {
+          "stage": "fetch",
+          "started_at_utc": "2026-09-10T15:48:15.150202+00:00",
+          "returncode": 0,
+          "finished_at_utc": "2026-09-10T15:48:19.546608+00:00"
+        }
+      }
+    ],
+    "collector": {
+      "stage": "collect",
+      "started_at_utc": "2026-09-10T15:48:19.549611+00:00",
+      "returncode": 0,
+      "finished_at_utc": "2026-09-10T15:48:20.105278+00:00"
+    },
+    "checkpoint": {
+      "stage": "checkpoint",
+      "started_at_utc": "2026-09-10T15:48:20.106278+00:00",
+      "returncode": 0,
+      "finished_at_utc": "2026-09-10T15:48:20.196793+00:00"
+    },
+    "strategy": {
+      "stage": "strategy",
+      "started_at_utc": "2026-09-10T15:48:20.196793+00:00",
+      "returncode": 0,
+      "finished_at_utc": "2026-09-10T15:48:20.733946+00:00"
+    }
+  },
+  "decision": "DO_NOT_FUND",
+  "all_controllable_preparation_complete": false,
+  "internal_incomplete": [
+    "Independent source-content review and complete corporate-action/calendar bundle not admitted.",
+    "Scheduled reviewed-input dispatcher is connected, but complete real reviewed bundles and invested-path operational acceptance remain pending.",
+    "Measured execution admission and monthly paired economic acceptance are not completed."
+  ],
+  "external_unresolved": [
+    "Actual account-specific ETF fees/permissions are not confirmed in current candidate evidence.",
+    "No clean forward profitability evidence; historical reuse is not a substitute.",
+    "Fresh funding decision, amount, loss tolerance and capital ownership need confirmation before any real order."
+  ],
+  "scope_note": "Old 3000-CNY pilot preparation sign-off does not cover this candidate.",
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false,
+  "evidence_sha256": {
+    "research\\prospective\\0003-raw-price-300k-paired-forward\\freeze.json": "1499f105b93079eb40e468ec402bd73c038b64da218c754e20bf3956cf49441d",
+    "research\\experiments\\cn-shadow-real-replay-0001\\result-v1.json": "d1042a398d87062858d083987c6a209c2c755114c1e127059c6a53367ee68cce",
+    "data\\runtime\\paired_forward\\20260910T154815149191Z-65c6e9bb\\cycle-status.json": "6fd43b94f95f5a5854b8d4dead97fea1f0a1a6db1e5598b52c965d1f3b8aa188"
+  }
+}

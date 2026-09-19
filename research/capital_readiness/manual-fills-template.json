@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "record_type": "manual_fill_export_template",
+  "warning": "Do not include account number, password, token, device identifier, or verification code.",
+  "fills": [
+    {
+      "symbol": "REPLACE_AFTER_APPROVED_PACKET",
+      "side": "BUY_OR_SELL",
+      "quantity": 0,
+      "price": 0,
+      "commission_cny": 0,
+      "execution_time": "YYYY-MM-DDTHH:MM:SS+08:00"
+    }
+  ],
+  "orders_authorized": false,
+  "capital_authorized": false
+}

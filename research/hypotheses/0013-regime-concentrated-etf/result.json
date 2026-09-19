@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0013-regime-concentrated-etf",
+  "record_type": "post_discovery_high_conviction_diagnostic",
+  "inputs": {
+    "spec_sha256": "227c90fd3209ef4e6628603bf640260cc405612be7618752527c29722dab1d0f",
+    "base_spec_sha256": "9e351225eaf37dec65c87e06b9dbd183c27c900df0c00aff2ac0f83503e461ef",
+    "price_sha256": {
+      "510300": "b585f1eb4bc8711fe43e0a7637913ea09a745225b7716f8c980d9263ed52066a",
+      "510500": "c2464afdbc996e39fe64118f4521c7f87112a8b85b5ce4408206947d71a3e5f4",
+      "159915": "db05d10e2e184fafa3e124a287034c378a0ca6cc04c00fa3f82ed653f73435bc",
+      "513500": "3e869c6c2f7b78bade5c7334afa0c88698c94283514a9863aa0349ddd7eaa55f",
+      "518880": "85ec4f2f19b9b2098fff16888e2d712d8ee7c7d9b1cf075310c70ac68eb2b326",
+      "511010": "90e677a00b701565fd1a9d8a52fbdc9afb566bea6ab7cff331acbce9d3ae6948"
+    }
+  },
+  "strategy": {
+    "start": "2022-01-01",
+    "first_market_date": "2022-01-04",
+    "end": "2026-08-31",
+    "observations": 1128,
+    "total_return": -0.0983,
+    "cagr": -0.02194796,
+    "annualized_volatility": 0.17348323,
+    "sharpe_zero_rate": -0.04584215,
+    "max_drawdown": -0.27782358
+  },
+  "benchmark": {
+    "start": "2022-01-01",
+    "first_market_date": "2022-01-04",
+    "end": "2026-08-31",
+    "observations": 1128,
+    "total_return": 0.0108,
+    "cagr": 0.00230656,
+    "annualized_volatility": 0.17640005,
+    "sharpe_zero_rate": 0.101665,
+    "max_drawdown": -0.32267206
+  },
+  "maximum_loss_from_initial_cny": 299.2,
+  "calendar_years": [
+    {
+      "year": 2022,
+      "start": "2022-01-01",
+      "first_market_date": "2022-01-04",
+      "end": "2022-12-30",
+      "observations": 241,
+      "total_return": -0.2397,
+      "cagr": -0.24099036,
+      "annualized_volatility": 0.1466541,
+      "sharpe_zero_rate": -1.87919418,
+      "max_drawdown": -0.25443116
+    },
+    {
+      "year": 2023,
+      "start": "2023-01-01",
+      "first_market_date": "2023-01-03",
+      "end": "2023-12-29",
+      "observations": 242,
+      "total_return": -0.02683151,
+      "cagr": -0.02706911,
+      "annualized_volatility": 0.08318278,
+      "sharpe_zero_rate": -0.29899088,
+      "max_drawdown": -0.1125744
+    },
+    {
+      "year": 2024,
+      "start": "2024-01-01",
+      "first_market_date": "2024-01-02",
+      "end": "2024-12-31",
+      "observations": 242,
+      "total_return": 0.324233,
+      "cagr": 0.32448775,
+      "annualized_volatility": 0.14062156,
+      "sharpe_zero_rate": 2.15134935,
+      "max_drawdown": -0.10903463
+    },
+    {
+      "year": 2025,
+      "start": "2025-01-01",
+      "first_market_date": "2025-01-02",
+      "end": "2025-12-31",
+      "observations": 243,
+      "total_return": 0.0,
+      "cagr": 0.0,
+      "annualized_volatility": 0.22749143,
+      "sharpe_zero_rate": 0.11477786,
+      "max_drawdown": -0.1780165
+    },
+    {
+      "year": 2026,
+      "start": "2026-01-01",
+      "first_market_date": "2026-01-05",
+      "end": "2026-08-31",
+      "observations": 160,
+      "total_return": -0.07971014,
+      "cagr": -0.11783151,
+      "annualized_volatility": 0.24612348,
+      "sharpe_zero_rate": -0.40860524,
+      "max_drawdown": -0.20310525
+    }
+  ],
+  "orders": 41,
+  "cost_cny": 205.0,
+  "diagnostics": {
+    "all_buys_are_lot_multiples": true,
+    "minimum_cash_cny": 3.7,
+    "cash_never_negative": true,
+    "ending_cash_cny": 556.1,
+    "ending_positions": {
+      "159915": 100
+    }
+  },
+  "checks": {
+    "net_total_return_positive": false,
+    "beats_executable_510300_buy_and_hold": false,
+    "maximum_historical_loss_within_sleeve": true,
+    "cash_never_negative": true,
+    "minimum_positive_calendar_years": false
+  },
+  "result": "REJECT_EXACT_RULE",
+  "interpretation_limit": "Post-discovery history can reject this rule, but cannot establish future profitability.",
+  "orders_authorized": false,
+  "capital_authorized": false
+}

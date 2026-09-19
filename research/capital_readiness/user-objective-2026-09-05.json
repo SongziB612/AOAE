@@ -1,0 +1,25 @@
+{
+  "record_type": "user_stated_research_objective_not_execution_authorization",
+  "recorded_date": "2026-09-05",
+  "initial_capital_cny": 300000,
+  "stated_loss_tolerance_cny": 100000,
+  "horizon_months": 12,
+  "horizon_start": null,
+  "user_return_objective_verbatim": "一年内，能涨多少涨多少",
+  "research_interpretation": "Seek higher net returns over twelve months subject to the stated loss tolerance; do not optimize unconstrained upside or treat tolerance as money to spend.",
+  "loss_reference_assumption": "Net loss from initial capital, adjusted for external deposits and withdrawals; not peak-to-trough drawdown.",
+  "loss_limit_guaranteed": false,
+  "return_forecast_established": false,
+  "financial_suitability_independently_verified": false,
+  "existing_paper_contracts_unchanged": true,
+  "required_research": [
+    "Audit corporate-action accounting and executable prices before relying on historical returns.",
+    "Evaluate 300000 CNY sizing with costs, liquidity, lot constraints and realistic execution.",
+    "Report independent out-of-sample economics, rolling twelve-month outcomes, drawdowns and stress losses; historical outcomes do not bound future loss.",
+    "Define operational risk thresholds separately before any live pilot; stated loss tolerance alone is not a trading policy."
+  ],
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false,
+  "leverage_authorized": false
+}

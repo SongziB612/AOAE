@@ -1,0 +1,46 @@
+{
+  "admission_id": "ADM-0002-polymarket-public-active-events",
+  "capital_authorized": false,
+  "decision": "quarantine_snapshot",
+  "next_experiment": "Design append-only recurring snapshots and an objective resolution-label contract without fitting a model.",
+  "preregistration_commit": "88dea51",
+  "record_type": "prospective_public_event_snapshot_admission",
+  "research_activity": {
+    "model_trials": 0,
+    "orders": 0,
+    "strategy_trials": 0
+  },
+  "result": {
+    "checks": {
+      "event_count_in_range": true,
+      "event_ids_unique_nonempty": true,
+      "events_are_open": true,
+      "events_is_list": true,
+      "market_ids_unique_nonempty": true,
+      "next_cursor_present": true,
+      "required_event_fields_present": true,
+      "required_market_fields_present": false,
+      "server_clock_skew_within_limit": false,
+      "server_date_present_and_parseable": false,
+      "top_level_object": true,
+      "within_byte_limit": true
+    },
+    "interpretation": "The captured response failed one or more preregistered admission checks and is quarantined from modeling.",
+    "status": "FAIL"
+  },
+  "schema_version": 1,
+  "snapshot": {
+    "bytes": 4777373,
+    "captured_at_utc": "2026-09-03T06:50:52.2792624Z",
+    "event_count": 100,
+    "local_path": "data/raw/prediction_markets/polymarket/active_events_initial.json",
+    "market_count": 1221,
+    "next_cursor": "Apcb5tJepEBY0x50gCIaTIR_mBLp063UIeXmXrRh1DR7InYiOjEsImsiOiJldmVudHMiLCJvaCI6IjRmNTNjZGExOGMyYmFhMGMwMzU0YmI1ZjlhM2VjYmU1ZWQxMmFiNGQ4ZTExYmE4NzNjMmYxMTE2MTIwMmI5NDUiLCJrZXlzIjpbeyJ0Ijoic3RyaW5nIiwidiI6IjU3MTg3In1dfQ",
+    "sha256": "5ac435cbe95e350c981968a4126eca122ee0ee6fa183b434b09cdcce4622c791"
+  },
+  "source": {
+    "authentication_used": false,
+    "http_date": null,
+    "url": "https://gamma-api.polymarket.com/events/keyset?closed=false&limit=100"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PRO-0001-etf-shadow-launch",
+  "record_type": "rejected_qlib_observer_signal",
+  "signal_date": "2026-08-31",
+  "paper_execution_date": "2026-09-01",
+  "best_iteration": 91,
+  "predictions": {
+    "159915": 0.01116091,
+    "510300": 0.01698482,
+    "510500": 0.00947301,
+    "513500": 0.01839384,
+    "518880": 0.01239253
+  },
+  "observer_weights": {
+    "510300": 0.5,
+    "513500": 0.5
+  },
+  "may_replace_champion": false,
+  "reason": "Qlib challenger failed the preregistered maximum-drawdown gate",
+  "orders_authorized": false,
+  "capital_authorized": false
+}

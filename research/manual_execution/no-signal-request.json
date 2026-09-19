@@ -1,0 +1,6 @@
+{
+  "signal": null,
+  "classification": "NO_SIGNAL_SUPPLIED_NOT_A_MARKET_SCAN",
+  "reason": "No admitted signal available in the inspected forward status; this input does not schedule or discover new signals.",
+  "inspected_status": "data/runtime/paired_forward/20260912T095037120605Z-706d7594/attempt-1/strategy-status.json"
+}

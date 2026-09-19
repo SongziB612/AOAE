@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "record_type": "preregistered_predictability_state_validation",
+  "source_batch": "../0021-bnb-websocket-100-market-forward/result.json",
+  "primary_decision_seconds_before_end": 120,
+  "execution_delay_ms": 500,
+  "shares_per_attempt": 5,
+  "minimum_initial_and_execution_depth": 5,
+  "market_split_by_start_time": {
+    "development": [1, 50],
+    "calibration": [51, 75],
+    "untouched_holdout": [76, 100]
+  },
+  "features": [
+    "absolute_displacement_bps",
+    "signal_aligned_velocity_10s_bps",
+    "realized_absolute_variation_30s_bps",
+    "signal_flip_count_30s",
+    "top_of_book_change_acceleration_5s_vs_20s",
+    "binary_market_overround",
+    "signed_top_depth_imbalance",
+    "signaled_ask"
+  ],
+  "causality_rule": "Only Chainlink ticks whose received_timestamp_ms is no later than the decision snapshot and only book snapshots no later than the decision snapshot may enter features.",
+  "model": {
+    "type": "StandardScaler_then_LogisticRegression",
+    "penalty": "l2",
+    "C": 1.0,
+    "solver": "lbfgs",
+    "random_state": 2201,
+    "probability_target": "signal_correct"
+  },
+  "action_rule": "Trade only when q_hat - visible_ask - taker_fee_per_share exceeds the calibration-selected buffer and five shares remain at the first WebSocket snapshot at or after 500ms.",
+  "calibration_edge_buffers": [0.0, 0.02, 0.05, 0.1],
+  "calibration_selection": "Among buffers with at least 10 calibration attempts and positive total delayed PnL, choose the largest buffer; if none qualify, reject without holdout optimization.",
+  "holdout_gate": {
+    "minimum_attempts": 10,
+    "total_delayed_fee_adjusted_pnl_must_be_positive": true,
+    "must_beat_unconditional_same_signal_baseline": true,
+    "maximum_drawdown_usd": 100,
+    "block_bootstrap_lower_confidence_bound_for_mean_pnl_must_be_positive": true,
+    "block_length_markets": 5,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 2201
+  },
+  "secondary_offsets_are_exploratory_only": [60, 30, 15, 5],
+  "advanced_method_gate": "Do not fit Hawkes, HMM, Koopman, neural SDE, or rough-volatility models unless this fixed interpretable state baseline beats the holdout baseline.",
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

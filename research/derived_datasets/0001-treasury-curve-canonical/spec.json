@@ -1,0 +1,51 @@
+{
+  "capital_authorized": false,
+  "columns": [
+    "observation_date",
+    "yield_1m_pct",
+    "yield_2m_pct",
+    "yield_3m_pct",
+    "yield_4m_pct",
+    "yield_6m_pct",
+    "yield_1y_pct",
+    "yield_2y_pct",
+    "yield_3y_pct",
+    "yield_5y_pct",
+    "yield_7y_pct",
+    "yield_10y_pct",
+    "yield_20y_pct",
+    "yield_30y_pct",
+    "spread_10y_2y_bps",
+    "spread_10y_3m_bps",
+    "spread_30y_10y_bps",
+    "change_2y_bps",
+    "change_10y_bps"
+  ],
+  "derivation_id": "DER-0001-treasury-curve-canonical",
+  "input": {
+    "admission_result_canonical_sha256": "b16748bba11d8e0c767bfb668bb86a614acc5045142c6be8a22905e24096abfb",
+    "admission_result_path": "../../data_admissions/0001-us-treasury-yield-curve/result.json",
+    "raw_snapshot_path": "data/raw/treasury/daily_treasury_yield_curve_2024.xml"
+  },
+  "next_experiment": "Preregister one economic curve-shape hypothesis, one benchmark, and one falsification rule before any backtest.",
+  "output": {
+    "decimal_places": 2,
+    "format": "csv",
+    "local_path": "data/processed/treasury/yield_curve_2024_canonical.csv",
+    "redistribution_authorized": false
+  },
+  "prohibited_columns": [
+    "signal",
+    "position",
+    "return",
+    "pnl",
+    "sharpe"
+  ],
+  "research_limits": {
+    "purpose": "descriptive_curve_invariants_only",
+    "strategy_mining_authorized": false,
+    "strategy_trials": 0
+  },
+  "schema_version": 1,
+  "title": "Canonical 2024 Treasury par-yield curve table"
+}

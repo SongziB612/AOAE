@@ -1,0 +1,20 @@
+{
+  "claim_id": "EG-CLAIM-001",
+  "claim": "Online multiplicative allocation automatically removes losing assets fast enough to prevent catastrophic loss",
+  "verdict": "REJECT",
+  "date_killed": "2026-09-15",
+  "experiment": "research/experiments/eg-0001/result-v1.json",
+  "independent_check": "research/experiments/eg-0001/independent-audit-v1.json",
+  "counterexample": {
+    "world": "permanent_loser",
+    "asset_daily_relatives": [1.001, 0.96],
+    "periods": 252,
+    "primary_learning_rate": 0.05,
+    "approximate_net_terminal_wealth_from_one": 0.0138,
+    "cost_multiplier": 1
+  },
+  "mechanism": "Online gradient learning has adjustment lag; a losing initial exposure can consume capital before adaptation removes enough risk.",
+  "rejection_scope": "Reject unconditional survival claim, not every EG application or the original paper's conditional regret theorem.",
+  "economic_samples": 0,
+  "capital_authorized": false
+}

@@ -1,0 +1,290 @@
+{
+  "capital_authorized": false,
+  "confidence": "infrastructure_negative_control_only",
+  "decision": "negative_control_rejected",
+  "evidence": {
+    "aggregate": {
+      "candidate_oos_mean_net_return": {
+        "maximum": 1.636913e-05,
+        "mean": -0.000474273393,
+        "median": -0.000492444739,
+        "minimum": -0.000872414529,
+        "sample_standard_deviation": 0.000201170553
+      },
+      "control_oos_mean_net_return": {
+        "maximum": -0.000264174187,
+        "mean": -0.000523413027,
+        "median": -0.000516360536,
+        "minimum": -0.000853186937,
+        "sample_standard_deviation": 0.00014738605
+      },
+      "false_positive_count": 0,
+      "false_positive_rate": 0.0,
+      "seed_count": 32,
+      "wilson_upper_bound_95": 0.107179198255
+    },
+    "seed_results": [
+      {
+        "candidate_oos_cumulative_net_return": -0.725165882572,
+        "candidate_oos_mean_net_return": -0.000593860405,
+        "control_oos_mean_net_return": -0.000555663595,
+        "false_positive": false,
+        "seed": 20260903
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.336126172822,
+        "candidate_oos_mean_net_return": -0.000154262157,
+        "control_oos_mean_net_return": -0.000459933328,
+        "false_positive": false,
+        "seed": 20260904
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.661638917435,
+        "candidate_oos_mean_net_return": -0.000489423897,
+        "control_oos_mean_net_return": -0.000494621918,
+        "false_positive": false,
+        "seed": 20260905
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.710104623666,
+        "candidate_oos_mean_net_return": -0.000569282155,
+        "control_oos_mean_net_return": -0.000420966642,
+        "false_positive": false,
+        "seed": 20260906
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.389644606134,
+        "candidate_oos_mean_net_return": -0.00019723482,
+        "control_oos_mean_net_return": -0.000618846137,
+        "false_positive": false,
+        "seed": 20260907
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.708954001983,
+        "candidate_oos_mean_net_return": -0.000567912119,
+        "control_oos_mean_net_return": -0.000573043354,
+        "false_positive": false,
+        "seed": 20260908
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.522767897346,
+        "candidate_oos_mean_net_return": -0.000320801193,
+        "control_oos_mean_net_return": -0.000631268663,
+        "false_positive": false,
+        "seed": 20260909
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.837400127137,
+        "candidate_oos_mean_net_return": -0.000861883159,
+        "control_oos_mean_net_return": -0.000676540236,
+        "false_positive": false,
+        "seed": 20260910
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.595075293073,
+        "candidate_oos_mean_net_return": -0.000404420739,
+        "control_oos_mean_net_return": -0.000512235899,
+        "false_positive": false,
+        "seed": 20260911
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.501905881572,
+        "candidate_oos_mean_net_return": -0.000300201461,
+        "control_oos_mean_net_return": -0.000390352424,
+        "false_positive": false,
+        "seed": 20260912
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.736701966347,
+        "candidate_oos_mean_net_return": -0.000614099446,
+        "control_oos_mean_net_return": -0.00028679945,
+        "false_positive": false,
+        "seed": 20260913
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.794951292312,
+        "candidate_oos_mean_net_return": -0.000743396487,
+        "control_oos_mean_net_return": -0.00041502621,
+        "false_positive": false,
+        "seed": 20260914
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.681091387778,
+        "candidate_oos_mean_net_return": -0.000520351795,
+        "control_oos_mean_net_return": -0.000726104314,
+        "false_positive": false,
+        "seed": 20260915
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.676711523839,
+        "candidate_oos_mean_net_return": -0.000517015553,
+        "control_oos_mean_net_return": -0.000462333279,
+        "false_positive": false,
+        "seed": 20260916
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.622381269146,
+        "candidate_oos_mean_net_return": -0.000435391438,
+        "control_oos_mean_net_return": -0.000632415738,
+        "false_positive": false,
+        "seed": 20260917
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.786449964326,
+        "candidate_oos_mean_net_return": -0.000722555256,
+        "control_oos_mean_net_return": -0.000343910618,
+        "false_positive": false,
+        "seed": 20260918
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.652349446152,
+        "candidate_oos_mean_net_return": -0.000478034572,
+        "control_oos_mean_net_return": -0.000264174187,
+        "false_positive": false,
+        "seed": 20260919
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.69011359189,
+        "candidate_oos_mean_net_return": -0.000533564573,
+        "control_oos_mean_net_return": -0.000422163404,
+        "false_positive": false,
+        "seed": 20260920
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.682756035872,
+        "candidate_oos_mean_net_return": -0.00052185159,
+        "control_oos_mean_net_return": -0.000404958486,
+        "false_positive": false,
+        "seed": 20260921
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.644838271695,
+        "candidate_oos_mean_net_return": -0.000466568919,
+        "control_oos_mean_net_return": -0.000687688019,
+        "false_positive": false,
+        "seed": 20260922
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.704102763646,
+        "candidate_oos_mean_net_return": -0.000558959649,
+        "control_oos_mean_net_return": -0.000396207397,
+        "false_positive": false,
+        "seed": 20260923
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.664695886465,
+        "candidate_oos_mean_net_return": -0.000495465581,
+        "control_oos_mean_net_return": -0.000601424207,
+        "false_positive": false,
+        "seed": 20260924
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.066681250895,
+        "candidate_oos_mean_net_return": 1.636913e-05,
+        "control_oos_mean_net_return": -0.000520485172,
+        "false_positive": false,
+        "seed": 20260925
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.671702318806,
+        "candidate_oos_mean_net_return": -0.000505543827,
+        "control_oos_mean_net_return": -0.000579419735,
+        "false_positive": false,
+        "seed": 20260926
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.646821278637,
+        "candidate_oos_mean_net_return": -0.000472074722,
+        "control_oos_mean_net_return": -0.000730728022,
+        "false_positive": false,
+        "seed": 20260927
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.412241813249,
+        "candidate_oos_mean_net_return": -0.000213570773,
+        "control_oos_mean_net_return": -0.000686941983,
+        "false_positive": false,
+        "seed": 20260928
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.842056078535,
+        "candidate_oos_mean_net_return": -0.000872414529,
+        "control_oos_mean_net_return": -0.000732773767,
+        "false_positive": false,
+        "seed": 20260929
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.614194726725,
+        "candidate_oos_mean_net_return": -0.000427331958,
+        "control_oos_mean_net_return": -0.000532588735,
+        "false_positive": false,
+        "seed": 20260930
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.650296774094,
+        "candidate_oos_mean_net_return": -0.00047377395,
+        "control_oos_mean_net_return": -0.000429031766,
+        "false_positive": false,
+        "seed": 20260931
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.40095879209,
+        "candidate_oos_mean_net_return": -0.000207145726,
+        "control_oos_mean_net_return": -0.00031443168,
+        "false_positive": false,
+        "seed": 20260932
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.433541751245,
+        "candidate_oos_mean_net_return": -0.000232652649,
+        "control_oos_mean_net_return": -0.000853186937,
+        "false_positive": false,
+        "seed": 20260933
+      },
+      {
+        "candidate_oos_cumulative_net_return": -0.787862847565,
+        "candidate_oos_mean_net_return": -0.000722072613,
+        "control_oos_mean_net_return": -0.000392951546,
+        "false_positive": false,
+        "seed": 20260934
+      }
+    ]
+  },
+  "experiment_id": "EXP-0003-iid-negative-control",
+  "failure_modes": [
+    "Gaussian IID returns are much simpler than real markets.",
+    "Thirty-two seeds only bound, rather than eliminate, the false-positive probability.",
+    "Rejecting this null does not prove that future real-data discoveries are valid.",
+    "The negative control tests one strategy and one cost model only."
+  ],
+  "hypothesis": "On independent IID candidate and control series, the unchanged opportunity rule will produce false positives on at most 10% of seeds and the two-sided 95% Wilson upper bound will not exceed 20%.",
+  "method": {
+    "bias_controls": [
+      "The candidate and control are independent IID Gaussian return series with no injected autocorrelation.",
+      "Seeds and thresholds are inherited from a digest-bound preregistration before execution.",
+      "Every declared seed is reported; no false positive may be hidden.",
+      "The lagged rule, sample size, split, and turnover cost match the positive-control experiments."
+    ],
+    "control_seed_offset": 1000003,
+    "cost_bps_per_unit_turnover": 5.0,
+    "data": "independent_iid_gaussian_candidate_and_control",
+    "samples_per_series": 5000,
+    "seed_count": 32,
+    "seed_source_sha256": "4b14660e3a4423ad3c319e4a25b47f3bf6d3339d7f8d2b8890099f0e9aa6be59",
+    "sigma": 0.01,
+    "signal_lag": 1,
+    "strategy": "lagged_sign_reversal",
+    "train_fraction": 0.6
+  },
+  "next_experiment": "Define the first real-data due-diligence contract: provider, instrument universe, timestamps, survivorship controls, costs, licenses, and a no-capital exploration budget.",
+  "record_type": "independent_iid_negative_control",
+  "result": {
+    "checks": {
+      "false_positive_rate_at_most_maximum": true,
+      "wilson_upper_bound_at_most_maximum": true
+    },
+    "interpretation": "The research rule rejected the independent IID null at the preregistered aggregate gate. This validates a negative control only, not a market edge.",
+    "status": "PASS"
+  },
+  "schema_version": 1
+}

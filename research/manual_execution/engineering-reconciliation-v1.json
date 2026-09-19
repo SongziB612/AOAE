@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE_REPORTED",
+  "ticket_id": "9b282322ab58a116c9e67470128e1450f869637c986e7818d9959ce2dec58c27",
+  "violations": [],
+  "details": [
+    {
+      "fill_id": "DEMO-NOT-A-BROKER-FILL",
+      "adverse_slippage_bps": "0",
+      "seconds_after_model_open": 70.0
+    }
+  ],
+  "reported_cash_cny": "5185.600",
+  "reported_positions": {
+    "510300": 1200
+  },
+  "reported_total_fees_cny": "14.4",
+  "ledger_valid": true,
+  "broker_authenticated": false,
+  "unfilled": {
+    "510300:BUY": 0
+  },
+  "follow_up": "Confirm broker order status; never automatically resubmit missing quantity.",
+  "automatic_follow_up_allowed": false,
+  "capital_authorized": false,
+  "input_rows_sha256": "5b224093713d2a172a76cf3032934a0cd8df64b5b1dce70d67b31c98a14c9858"
+}

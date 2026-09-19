@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "provider": "Sina via AKShare fund_etf_hist_sina",
+  "adapter_version": "1.18.94",
+  "requested_end_date": "2026-08-31",
+  "files": {
+    "510300": {
+      "rows": 1372,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "42f83f734bba82c66e0f30e7c5e3e7516fe197238565639b1851131ce3414787"
+    },
+    "510500": {
+      "rows": 1372,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "cecb35d0ad7f8246ed7685d193775d48d22054008a0454a6d3b3af62c04489ab"
+    },
+    "159915": {
+      "rows": 1371,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "f6a3743ea284538597ca9f15d6e0a90966aef45bdb517f716365a0ed5c6aefc8"
+    },
+    "512480": {
+      "rows": 1371,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "6b49ff813d427fb341fb933626216f867b57fe34fb8e3509cd1069dd15333c33"
+    },
+    "512660": {
+      "rows": 1372,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "9e3b4c132b95bd8045f39e7e89513ea177519fcd296e0f66d7eb57f450f45b70"
+    },
+    "512170": {
+      "rows": 1371,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "d1e65a8831b6760ee4f473000a33275822ed4c11d068791677cb288540ecf4bd"
+    },
+    "515790": {
+      "rows": 1372,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "c707ddc29b19ba533e5fdf06d57a3332e32d9f877b4af2ee19f7ebf03a998ff1"
+    },
+    "513500": {
+      "rows": 1371,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "b682a65bd7559578857def4d899d7454c5b88bd6b2a7f4c45a9388e06988a5b9"
+    },
+    "518880": {
+      "rows": 1372,
+      "first_date": "2021-01-04",
+      "last_market_date": "2026-08-31",
+      "sha256": "32f8b9677914f6381fd3e8d0ab8df7b8a976142d03fe5ecb554d0d6a761b0379"
+    }
+  },
+  "orders_authorized": false,
+  "capital_authorized": false
+}

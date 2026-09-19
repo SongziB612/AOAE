@@ -1,0 +1,43 @@
+{
+  "bias_controls": [
+    "The hypothesis and thresholds are fixed in this specification before execution.",
+    "Exactly one declared trial is permitted; there is no parameter search.",
+    "The signal at t uses only the return at t-1.",
+    "The out-of-sample segment is contiguous and never used for fitting or selection.",
+    "A paired IID control uses the identical innovation sequence.",
+    "Transaction costs are charged on every unit of turnover."
+  ],
+  "capital_authorized": false,
+  "confidence": "infrastructure_only",
+  "data": {
+    "control_phi": 0.0,
+    "kind": "paired_ar1",
+    "samples": 5000,
+    "seed": 20260902,
+    "sigma": 0.01,
+    "structured_phi": -0.25
+  },
+  "decision_rule": {
+    "min_structured_oos_cumulative_return": 0.0,
+    "require_structured_oos_mean_above_control": true
+  },
+  "experiment_id": "EXP-0001-synthetic-mean-reversion",
+  "failure_modes": [
+    "Synthetic AR(1) returns omit market microstructure, liquidity, impact, and regime changes.",
+    "A single seed cannot establish statistical robustness.",
+    "Known injected structure is an infrastructure check, not evidence of market predictability.",
+    "The simplified cost model is not calibrated to any venue or instrument."
+  ],
+  "hypothesis": "A one-period lagged reversal rule will recover deliberately injected negative autocorrelation out of sample after fixed turnover costs, and its mean net return will exceed a paired IID control.",
+  "method": {
+    "annualization_periods": 252,
+    "cost_bps": 5.0,
+    "signal_lag": 1,
+    "strategy": "lagged_sign_reversal",
+    "train_fraction": 0.6,
+    "trial_count": 1
+  },
+  "next_experiment": "Add independent property-based invariants and a preregistered multi-seed sensitivity analysis without selecting the best seed.",
+  "schema_version": 1,
+  "title": "Synthetic mean-reversion research-pipeline smoke test"
+}

@@ -1,0 +1,63 @@
+{
+  "capital_authorized": false,
+  "confidence": "single_holdout_slope_structure_only",
+  "data": {
+    "first_date": "2023-01-03",
+    "last_date": "2023-12-29",
+    "missing_required_rows": 0,
+    "rows": 250,
+    "snapshot_bytes": 284423,
+    "snapshot_sha256": "43606b6a4a9f10c6b51194240c78afc6b0a31ed3acb128f0ee2fcb423d78d3c6",
+    "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2023"
+  },
+  "decision": "slope_structure_supported",
+  "evidence": {
+    "inversion_count": 250,
+    "inversion_rate": 1.0,
+    "maximum_two_year_minus_ten_year_bps": 108.0,
+    "mean_two_year_minus_ten_year_bps": 62.396,
+    "median_two_year_minus_ten_year_bps": 64.5,
+    "minimum_two_year_minus_ten_year_bps": 13.0
+  },
+  "failure_modes": [
+    "One calendar year may not represent other monetary-policy or inflation regimes.",
+    "CMT values are theoretical constant-maturity par yields, not transaction prices.",
+    "A persistent inverted curve does not establish causation, future returns, timing ability, or a profitable trade.",
+    "The selected 2-year and 10-year tenors do not describe every part of the yield curve."
+  ],
+  "hypothesis": "On the untouched 2023 Treasury holdout, the 2-year CMT yield will exceed the 10-year CMT yield on at least 80% of complete published observations.",
+  "hypothesis_id": "HYP-0002-treasury-slope-inversion",
+  "method": {
+    "benchmark_inversion_rate": 0.5,
+    "bias_controls": [
+      "The 2023 source snapshot must not enter the project before this specification is committed.",
+      "The entire 2023 period is a single untouched holdout; no training or parameter selection is performed.",
+      "Only one decision metric and one threshold are permitted.",
+      "Every complete published observation is used with no calendar interpolation or missing-value imputation.",
+      "The result describes contemporaneous slope structure and cannot be represented as prediction or tradable alpha."
+    ],
+    "imputation": "none",
+    "metric": "share_of_observations_above_zero",
+    "minimum_inversion_rate": 0.8,
+    "minimum_observations": 240,
+    "trading_costs": "not_applicable_no_trading",
+    "transformation": "two_year_minus_ten_year_spread_basis_points",
+    "trial_count": 1
+  },
+  "next_experiment": "If supported, preregister one temporal slope hypothesis on a new untouched holdout; if falsified, preserve the failure and reassess the regime premise.",
+  "preregistration_commit": "42b6dfc",
+  "record_type": "preregistered_real_data_economic_structure_test",
+  "result": {
+    "checks": {
+      "dates_unique_and_increasing": true,
+      "dates_within_holdout": true,
+      "minimum_inversion_rate_met": true,
+      "required_fields_complete": true,
+      "row_count_within_bounds": true
+    },
+    "interpretation": "The untouched holdout supports the preregistered persistent-inversion threshold. This describes slope structure, not prediction or alpha.",
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "strategy_mining_authorized": false
+}

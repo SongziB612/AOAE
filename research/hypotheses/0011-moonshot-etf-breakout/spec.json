@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0011-moonshot-etf-breakout",
+  "title": "3000 CNY bounded-loss high-volatility ETF breakout sleeve",
+  "hypothesis": "A fixed long-only breakout rule can concentrate a 3000 CNY sleeve into persistent high-volatility ETF trends while limiting losses to the funded sleeve and avoiding leverage.",
+  "economic_mechanism": "Behavioral underreaction and slow institutional/retail fund flows can create trend persistence after multi-month price breakouts; false breakouts pay for the infrequent large winners.",
+  "data": {
+    "provider": "Sina via AKShare fund_etf_hist_sina",
+    "frequency": "daily",
+    "adjustment": "unadjusted",
+    "start_date": "2021-01-04",
+    "end_date": "2026-08-31",
+    "universe": {
+      "510300": "CSI 300 ETF",
+      "510500": "CSI 500 ETF",
+      "159915": "ChiNext ETF",
+      "512480": "Semiconductor ETF",
+      "512660": "Defense Industry ETF",
+      "512170": "Healthcare ETF",
+      "515790": "Photovoltaic ETF",
+      "513500": "S&P 500 ETF QDII",
+      "518880": "Gold ETF"
+    }
+  },
+  "method": {
+    "signal_at_close": "close strictly above the highest close of the prior 55 trading days",
+    "selection": "highest 63-trading-day return among simultaneous breakouts; symbol ascending as deterministic tie-break",
+    "exit_at_close": "close strictly below the lowest close of the prior 20 trading days",
+    "execution": "next common available open",
+    "position_count": 1,
+    "initial_and_maximum_capital_cny": 3000,
+    "long_only": true,
+    "leverage": false,
+    "buy_lot_size_shares": 100,
+    "commission_rate_one_way": 0.0015,
+    "minimum_commission_per_order_cny": 5,
+    "slippage_bps_one_way": 10,
+    "idle_cash_return": 0,
+    "parameter_trials": 1
+  },
+  "qualification_period": ["2022-01-01", "2026-08-31"],
+  "decision_rule": {
+    "net_total_return_positive": true,
+    "minimum_closed_trades": 10,
+    "profit_factor_above_one": true,
+    "maximum_loss_not_above_funded_sleeve_cny": 3000,
+    "must_beat_executable_159915_buy_and_hold": true
+  },
+  "known_limits": [
+    "The universe uses present-day knowledge and has survivorship and selection bias.",
+    "Daily bars cannot prove stop or next-open fill quality during gaps.",
+    "This qualification period is not a pristine untouched holdout.",
+    "A total loss of the 3000 CNY sleeve remains possible."
+  ],
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false,
+  "next_step_if_pass": "start a 90-day forward local paper sleeve without changing parameters",
+  "next_step_if_fail": "reject this exact rule without tuning the qualification period"
+}

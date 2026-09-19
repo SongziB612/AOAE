@@ -1,0 +1,105 @@
+{
+  "capital_authorized": false,
+  "confidence": "infrastructure_only",
+  "decision": "infrastructure_validated",
+  "evidence": {
+    "data": {
+      "control_phi": 0.0,
+      "kind": "paired_ar1",
+      "paired_innovations": true,
+      "samples": 5000,
+      "seed": 20260902,
+      "sigma": 0.01,
+      "structured_phi": -0.25
+    },
+    "metrics": {
+      "control": {
+        "in_sample": {
+          "annualized_sharpe": -1.0311705352,
+          "cumulative_net_return": -0.876092814306,
+          "max_drawdown": -0.881827388532,
+          "mean_gross_return": -0.000153138935,
+          "mean_net_return": -0.000646305602,
+          "net_volatility": 0.009949647524,
+          "observations": 3000,
+          "transaction_cost": 1.4795,
+          "turnover": 2959.0
+        },
+        "out_of_sample": {
+          "annualized_sharpe": -0.832336315216,
+          "cumulative_net_return": -0.692681063025,
+          "max_drawdown": -0.718446117722,
+          "mean_gross_return": -5.078758e-05,
+          "mean_net_return": -0.00053728758,
+          "net_volatility": 0.010247271161,
+          "observations": 2000,
+          "transaction_cost": 0.973,
+          "turnover": 1946.0
+        }
+      },
+      "structured": {
+        "in_sample": {
+          "annualized_sharpe": 2.258713713576,
+          "cumulative_net_return": 61.865554701702,
+          "max_drawdown": -0.198430903052,
+          "mean_gross_return": 0.002007015289,
+          "mean_net_return": 0.001431848622,
+          "net_volatility": 0.010063201937,
+          "observations": 3000,
+          "transaction_cost": 1.7255,
+          "turnover": 3451.0
+        },
+        "out_of_sample": {
+          "annualized_sharpe": 2.266674115303,
+          "cumulative_net_return": 16.236611987211,
+          "max_drawdown": -0.173431306188,
+          "mean_gross_return": 0.002056498407,
+          "mean_net_return": 0.001477998407,
+          "net_volatility": 0.010351067751,
+          "observations": 2000,
+          "transaction_cost": 1.157,
+          "turnover": 2314.0
+        }
+      }
+    }
+  },
+  "experiment_id": "EXP-0001-synthetic-mean-reversion",
+  "failure_modes": [
+    "Synthetic AR(1) returns omit market microstructure, liquidity, impact, and regime changes.",
+    "A single seed cannot establish statistical robustness.",
+    "Known injected structure is an infrastructure check, not evidence of market predictability.",
+    "The simplified cost model is not calibrated to any venue or instrument."
+  ],
+  "hypothesis": "A one-period lagged reversal rule will recover deliberately injected negative autocorrelation out of sample after fixed turnover costs, and its mean net return will exceed a paired IID control.",
+  "method": {
+    "annualization_periods": 252,
+    "bias_controls": [
+      "The hypothesis and thresholds are fixed in this specification before execution.",
+      "Exactly one declared trial is permitted; there is no parameter search.",
+      "The signal at t uses only the return at t-1.",
+      "The out-of-sample segment is contiguous and never used for fitting or selection.",
+      "A paired IID control uses the identical innovation sequence.",
+      "Transaction costs are charged on every unit of turnover."
+    ],
+    "cost_bps_per_unit_turnover": 5.0,
+    "signal_lag": 1,
+    "split": {
+      "kind": "contiguous_preregistered",
+      "out_of_sample_start_inclusive": 3000,
+      "train_end_exclusive": 3000
+    },
+    "strategy": "lagged_sign_reversal",
+    "trial_count": 1
+  },
+  "next_experiment": "Add independent property-based invariants and a preregistered multi-seed sensitivity analysis without selecting the best seed.",
+  "record_type": "synthetic_infrastructure_smoke_test",
+  "result": {
+    "checks": {
+      "structured_oos_cumulative_return_above_minimum": true,
+      "structured_oos_mean_return_above_control": true
+    },
+    "interpretation": "The deterministic runner recovered the deliberately injected structure out of sample. This validates only the experiment plumbing, not a market edge.",
+    "status": "PASS"
+  },
+  "schema_version": 1
+}

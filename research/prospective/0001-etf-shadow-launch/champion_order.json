@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PRO-0001-etf-shadow-launch",
+  "record_type": "paper_shadow_launch_order",
+  "classification": "backfilled_launch_order_created_after_execution_date; excluded_from_prospective_performance claims",
+  "signal_date": "2026-08-31",
+  "paper_execution_date": "2026-09-01",
+  "model": "frozen_monthly_dual_momentum_champion",
+  "scores": {
+    "510300": 0.05002717,
+    "510500": 0.01832169,
+    "159915": 0.18133218,
+    "513500": 0.09140985,
+    "518880": -0.04461245
+  },
+  "target_weights": {
+    "159915": 0.5,
+    "513500": 0.5
+  },
+  "paper_order": {
+    "initial_capital_cny": 100000.0,
+    "one_way_cost_bps": 15.0,
+    "estimated_cost_cny": 150.0,
+    "fractional_accounting": true,
+    "legs": [
+      {
+        "symbol": "159915",
+        "side": "BUY",
+        "target_weight": 0.5,
+        "paper_fill_open": 3.452,
+        "paper_quantity": 14462.630359,
+        "paper_notional_cny": 49925.0
+      },
+      {
+        "symbol": "513500",
+        "side": "BUY",
+        "target_weight": 0.5,
+        "paper_fill_open": 2.71,
+        "paper_quantity": 18422.509225,
+        "paper_notional_cny": 49925.0
+      }
+    ]
+  },
+  "observed_paper_equity": {
+    "2026-09-01": 99382.03,
+    "2026-09-02": 96941.99
+  },
+  "observed_return_through_data_end": -0.03058013,
+  "inputs": {
+    "frozen_price_sha256": {
+      "510300": "b585f1eb4bc8711fe43e0a7637913ea09a745225b7716f8c980d9263ed52066a",
+      "510500": "c2464afdbc996e39fe64118f4521c7f87112a8b85b5ce4408206947d71a3e5f4",
+      "159915": "db05d10e2e184fafa3e124a287034c378a0ca6cc04c00fa3f82ed653f73435bc",
+      "513500": "3e869c6c2f7b78bade5c7334afa0c88698c94283514a9863aa0349ddd7eaa55f",
+      "518880": "85ec4f2f19b9b2098fff16888e2d712d8ee7c7d9b1cf075310c70ac68eb2b326",
+      "511010": "90e677a00b701565fd1a9d8a52fbdc9afb566bea6ab7cff331acbce9d3ae6948"
+    },
+    "execution_snapshot_sha256": {
+      "510300": "c0fe91bce07f12cd331d866605f5ae8a3201d6397300c7c9e5bfa3bff1be0eec",
+      "510500": "fcc023afbe15cad65de84d45d60a345b68f8a14a553ca59f6cd03adabc694935",
+      "159915": "f8dbdd5a772fab582abb9f57feae506512e1f397ca17bca7547e29f4d44c02b1",
+      "513500": "8a304e1940f7e701ef105b0476c634d517591317a328fa3d7d5c039d333a15a3",
+      "518880": "18b3e6c08b31307396653b3f18a855ef95e15a2a56f1e935a12d4b832dd7ca6a",
+      "511010": "0864ada066cb6429b82cacafe95a5ccb09174d2cc5d8e8da58aabacc0bf0c2c5"
+    }
+  },
+  "prospective_score_eligible": false,
+  "reason_not_prospective": "order record was created on 2026-09-03 after the 2026-09-01 paper execution date",
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "broker_connection_authorized": false
+}

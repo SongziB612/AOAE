@@ -1,0 +1,50 @@
+{
+  "experiment_id": "PRO-0003-raw-price-300k-paired-forward",
+  "frozen_at_utc": "2026-09-05T11:18:26.832840+00:00",
+  "status": "FROZEN_NOT_SCHEDULED",
+  "initial_paper_capital_per_arm_cny": 300000,
+  "arms": [
+    "causal_total_return_momentum_overlay",
+    "monthly_same_universe_equal_weight",
+    "monthly_same_universe_exposure_matched_equal_weight"
+  ],
+  "objective": "Measure paired after-cost incremental economics on new evidence, not maximize historical Sharpe.",
+  "historical_data_is_not_forward_evidence": true,
+  "signal_rule": "First verified common month-end after freeze; save timestamped signal and inputs before its execution window.",
+  "execution_rule": "No retrospective next-open fills accepted as observed execution; late signals are missed, not backfilled.",
+  "evaluation": "Monthly paired reports; fixed twelve-month evaluation after first eligible presaved signal; no automatic capital pass based on elapsed time.",
+  "risk_pause_loss_cny": 100000,
+  "live_loss_limit_guaranteed": false,
+  "funds_are_simulated_only": true,
+  "observed_forward_signals": 0,
+  "observed_forward_fills": 0,
+  "missing_operational_capabilities": [
+    "timestamped pre-execution signal collector",
+    "raw daily update and verified future corporate actions",
+    "separate comparable three-arm forward ledger",
+    "measured execution evidence admission"
+  ],
+  "changes_require_new_experiment_id_and_no_score_splicing": true,
+  "input_sha256": {
+    "src/aoae/corporate_action_replay.py": "001e4088a8292c190386da96804caaaae90b3d84a62a86ff139881140cda4dbd",
+    "src/aoae/etf_momentum.py": "a112b6f5f8b993c66ef09ca4b273f7554b5495ebcf6a6a92c4128f16788da90a",
+    "src/aoae/etf_risk_overlay.py": "71d612212c383f4d3e798057c39dd7a5a93601e3da5cf1deb3bedc7cf0600427",
+    "src/aoae/small_account.py": "d00974968e528f0b3cd41095db84592eff99633a08eae2a4ebf1a28e4844d7e0",
+    "src/aoae/independent_cash_ledger.py": "a4dd222b1f1e8ed21b38a8a2675d44c8d2a55b35415dccb6b6d9e1ff006d1070",
+    "scripts/challenge_300k_baselines.py": "91209cda18923f7a107a533f6646760ef1e17acfbc996f8ebbac7f04b7825612",
+    "scripts/run_300k_accounting_replay.py": "46c6c5c6296707b6790312c355a78f794c774ca4fe7a8ab0f2c361933148d39f",
+    "research/hypotheses/0004-cn-etf-dual-momentum/spec.json": "9e351225eaf37dec65c87e06b9dbd183c27c900df0c00aff2ac0f83503e461ef",
+    "research/capital_readiness/first-principles-comparison-spec.json": "646c1d3525bdb8578d5f0ec5131db0611fe3b64c1e90b13a6f97724089397e34",
+    "research/capital_readiness/300k-accounting-replay-v4.json": "785d2ad99ad9fdbef30aea664130383a9a92742a06364378fc01ae3113613eb7",
+    "research/capital_readiness/verified-split-timing-2026-09-05.json": "f5441288960a72757ee3d79dca6f0673752b1169718a8c3f1599aa4475b72f86",
+    "data/audit/etf-accounting-2026-09-05-v4/510300.csv": "c31426731a8cbecc2199a03a2ae72bd82d188bd5b20f67da5cd52e9d19ee6b40",
+    "data/audit/etf-accounting-2026-09-05-v4/510500.csv": "1495d1febdb78b49b1c18ca3ebfe0aa3263824ffa0fff5528101c72d6ddb3ff5",
+    "data/audit/etf-accounting-2026-09-05-v4/159915.csv": "f9c9dfad6e1ef4c3857937990714e0f01e972395ff577d897672e0e45c1ae552",
+    "data/audit/etf-accounting-2026-09-05-v4/513500.csv": "e1e734c0f7df7b82f62a4245af0ea79d578978a09e91f0e6484104a5be7cc113",
+    "data/audit/etf-accounting-2026-09-05-v4/518880.csv": "17991dc17b2d85452e391c0fec2f2eab4102caf415c6dba6d261f52805bee108",
+    "data/audit/etf-accounting-2026-09-05-v4/511010.csv": "e920f1e1cc82e604000c5d3404dc176da1b3de18ec8987acc7ad214858d2ee30"
+  },
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "broker_connection_authorized": false
+}

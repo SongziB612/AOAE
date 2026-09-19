@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "record_type": "public_market_rule_drift_audit",
+  "markets": [
+    {"label": "wallet_session_2026_07_17", "slug": "bnb-updown-5m-1784279400"},
+    {"label": "thirty_second_twap_2026_08_07", "slug": "bnb-updown-5m-1786108800"},
+    {"label": "sixty_second_twap_2026_09_03", "slug": "bnb-updown-5m-1788420000"}
+  ],
+  "orders_authorized": false,
+  "authentication_authorized": false,
+  "capital_authorized": false
+}

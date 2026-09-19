@@ -1,0 +1,1363 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "HYP-0006-volatility-controlled-etf-overlay",
+  "record_type": "post_holdout_historical_risk_diagnostic",
+  "inputs": {
+    "spec_sha256": "2d2a6f59a7879d6ebfcb2dbcf6603422147f473a0b580eecf7abaceaf44e7999",
+    "price_sha256": {
+      "510300": "b585f1eb4bc8711fe43e0a7637913ea09a745225b7716f8c980d9263ed52066a",
+      "510500": "c2464afdbc996e39fe64118f4521c7f87112a8b85b5ce4408206947d71a3e5f4",
+      "159915": "db05d10e2e184fafa3e124a287034c378a0ca6cc04c00fa3f82ed653f73435bc",
+      "513500": "3e869c6c2f7b78bade5c7334afa0c88698c94283514a9863aa0349ddd7eaa55f",
+      "518880": "85ec4f2f19b9b2098fff16888e2d712d8ee7c7d9b1cf075310c70ac68eb2b326",
+      "511010": "90e677a00b701565fd1a9d8a52fbdc9afb566bea6ab7cff331acbce9d3ae6948"
+    }
+  },
+  "diagnostic": {
+    "risk_overlay": {
+      "start": "2022-01-01",
+      "first_market_date": "2022-01-04",
+      "end": "2026-08-31",
+      "observations": 1128,
+      "total_return": 0.67774544,
+      "cagr": 0.11737256,
+      "annualized_volatility": 0.1211002,
+      "sharpe_zero_rate": 1.01563474,
+      "max_drawdown": -0.18418414
+    },
+    "champion": {
+      "start": "2022-01-01",
+      "first_market_date": "2022-01-04",
+      "end": "2026-08-31",
+      "observations": 1128,
+      "total_return": 0.48027627,
+      "cagr": 0.08776273,
+      "annualized_volatility": 0.17842262,
+      "sharpe_zero_rate": 0.58101131,
+      "max_drawdown": -0.21983345
+    },
+    "risk_overlay_calmar": 0.63725661,
+    "champion_calmar": 0.39922373,
+    "checks": {
+      "total_return_positive": true,
+      "cagr_at_least_80_percent_of_champion": true,
+      "max_drawdown_at_least_10_percent_less_severe_than_champion": true,
+      "calmar_ratio_above_champion": true,
+      "sharpe_above_champion": true
+    }
+  },
+  "execution_summary": {
+    "rebalances": 56,
+    "average_risk_exposure": 0.75924743,
+    "cost_cny": 8484.93
+  },
+  "diagnostic_rebalances": [
+    {
+      "signal_date": "2021-12-31",
+      "execution_date": "2022-01-04",
+      "weights": {
+        "510500": 0.519553,
+        "159915": 0.362041,
+        "511010": 0.118405
+      },
+      "scores": {
+        "510300": -0.03983364,
+        "510500": 0.12811575,
+        "159915": 0.1314759,
+        "513500": 0.12630896,
+        "518880": -0.03675529
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.88159467,
+        "estimated_full_risk_volatility": 0.13611698,
+        "trailing_volatility_510500": 0.12459618,
+        "trailing_volatility_159915": 0.17880389
+      },
+      "turnover": 1.33848201,
+      "cost_cny": 386.7639
+    },
+    {
+      "signal_date": "2022-01-28",
+      "execution_date": "2022-02-07",
+      "weights": {
+        "510500": 0.49346,
+        "513500": 0.466775,
+        "511010": 0.039764
+      },
+      "scores": {
+        "510300": -0.05298472,
+        "510500": 0.10631102,
+        "159915": 0.01918579,
+        "513500": 0.15788363,
+        "518880": -0.02869229
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.9602357,
+        "estimated_full_risk_volatility": 0.12496932,
+        "trailing_volatility_510500": 0.14220056,
+        "trailing_volatility_513500": 0.15033007
+      },
+      "turnover": 0.93355047,
+      "cost_cny": 243.562
+    },
+    {
+      "signal_date": "2022-02-28",
+      "execution_date": "2022-03-01",
+      "weights": {
+        "510500": 0.433229,
+        "513500": 0.319417,
+        "511010": 0.247354
+      },
+      "scores": {
+        "510300": -0.06654151,
+        "510500": 0.07929983,
+        "159915": -0.05277471,
+        "513500": 0.05194414,
+        "518880": 0.00069112
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.75264641,
+        "estimated_full_risk_volatility": 0.15943742,
+        "trailing_volatility_510500": 0.15650114,
+        "trailing_volatility_513500": 0.21226414
+      },
+      "turnover": 0.41575801,
+      "cost_cny": 108.7116
+    },
+    {
+      "signal_date": "2022-03-31",
+      "execution_date": "2022-04-01",
+      "weights": {
+        "510500": 0.37099,
+        "518880": 0.576591,
+        "511010": 0.05242
+      },
+      "scores": {
+        "510300": -0.06697598,
+        "510500": 0.02230748,
+        "159915": -0.00348194,
+        "513500": 0.01402492,
+        "518880": 0.05098951
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.9475802,
+        "estimated_full_risk_volatility": 0.12663836,
+        "trailing_volatility_510500": 0.24662093,
+        "trailing_volatility_518880": 0.15868066
+      },
+      "turnover": 1.15318131,
+      "cost_cny": 294.6492
+    },
+    {
+      "signal_date": "2022-04-29",
+      "execution_date": "2022-05-05",
+      "weights": {
+        "513500": 0.384997,
+        "518880": 0.615003
+      },
+      "scores": {
+        "510300": -0.17144488,
+        "510500": -0.04867957,
+        "159915": -0.14166922,
+        "513500": 0.03011231,
+        "518880": 0.07109267
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.1170422,
+        "trailing_volatility_513500": 0.25971039,
+        "trailing_volatility_518880": 0.16258102
+      },
+      "turnover": 0.78834979,
+      "cost_cny": 195.1572
+    },
+    {
+      "signal_date": "2022-05-31",
+      "execution_date": "2022-06-01",
+      "weights": {
+        "518880": 0.5,
+        "511010": 0.5
+      },
+      "scores": {
+        "510300": -0.22927385,
+        "510500": -0.20791278,
+        "159915": -0.28948771,
+        "513500": -0.02350164,
+        "518880": 0.04147742
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.15411109,
+        "trailing_volatility_518880": 0.15411109
+      },
+      "turnover": 1.0,
+      "cost_cny": 240.7152
+    },
+    {
+      "signal_date": "2022-06-30",
+      "execution_date": "2022-07-01",
+      "weights": {
+        "518880": 0.5,
+        "511010": 0.5
+      },
+      "scores": {
+        "510300": -0.20095278,
+        "510500": -0.13497865,
+        "159915": -0.27944988,
+        "513500": -0.02900803,
+        "518880": 0.05387429
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.1071718,
+        "trailing_volatility_518880": 0.1071718
+      },
+      "turnover": 0.00595758,
+      "cost_cny": 1.4225
+    },
+    {
+      "signal_date": "2022-07-29",
+      "execution_date": "2022-08-01",
+      "weights": {
+        "518880": 0.5,
+        "511010": 0.5
+      },
+      "scores": {
+        "510300": -0.0922914,
+        "510500": -0.07333945,
+        "159915": -0.14841105,
+        "513500": -0.12353096,
+        "518880": 0.04310415
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.11353235,
+        "trailing_volatility_518880": 0.11353235
+      },
+      "turnover": 0.00986463,
+      "cost_cny": 2.3469
+    },
+    {
+      "signal_date": "2022-08-31",
+      "execution_date": "2022-09-01",
+      "weights": {
+        "518880": 0.5,
+        "511010": 0.5
+      },
+      "scores": {
+        "510300": -0.13133056,
+        "510500": -0.09722045,
+        "159915": -0.12232262,
+        "513500": -0.00551907,
+        "518880": 0.01652322
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.10431117,
+        "trailing_volatility_518880": 0.10431117
+      },
+      "turnover": 0.00531993,
+      "cost_cny": 1.269
+    },
+    {
+      "signal_date": "2022-09-30",
+      "execution_date": "2022-10-10",
+      "weights": {
+        "518880": 0.5,
+        "511010": 0.5
+      },
+      "scores": {
+        "510300": -0.08578456,
+        "510500": -0.08981037,
+        "159915": -0.10752389,
+        "513500": -0.04465388,
+        "518880": 0.00063822
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.09660504,
+        "trailing_volatility_518880": 0.09660504
+      },
+      "turnover": 0.01558211,
+      "cost_cny": 3.754
+    },
+    {
+      "signal_date": "2022-10-31",
+      "execution_date": "2022-11-01",
+      "weights": {
+        "511010": 1.0
+      },
+      "scores": {
+        "510300": -0.1209628,
+        "510500": -0.0509412,
+        "159915": -0.14436653,
+        "513500": -0.08600947,
+        "518880": -0.00347875
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.0,
+        "estimated_full_risk_volatility": 0.0
+      },
+      "turnover": 0.992959,
+      "cost_cny": 239.3412
+    },
+    {
+      "signal_date": "2022-11-30",
+      "execution_date": "2022-12-01",
+      "weights": {
+        "511010": 1.0
+      },
+      "scores": {
+        "510300": -0.17101687,
+        "510500": -0.06064466,
+        "159915": -0.14808159,
+        "513500": -0.01604435,
+        "518880": -0.00320825
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.0,
+        "estimated_full_risk_volatility": 0.0
+      },
+      "turnover": 0.0,
+      "cost_cny": 0.0
+    },
+    {
+      "signal_date": "2022-12-30",
+      "execution_date": "2023-01-03",
+      "weights": {
+        "513500": 0.28871,
+        "518880": 0.71129
+      },
+      "scores": {
+        "510300": -0.17569008,
+        "510500": -0.09069687,
+        "159915": -0.22725907,
+        "513500": 0.04139653,
+        "518880": 0.06956285
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.11161739,
+        "trailing_volatility_513500": 0.23031226,
+        "trailing_volatility_518880": 0.09348276
+      },
+      "turnover": 2.0,
+      "cost_cny": 479.2079
+    },
+    {
+      "signal_date": "2023-01-31",
+      "execution_date": "2023-02-01",
+      "weights": {
+        "518880": 0.5,
+        "511010": 0.5
+      },
+      "scores": {
+        "510300": -0.15537634,
+        "510500": -0.13982279,
+        "159915": -0.21331474,
+        "513500": -0.04884135,
+        "518880": 0.09697138
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.09362476,
+        "trailing_volatility_518880": 0.09362476
+      },
+      "turnover": 1.0,
+      "cost_cny": 245.2353
+    },
+    {
+      "signal_date": "2023-02-28",
+      "execution_date": "2023-03-01",
+      "weights": {
+        "518880": 0.5,
+        "511010": 0.5
+      },
+      "scores": {
+        "510300": -0.02922052,
+        "510500": -0.03607295,
+        "159915": -0.05105963,
+        "513500": -0.04623659,
+        "518880": 0.09730256
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.5,
+        "estimated_full_risk_volatility": 0.08356698,
+        "trailing_volatility_518880": 0.08356698
+      },
+      "turnover": 0.00723772,
+      "cost_cny": 1.7612
+    },
+    {
+      "signal_date": "2023-03-31",
+      "execution_date": "2023-04-03",
+      "weights": {
+        "510500": 0.49262,
+        "518880": 0.50738
+      },
+      "scores": {
+        "510300": 0.02357345,
+        "510500": 0.06105779,
+        "159915": -0.03468047,
+        "513500": -0.00787278,
+        "518880": 0.05905183
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07913847,
+        "trailing_volatility_510500": 0.11287394,
+        "trailing_volatility_518880": 0.10959043
+      },
+      "turnover": 0.98524031,
+      "cost_cny": 247.4085
+    },
+    {
+      "signal_date": "2023-04-28",
+      "execution_date": "2023-05-04",
+      "weights": {
+        "510500": 0.488692,
+        "518880": 0.511308
+      },
+      "scores": {
+        "510300": 0.04267224,
+        "510500": 0.06633353,
+        "159915": -0.01134472,
+        "513500": -0.00746843,
+        "518880": 0.08836759
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.08560218,
+        "trailing_volatility_510500": 0.12772364,
+        "trailing_volatility_518880": 0.122074
+      },
+      "turnover": 0.01753414,
+      "cost_cny": 4.4299
+    },
+    {
+      "signal_date": "2023-05-31",
+      "execution_date": "2023-06-01",
+      "weights": {
+        "510500": 0.512623,
+        "518880": 0.487377
+      },
+      "scores": {
+        "510300": 0.03893453,
+        "510500": 0.044584,
+        "159915": -0.02156962,
+        "513500": 0.02502604,
+        "518880": 0.11371913
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.08049839,
+        "trailing_volatility_510500": 0.12207461,
+        "trailing_volatility_518880": 0.12839789
+      },
+      "turnover": 0.05798273,
+      "cost_cny": 14.3833
+    },
+    {
+      "signal_date": "2023-06-30",
+      "execution_date": "2023-07-03",
+      "weights": {
+        "513500": 0.498389,
+        "518880": 0.501611
+      },
+      "scores": {
+        "510300": -0.0518333,
+        "510500": 0.00320082,
+        "159915": -0.10262742,
+        "513500": 0.1691109,
+        "518880": 0.10025203
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.05812591,
+        "trailing_volatility_513500": 0.10603749,
+        "trailing_volatility_518880": 0.10535629
+      },
+      "turnover": 1.02714988,
+      "cost_cny": 254.7481
+    },
+    {
+      "signal_date": "2023-07-31",
+      "execution_date": "2023-08-01",
+      "weights": {
+        "513500": 0.455724,
+        "518880": 0.544276
+      },
+      "scores": {
+        "510300": -0.08499741,
+        "510500": -0.02824605,
+        "159915": -0.16827306,
+        "513500": 0.20968165,
+        "518880": 0.13274969
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.06423336,
+        "trailing_volatility_513500": 0.11071668,
+        "trailing_volatility_518880": 0.09270327
+      },
+      "turnover": 0.08676729,
+      "cost_cny": 21.8081
+    },
+    {
+      "signal_date": "2023-08-31",
+      "execution_date": "2023-09-01",
+      "weights": {
+        "513500": 0.365774,
+        "518880": 0.634226
+      },
+      "scores": {
+        "510300": -0.02219932,
+        "510500": -0.04021254,
+        "159915": -0.13954867,
+        "513500": 0.15370312,
+        "518880": 0.13933293
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.06918821,
+        "trailing_volatility_513500": 0.11580765,
+        "trailing_volatility_518880": 0.0667892
+      },
+      "turnover": 0.17315235,
+      "cost_cny": 43.7256
+    },
+    {
+      "signal_date": "2023-09-28",
+      "execution_date": "2023-10-09",
+      "weights": {
+        "513500": 0.412061,
+        "518880": 0.587939
+      },
+      "scores": {
+        "510300": -0.02936527,
+        "510500": -0.04361714,
+        "159915": -0.10076165,
+        "513500": 0.20664107,
+        "518880": 0.13027849
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07853196,
+        "trailing_volatility_513500": 0.11195331,
+        "trailing_volatility_518880": 0.07846331
+      },
+      "turnover": 0.10654084,
+      "cost_cny": 26.1761
+    },
+    {
+      "signal_date": "2023-10-31",
+      "execution_date": "2023-11-01",
+      "weights": {
+        "513500": 0.429796,
+        "518880": 0.570204
+      },
+      "scores": {
+        "510300": -0.03037128,
+        "510500": -0.05878263,
+        "159915": -0.15338806,
+        "513500": 0.15310462,
+        "518880": 0.13164891
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07647742,
+        "trailing_volatility_513500": 0.11921301,
+        "trailing_volatility_518880": 0.08985792
+      },
+      "turnover": 0.06704324,
+      "cost_cny": 16.7531
+    },
+    {
+      "signal_date": "2023-11-30",
+      "execution_date": "2023-12-01",
+      "weights": {
+        "513500": 0.454992,
+        "518880": 0.545008
+      },
+      "scores": {
+        "510300": -0.05360124,
+        "510500": -0.09255035,
+        "159915": -0.14784294,
+        "513500": 0.065866,
+        "518880": 0.11547126
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07272279,
+        "trailing_volatility_513500": 0.11576547,
+        "trailing_volatility_518880": 0.09664497
+      },
+      "turnover": 0.01819322,
+      "cost_cny": 4.6707
+    },
+    {
+      "signal_date": "2023-12-29",
+      "execution_date": "2024-01-02",
+      "weights": {
+        "513500": 0.477998,
+        "518880": 0.522002
+      },
+      "scores": {
+        "510300": -0.09701273,
+        "510500": -0.07537204,
+        "159915": -0.15152036,
+        "513500": 0.11028723,
+        "518880": 0.11537561
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07505607,
+        "trailing_volatility_513500": 0.11168058,
+        "trailing_volatility_518880": 0.10226612
+      },
+      "turnover": 0.03122757,
+      "cost_cny": 8.2226
+    },
+    {
+      "signal_date": "2024-01-31",
+      "execution_date": "2024-02-01",
+      "weights": {
+        "513500": 0.427999,
+        "518880": 0.572001
+      },
+      "scores": {
+        "510300": -0.16909948,
+        "510500": -0.1158019,
+        "159915": -0.21664097,
+        "513500": 0.15498018,
+        "518880": 0.10494292
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.06920371,
+        "trailing_volatility_513500": 0.10621237,
+        "trailing_volatility_518880": 0.07947331
+      },
+      "turnover": 0.11590738,
+      "cost_cny": 31.0508
+    },
+    {
+      "signal_date": "2024-02-29",
+      "execution_date": "2024-03-01",
+      "weights": {
+        "513500": 0.376207,
+        "518880": 0.623793
+      },
+      "scores": {
+        "510300": -0.18443939,
+        "510500": -0.20618556,
+        "159915": -0.26976328,
+        "513500": 0.17895655,
+        "518880": 0.10257402
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.06921273,
+        "trailing_volatility_513500": 0.12137843,
+        "trailing_volatility_518880": 0.07320285
+      },
+      "turnover": 0.13921927,
+      "cost_cny": 38.5463
+    },
+    {
+      "signal_date": "2024-03-29",
+      "execution_date": "2024-04-01",
+      "weights": {
+        "513500": 0.411205,
+        "518880": 0.588795
+      },
+      "scores": {
+        "510300": -0.08179781,
+        "510500": -0.09977866,
+        "159915": -0.15827888,
+        "513500": 0.27965609,
+        "518880": 0.07025444
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.07641608,
+        "trailing_volatility_513500": 0.12650269,
+        "trailing_volatility_518880": 0.08834733
+      },
+      "turnover": 0.09821138,
+      "cost_cny": 29.5297
+    },
+    {
+      "signal_date": "2024-04-30",
+      "execution_date": "2024-05-06",
+      "weights": {
+        "513500": 0.476931,
+        "518880": 0.523069
+      },
+      "scores": {
+        "510300": -0.06178894,
+        "510500": -0.10751308,
+        "159915": -0.1469481,
+        "513500": 0.3431256,
+        "518880": 0.12554511
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.1051604,
+        "trailing_volatility_513500": 0.15239225,
+        "trailing_volatility_518880": 0.1389504
+      },
+      "turnover": 0.16390077,
+      "cost_cny": 48.4063
+    },
+    {
+      "signal_date": "2024-05-31",
+      "execution_date": "2024-06-03",
+      "weights": {
+        "513500": 0.539512,
+        "518880": 0.460488
+      },
+      "scores": {
+        "510300": -0.03103703,
+        "510500": -0.06630774,
+        "159915": -0.11227153,
+        "513500": 0.22043509,
+        "518880": 0.19422455
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.11538199,
+        "trailing_volatility_513500": 0.14199702,
+        "trailing_volatility_518880": 0.16636472
+      },
+      "turnover": 0.11521313,
+      "cost_cny": 34.9697
+    },
+    {
+      "signal_date": "2024-06-28",
+      "execution_date": "2024-07-01",
+      "weights": {
+        "513500": 0.558256,
+        "518880": 0.441744
+      },
+      "scores": {
+        "510300": 0.017538,
+        "510500": -0.06350447,
+        "159915": -0.08057571,
+        "513500": 0.19576,
+        "518880": 0.19865307
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.1153917,
+        "trailing_volatility_513500": 0.14063258,
+        "trailing_volatility_518880": 0.17772519
+      },
+      "turnover": 0.00088659,
+      "cost_cny": 0.2796
+    },
+    {
+      "signal_date": "2024-07-31",
+      "execution_date": "2024-08-01",
+      "weights": {
+        "513500": 0.460999,
+        "518880": 0.461889,
+        "511010": 0.077112
+      },
+      "scores": {
+        "510300": -0.0124517,
+        "510500": -0.08910481,
+        "159915": -0.13048681,
+        "513500": 0.25104929,
+        "518880": 0.17135257
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.92288823,
+        "estimated_full_risk_volatility": 0.13002658,
+        "trailing_volatility_513500": 0.16018343,
+        "trailing_volatility_518880": 0.15987501
+      },
+      "turnover": 0.17935092,
+      "cost_cny": 57.7463
+    },
+    {
+      "signal_date": "2024-08-30",
+      "execution_date": "2024-09-02",
+      "weights": {
+        "513500": 0.311878,
+        "518880": 0.495327,
+        "511010": 0.192795
+      },
+      "scores": {
+        "510300": -0.04290961,
+        "510500": -0.11104056,
+        "159915": -0.12846648,
+        "513500": 0.20382564,
+        "518880": 0.2085314
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.80720502,
+        "estimated_full_risk_volatility": 0.14866112,
+        "trailing_volatility_513500": 0.22879101,
+        "trailing_volatility_518880": 0.1440563
+      },
+      "turnover": 0.30054285,
+      "cost_cny": 97.0365
+    },
+    {
+      "signal_date": "2024-09-30",
+      "execution_date": "2024-10-08",
+      "weights": {
+        "513500": 0.285358,
+        "518880": 0.544069,
+        "511010": 0.170572
+      },
+      "scores": {
+        "510300": -0.08021673,
+        "510500": -0.17794887,
+        "159915": -0.20100169,
+        "513500": 0.19764713,
+        "518880": 0.16312417
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.82942757,
+        "estimated_full_risk_volatility": 0.14467809,
+        "trailing_volatility_513500": 0.24496612,
+        "trailing_volatility_518880": 0.12848198
+      },
+      "turnover": 0.06381381,
+      "cost_cny": 20.5577
+    },
+    {
+      "signal_date": "2024-10-31",
+      "execution_date": "2024-11-01",
+      "weights": {
+        "513500": 0.312909,
+        "518880": 0.654086,
+        "511010": 0.033005
+      },
+      "scores": {
+        "510300": -0.02745134,
+        "510500": -0.11434098,
+        "159915": -0.10683413,
+        "513500": 0.20811118,
+        "518880": 0.1891724
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.96699498,
+        "estimated_full_risk_volatility": 0.12409578,
+        "trailing_volatility_513500": 0.23502577,
+        "trailing_volatility_518880": 0.11243421
+      },
+      "turnover": 0.2637694,
+      "cost_cny": 88.8673
+    },
+    {
+      "signal_date": "2024-11-29",
+      "execution_date": "2024-12-02",
+      "weights": {
+        "513500": 0.434398,
+        "518880": 0.565602
+      },
+      "scores": {
+        "510300": 0.10330244,
+        "510500": 0.09066431,
+        "159915": 0.13257513,
+        "513500": 0.19263879,
+        "518880": 0.23835913
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.10850588,
+        "trailing_volatility_513500": 0.18171637,
+        "trailing_volatility_518880": 0.1395633
+      },
+      "turnover": 0.18177622,
+      "cost_cny": 62.4056
+    },
+    {
+      "signal_date": "2024-12-31",
+      "execution_date": "2025-01-02",
+      "weights": {
+        "159915": 0.132111,
+        "513500": 0.566134,
+        "511010": 0.301755
+      },
+      "scores": {
+        "510300": 0.19411051,
+        "510500": 0.16798152,
+        "159915": 0.27546106,
+        "513500": 0.25767852,
+        "518880": 0.19974298
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.69824534,
+        "estimated_full_risk_volatility": 0.17185937,
+        "trailing_volatility_159915": 0.77289749,
+        "trailing_volatility_513500": 0.18036078
+      },
+      "turnover": 1.14965635,
+      "cost_cny": 396.5437
+    },
+    {
+      "signal_date": "2025-01-27",
+      "execution_date": "2025-02-05",
+      "weights": {
+        "159915": 0.279662,
+        "513500": 0.509228,
+        "511010": 0.21111
+      },
+      "scores": {
+        "510300": 0.21387814,
+        "510500": 0.20805473,
+        "159915": 0.28565454,
+        "513500": 0.23247232,
+        "518880": 0.19194196
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.78888993,
+        "estimated_full_risk_volatility": 0.15211247,
+        "trailing_volatility_159915": 0.30863246,
+        "trailing_volatility_513500": 0.16949697
+      },
+      "turnover": 0.30284479,
+      "cost_cny": 104.7103
+    },
+    {
+      "signal_date": "2025-02-28",
+      "execution_date": "2025-03-03",
+      "weights": {
+        "159915": 0.336399,
+        "518880": 0.663601
+      },
+      "scores": {
+        "510300": 0.16714018,
+        "510500": 0.2034856,
+        "159915": 0.29383229,
+        "513500": 0.21579627,
+        "518880": 0.23381463
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.11853904,
+        "trailing_volatility_159915": 0.26247945,
+        "trailing_volatility_518880": 0.13305865
+      },
+      "turnover": 1.40306406,
+      "cost_cny": 474.3589
+    },
+    {
+      "signal_date": "2025-03-31",
+      "execution_date": "2025-04-01",
+      "weights": {
+        "159915": 0.331921,
+        "518880": 0.668079
+      },
+      "scores": {
+        "510300": 0.19102397,
+        "510500": 0.22391412,
+        "159915": 0.28823283,
+        "513500": 0.09348816,
+        "518880": 0.23508599
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.10766752,
+        "trailing_volatility_159915": 0.25181927,
+        "trailing_volatility_518880": 0.12511101
+      },
+      "turnover": 0.04492901,
+      "cost_cny": 15.9679
+    },
+    {
+      "signal_date": "2025-04-30",
+      "execution_date": "2025-05-06",
+      "weights": {
+        "510500": 0.288977,
+        "518880": 0.34976,
+        "511010": 0.361263
+      },
+      "scores": {
+        "510300": 0.06880781,
+        "510500": 0.08838786,
+        "159915": 0.08650437,
+        "513500": 0.02657882,
+        "518880": 0.22788745
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.63873701,
+        "estimated_full_risk_volatility": 0.18787075,
+        "trailing_volatility_510500": 0.25907412,
+        "trailing_volatility_518880": 0.21405063
+      },
+      "turnover": 1.3004795,
+      "cost_cny": 475.6457
+    },
+    {
+      "signal_date": "2025-05-30",
+      "execution_date": "2025-06-03",
+      "weights": {
+        "510300": 0.402652,
+        "518880": 0.324877,
+        "511010": 0.272471
+      },
+      "scores": {
+        "510300": 0.01030295,
+        "510500": -0.00912686,
+        "159915": -0.04214957,
+        "513500": -0.03616887,
+        "518880": 0.32630616
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.72752906,
+        "estimated_full_risk_volatility": 0.16494187,
+        "trailing_volatility_510300": 0.18333964,
+        "trailing_volatility_518880": 0.22723074
+      },
+      "turnover": 0.80530392,
+      "cost_cny": 292.958
+    },
+    {
+      "signal_date": "2025-06-30",
+      "execution_date": "2025-07-01",
+      "weights": {
+        "510300": 0.4395,
+        "518880": 0.326505,
+        "511010": 0.233995
+      },
+      "scores": {
+        "510300": 0.05401574,
+        "510500": 0.04108472,
+        "159915": 0.02718734,
+        "513500": -0.01029637,
+        "518880": 0.30777503
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.76600473,
+        "estimated_full_risk_volatility": 0.156657,
+        "trailing_volatility_510300": 0.17164431,
+        "trailing_volatility_518880": 0.2310461
+      },
+      "turnover": 0.07449451,
+      "cost_cny": 27.2817
+    },
+    {
+      "signal_date": "2025-07-31",
+      "execution_date": "2025-08-01",
+      "weights": {
+        "510500": 0.55041,
+        "518880": 0.44959
+      },
+      "scores": {
+        "510300": 0.09961392,
+        "510500": 0.1490166,
+        "159915": 0.14080426,
+        "513500": -0.00657242,
+        "518880": 0.2664149
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.09811681,
+        "trailing_volatility_510500": 0.12430232,
+        "trailing_volatility_518880": 0.15217674
+      },
+      "turnover": 1.35988435,
+      "cost_cny": 506.8939
+    },
+    {
+      "signal_date": "2025-08-29",
+      "execution_date": "2025-09-01",
+      "weights": {
+        "159915": 0.302027,
+        "518880": 0.697973
+      },
+      "scores": {
+        "510300": 0.15341276,
+        "510500": 0.20348814,
+        "159915": 0.25526131,
+        "513500": 0.09350601,
+        "518880": 0.24126046
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 1.0,
+        "estimated_full_risk_volatility": 0.09183264,
+        "trailing_volatility_159915": 0.21993292,
+        "trailing_volatility_518880": 0.09516955
+      },
+      "turnover": 1.15406519,
+      "cost_cny": 468.9343
+    },
+    {
+      "signal_date": "2025-09-30",
+      "execution_date": "2025-10-09",
+      "weights": {
+        "510500": 0.329737,
+        "159915": 0.205453,
+        "511010": 0.46481
+      },
+      "scores": {
+        "510300": 0.33756874,
+        "510500": 0.4456504,
+        "159915": 0.68213189,
+        "513500": 0.13632412,
+        "518880": 0.22695183
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.53519015,
+        "estimated_full_risk_volatility": 0.22421937,
+        "trailing_volatility_510500": 0.18840552,
+        "trailing_volatility_159915": 0.30237614
+      },
+      "turnover": 1.58909313,
+      "cost_cny": 737.5968
+    },
+    {
+      "signal_date": "2025-10-31",
+      "execution_date": "2025-11-03",
+      "weights": {
+        "510500": 0.273566,
+        "159915": 0.171495,
+        "511010": 0.554939
+      },
+      "scores": {
+        "510300": 0.21494356,
+        "510500": 0.33366027,
+        "159915": 0.56136507,
+        "513500": 0.17995896,
+        "518880": 0.22890909
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.44506079,
+        "estimated_full_risk_volatility": 0.26962609,
+        "trailing_volatility_510500": 0.22545554,
+        "trailing_volatility_159915": 0.35964362
+      },
+      "turnover": 0.16869693,
+      "cost_cny": 77.5216
+    },
+    {
+      "signal_date": "2025-11-28",
+      "execution_date": "2025-12-01",
+      "weights": {
+        "159915": 0.227233,
+        "518880": 0.339746,
+        "511010": 0.43302
+      },
+      "scores": {
+        "510300": 0.24052575,
+        "510500": 0.3059308,
+        "159915": 0.55813539,
+        "513500": 0.21137225,
+        "518880": 0.35661541
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.56697984,
+        "estimated_full_risk_volatility": 0.21164774,
+        "trailing_volatility_159915": 0.35972117,
+        "trailing_volatility_518880": 0.24059317
+      },
+      "turnover": 0.79700427,
+      "cost_cny": 359.9423
+    },
+    {
+      "signal_date": "2025-12-31",
+      "execution_date": "2026-01-05",
+      "weights": {
+        "159915": 0.269254,
+        "518880": 0.324722,
+        "511010": 0.406024
+      },
+      "scores": {
+        "510300": 0.18434915,
+        "510500": 0.21275675,
+        "159915": 0.42256052,
+        "513500": 0.13697395,
+        "518880": 0.39095272
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.593976,
+        "estimated_full_risk_volatility": 0.20202836,
+        "trailing_volatility_159915": 0.29566591,
+        "trailing_volatility_518880": 0.24516059
+      },
+      "turnover": 0.06960551,
+      "cost_cny": 32.1405
+    },
+    {
+      "signal_date": "2026-01-30",
+      "execution_date": "2026-02-02",
+      "weights": {
+        "159915": 0.353126,
+        "518880": 0.302321,
+        "511010": 0.344553
+      },
+      "scores": {
+        "510300": 0.20114596,
+        "510500": 0.28816716,
+        "159915": 0.49260189,
+        "513500": 0.11421112,
+        "518880": 0.39836377
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.65544711,
+        "estimated_full_risk_volatility": 0.18308113,
+        "trailing_volatility_159915": 0.22773713,
+        "trailing_volatility_518880": 0.26600788
+      },
+      "turnover": 0.16244362,
+      "cost_cny": 77.1113
+    },
+    {
+      "signal_date": "2026-02-27",
+      "execution_date": "2026-03-02",
+      "weights": {
+        "159915": 0.324098,
+        "518880": 0.201143,
+        "511010": 0.474759
+      },
+      "scores": {
+        "510300": 0.19039141,
+        "510500": 0.369481,
+        "159915": 0.42223023,
+        "513500": 0.10606296,
+        "518880": 0.49077994
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.52524079,
+        "estimated_full_risk_volatility": 0.22846664,
+        "trailing_volatility_159915": 0.23067097,
+        "trailing_volatility_518880": 0.37167499
+      },
+      "turnover": 0.28313977,
+      "cost_cny": 139.2051
+    },
+    {
+      "signal_date": "2026-03-31",
+      "execution_date": "2026-04-01",
+      "weights": {
+        "510500": 0.241951,
+        "518880": 0.143024,
+        "511010": 0.615024
+      },
+      "scores": {
+        "510300": 0.13713088,
+        "510500": 0.33580272,
+        "159915": 0.29162699,
+        "513500": 0.13800716,
+        "518880": 0.56566945
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.38497568,
+        "estimated_full_risk_volatility": 0.311708,
+        "trailing_volatility_510500": 0.27131398,
+        "trailing_volatility_518880": 0.45897665
+      },
+      "turnover": 0.73805193,
+      "cost_cny": 353.8553
+    },
+    {
+      "signal_date": "2026-04-30",
+      "execution_date": "2026-05-06",
+      "weights": {
+        "510500": 0.222256,
+        "159915": 0.228374,
+        "511010": 0.549369
+      },
+      "scores": {
+        "510300": 0.09770298,
+        "510500": 0.24146151,
+        "159915": 0.37450194,
+        "513500": 0.04743901,
+        "518880": 0.18553426
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.4506305,
+        "estimated_full_risk_volatility": 0.26629356,
+        "trailing_volatility_510500": 0.28553209,
+        "trailing_volatility_159915": 0.27788248
+      },
+      "turnover": 0.45674882,
+      "cost_cny": 223.0975
+    },
+    {
+      "signal_date": "2026-05-29",
+      "execution_date": "2026-06-01",
+      "weights": {
+        "510500": 0.234721,
+        "159915": 0.212717,
+        "511010": 0.552562
+      },
+      "scores": {
+        "510300": 0.15355263,
+        "510500": 0.3286509,
+        "159915": 0.50604697,
+        "513500": 0.09317185,
+        "518880": 0.2645253
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.4474381,
+        "estimated_full_risk_volatility": 0.26819352,
+        "trailing_volatility_510500": 0.26724513,
+        "trailing_volatility_159915": 0.29489019
+      },
+      "turnover": 0.05723481,
+      "cost_cny": 28.432
+    },
+    {
+      "signal_date": "2026-06-30",
+      "execution_date": "2026-07-01",
+      "weights": {
+        "510500": 0.233678,
+        "159915": 0.174449,
+        "511010": 0.591873
+      },
+      "scores": {
+        "510300": 0.189278,
+        "510500": 0.33078556,
+        "159915": 0.63533209,
+        "513500": 0.15238205,
+        "518880": 0.12592058
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.40812672,
+        "estimated_full_risk_volatility": 0.29402633,
+        "trailing_volatility_510500": 0.26408989,
+        "trailing_volatility_159915": 0.35375469
+      },
+      "turnover": 0.11913862,
+      "cost_cny": 61.4728
+    },
+    {
+      "signal_date": "2026-07-31",
+      "execution_date": "2026-08-03",
+      "weights": {
+        "510500": 0.183556,
+        "159915": 0.133256,
+        "511010": 0.683189
+      },
+      "scores": {
+        "510300": 0.1221346,
+        "510500": 0.25811222,
+        "159915": 0.51314272,
+        "513500": 0.09412721,
+        "518880": -0.01877761
+      },
+      "risk_diagnostics": {
+        "risk_exposure": 0.31681138,
+        "estimated_full_risk_volatility": 0.37877427,
+        "trailing_volatility_510500": 0.33497646,
+        "trailing_volatility_159915": 0.46141931
+      },
+      "turnover": 0.07524098,
+      "cost_cny": 35.6408
+    }
+  ],
+  "result": {
+    "status": "PASS",
+    "decision": "add_as_separate_prospective_shadow_arm",
+    "champion_replaced": false
+  },
+  "orders_authorized": false,
+  "capital_authorized": false,
+  "replacement_authorized": false
+}

@@ -1,0 +1,94 @@
+{
+  "engineering_status": "PASS",
+  "failure": null,
+  "checks": [
+    {
+      "name": "dependencies",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "name": "tests",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "name": "baseline",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "name": "baseline_byte_reproduction",
+      "passed": true,
+      "sha256": "5c38e0d14830c0cf56c1dfefa099683504740e8d3899ae3618653657545a1ab7"
+    },
+    {
+      "name": "baseline_accounting",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "name": "net_expert",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "name": "net_expert_byte_reproduction",
+      "passed": true,
+      "sha256": "aaa7368ca7b3a8e8fc040aa0c98f0b7f0c902615e04b7afb903e9ba03d268270"
+    },
+    {
+      "name": "net_expert_accounting",
+      "passed": true,
+      "returncode": 0
+    },
+    {
+      "name": "net_scoring",
+      "passed": true,
+      "returncode": 0
+    }
+  ],
+  "artifacts_sha256": {
+    "baseline-audit.json": "289f98d29c00a222e13e62838514fbcbf67a8a1aec2b07da514d112d84284b5e",
+    "baseline.json": "5c38e0d14830c0cf56c1dfefa099683504740e8d3899ae3618653657545a1ab7",
+    "baseline.log": "9e65a507f9af24e83c57ebbfdbf3a996a7e9d70cb1a0e617a930515198453f04",
+    "baseline_accounting.log": "289f98d29c00a222e13e62838514fbcbf67a8a1aec2b07da514d112d84284b5e",
+    "dependencies.log": "672aec65a45bed50e70229c70934a7eebf0462595c459b83023027645d57cccf",
+    "net-scoring-audit.json": "470527aecdc4b9954467b4fa9b08d32ab18d790f6c5d61b7b5293bee5d996f39",
+    "net_expert-audit.json": "bf2ac1f739e1577d91b79c68df0744b7f6035b4ba73745084f92c497a184b13d",
+    "net_expert.json": "aaa7368ca7b3a8e8fc040aa0c98f0b7f0c902615e04b7afb903e9ba03d268270",
+    "net_expert.log": "827056e29d19eb06575cd1304278100f781c1ab5001d6497f17e1d6b98f4324c",
+    "net_expert_accounting.log": "bf2ac1f739e1577d91b79c68df0744b7f6035b4ba73745084f92c497a184b13d",
+    "net_scoring.log": "470527aecdc4b9954467b4fa9b08d32ab18d790f6c5d61b7b5293bee5d996f39",
+    "tests.log": "f26eb542f6f78a3a77305efffc19d90d039489c7f7a8143d3904757acb2b5437"
+  },
+  "protocol_sha256": "0f083c1c0ddb97f710e8602d907c52e6e565a437172897cba393f60ec46a3420",
+  "verifier_sha256": "76a5354acb7191ea76200c326712d2e96a1c04fc5134f35f74d7ee73192aa3ee",
+  "preflight_source_sha256": "62edc0c03d25ae8e981731e14d65ce95adc30b31596968c85ccecf412b2e7a1f",
+  "real_data_preflight": {
+    "status": "BLOCKED",
+    "blockers": [
+      "MISSING_US_ETF_ADMISSION_MANIFEST"
+    ],
+    "manifest_sha256": null,
+    "data_admitted": false,
+    "holdout_contents_read": false,
+    "price_contents_read": false,
+    "scope": "Metadata completeness only; file hashes, vendor rights, PIT vintages and execution must be independently verified before admission.",
+    "remaining_research_gates": [
+      "Independently verified raw bars, actions and availability vintages",
+      "Real exchange calendar, whole-share and cash/receivable execution integration",
+      "Frozen candidate and statistical/family-testing protocol before holdout",
+      "Net executable OOS advantage versus matched simple baselines",
+      "Prospective fills and tail/capacity evidence",
+      "Explicit capital ownership/mandate and broker authorization"
+    ],
+    "capital_authorized": false,
+    "orders_authorized": false
+  },
+  "research_verdict": "RESEARCH",
+  "capital_readiness": "NOT_READY",
+  "capital_authorized": false,
+  "orders_authorized": false,
+  "interpretation": "Engineering closure only; no real-data profitability validated or new final holdout accessed."
+}

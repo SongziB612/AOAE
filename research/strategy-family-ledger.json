@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-04",
+  "purpose": "Conservative strategy-family accounting for selection-bias review. This ledger does not reconstruct undocumented experiments.",
+  "families": [
+    {
+      "strategy_family": "cn_listed_etf_allocation",
+      "known_strategy_choices": 6,
+      "undocumented_pre_ledger_choices": "unknown",
+      "pbo_ready": false,
+      "pbo_blocker": "Not every choice has a comparable return matrix across identical folds, and any experiments before the repository ledger are unknown.",
+      "records": [
+        {
+          "hypothesis": "0004-cn-etf-dual-momentum",
+          "role": "economic_strategy",
+          "counts_toward_known_strategy_choices": true,
+          "outcome": "PASS_then_frozen_champion",
+          "interpretation": "Original holdout result; later comparison makes the currently selected strategy part of a wider family-selection process."
+        },
+        {
+          "hypothesis": "0005-qlib-lightgbm-etf-challenger",
+          "role": "economic_strategy",
+          "counts_toward_known_strategy_choices": true,
+          "outcome": "FAIL"
+        },
+        {
+          "hypothesis": "0006-volatility-controlled-etf-overlay",
+          "role": "economic_strategy",
+          "counts_toward_known_strategy_choices": true,
+          "outcome": "PASS_as_prospective_shadow_only"
+        },
+        {
+          "hypothesis": "0007-small-account-executable",
+          "role": "execution_diagnostic",
+          "counts_toward_known_strategy_choices": false,
+          "outcome": "PASS"
+        },
+        {
+          "hypothesis": "0008-volatility-budget-small-account",
+          "role": "economic_strategy",
+          "counts_toward_known_strategy_choices": true,
+          "outcome": "FAIL"
+        },
+        {
+          "hypothesis": "0009-risk-rescaled-forward",
+          "role": "forward_design_rejected_before_signal",
+          "counts_toward_known_strategy_choices": false,
+          "outcome": "REJECTED_BEFORE_FIRST_SIGNAL"
+        },
+        {
+          "hypothesis": "0010-high-risk-executable-overlay",
+          "role": "economic_strategy",
+          "counts_toward_known_strategy_choices": true,
+          "outcome": "PASS_as_forward_paper_challenger_only"
+        },
+        {
+          "hypothesis": "0011-moonshot-etf-breakout",
+          "role": "economic_strategy",
+          "counts_toward_known_strategy_choices": true,
+          "outcome": "FAIL"
+        },
+        {
+          "hypothesis": "0012-high-risk-overlay-robustness",
+          "role": "post_discovery_robustness_audit",
+          "counts_toward_known_strategy_choices": false,
+          "outcome": "PASS_with_no_future_alpha_claim"
+        }
+      ]
+    }
+  ],
+  "policy_from_now_on": {
+    "required_fields_for_new_economic_strategy": [
+      "strategy_family",
+      "family_trial_index",
+      "known_prior_strategy_choices"
+    ],
+    "selection_adjustment_required_for_alpha_claim": true,
+    "capital_authorized": false
+  }
+}

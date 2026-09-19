@@ -1,0 +1,25 @@
+{
+  "record_type": "post_discovery_baseline_challenge_not_clean_preregistration",
+  "question": "Does momentum selection add value beyond holding the same five assets or using the same total risk exposure?",
+  "reference": "research/capital_readiness/300k-accounting-replay-v4.json",
+  "capital_cny": 300000,
+  "commission_each_side": 0.003,
+  "minimum_commission_cny": 5,
+  "slippage_bps_each_side": 30,
+  "windows": "45 overlapping twelve-month periods, monthly starts 2022-01 through 2025-09",
+  "comparators": [
+    "monthly_equal_weight_same_five_assets",
+    "monthly_equal_weight_same_five_assets_scaled_to_champion_total_risk_weight"
+  ],
+  "rules": [
+    "Same raw prices, corporate actions, costs, lot constraints, pause and terminal cost haircut.",
+    "Compare paired window differences, not difference between two marginal medians.",
+    "Report both comparators without selecting a favorable one.",
+    "Exposure-matched comparator is an attribution diagnostic inheriting champion timing, not a standalone strategy.",
+    "No significance or forward profitability claim from overlapping reused windows."
+  ],
+  "economic_payer_established": false,
+  "risk_of_ruin_established": false,
+  "capital_authorized": false,
+  "orders_authorized": false
+}

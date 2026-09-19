@@ -1,0 +1,18 @@
+{
+  "experiment_id": "CN-NO-TRADE-0001",
+  "parent_experiment": "CN-VALUE-0001",
+  "explicit_variants_in_this_batch": 4,
+  "bands_including_control": [0.0, 0.025, 0.05, 0.1],
+  "primary_band_fixed_before_run": 0.05,
+  "replay_paths": 64,
+  "historical_years": [2022, 2023, 2024, 2025],
+  "path_count_is_not_independent_sample_count": true,
+  "total_family_trial_count": null,
+  "clean_oos_observations": 0,
+  "deflated_sharpe": null,
+  "probability_of_backtest_overfitting": null,
+  "reason_statistics_not_reported": "Unknown total selection history and reused data; no fabricated multiplicity correction or confidence probability",
+  "decision": "RESEARCH_ONLY_NOT_PROMOTED",
+  "counterexample": "Primary band reduces costs but loses net return versus control in 2023 under all four fee/slippage scenarios",
+  "formal_forward_strategy_changed": false
+}
