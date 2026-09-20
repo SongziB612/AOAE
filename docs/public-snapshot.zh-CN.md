@@ -6,4 +6,4 @@
 
 依赖排除数据的回测、冻结哈希校验及部分集成检查需要在原本地环境运行；不得把缺失输入当成已通过。用户确认费用文件包含个人账户状态，未公开；公开代码保留对该本地文件的显式依赖，不用虚构账户替代。
 
-最新资金状态见 `research/capital_readiness/manual-preflight-2026-09-14.md` 和 `research/capital_readiness/primary-dividend-audit-2026-09-14.md`。当前仍为 `DO_NOT_FUND`，无已证实实盘收益。
+最新公司行动核验进度见 `research/capital_readiness/forward-action-impact-2026-09-20.md` 和 `research/capital_readiness/forward-action-anchors-2022-2026-09-20.json`。这修复了已知分红造成的假亏损，并非新增可执行收益；资金状态仍为 `DO_NOT_FUND`，无已证实实盘收益。

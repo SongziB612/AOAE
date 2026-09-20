@@ -1,0 +1,20 @@
+{
+  "review_date": "2026-09-20",
+  "scope": "511010 cash distribution announced before the first prospective 2026-09 month-end signal",
+  "evidence_method": "Manual transcription of the issuer PDF obtained from the SSE public fund-announcement query; compare selected fields with a separately captured distribution table",
+  "events": [
+    {
+      "symbol": "511010",
+      "ex_date": "2026-09-18",
+      "registration_date": "2026-09-17",
+      "payment_date": "2026-09-23",
+      "cash_per_share": "0.6204",
+      "publication_date": "2026-09-15",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-09-15/511010_20260915_H5ST.pdf",
+      "source_locator": "PDF page 1: 6.204 CNY per 10 shares, registration/ex/payment dates; page 2: investor remittance timing"
+    }
+  ],
+  "historical_first_available_time_verified": false,
+  "full_action_discovery_complete": false,
+  "capital_authorized": false
+}

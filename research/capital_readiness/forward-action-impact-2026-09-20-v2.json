@@ -1,0 +1,38 @@
+{
+  "status": "KNOWN_DIVIDEND_CORRECTED_IN_SIGNAL_ENGINE",
+  "symbol": "511010",
+  "prior_day": "2026-09-17",
+  "ex_date": "2026-09-18",
+  "previous_raw_close_cny": "141.25",
+  "ex_date_raw_close_cny": "140.67",
+  "cash_per_share_cny": "0.6204",
+  "payment_date": "2026-09-23",
+  "raw_close_return": "-0.0041061946902654867256637168",
+  "cash_adjusted_total_return": "0.000286017699115044247787611",
+  "dividend_adjustment_bps": "43.92212389380530973451327434",
+  "raw_price_false_loss": true,
+  "known_action_catalog_sha256": "f7936447d715c2afd52052ab09a50815b526944fd7ab3b78d922e13cfebd2c36",
+  "matched_known_actions": [
+    [
+      "511010",
+      "2026-09-18"
+    ]
+  ],
+  "input_sha256": {
+    "data\\runtime\\paired_forward\\20260919T134054470797Z-51334c9d\\attempt-1\\prices\\511010.csv": "7c244966deaa09f2390f2951988937669a083106ca325aebccd80079bc61a201",
+    "data\\audit\\etf-distributions-2026-09-20-forward-check\\manifest.json": "452be7494b5b210b1265dc4a93187fc53c2751528aeb401dcd5eb05446d7473b",
+    "data\\audit\\etf-distributions-2026-09-20-forward-check\\511010.html": "6891ed2c351ea9239b7011d2d77147784721e7a051018c119914b8bc8c3d5268",
+    "scripts\\audit_forward_action_impact.py": "4e1c3ed4d56058110575783cde7c05f20043899ed898748d72bbb2c2035f81bc",
+    "src\\aoae\\corporate_action_guard.py": "526dc89c54e2da6605e41837ee25425dc4348c47a9ff3a6fa924b1130d19afb5",
+    "src\\aoae\\corporate_action_replay.py": "001e4088a8292c190386da96804caaaae90b3d84a62a86ff139881140cda4dbd",
+    "configs\\forward_action_anchors.json": "f7936447d715c2afd52052ab09a50815b526944fd7ab3b78d922e13cfebd2c36",
+    "research\\capital_readiness\\primary-dividend-forward-review-2026-09-20.json": "34bdb4dac72f910e5e5e5ee685fe31fba52976f9d44de55881c187232999d874",
+    "research\\capital_readiness\\primary-dividend-forward-audit-2026-09-20.json": "fc470614a27f0aec4f98cb6c6195c17cdfdcfe8b3acf5ec7f121aca2a40e521d",
+    "data\\audit\\primary-dividend-forward-pdfs-2026-09-20-v1\\manifest.json": "a525f785f739dc4fa1b4f16b0d0c0766b09c5ecb0fd598774c01005c9a119424",
+    "data\\audit\\primary-dividend-forward-pdfs-2026-09-20-v1\\00-511010-2026-09-18.pdf": "3c67fc24bc804d1e25b3fceecbda509b42f1348e2fb1d8e32069e5a03f930a93"
+  },
+  "full_action_discovery_complete": false,
+  "market_observation_not_broker_fill": true,
+  "capital_authorized": false,
+  "economic_interpretation": "Cash dividend offsets ex-date price decline; it is not incremental alpha."
+}

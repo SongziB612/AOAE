@@ -7,10 +7,11 @@ import json
 import pandas as pd
 
 from aoae.corporate_action_replay import Action
+from aoae.corporate_action_guard import verify_known_action_anchors
 from aoae.etf_momentum import load_spec
 from aoae.forward_journal import digest
 from aoae.forward_signal import frozen_weights
-from aoae.paired_forward import admit_signal
+from aoae.paired_forward import admit_signal, timestamp
 from aoae.source_timing import validate_source_timing
 
 
@@ -64,6 +65,10 @@ def build_event(root, bundle, freeze, now):
         raise ValueError('price calendar has missing or unexpected sessions')
     if action_data['status'] != 'REVIEWED' or action_data['coverage_start'] > expected_dates[0] or action_data['coverage_end'] < day:
         raise ValueError('corporate action coverage incomplete')
+    zone = timezone(timedelta(hours=8))
+    signal_close = datetime.fromisoformat(day).replace(hour=15, tzinfo=zone)
+    if timestamp(review['source_provenance'][bundle['actions']]['captured_at']) < signal_close:
+        raise ValueError('corporate action snapshot predates signal close')
     actions, seen = [], set()
     for a in action_data['actions']:
         key = (a['symbol'], a['date'])
@@ -72,13 +77,17 @@ def build_event(root, bundle, freeze, now):
         seen.add(key)
         actions.append(Action(**{**a, 'date': pd.Timestamp(a['date']),
             'payment_date': pd.Timestamp(a['payment_date']) if a['payment_date'] else None}))
+    anchors = verify_known_action_anchors(root, actions, expected_dates[0], day,
+                                          spec.symbols, now)
     weights = frozen_weights(panel, actions, spec, day)['weights']
     bound = {'prices': {s: sources[n] for s, n in bundle['prices'].items()},
-             'actions': sources[bundle['actions']], 'calendar': sources[bundle['calendar']]}
+             'actions': sources[bundle['actions']], 'calendar': sources[bundle['calendar']],
+             'known_action_anchors': anchors['catalog_sha256']}
     review.update(kind='SIGNAL_INPUTS_AND_CALENDAR', signal_day=day, next_session=following,
                   actions_covered_through=action_data['coverage_end'], prices_through=day,
+                  known_action_anchor_matches=anchors['matched'],
+                  full_action_discovery_complete=False,
                   input_sha256=digest(bound))
-    zone = timezone(timedelta(hours=8))
     def at(d, hour, minute=0):
         return datetime.fromisoformat(d).replace(hour=hour, minute=minute, tzinfo=zone).isoformat()
     signal = {'signal_close_at': at(day, 15), 'execution_not_before': at(following, 9, 30),

@@ -1,0 +1,203 @@
+{
+  "status": "KNOWN_EVENTS_ONLY_NOT_COMPLETE",
+  "full_action_discovery_complete": false,
+  "capital_authorized": false,
+  "evidence_bundle": {
+    "review_path": "research/capital_readiness/primary-dividend-2026-universe-review-2026-09-20.json",
+    "review_sha256": "a7cfa33b55192d83867bf118a4485c470a6614be74b3dc011e98adb5b4b41c62",
+    "audit_path": "research/capital_readiness/primary-dividend-2026-universe-audit-2026-09-20.json",
+    "audit_sha256": "c0498e8f75d80bdd30b3ba8a4074e20132700ddd15219d028a14e97d2b1ca667",
+    "archive_manifest_path": "data/audit/primary-dividend-2026-universe-pdfs-2026-09-20-v1/manifest.json",
+    "archive_manifest_sha256": "50c143b4037de073a366d6845a459ab60d9a1de407504bd3ee9c33afc36a21db"
+  },
+  "evidence_bundles": {
+    "risk_2026_09_16": {
+      "review_path": "research/capital_readiness/primary-dividend-review-2026-09-16.json",
+      "review_sha256": "d5ef2832659945affe0185190d9ccb01953df3259a1c2c53f343199d5db06f8d",
+      "audit_path": "research/capital_readiness/primary-dividend-audit-2026-09-16.json",
+      "audit_sha256": "8e3c620bde54959f9f7edee30ef36b6683614a6f94370fb1322d96117743324c",
+      "archive_manifest_path": "data/audit/primary-dividend-pdfs-2026-09-16-v1/manifest.json",
+      "archive_manifest_sha256": "93c32e1f150f537dc73dd969743626913300e03841e8e1f691af12395f3f12e3"
+    },
+    "risk_2026_09_20": {
+      "review_path": "research/capital_readiness/primary-dividend-review-2026-09-20.json",
+      "review_sha256": "d50be0dd43000c7b894fe3d82fb647d36339a06df1bce78481710ba98c680589",
+      "audit_path": "research/capital_readiness/primary-dividend-audit-2026-09-20.json",
+      "audit_sha256": "83229c28bee17f52046256c799248a75c9cba77fe6ab75cfcd9079b100f3177b",
+      "archive_manifest_path": "data/audit/primary-dividend-pdfs-2026-09-20-v1/manifest.json",
+      "archive_manifest_sha256": "eae57dfa46bef0deff70bbfc3cd88f60740a59c793c839577cc93e5a7837de7d"
+    },
+    "bond_2026_09_20": {
+      "review_path": "research/capital_readiness/primary-dividend-bond-review-2026-09-20.json",
+      "review_sha256": "81385cd5c0eea01d8741302bfab3d0a19407cb93f0a2c0c6f3d1e2e0c36ba8d7",
+      "audit_path": "research/capital_readiness/primary-dividend-bond-audit-2026-09-20.json",
+      "audit_sha256": "26863a1263b3ecc1cae5e2f1908cfba89c5c173ed626f3334e36ceb25881dcd2",
+      "archive_manifest_path": "data/audit/primary-dividend-bond-pdfs-2026-09-20-v2/manifest.json",
+      "archive_manifest_sha256": "f0a758f234a793c35a9e86b9885b8ca4b1c78fa52ae3859558cc454dee422bb2"
+    }
+  },
+  "events": [
+    {
+      "symbol": "510300",
+      "date": "2022-01-19",
+      "ratio": "1",
+      "cash_per_old_share": "0.075",
+      "payment_date": "2022-01-24",
+      "publication_date": "2022-01-12",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2022-01-12/510300_20220112_1_pWPNE0aG.pdf",
+      "evidence_bundle_id": "risk_2026_09_20",
+      "primary_pdf_path": "data/audit/primary-dividend-pdfs-2026-09-20-v1/00-510300-2022-01-19.pdf",
+      "primary_pdf_sha256": "1f5411e65cb9043bec5ae100df3925e6bb0aa122ea18186c7ba9a7e0747a9b50"
+    },
+    {
+      "symbol": "510300",
+      "date": "2023-01-16",
+      "ratio": "1",
+      "cash_per_old_share": "0.064",
+      "payment_date": "2023-01-19",
+      "publication_date": "2023-01-09",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2023-01-09/510300_20230109_0ED5.pdf",
+      "evidence_bundle_id": "risk_2026_09_20",
+      "primary_pdf_path": "data/audit/primary-dividend-pdfs-2026-09-20-v1/01-510300-2023-01-16.pdf",
+      "primary_pdf_sha256": "68f2227ae25acec3b831d50d042b87f12696dc0df1514ef9dacb36e018d571d7"
+    },
+    {
+      "symbol": "510300",
+      "date": "2024-01-18",
+      "ratio": "1",
+      "cash_per_old_share": "0.069",
+      "payment_date": "2024-01-23",
+      "publication_date": "2024-01-11",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2024-01-11/510300_20240111_QQFV.pdf",
+      "evidence_bundle_id": "risk_2026_09_16",
+      "primary_pdf_path": "data/audit/primary-dividend-pdfs-2026-09-16-v1/00-510300-2024-01-18.pdf",
+      "primary_pdf_sha256": "165ddaec9b36480ff4cbc738227043db7b7acc4f80ac31bedaa0e4f5c4001f4b"
+    },
+    {
+      "symbol": "510300",
+      "date": "2025-06-18",
+      "ratio": "1",
+      "cash_per_old_share": "0.088",
+      "payment_date": "2025-06-27",
+      "publication_date": "2025-06-11",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-06-11/510300_20250611_ZAU4.pdf",
+      "evidence_bundle_id": "risk_2026_09_20",
+      "primary_pdf_path": "data/audit/primary-dividend-pdfs-2026-09-20-v1/02-510300-2025-06-18.pdf",
+      "primary_pdf_sha256": "9a2f554b8ba5e340c79905171388f65225e9239027a36794522aa6bb4a82be67"
+    },
+    {
+      "symbol": "510300",
+      "date": "2026-01-19",
+      "ratio": "1",
+      "cash_per_old_share": "0.123",
+      "payment_date": "2026-01-27",
+      "publication_date": "2026-01-12",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-01-12/510300_20260112_VTCZ.pdf",
+      "primary_pdf_path": "data/audit/primary-dividend-2026-universe-pdfs-2026-09-20-v1/00-510300-2026-01-19.pdf",
+      "primary_pdf_sha256": "c8ff747d02fa90db72320458c38249f73720b932d61b7e088f033583aab63992"
+    },
+    {
+      "symbol": "510500",
+      "date": "2024-05-17",
+      "ratio": "1",
+      "cash_per_old_share": "0.087",
+      "payment_date": "2024-05-22",
+      "publication_date": "2024-05-10",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2024-05-10/510500_20240510_LM77.pdf",
+      "evidence_bundle_id": "risk_2026_09_16",
+      "primary_pdf_path": "data/audit/primary-dividend-pdfs-2026-09-16-v1/01-510500-2024-05-17.pdf",
+      "primary_pdf_sha256": "fd5097c1f298d22c5605a4116f57ff8d747392d51c6e0ff85da36102eeb67e45"
+    },
+    {
+      "symbol": "510500",
+      "date": "2025-01-16",
+      "ratio": "1",
+      "cash_per_old_share": "0.091",
+      "payment_date": "2025-01-21",
+      "publication_date": "2025-01-09",
+      "source_url": "https://www.nffund.com/main/files/2025/01/08/255916276908.pdf",
+      "evidence_bundle_id": "risk_2026_09_16",
+      "primary_pdf_path": "data/audit/primary-dividend-pdfs-2026-09-16-v1/02-510500-2025-01-16.pdf",
+      "primary_pdf_sha256": "9a1b3a2a62ab64293fe35b22be4ec9814dc3da6894996fc09be452783a3e14d5"
+    },
+    {
+      "symbol": "510500",
+      "date": "2026-01-16",
+      "ratio": "1",
+      "cash_per_old_share": "0.062",
+      "payment_date": "2026-01-21",
+      "publication_date": "2026-01-09",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-01-09/510500_20260109_5K7U.pdf",
+      "primary_pdf_path": "data/audit/primary-dividend-2026-universe-pdfs-2026-09-20-v1/01-510500-2026-01-16.pdf",
+      "primary_pdf_sha256": "bcc1662da519fff6464f728ffba4035662653c43a3e23c57feb87ced0c7e233f"
+    },
+    {
+      "symbol": "510500",
+      "date": "2026-07-15",
+      "ratio": "1",
+      "cash_per_old_share": "0.149",
+      "payment_date": "2026-07-20",
+      "publication_date": "2026-07-08",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-07-08/510500_20260708_0561.pdf",
+      "primary_pdf_path": "data/audit/primary-dividend-2026-universe-pdfs-2026-09-20-v1/02-510500-2026-07-15.pdf",
+      "primary_pdf_sha256": "9542ec2c38bde2cdd16c2c1afcbcd506e2794de38b7a8484b2754908509012b1"
+    },
+    {
+      "symbol": "511010",
+      "date": "2025-09-23",
+      "ratio": "1",
+      "cash_per_old_share": "1.45",
+      "payment_date": "2025-09-26",
+      "publication_date": "2025-09-18",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-09-18/511010_20250918_FU3S.pdf",
+      "evidence_bundle_id": "bond_2026_09_20",
+      "primary_pdf_path": "data/audit/primary-dividend-bond-pdfs-2026-09-20-v2/00-511010-2025-09-23.pdf",
+      "primary_pdf_sha256": "ddfaac7c7097b0a15666d6e6787553be48613468e221564bccabfceceb5d0d02"
+    },
+    {
+      "symbol": "511010",
+      "date": "2025-12-26",
+      "ratio": "1",
+      "cash_per_old_share": "0.6542",
+      "payment_date": "2025-12-31",
+      "publication_date": "2025-12-23",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-12-23/511010_20251223_0M89.pdf",
+      "evidence_bundle_id": "bond_2026_09_20",
+      "primary_pdf_path": "data/audit/primary-dividend-bond-pdfs-2026-09-20-v2/01-511010-2025-12-26.pdf",
+      "primary_pdf_sha256": "733995693eef19c61a55a30d2be7dcc0dcc471980b81b85363977478195c50a8"
+    },
+    {
+      "symbol": "511010",
+      "date": "2026-03-25",
+      "ratio": "1",
+      "cash_per_old_share": "0.5715",
+      "payment_date": "2026-03-30",
+      "publication_date": "2026-03-20",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-03-20/511010_20260320_Y87H.pdf",
+      "primary_pdf_path": "data/audit/primary-dividend-2026-universe-pdfs-2026-09-20-v1/03-511010-2026-03-25.pdf",
+      "primary_pdf_sha256": "a45a301dd556b3b1f36bad19abf952e7490110fda539a1d716cadb903bd22656"
+    },
+    {
+      "symbol": "511010",
+      "date": "2026-06-25",
+      "ratio": "1",
+      "cash_per_old_share": "0.8144",
+      "payment_date": "2026-06-30",
+      "publication_date": "2026-06-22",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-06-22/511010_20260622_0EYP.pdf",
+      "primary_pdf_path": "data/audit/primary-dividend-2026-universe-pdfs-2026-09-20-v1/04-511010-2026-06-25.pdf",
+      "primary_pdf_sha256": "82418fe2913770fd1ab6211869dbc8a83683e73490fcdb277c9c3be226a992a9"
+    },
+    {
+      "symbol": "511010",
+      "date": "2026-09-18",
+      "ratio": "1",
+      "cash_per_old_share": "0.6204",
+      "payment_date": "2026-09-23",
+      "publication_date": "2026-09-15",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2026-09-15/511010_20260915_H5ST.pdf",
+      "primary_pdf_path": "data/audit/primary-dividend-2026-universe-pdfs-2026-09-20-v1/05-511010-2026-09-18.pdf",
+      "primary_pdf_sha256": "3c67fc24bc804d1e25b3fceecbda509b42f1348e2fb1d8e32069e5a03f930a93"
+    }
+  ]
+}

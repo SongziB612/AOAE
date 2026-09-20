@@ -32,6 +32,11 @@
       "sha256": "c2820cd6f85853a9447b15ef9d7482c5a65f2ba49fe8bef905756163d6fc785c"
     },
     {
+      "path": "configs/forward_action_anchors.json",
+      "bytes": 10191,
+      "sha256": "ec29547105ae7b89c61a1e18e7e022dbf803c9f72aef0f83fd6c4d2818e059ee"
+    },
+    {
       "path": "configs/net_expert_challenge.json",
       "bytes": 1499,
       "sha256": "05c0fca23fe422fd77b3a0b5cdaafd1de4bf8acac68f582f516ac7214fb84ab2"
@@ -108,8 +113,8 @@
     },
     {
       "path": "docs/public-snapshot.zh-CN.md",
-      "bytes": 1038,
-      "sha256": "1648283a9c5cfd5ca0e8443f9ef26fe3d6cd46cde40202308ebf6a7b4b843ed3"
+      "bytes": 1143,
+      "sha256": "ff20fd47968c6742eadabbd6ba7b9704c099d2592cc9ac1b1dd2b61408f58ec1"
     },
     {
       "path": "docs/research/top-quant-return-anatomy.md",
@@ -242,6 +247,41 @@
       "sha256": "9a0e68fb6ca6fb02b14ecf511a5461563723d8a960318c17641dc347261d85b6"
     },
     {
+      "path": "research/capital_readiness/forward-action-anchors-2022-2026-09-20.json",
+      "bytes": 2247,
+      "sha256": "2781b99db42cda65410b230f1cb26b7107b1c4f213080d0700946f0405a01ce4"
+    },
+    {
+      "path": "research/capital_readiness/forward-action-anchors-2026-09-20.json",
+      "bytes": 1842,
+      "sha256": "159d63ff88b19febcd54126f5e5d339a3a38a8bcee6631cf662fe47aa3a35e26"
+    },
+    {
+      "path": "research/capital_readiness/forward-action-impact-2026-09-20-v2.json",
+      "bytes": 2445,
+      "sha256": "7ab9bca4b5ddd39339190e8a9a9bb22f010828217151a500a715b37f6dcd2259"
+    },
+    {
+      "path": "research/capital_readiness/forward-action-impact-2026-09-20-v3.json",
+      "bytes": 2469,
+      "sha256": "eb2bb71fd69e8f8f3b6d82720269d3b2e15fd23dd448b41cfcd62818467866dc"
+    },
+    {
+      "path": "research/capital_readiness/forward-action-impact-2026-09-20-v4.json",
+      "bytes": 2469,
+      "sha256": "5f38b95948da4a76fd4e9c677b900bb10d0833e7b18ea8ab528b1bf495a5754a"
+    },
+    {
+      "path": "research/capital_readiness/forward-action-impact-2026-09-20.json",
+      "bytes": 1500,
+      "sha256": "0af683c75acb701c98f0f1c5dd77eacb2e896b9a21057fb82551726c7fdfd615"
+    },
+    {
+      "path": "research/capital_readiness/forward-action-impact-2026-09-20.md",
+      "bytes": 2478,
+      "sha256": "755a084ba83b949104569d5c969842514dc2868b0657653531f3d7adab89ed0a"
+    },
+    {
       "path": "research/capital_readiness/independent-audit-v1.json",
       "bytes": 2987,
       "sha256": "3135f03df480d9a04063542a7fc642b52ce82b0ac937ef22d0aa3e64793b1df2"
@@ -302,6 +342,16 @@
       "sha256": "c924d0c7e140a57b4808f46443b0169e6488ffd034aa804208127c863e690eda"
     },
     {
+      "path": "research/capital_readiness/primary-dividend-2026-universe-audit-2026-09-20.json",
+      "bytes": 3696,
+      "sha256": "23c316b45b01f1a5a21f87a3f548d37ab0877635afe1b3eec45a5509ee540269"
+    },
+    {
+      "path": "research/capital_readiness/primary-dividend-2026-universe-review-2026-09-20.json",
+      "bytes": 2994,
+      "sha256": "a7cfa33b55192d83867bf118a4485c470a6614be74b3dc011e98adb5b4b41c62"
+    },
+    {
       "path": "research/capital_readiness/primary-dividend-audit-2026-09-14.json",
       "bytes": 2365,
       "sha256": "bade45aa1e8eef556337147ab0b808fd3443f12c7ceb3ab4fc86586c3593c896"
@@ -335,6 +385,16 @@
       "path": "research/capital_readiness/primary-dividend-bond-review-2026-09-20.json",
       "bytes": 1143,
       "sha256": "81385cd5c0eea01d8741302bfab3d0a19407cb93f0a2c0c6f3d1e2e0c36ba8d7"
+    },
+    {
+      "path": "research/capital_readiness/primary-dividend-forward-audit-2026-09-20.json",
+      "bytes": 2215,
+      "sha256": "51fd1af27224c169427197f220fa674253c673276457cd6ce996c12dbd718545"
+    },
+    {
+      "path": "research/capital_readiness/primary-dividend-forward-review-2026-09-20.json",
+      "bytes": 936,
+      "sha256": "34bdb4dac72f910e5e5e5ee685fe31fba52976f9d44de55881c187232999d874"
     },
     {
       "path": "research/capital_readiness/primary-dividend-review-2026-09-14.json",
@@ -2032,6 +2092,11 @@
       "sha256": "e03ca1de9baf4600631178d169a28c2df11673d65d799c721a88f155f980a4d4"
     },
     {
+      "path": "scripts/audit_forward_action_impact.py",
+      "bytes": 6080,
+      "sha256": "868a02a50d00eb3786148a136460a8ba02712b85e08e44c6926a5a0e23ea4314"
+    },
+    {
       "path": "scripts/audit_historical_causality.py",
       "bytes": 4441,
       "sha256": "be477c5b0f797b0a21696a5233e20e56a81d6aa87b7a12425f760291860b40c5"
@@ -2323,8 +2388,8 @@
     },
     {
       "path": "scripts/prepare_public_snapshot.py",
-      "bytes": 3889,
-      "sha256": "ea2ec62e7622900d31cb7a10a9d29930a532e0d86f15cd228efe5f295445e00a"
+      "bytes": 3939,
+      "sha256": "eab3db30b6686fae238a70740c60623f3cc8fa542d5cfc6ac712a1dd363f2f8c"
     },
     {
       "path": "scripts/presave_reviewed_signal.py",
@@ -2428,8 +2493,8 @@
     },
     {
       "path": "scripts/run_paired_strategy_cycle.py",
-      "bytes": 2451,
-      "sha256": "dde092364bcba9c99885825cec024156270b5c479f9d26366a89f547f0a1de72"
+      "bytes": 2540,
+      "sha256": "b36a6dc644c9f7d17a795659fb27360c5dda6e6cf838c2134dfcdb6e371af8ab"
     },
     {
       "path": "scripts/run_paper_eod.py",
@@ -2510,6 +2575,11 @@
       "path": "scripts/verify_eg_synthetic.py",
       "bytes": 4709,
       "sha256": "a9e5759eaa260319875b0bfd9bfb0ee3e707eba623f38140d711990fee6943c4"
+    },
+    {
+      "path": "scripts/verify_forward_action_anchors.py",
+      "bytes": 4836,
+      "sha256": "46727099332b5e4b10710b4276085686afbdabcd6c2f7a47a5f566cbfc854392"
     },
     {
       "path": "scripts/verify_kelly_claims.py",
@@ -2600,6 +2670,11 @@
       "path": "src/aoae/contracts.py",
       "bytes": 7995,
       "sha256": "51dc4f287b996d1cc42ce7f214c2cc31edc2076ff59f50d0032825884b986e3e"
+    },
+    {
+      "path": "src/aoae/corporate_action_guard.py",
+      "bytes": 5250,
+      "sha256": "ce2ed25bcdaacf2ba5a301b81309f4175f13be924b181d225195b9ccbfc629d8"
     },
     {
       "path": "src/aoae/corporate_action_replay.py",
@@ -2803,8 +2878,8 @@
     },
     {
       "path": "src/aoae/reviewed_signal.py",
-      "bytes": 4670,
-      "sha256": "8fd460cf121f9026607f387696313a4d283faf58a4df4140dbec3756172862eb"
+      "bytes": 5326,
+      "sha256": "0a02acc7ea736177c5a2ff0bff9ab92bfbcf44959db0f9062e816c1678045c6d"
     },
     {
       "path": "src/aoae/selection_audit.py",
@@ -2945,6 +3020,11 @@
       "path": "tests/test_contracts.py",
       "bytes": 1408,
       "sha256": "dc19ce9d00b6c1ba67d643e5e7dc4068a749480a295bf23c899b9844b32860c3"
+    },
+    {
+      "path": "tests/test_corporate_action_guard.py",
+      "bytes": 5024,
+      "sha256": "86db8dcfe278ea329dd04951d4da52f01308c3fb72f7184886cd6b5ba44107ca"
     },
     {
       "path": "tests/test_corporate_action_replay.py",
@@ -3108,8 +3188,8 @@
     },
     {
       "path": "tests/test_paired_workflow.py",
-      "bytes": 7361,
-      "sha256": "92f29aeb9d00c81f35bbcb14f4dc62b1efb38ca7dab1890da9d504c11dff958c"
+      "bytes": 8411,
+      "sha256": "c4dc80abb6db02dcc490bb8e36fd76377f00d9f0bb092436c809267e5131f279"
     },
     {
       "path": "tests/test_paper_account.py",
@@ -3168,8 +3248,8 @@
     },
     {
       "path": "tests/test_reviewed_signal.py",
-      "bytes": 3534,
-      "sha256": "cfe476dea769d43be2cf372d5f1daa8a27144a76c7548eca73f677b717c693b5"
+      "bytes": 3699,
+      "sha256": "c26add11154389c70e644a35379f41672e7b54b80dffb5ca5bf8afd625a79ac2"
     },
     {
       "path": "tests/test_selection_audit.py",
@@ -4005,6 +4085,10 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "scripts/__pycache__/audit_primary_dividends.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "scripts/__pycache__/audit_public_wallet_claim.cpython-312.pyc",
       "reason": "cache or raw market observations"
     },
@@ -4018,6 +4102,10 @@
     },
     {
       "path": "scripts/__pycache__/audit_sleeve_risk.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "scripts/__pycache__/audit_sleeve_risk.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4245,6 +4333,10 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/__init__.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/__main__.cpython-312.pyc",
       "reason": "cache or raw market observations"
     },
@@ -4253,7 +4345,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/asset_attribution.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/basket.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/basket.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4261,7 +4361,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/batch_replay.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/capital_readiness.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/capital_readiness.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4269,7 +4377,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/capture_retry.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/cli.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/cli.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4277,7 +4393,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/cn_universal.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/conditional_eg.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/conditional_eg.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4285,7 +4409,23 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/contracts.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/corporate_action_guard.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/corporate_action_guard.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/corporate_action_replay.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/corporate_action_replay.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4293,7 +4433,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/daily_snapshot.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/data_admission.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/data_admission.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4301,7 +4449,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/edge_portfolio.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/equal_vol_control.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/equal_vol_control.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4309,7 +4465,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/etf_momentum.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/etf_risk_overlay.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/etf_risk_overlay.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4317,7 +4481,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/etf_risk_validation.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/etf_validation.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/etf_validation.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4325,7 +4497,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/exchange_calendar.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/experiment.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/experiment.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4333,7 +4513,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/exponentiated_portfolio.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/forward_journal.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/forward_journal.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4341,7 +4529,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/forward_progress.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/forward_signal.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/forward_signal.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4349,7 +4545,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/idle_cash.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/independent_cash_ledger.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/independent_cash_ledger.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4357,7 +4561,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/kelly_diagnostics.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/latency_probe.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/latency_probe.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4365,7 +4577,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/manual_bridge.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/manual_execution.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/manual_execution.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4373,7 +4593,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/manual_ticket.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/minute_diagnostics.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/minute_diagnostics.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4381,7 +4609,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/moonshot_breakout.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/negative_control.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/negative_control.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4389,7 +4625,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/net_expert_allocator.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/no_trade_band.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/no_trade_band.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4397,7 +4641,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/orderbook.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/paired_forward.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/paired_forward.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4405,7 +4657,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/paired_workflow.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/paper_account.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/paper_account.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4413,7 +4673,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/paper_daily.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/paper_fill.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/paper_fill.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4421,7 +4689,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/predictability_state.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/prediction_data.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/prediction_data.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4429,7 +4705,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/probability.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/qlib_challenger.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/qlib_challenger.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4437,7 +4721,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/real_hypothesis.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/research_freeze.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/research_freeze.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4445,7 +4737,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/reviewed_day.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/reviewed_signal.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/reviewed_signal.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4453,7 +4753,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/selection_audit.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/sensitivity.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/sensitivity.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4461,7 +4769,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/sensitivity_contracts.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/shadow_accounting.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/shadow_accounting.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4469,7 +4785,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/shadow_cycle.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/slope_hypothesis.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/slope_hypothesis.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4477,7 +4801,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/small_account.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/source_timing.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/source_timing.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4485,7 +4817,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/state_validation.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/strategy_sleeve_identity.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/strategy_sleeve_identity.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4493,7 +4833,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/temporal_hypothesis.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/treasury_curve.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/treasury_curve.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4501,7 +4849,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/universal.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/universal_execution.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/universal_execution.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4509,7 +4865,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/universal_metrics.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/universal_readiness.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/universal_readiness.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4517,7 +4881,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/universal_synthetic.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "src/aoae/__pycache__/universal_temporal.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "src/aoae/__pycache__/universal_temporal.cpython-313.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4525,7 +4897,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "src/aoae/__pycache__/walk_forward.cpython-313.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_asset_attribution.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_asset_attribution.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4533,7 +4913,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_basket.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_batch_replay.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_batch_replay.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4541,7 +4929,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_capital_readiness.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_capture_retry.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_capture_retry.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4549,7 +4945,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_cli.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_cn_universal.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_cn_universal.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4557,7 +4961,23 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_conditional_eg.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_contracts.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_contracts.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_corporate_action_guard.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_corporate_action_guard.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4565,7 +4985,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_corporate_action_replay.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_daily_fetch_contract.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_daily_fetch_contract.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4573,7 +5001,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_daily_snapshot.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_data_admission.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_data_admission.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4581,7 +5017,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_edge_portfolio.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_equal_vol_control.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_equal_vol_control.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4589,7 +5033,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_etf_momentum.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_etf_risk_overlay.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_etf_risk_overlay.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4597,7 +5049,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_etf_risk_validation.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_etf_validation.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_etf_validation.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4605,7 +5065,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_exchange_calendar.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_execution_timing_stress.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_execution_timing_stress.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4613,7 +5081,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_experiment.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_exponentiated_portfolio.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_exponentiated_portfolio.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4621,7 +5097,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_forward_journal.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_forward_progress.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_forward_progress.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4629,7 +5113,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_forward_signal.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_idle_cash.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_idle_cash.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4637,7 +5129,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_independent_cash_ledger.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_kelly_diagnostics.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_kelly_diagnostics.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4645,7 +5145,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_latency_probe.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_manual_bridge.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_manual_bridge.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4653,7 +5161,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_manual_execution.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_manual_ticket.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_manual_ticket.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4661,7 +5177,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_metrics_initial_balance.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_minute_diagnostics.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_minute_diagnostics.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4669,7 +5193,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_moonshot_breakout.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_negative_control.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_negative_control.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4677,7 +5209,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_net_expert_allocator.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_no_trade_band.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_no_trade_band.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4685,7 +5225,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_orderbook.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_paired_forward.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_paired_forward.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4693,7 +5241,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_paired_workflow.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_paper_account.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_paper_account.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4701,7 +5257,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_paper_daily.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_paper_fill.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_paper_fill.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4709,7 +5273,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_pilot_account.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_predictability_state.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_predictability_state.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4717,11 +5289,23 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_prediction_data.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_primary_dividend_audit.cpython-312.pyc",
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_primary_dividend_audit.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_probability.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_probability.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4737,7 +5321,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_real_hypothesis.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_research_freeze.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_research_freeze.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4745,7 +5337,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_reviewed_signal.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_selection_audit.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_selection_audit.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4753,7 +5353,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_sensitivity.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_shadow_accounting.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_shadow_accounting.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4761,7 +5369,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_shadow_cycle.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_shadow_independent_replay.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_shadow_independent_replay.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4769,7 +5385,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_sleeve_risk.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_slope_hypothesis.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_slope_hypothesis.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4777,7 +5401,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_small_account.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_source_timing.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_source_timing.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4785,7 +5417,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_state_validation.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_strategy_sleeve_identity.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_strategy_sleeve_identity.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4793,7 +5433,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_temporal_hypothesis.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_treasury_curve.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_treasury_curve.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4801,7 +5449,15 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_universal.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_universal_execution.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_universal_execution.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     },
     {
@@ -4809,11 +5465,23 @@
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_universal_readiness.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_universal_temporal.cpython-312.pyc",
       "reason": "cache or raw market observations"
     },
     {
+      "path": "tests/__pycache__/test_universal_temporal.cpython-313-pytest-8.4.2.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
       "path": "tests/__pycache__/test_walk_forward.cpython-312.pyc",
+      "reason": "cache or raw market observations"
+    },
+    {
+      "path": "tests/__pycache__/test_walk_forward.cpython-313-pytest-8.4.2.pyc",
       "reason": "cache or raw market observations"
     }
   ],

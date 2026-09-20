@@ -35,6 +35,7 @@ def main():
         result['source_sha256'] = {name: sha256((root / name).read_bytes()).hexdigest() for name in (
             'scripts/run_paired_strategy_cycle.py', 'src/aoae/paired_workflow.py',
             'src/aoae/reviewed_day.py', 'src/aoae/reviewed_signal.py',
+            'src/aoae/corporate_action_guard.py', 'configs/forward_action_anchors.json',
             'src/aoae/forward_journal.py', 'src/aoae/shadow_cycle.py',
             'src/aoae/shadow_accounting.py', 'configs/cn_exchange_calendar_2026.json')}
         with output.open('x', encoding='utf-8') as stream:

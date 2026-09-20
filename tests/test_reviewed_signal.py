@@ -44,7 +44,10 @@ class ReviewedSignalTests(unittest.TestCase):
                     'published_at': '2026-09-30T07:00:00+00:00', 'first_available_at': '2026-09-30T07:01:00+00:00', 'captured_at': '2026-09-30T07:02:00+00:00'} for n, h in hashes.items()}}
         bundle = {'review': review, 'prices': prices, 'calendar': 'calendar.json', 'actions': 'actions.json', 'signal_day': '2026-09-30'}
         freeze = {'frozen_at_utc': '2026-09-05T00:00:00+00:00', 'arms': ['causal_total_return_momentum_overlay', 'monthly_same_universe_equal_weight', 'monthly_same_universe_exposure_matched_equal_weight']}
-        with patch('aoae.reviewed_signal.load_spec', return_value=spec), patch.object(Path, 'read_bytes', lambda p: files[p.name]):
+        with patch('aoae.reviewed_signal.load_spec', return_value=spec), \
+             patch('aoae.reviewed_signal.verify_known_action_anchors', return_value={
+                 'catalog_sha256': 'b' * 64, 'matched': []}), \
+             patch.object(Path, 'read_bytes', lambda p: files[p.name]):
             event = build_event(root, bundle, freeze, '2026-09-30T08:00:00+00:00')
             self.assertEqual(event['kind'], 'PRESAVE_SIGNAL')
             self.assertEqual(set(event['signal']['weights']), set(freeze['arms']))

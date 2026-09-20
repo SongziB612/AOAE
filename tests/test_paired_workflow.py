@@ -24,6 +24,11 @@ class PairedWorkflowTests(unittest.TestCase):
         self.spec = load_spec(repo / 'research/hypotheses/0004-cn-etf-dual-momentum/spec.json')
         self.root = repo / 'data/runtime' / ('workflow-test-' + uuid4().hex)
         self.root.mkdir()
+        (self.root / 'configs').mkdir()
+        (self.root / 'configs/forward_action_anchors.json').write_text(json.dumps({
+            'status': 'KNOWN_EVENTS_ONLY_NOT_COMPLETE', 'events': [],
+            'full_action_discovery_complete': False, 'capital_authorized': False}),
+            encoding='utf-8')
         def cleanup():
             target = self.root.resolve()
             if target.parent != (repo / 'data/runtime').resolve() or not target.name.startswith('workflow-test-'):
@@ -127,6 +132,18 @@ class PairedWorkflowTests(unittest.TestCase):
         bundle['review']['status'] = 'UNKNOWN'
         with self.assertRaises(ValueError):
             build_day(self.root, bundle, self.spec.risk_assets, '2026-10-08T09:00:00+00:00')
+
+    def test_month_end_rejects_stale_action_snapshot(self):
+        bundle, path = self.write_bundle('2026-09-30', signal=True)
+        provenance = bundle['review']['source_provenance'][bundle['actions']]
+        provenance.update(published_at='2026-09-30T06:30:00+00:00',
+                          first_available_at='2026-09-30T06:31:00+00:00',
+                          captured_at='2026-09-30T06:32:00+00:00')
+        path.write_text(json.dumps(bundle), encoding='utf-8')
+        result = self.run_day('2026-09-30')
+        self.assertEqual(result['status'], 'BLOCKED_REVIEW_REQUIRED')
+        self.assertTrue(any('snapshot predates signal close' in b for b in result['blockers']))
+        self.assertEqual(self.j.audit()['events'], 1)
 
     def test_market_closed_does_not_append(self):
         result = self.run_day('2026-10-01')

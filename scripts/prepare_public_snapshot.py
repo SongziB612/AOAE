@@ -66,7 +66,8 @@ def main():
               'limitations': ['No historical Git objects exported.',
                              'Raw data and local account records are absent; data-dependent replay requires original local inputs.',
                              'Credential pattern scan is not a guarantee of absence of every possible secret.']}
-    (output / 'PUBLIC_SNAPSHOT_MANIFEST.json').write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding='utf-8')
+    with (output / 'PUBLIC_SNAPSHOT_MANIFEST.json').open('w', encoding='utf-8', newline='\n') as stream:
+        stream.write(json.dumps(report, indent=2, ensure_ascii=False))
     print(json.dumps({'files': len(manifest), 'bytes': sum(x['bytes'] for x in manifest), 'excluded_files': len(excluded), 'output': str(output)}))
 
 

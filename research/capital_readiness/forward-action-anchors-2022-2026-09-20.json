@@ -1,0 +1,83 @@
+{
+  "status": "DISCOVERED_CASH_ACTIONS_PRIMARY_AND_SECONDARY_MATCH",
+  "start": "2022-01-01",
+  "through": "2026-09-20",
+  "events": [
+    [
+      "510300",
+      "2022-01-19"
+    ],
+    [
+      "510300",
+      "2023-01-16"
+    ],
+    [
+      "510300",
+      "2024-01-18"
+    ],
+    [
+      "510300",
+      "2025-06-18"
+    ],
+    [
+      "510300",
+      "2026-01-19"
+    ],
+    [
+      "510500",
+      "2024-05-17"
+    ],
+    [
+      "510500",
+      "2025-01-16"
+    ],
+    [
+      "510500",
+      "2026-01-16"
+    ],
+    [
+      "510500",
+      "2026-07-15"
+    ],
+    [
+      "511010",
+      "2025-09-23"
+    ],
+    [
+      "511010",
+      "2025-12-26"
+    ],
+    [
+      "511010",
+      "2026-03-25"
+    ],
+    [
+      "511010",
+      "2026-06-25"
+    ],
+    [
+      "511010",
+      "2026-09-18"
+    ]
+  ],
+  "matched_primary_events": 14,
+  "known_action_catalog_sha256": "ec29547105ae7b89c61a1e18e7e022dbf803c9f72aef0f83fd6c4d2818e059ee",
+  "input_sha256": {
+    "data\\audit\\etf-distributions-2026-09-20-forward-check\\manifest.json": "452be7494b5b210b1265dc4a93187fc53c2751528aeb401dcd5eb05446d7473b",
+    "configs\\forward_action_anchors.json": "ec29547105ae7b89c61a1e18e7e022dbf803c9f72aef0f83fd6c4d2818e059ee",
+    "scripts\\verify_forward_action_anchors.py": "46727099332b5e4b10710b4276085686afbdabcd6c2f7a47a5f566cbfc854392"
+  },
+  "secondary_raw_sha256": {
+    "data\\audit\\etf-distributions-2026-09-20-forward-check\\510300.html": "2aec70c20b26b85ad34131520327fd299415715be2fd8e353f51d72c65479cf2",
+    "data\\audit\\etf-distributions-2026-09-20-forward-check\\510500.html": "a574e260f5a1076eaddafb83d3143636ce1562d085923d8d6ba943c1aa532df0",
+    "data\\audit\\etf-distributions-2026-09-20-forward-check\\511010.html": "6891ed2c351ea9239b7011d2d77147784721e7a051018c119914b8bc8c3d5268"
+  },
+  "full_action_discovery_complete": false,
+  "historical_first_available_time_verified": false,
+  "capital_authorized": false,
+  "limits": [
+    "The secondary table may omit an event; its selected rows are not a complete official announcements inventory.",
+    "The archive date does not prove intraday historical first availability.",
+    "Only cash distributions, not every split, suspension or tradability condition, are checked."
+  ]
+}
