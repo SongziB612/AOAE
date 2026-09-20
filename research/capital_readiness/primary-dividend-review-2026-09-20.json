@@ -1,0 +1,39 @@
+{
+  "review_date": "2026-09-20",
+  "scope": "Previously unverified dividend events in the 2022-2025 replay window",
+  "evidence_method": "Manual transcription of SSE-hosted issuer announcements; archive and text extraction checked separately",
+  "events": [
+    {
+      "symbol": "510300",
+      "ex_date": "2022-01-19",
+      "registration_date": "2022-01-18",
+      "payment_date": "2022-01-24",
+      "cash_per_share": "0.075",
+      "publication_date": "2022-01-12",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2022-01-12/510300_20220112_1_pWPNE0aG.pdf",
+      "source_locator": "PDF page 2 distribution fields; page 3 settlement timing"
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2023-01-16",
+      "registration_date": "2023-01-13",
+      "payment_date": "2023-01-19",
+      "cash_per_share": "0.064",
+      "publication_date": "2023-01-09",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2023-01-09/510300_20230109_0ED5.pdf",
+      "source_locator": "PDF page 2 distribution fields; web search excerpt independently checked against archived document"
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2025-06-18",
+      "registration_date": "2025-06-17",
+      "payment_date": "2025-06-27",
+      "cash_per_share": "0.088",
+      "publication_date": "2025-06-11",
+      "source_url": "https://www.sse.com.cn/disclosure/fund/announcement/c/new/2025-06-11/510300_20250611_ZAU4.pdf",
+      "source_locator": "PDF page 2 distribution fields; page 3 settlement timing"
+    }
+  ],
+  "point_in_time_admitted": false,
+  "capital_authorized": false
+}

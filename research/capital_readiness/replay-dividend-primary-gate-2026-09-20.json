@@ -1,0 +1,108 @@
+{
+  "status": "REPLAYED_CASH_EVENTS_PRIMARY_MATCH",
+  "year_range": "2022-2025",
+  "replay_cash_events": 8,
+  "rows": [
+    {
+      "symbol": "510300",
+      "ex_date": "2022-01-19",
+      "review_path": "research\\capital_readiness\\primary-dividend-review-2026-09-20.json",
+      "pdf_path": "data\\audit\\primary-dividend-pdfs-2026-09-20-v1\\00-510300-2022-01-19.pdf",
+      "pdf_sha256": "1f5411e65cb9043bec5ae100df3925e6bb0aa122ea18186c7ba9a7e0747a9b50",
+      "cash_per_share": "0.075",
+      "payment_date": "2022-01-24",
+      "status": "MATCH"
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2023-01-16",
+      "review_path": "research\\capital_readiness\\primary-dividend-review-2026-09-20.json",
+      "pdf_path": "data\\audit\\primary-dividend-pdfs-2026-09-20-v1\\01-510300-2023-01-16.pdf",
+      "pdf_sha256": "68f2227ae25acec3b831d50d042b87f12696dc0df1514ef9dacb36e018d571d7",
+      "cash_per_share": "0.064",
+      "payment_date": "2023-01-19",
+      "status": "MATCH"
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2024-01-18",
+      "review_path": "research\\capital_readiness\\primary-dividend-review-2026-09-16.json",
+      "pdf_path": "data\\audit\\primary-dividend-pdfs-2026-09-16-v1\\00-510300-2024-01-18.pdf",
+      "pdf_sha256": "165ddaec9b36480ff4cbc738227043db7b7acc4f80ac31bedaa0e4f5c4001f4b",
+      "cash_per_share": "0.069",
+      "payment_date": "2024-01-23",
+      "status": "MATCH"
+    },
+    {
+      "symbol": "510300",
+      "ex_date": "2025-06-18",
+      "review_path": "research\\capital_readiness\\primary-dividend-review-2026-09-20.json",
+      "pdf_path": "data\\audit\\primary-dividend-pdfs-2026-09-20-v1\\02-510300-2025-06-18.pdf",
+      "pdf_sha256": "9a2f554b8ba5e340c79905171388f65225e9239027a36794522aa6bb4a82be67",
+      "cash_per_share": "0.088",
+      "payment_date": "2025-06-27",
+      "status": "MATCH"
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2024-05-17",
+      "review_path": "research\\capital_readiness\\primary-dividend-review-2026-09-16.json",
+      "pdf_path": "data\\audit\\primary-dividend-pdfs-2026-09-16-v1\\01-510500-2024-05-17.pdf",
+      "pdf_sha256": "fd5097c1f298d22c5605a4116f57ff8d747392d51c6e0ff85da36102eeb67e45",
+      "cash_per_share": "0.087",
+      "payment_date": "2024-05-22",
+      "status": "MATCH"
+    },
+    {
+      "symbol": "510500",
+      "ex_date": "2025-01-16",
+      "review_path": "research\\capital_readiness\\primary-dividend-review-2026-09-16.json",
+      "pdf_path": "data\\audit\\primary-dividend-pdfs-2026-09-16-v1\\02-510500-2025-01-16.pdf",
+      "pdf_sha256": "9a1b3a2a62ab64293fe35b22be4ec9814dc3da6894996fc09be452783a3e14d5",
+      "cash_per_share": "0.091",
+      "payment_date": "2025-01-21",
+      "status": "MATCH"
+    },
+    {
+      "symbol": "511010",
+      "ex_date": "2025-09-23",
+      "review_path": "research\\capital_readiness\\primary-dividend-bond-review-2026-09-20.json",
+      "pdf_path": "data\\audit\\primary-dividend-bond-pdfs-2026-09-20-v2\\00-511010-2025-09-23.pdf",
+      "pdf_sha256": "ddfaac7c7097b0a15666d6e6787553be48613468e221564bccabfceceb5d0d02",
+      "cash_per_share": "1.45",
+      "payment_date": "2025-09-26",
+      "status": "MATCH"
+    },
+    {
+      "symbol": "511010",
+      "ex_date": "2025-12-26",
+      "review_path": "research\\capital_readiness\\primary-dividend-bond-review-2026-09-20.json",
+      "pdf_path": "data\\audit\\primary-dividend-bond-pdfs-2026-09-20-v2\\01-511010-2025-12-26.pdf",
+      "pdf_sha256": "733995693eef19c61a55a30d2be7dcc0dcc471980b81b85363977478195c50a8",
+      "cash_per_share": "0.6542",
+      "payment_date": "2025-12-31",
+      "status": "MATCH"
+    }
+  ],
+  "input_sha256": {
+    "research\\capital_readiness\\300k-accounting-replay-v4.json": "785d2ad99ad9fdbef30aea664130383a9a92742a06364378fc01ae3113613eb7",
+    "research\\capital_readiness\\primary-dividend-review-2026-09-16.json": "d5ef2832659945affe0185190d9ccb01953df3259a1c2c53f343199d5db06f8d",
+    "research\\capital_readiness\\primary-dividend-audit-2026-09-16.json": "8e3c620bde54959f9f7edee30ef36b6683614a6f94370fb1322d96117743324c",
+    "data\\audit\\primary-dividend-pdfs-2026-09-16-v1\\manifest.json": "93c32e1f150f537dc73dd969743626913300e03841e8e1f691af12395f3f12e3",
+    "research\\capital_readiness\\primary-dividend-review-2026-09-20.json": "d50be0dd43000c7b894fe3d82fb647d36339a06df1bce78481710ba98c680589",
+    "research\\capital_readiness\\primary-dividend-audit-2026-09-20.json": "83229c28bee17f52046256c799248a75c9cba77fe6ab75cfcd9079b100f3177b",
+    "data\\audit\\primary-dividend-pdfs-2026-09-20-v1\\manifest.json": "eae57dfa46bef0deff70bbfc3cd88f60740a59c793c839577cc93e5a7837de7d",
+    "research\\capital_readiness\\primary-dividend-bond-review-2026-09-20.json": "81385cd5c0eea01d8741302bfab3d0a19407cb93f0a2c0c6f3d1e2e0c36ba8d7",
+    "research\\capital_readiness\\primary-dividend-bond-audit-2026-09-20.json": "26863a1263b3ecc1cae5e2f1908cfba89c5c173ed626f3334e36ceb25881dcd2",
+    "data\\audit\\primary-dividend-bond-pdfs-2026-09-20-v2\\manifest.json": "f0a758f234a793c35a9e86b9885b8ca4b1c78fa52ae3859558cc454dee422bb2"
+  },
+  "script_sha256": "3a9a477071aadddad38e0513f425fad08e57e5523f9e484d3ea25144adc0bdf2",
+  "action_discovery_complete": false,
+  "historical_pit_admitted": false,
+  "capital_authorized": false,
+  "limits": [
+    "This checks every cash event already in the replay; it does not prove no cash event was omitted.",
+    "PDFs were archived in 2026 and do not establish precise historical first availability.",
+    "Review transcription was manual; this gate only binds reviewed fields, archive hashes, and replay accounting."
+  ]
+}
